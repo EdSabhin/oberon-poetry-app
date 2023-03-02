@@ -32,11 +32,11 @@ const PoemCard = ({ title, author, poem }: Props) => {
       })}
       <p className="pt-3">.................. ✏ </p>
       <div className="w-full flex justify-end pt-4">
-        <Button />
+        <Button text="Read Full Poem" />
       </div>
       <Image
-        width={100}
-        height={100}
+        width={"100"}
+        height={"100"}
         className="absolute top-5 right-7 rounded-full"
         src="https://i.pinimg.com/736x/fa/34/b8/fa34b83a0826dc3a6f701df417b3d409.jpg"
         alt=""
