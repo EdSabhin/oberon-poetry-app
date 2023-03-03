@@ -6,10 +6,10 @@ const Header = (props: Props) => {
   return (
     <header
       className="w-full flex flex-col items-center py-6
-      bg-gradient-to-r from-yellow-800 to-green-300 bg-black text-white border-4 border-green-200 border-dashed"
+      bg-gradient-to-r from-black to-pink-900 text-white border-none"
     >
-      <h1 className="text-5xl py-4 underline">On Shakespeare</h1>
-      <h2 className="px-6 pt-8 pb-6">
+      <h1 className="text-5xl py-4  text-yellow-100">On Shakespeare</h1>
+      <h2 className="px-6 pt-4 pb-6 text-center">
         {`William Shakespeare's genius lies in his ability to capture the
           complexities of human emotions and motivations, and convey them
           through his characters' words and actions. His works demonstrate an

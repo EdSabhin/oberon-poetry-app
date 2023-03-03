@@ -12,6 +12,7 @@ export interface Poem {
 
 const HomePage = () => {
   const [poems, setPoems] = useState<any>([]);
+  const [bgColor, setBgColor] = useState<boolean>(false);
 
   useEffect(() => {
     fetchData().then(setPoems);
@@ -23,7 +24,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <Main poemsArray={poemsArray} />
+      <Main poemsArray={poemsArray} bgColor={bgColor} setBgColor={setBgColor} />
       <Footer />
     </>
   );

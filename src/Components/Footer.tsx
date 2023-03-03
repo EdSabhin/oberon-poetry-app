@@ -7,9 +7,11 @@ const Footer = (props: Props) => {
   return (
     <footer
       className="w-full flex flex-col items-center py-6
-      bg-gradient-to-r from-yellow-800 to-green-300 text-white border-4 text-2xl border-green-300 border-dashed"
+      bg-gradient-to-l from-pink-900 to-black text-white border-none"
     >
-      <div>{"This is Gulielmus Shakspere's dramatic footer"} 👣</div>
+      <div className="pt-4 text-2xl text-yellow-100">
+        {"Here lies Gulielmus Shakspere's DramatiC footer"} 👣
+      </div>
       <Image
         width={500}
         height={500}

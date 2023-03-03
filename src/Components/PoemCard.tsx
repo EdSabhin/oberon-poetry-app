@@ -16,9 +16,9 @@ const PoemCard = ({ title, author, poem }: Props) => {
     <div
       className="relative w-max p-8 border-r-4 border-orange-300 hover:bg-gradient-to-r from-red-500 to-gray-400
       bg-gradient-to-b hover:from bg-red-500 hover:to-red-300 
-    hover:border-indigo-300 rounded transition ease-in-out delay-150 hover:-translate-y-4 duration-300"
+    hover:border-indigo-300 rounded transition ease-in-out delay-400 hover:-translate-y-4 duration-300"
     >
-      <h1 className="py-1 text-4xl text-indigo-300">{shortTitle}</h1>
+      <h1 className="py-1 text-4xl text-yellow-300">{shortTitle}</h1>
       <h2 className="pt-1 pb-10 text-xl text-yellow-100">{author}</h2>
       {shortPoem.map((poemVerse, index) => {
         return (
