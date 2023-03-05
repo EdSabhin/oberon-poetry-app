@@ -14,25 +14,35 @@ const PoemCard = ({ title, author, poem }: Props) => {
 
   return (
     <div
-      className="relative w-max p-8 border-r-4 border-orange-300 hover:bg-gradient-to-r from-red-500 to-gray-400
-      bg-gradient-to-b hover:from bg-red-500 hover:to-red-300 
-    hover:border-indigo-300 rounded transition ease-in-out delay-400 hover:-translate-y-4 duration-300"
+      className="relative md:w-[465px] md:h-[550px] p-8 border-l-8 border-transparent bg-gradient-to-b from-gray-900 to-gray-600 hover:bg-gradient-to-r hover:to-red-300 
+    hover:border-amber-200 rounded transition ease-in-out delay-400 hover:-translate-y-4 duration-300 group"
     >
-      <h1 className="py-1 text-4xl text-yellow-300">{shortTitle}</h1>
-      <h2 className="pt-1 pb-10 text-xl text-yellow-100">{author}</h2>
+      <h1 className="py-2 text-5xl hover:underline hover:decoration-2 hover:decoration-amber-100 hover:underline-offset-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900">
+        {shortTitle}
+      </h1>
+      <h2 className="pt-1 pb-10 text-2xl text-yellow-100">{author}</h2>
       {shortPoem.map((poemVerse, index) => {
         return (
           <p
             key={index}
-            className="italic hover:bg-gradient-to-r from-indigo-300 to-indigo-700"
+            className="w-max rounded transition-ease-in-out delay-400  hover:scale-105 duration-300 hover:bg-gradient-to-r from-indigo-400 to-red-400 p-1 text-2xl hover:text-amber-300 tracking-wide"
           >
             {poemVerse}
           </p>
         );
       })}
-      <p className="pt-3">.................. ✏ </p>
+      <div className="flex pt-3 gap-2 items-end">
+        <p className="pt-2 text-2xl ">..................</p>
+        <Image
+          width={50}
+          height={50}
+          className="mb-2  group-hover:animate-pulse-faster"
+          src="/feather-pen.png"
+          alt=""
+        />
+      </div>
       <div className="w-full flex justify-end pt-4">
-        <Button text="Read Full Poem" />
+        <Button text="Full Poem" />
       </div>
       <Image
         width={"100"}

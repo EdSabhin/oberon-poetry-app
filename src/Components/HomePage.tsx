@@ -13,10 +13,18 @@ export interface Poem {
 const HomePage = () => {
   const [poems, setPoems] = useState<any>([]);
   const [bgColor, setBgColor] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    fetchData().then(setPoems);
+    setTimeout(() => {
+      fetchData().then((data) => {
+        setPoems(data);
+        setLoading(false);
+      });
+    }, 4000);
   }, []);
+  // Use .then((data)) => {} when fetch is conditioning
+  // Otherwise use .then() directly
 
   const poemsArray = poems.slice(0, 5);
   console.log(poemsArray);
@@ -24,7 +32,12 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <Main poemsArray={poemsArray} bgColor={bgColor} setBgColor={setBgColor} />
+      <Main
+        loading={loading}
+        poemsArray={poemsArray}
+        bgColor={bgColor}
+        setBgColor={setBgColor}
+      />
       <Footer />
     </>
   );
