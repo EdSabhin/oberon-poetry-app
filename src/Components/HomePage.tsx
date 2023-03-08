@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
+import FullPoem from "./FullPoem";
 
 export interface Poem {
   title: string;
@@ -14,6 +15,7 @@ const HomePage = () => {
   const [poems, setPoems] = useState<any>([]);
   const [bgColor, setBgColor] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
+  const [fullPoemView, setFullPoemView] = useState<number | null>(null);
 
   useEffect(() => {
     setTimeout(() => {
@@ -32,12 +34,20 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <Main
-        loading={loading}
-        poemsArray={poemsArray}
-        bgColor={bgColor}
-        setBgColor={setBgColor}
-      />
+      {fullPoemView === null ? (
+        <Main
+          loading={loading}
+          poemsArray={poemsArray}
+          bgColor={bgColor}
+          setBgColor={setBgColor}
+          setFullPoemView={setFullPoemView}
+        />
+      ) : (
+        <FullPoem
+          poemsArray={poemsArray[fullPoemView]}
+          setFullPoemView={setFullPoemView}
+        />
+      )}
       <Footer />
     </>
   );

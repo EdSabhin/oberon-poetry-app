@@ -6,18 +6,20 @@ type Props = {
   title: string;
   author: string;
   poem: string[];
+  index: number;
+  setFullPoemView: (value: number) => void;
 };
 
-const PoemCard = ({ title, author, poem }: Props) => {
+const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
   const shortPoem = poem.slice(0, 5);
   const shortTitle = title.slice(0, title.indexOf(":"));
 
   return (
     <div
-      className="relative md:w-[465px] md:h-[550px] p-8 border-l-8 border-transparent bg-gradient-to-b from-gray-900 to-gray-600 hover:bg-gradient-to-r hover:to-red-300 
+      className="relative md:w-[465px] md:h-[550px] p-8 border-l-8 border-transparent bg-gradient-to-b from-gray-900 to-gray-600  hover:bg-gradient-to-bl hover:from-indigo-900 hover:via-indigo-400 hover:to-indigo-900
     hover:border-amber-200 rounded transition ease-in-out delay-400 hover:-translate-y-4 duration-300 group"
     >
-      <h1 className="py-2 text-5xl hover:underline hover:decoration-2 hover:decoration-amber-100 hover:underline-offset-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900">
+      <h1 className="py-2 text-5xl underline group-hover:decoration-2 group-hover:decoration-amber-100 group-hover:underline-offset-4 text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-amber-900">
         {shortTitle}
       </h1>
       <h2 className="pt-1 pb-10 text-2xl text-yellow-100">{author}</h2>
@@ -25,7 +27,7 @@ const PoemCard = ({ title, author, poem }: Props) => {
         return (
           <p
             key={index}
-            className="w-max rounded transition-ease-in-out delay-400  hover:scale-105 duration-300 hover:bg-gradient-to-r from-indigo-400 to-red-400 p-1 text-2xl hover:text-amber-300 tracking-wide"
+            className="w-max rounded transition-ease-in-out delay-400  hover:scale-105 duration-300 hover:bg-gradient-to-r hover:from-indigo-600 hover:via-red-400 hover:to-indigo-600 p-1 text-2xl hover:text-amber-200 tracking-wide"
           >
             {poemVerse}
           </p>
@@ -42,7 +44,7 @@ const PoemCard = ({ title, author, poem }: Props) => {
         />
       </div>
       <div className="w-full flex justify-end pt-4">
-        <Button text="Full Poem" />
+        <Button text="Full Poem" onClick={()=>setFullPoemView(index)} />
       </div>
       <Image
         width={"100"}

@@ -25,11 +25,11 @@ const Header = (props: Props) => {
           relevance, which continue to resonate with audiences today. His legacy
           has had a profound impact on the English language and literature, and
           his plays continue to be celebrated as some of the greatest works of
-          art in human history".`}
+          art in human history."`}
       </h2>
       <div className="w-full flex justify-end pr-40 pb-10">
         <h3 className={`${OldStandardTT.className} text-2xl text-start`}>
-          Gee Pee Tee, of House Chat.
+          Gee Pee Tee, of House Chat
         </h3>
       </div>
     </header>

@@ -12,7 +12,7 @@ const Footer = (props: Props) => {
       className="w-full flex flex-col items-center py-6
       bg-gradient-to-t from-gray-700 to-black text-white border-none tracking-wider"
     >
-      <div className="pt-4 text-4xl text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-amber-400">
+      <div className="p-4 text-4xl text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-amber-400">
         {"Here lies Gulielmus Shakspere's Dramatic Footer"} 👣
       </div>
       <Image

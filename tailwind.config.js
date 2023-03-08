@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      /*colors: {
+        cardGradientA: "var(--cardGradientA)",
+      },*/
       animation: {
         "spin-slow": "spin 3s linear infinite",
         "pulse-faster": "pulse 1s cubic-bezier(0.4, 0, 0.6, 4) infinite",
