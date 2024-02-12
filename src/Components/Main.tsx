@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import CardsSection from "./CardsSection";
 import Button from "./Button";
 import LoadingImage from "./LoadingImage";
+import MusicPlayer from "./MusicPlayer";
+import { songData } from "@/service/songData";
 
 type Props = {
   poemsArray: [];
@@ -18,8 +20,6 @@ const Main = ({
   setFullPoemView,
   loading,
 }: Props) => {
-  console.log(loading);
-
   return (
     <main
       className={`${
@@ -34,16 +34,22 @@ const Main = ({
         <h2 className="text-5xl p-4 pb-1 pr-20 underline decoration-1 underline-offset-6 decoration-amber-300 decoration-solid text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-yellow-400">
           {"William's Den of Sonnets"}
         </h2>
-        <Button
-          text={"Blood Night / Playwright"}
-          onClick={() => setBgColor(!bgColor)}
-        />
+        <div className="flex items-center gap-10">
+          <MusicPlayer songs={songData} />
+          <Button
+            text={"Blood Night / Playwright"}
+            onClick={() => setBgColor(!bgColor)}
+          />
+        </div>
       </div>
 
       {loading ? (
         <LoadingImage image="/feather-pen.png" />
       ) : (
-        <CardsSection poemsArray={poemsArray} setFullPoemView={setFullPoemView} />
+        <CardsSection
+          poemsArray={poemsArray}
+          setFullPoemView={setFullPoemView}
+        />
       )}
     </main>
   );

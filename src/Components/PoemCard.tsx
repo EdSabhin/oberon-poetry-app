@@ -16,13 +16,26 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
 
   return (
     <div
-      className="relative md:w-[465px] md:h-[550px] p-8 border-l-8 border-transparent bg-gradient-to-b from-gray-900 to-gray-600  hover:bg-gradient-to-bl hover:from-indigo-900 hover:via-indigo-400 hover:to-indigo-900
+      className="md:w-[465px] md:h-[550px] p-8 border-l-8 border-transparent bg-gradient-to-b from-gray-900 to-gray-600  hover:bg-gradient-to-bl hover:from-indigo-900 hover:via-indigo-400 hover:to-indigo-900
     hover:border-amber-200 rounded transition ease-in-out delay-400 hover:-translate-y-4 duration-300 group"
     >
-      <h1 className="py-2 text-5xl underline group-hover:decoration-2 group-hover:decoration-amber-100 group-hover:underline-offset-4 text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-amber-900">
-        {shortTitle}
-      </h1>
-      <h2 className="pt-1 pb-10 text-2xl text-yellow-100">{author}</h2>
+      <div className="w-full flex gap-16">
+        <div className="w-5/6">
+          <h1 className="py-2 text-5xl underline group-hover:decoration-2 group-hover:decoration-amber-100 group-hover:underline-offset-4 text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-amber-900">
+            {shortTitle}
+          </h1>
+          <h2 className="pt-1 pb-10 text-2xl text-yellow-100">{author}</h2>
+        </div>
+        <div className="w-3/4">
+          <Image
+            width={"100"}
+            height={"100"}
+            className=" rounded-full"
+            src="https://i.pinimg.com/736x/fa/34/b8/fa34b83a0826dc3a6f701df417b3d409.jpg"
+            alt=""
+          />
+        </div>
+      </div>
       {shortPoem.map((poemVerse, index) => {
         return (
           <p
@@ -44,15 +57,8 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
         />
       </div>
       <div className="w-full flex justify-end pt-4">
-        <Button text="Full Poem" onClick={()=>setFullPoemView(index)} />
+        <Button text="Full Poem" onClick={() => setFullPoemView(index)} />
       </div>
-      <Image
-        width={"100"}
-        height={"100"}
-        className="absolute top-5 right-7 rounded-full"
-        src="https://i.pinimg.com/736x/fa/34/b8/fa34b83a0826dc3a6f701df417b3d409.jpg"
-        alt=""
-      />
     </div>
   );
 };

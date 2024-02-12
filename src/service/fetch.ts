@@ -1,7 +1,5 @@
-export async function fetchData<T>(): Promise<T> {
-  const response = await fetch(
-    "https://poetrydb.org/author,title/Shakespeare;Sonnet"
-  );
+export async function fetchData<T>(url: string): Promise<T> {
+  const response = await fetch(url);
   if (!response.ok) {
     throw new Error(`HTTP error! Status: ${response.status}`);
   }

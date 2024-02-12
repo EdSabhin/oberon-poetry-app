@@ -1,5 +1,5 @@
 import React from "react";
-import { Poem } from "./HomePage";
+import { Poem } from "../pages/HomePage";
 import PoemCard from "./PoemCard";
 
 type Props = {
