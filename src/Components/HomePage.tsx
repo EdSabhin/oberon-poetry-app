@@ -25,8 +25,8 @@ const HomePage = () => {
       });
     }, 4000);
   }, []);
-  // Use .then((data)) => {} when fetch is conditioning
-  // Otherwise use .then() directly
+  // Use .then((data)) => {} when fetch is conditioning.
+  // Otherwise use .then() directly.
 
   const poemsArray = poems.slice(0, 5);
   console.log(poemsArray);
