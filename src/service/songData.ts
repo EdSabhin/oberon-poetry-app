@@ -11,4 +11,4 @@ export const songData = [
     artist: "John Dowland",
     songSrc: "/songs/Song2.mp3",
   },
-];
+]

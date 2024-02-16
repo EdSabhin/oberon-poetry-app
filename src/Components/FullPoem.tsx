@@ -1,18 +1,18 @@
-import React, { useEffect } from "react";
-import Button from "./Button";
-import { Poem } from "../pages/HomePage";
+import React, { useEffect } from "react"
+import Button from "./Button"
+import { Poem } from "../pages/HomePage"
 
 type Props = {
-  poemsArray: Poem;
-  setFullPoemView: (value: null) => void;
-};
+  poemsArray: Poem
+  setFullPoemView: (value: null) => void
+}
 
 const FullPoem = ({ poemsArray, setFullPoemView }: Props) => {
-  const shortTitle = poemsArray.title.slice(0, poemsArray.title.indexOf(":"));
+  const shortTitle = poemsArray.title.slice(0, poemsArray.title.indexOf(":"))
   useEffect(() => {
-    const element = document.getElementById("FullPoem");
-    element?.scrollIntoView({ behavior: "smooth" });
-  }, []);
+    const element = document.getElementById("FullPoem")
+    element?.scrollIntoView({ behavior: "smooth" })
+  }, [])
 
   return (
     <div
@@ -37,7 +37,7 @@ const FullPoem = ({ poemsArray, setFullPoemView }: Props) => {
             >
               {verse}
             </p>
-          );
+          )
         })}
         <div className="w-full flex justify-end pr-20 p-8">
           <h2 className="pt-1 pb-2 text-2xl text-yellow-200">
@@ -46,7 +46,7 @@ const FullPoem = ({ poemsArray, setFullPoemView }: Props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FullPoem;
+export default FullPoem

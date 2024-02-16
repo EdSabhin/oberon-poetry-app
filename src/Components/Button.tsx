@@ -1,12 +1,12 @@
-import React from "react";
-import { Old_Standard_TT } from "next/font/google";
+import React from "react"
+import { Old_Standard_TT } from "next/font/google"
 
-const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] });
+const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 
 type Props = {
-  text: string;
-  onClick?: () => void;
-};
+  text: string
+  onClick?: () => void
+}
 
 const Button = ({ text, onClick }: Props) => {
   return (
@@ -16,7 +16,7 @@ const Button = ({ text, onClick }: Props) => {
     >
       {text}
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

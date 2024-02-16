@@ -1,9 +1,9 @@
-import React from "react";
-import Image from "next/image";
+import React from "react"
+import Image from "next/image"
 
 type Props = {
-  image: string;
-};
+  image: string
+}
 
 const LoadingImage = ({ image }: Props) => {
   return (
@@ -16,7 +16,7 @@ const LoadingImage = ({ image }: Props) => {
         alt=""
       />
     </div>
-  );
-};
+  )
+}
 
-export default LoadingImage;
+export default LoadingImage

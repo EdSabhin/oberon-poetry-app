@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from "react";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
-import Header from "@/Components/Header";
-import LoadingImage from "@/Components/LoadingImage";
-import { fetchData } from "@/service/fetch";
+import React, { useEffect, useState } from "react"
+import Navbar from "../Components/Navbar"
+import Footer from "../Components/Footer"
+import Header from "@/Components/Header"
+import LoadingImage from "@/Components/LoadingImage"
+import { fetchData } from "@/service/fetch"
 
-type Props = {};
+type Props = {}
 
 const PoetsList = (props: Props) => {
-  const [authors, setAuthors] = useState<any>();
-  const [bgColor, setBgColor] = useState<boolean>(false);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [showModalImage, setShowModalImage] = useState<boolean>(false);
+  const [authors, setAuthors] = useState<any>()
+  const [bgColor, setBgColor] = useState<boolean>(false)
+  const [loading, setLoading] = useState<boolean>(true)
+  const [showModalImage, setShowModalImage] = useState<boolean>(false)
 
   useEffect(() => {
     setTimeout(() => {
       fetchData("https://poetrydb.org/author").then((data) => {
-        setAuthors(data);
-        setLoading(false);
-      });
-    }, 3000);
-  }, []);
+        setAuthors(data)
+        setLoading(false)
+      })
+    }, 3000)
+  }, [])
 
   // Use .then((data)) => {} when fetch is conditioning
   // Otherwise use .then() directly
@@ -45,7 +45,7 @@ const PoetsList = (props: Props) => {
               >
                 <h3 className="text-3xl">{author}</h3>
               </div>
-            );
+            )
           })}
         </section>
       )}
@@ -61,6 +61,6 @@ const PoetsList = (props: Props) => {
         setShowModalImage={setShowModalImage}
       />
     </>
-  );
-};
-export default PoetsList;
+  )
+}
+export default PoetsList

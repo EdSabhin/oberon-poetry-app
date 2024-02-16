@@ -1,17 +1,17 @@
-import React from "react";
-import CardsSection from "./CardsSection";
-import Button from "./Button";
-import LoadingImage from "./LoadingImage";
-import MusicPlayer from "./MusicPlayer";
-import { songData } from "@/service/songData";
+import React from "react"
+import CardsSection from "./CardsSection"
+import Button from "./Button"
+import LoadingImage from "./LoadingImage"
+import MusicPlayer from "./MusicPlayer"
+import { songData } from "@/service/songData"
 
 type Props = {
-  poemsArray: [];
-  bgColor: boolean;
-  setBgColor: (value: boolean) => void;
-  setFullPoemView: (value: number) => void;
-  loading: boolean;
-};
+  poemsArray: []
+  bgColor: boolean
+  setBgColor: (value: boolean) => void
+  setFullPoemView: (value: number) => void
+  loading: boolean
+}
 
 const Main = ({
   poemsArray,
@@ -31,7 +31,7 @@ const Main = ({
     >
       <div className="w-100 flex flex-row m-8 ">
         {" "}
-        <h2 className="text-5xl p-4 pb-1 pr-20 underline decoration-1 underline-offset-6 decoration-amber-300 decoration-solid text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-yellow-400">
+        <h2 className="text-5xl p-4 pb-1 pr-20 underline decoration-1 underline-offset-8 decoration-amber-300 decoration-solid text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-yellow-400">
           {"William's Den of Sonnets"}
         </h2>
         <div className="flex items-center gap-10">
@@ -52,7 +52,7 @@ const Main = ({
         />
       )}
     </main>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main

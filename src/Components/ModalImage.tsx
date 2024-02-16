@@ -1,19 +1,19 @@
-import Image from "next/image";
-import React, { useEffect } from "react";
+import Image from "next/image"
+import React, { useEffect } from "react"
 
 type Props = {
-  src: string;
-  setShowModalImage?: (value: boolean) => void;
-};
+  src: string
+  setShowModalImage?: (value: boolean) => void
+}
 
 const ModalImage = ({ src, setShowModalImage }: Props) => {
   useEffect(() => {
-    document.body.classList.add("overflow-hidden");
+    document.body.classList.add("overflow-hidden")
 
     return () => {
-      document.body.classList.remove("overflow-hidden");
-    };
-  }, []);
+      document.body.classList.remove("overflow-hidden")
+    }
+  }, [])
 
   return (
     <div className="modalPoetList fixed inset-0 overflow-y-auto z-40">
@@ -42,7 +42,7 @@ const ModalImage = ({ src, setShowModalImage }: Props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ModalImage;
+export default ModalImage

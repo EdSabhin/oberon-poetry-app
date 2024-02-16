@@ -1,11 +1,11 @@
-import React from "react";
-import { Poem } from "../pages/HomePage";
-import PoemCard from "./PoemCard";
+import React from "react"
+import { Poem } from "../pages/HomePage"
+import PoemCard from "./PoemCard"
 
 type Props = {
-  poemsArray: [];
-  setFullPoemView: (value: number) => void;
-};
+  poemsArray: []
+  setFullPoemView: (value: number) => void
+}
 
 const CardsSection = ({ poemsArray, setFullPoemView }: Props) => {
   return (
@@ -20,10 +20,10 @@ const CardsSection = ({ poemsArray, setFullPoemView }: Props) => {
             poem={poem.lines}
             setFullPoemView={setFullPoemView}
           />
-        );
+        )
       })}
     </section>
-  );
-};
+  )
+}
 
-export default CardsSection;
+export default CardsSection

@@ -1,18 +1,18 @@
-import Image from "next/image";
-import React from "react";
-import Button from "./Button";
+import Image from "next/image"
+import React from "react"
+import Button from "./Button"
 
 type Props = {
-  title: string;
-  author: string;
-  poem: string[];
-  index: number;
-  setFullPoemView: (value: number) => void;
-};
+  title: string
+  author: string
+  poem: string[]
+  index: number
+  setFullPoemView: (value: number) => void
+}
 
 const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
-  const shortPoem = poem.slice(0, 5);
-  const shortTitle = title.slice(0, title.indexOf(":"));
+  const shortPoem = poem.slice(0, 5)
+  const shortTitle = title.slice(0, title.indexOf(":"))
 
   return (
     <div
@@ -44,7 +44,7 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
           >
             {poemVerse}
           </p>
-        );
+        )
       })}
       <div className="flex pt-3 gap-2 items-end">
         <p className="pt-2 text-2xl ">..................</p>
@@ -60,7 +60,7 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
         <Button text="Full Poem" onClick={() => setFullPoemView(index)} />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PoemCard;
+export default PoemCard

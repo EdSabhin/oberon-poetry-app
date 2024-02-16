@@ -1,18 +1,17 @@
-import Image from "next/image";
-import React, { useState } from "react";
-import { Old_Standard_TT } from "next/font/google";
-import ModalImage from "./ModalImage";
+import Image from "next/image"
+import { Old_Standard_TT } from "next/font/google"
+import ModalImage from "./ModalImage"
 
-const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] });
+const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 
 type Props = {
-  image: string;
-  text: string;
-  imageWidth?: number;
-  imageHeight?: number;
-  showModalImage?: boolean;
-  setShowModalImage?: (value: boolean) => void;
-};
+  image: string
+  text: string
+  imageWidth?: number
+  imageHeight?: number
+  showModalImage?: boolean
+  setShowModalImage?: (value: boolean) => void
+}
 
 const Footer = ({
   image,
@@ -61,7 +60,7 @@ const Footer = ({
         <ModalImage src={image} setShowModalImage={setShowModalImage} />
       )}
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

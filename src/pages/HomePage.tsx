@@ -1,37 +1,37 @@
-import { fetchData } from "@/service/fetch";
-import React, { useEffect, useState } from "react";
-import Header from "../Components/Header";
-import Main from "../Components/Main";
-import Footer from "../Components/Footer";
-import FullPoem from "../Components/FullPoem";
-import Navbar from "../Components/Navbar";
+import { fetchData } from "@/service/fetch"
+import React, { useEffect, useState } from "react"
+import Header from "../components/Header"
+import Main from "../components/Main"
+import Footer from "../components/Footer"
+import FullPoem from "../components/FullPoem"
+import Navbar from "../components/Navbar"
 
 export interface Poem {
-  title: string;
-  author: string;
-  lines: string[];
+  title: string
+  author: string
+  lines: string[]
 }
 
 const HomePage = () => {
-  const [poems, setPoems] = useState<any>([]);
-  const [bgColor, setBgColor] = useState<boolean>(false);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [fullPoemView, setFullPoemView] = useState<number | null>(null);
+  const [poems, setPoems] = useState<any>([])
+  const [bgColor, setBgColor] = useState<boolean>(false)
+  const [loading, setLoading] = useState<boolean>(true)
+  const [fullPoemView, setFullPoemView] = useState<number | null>(null)
 
   useEffect(() => {
     setTimeout(() => {
       fetchData("https://poetrydb.org/author,title/Shakespeare;Sonnet").then(
         (data) => {
-          setPoems(data);
-          setLoading(false);
-        }
-      );
-    }, 3000);
-  }, []);
+          setPoems(data)
+          setLoading(false)
+        },
+      )
+    }, 3000)
+  }, [])
   // Use .then((data)) => {} when fetch is conditioning
   // Otherwise use .then() directly
 
-  const poemsArray = poems.slice(0, 5);
+  const poemsArray = poems.slice(0, 5)
 
   return (
     <>
@@ -71,7 +71,7 @@ const HomePage = () => {
         }
       />
     </>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage
