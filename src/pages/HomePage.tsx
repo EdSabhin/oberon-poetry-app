@@ -1,4 +1,4 @@
-import { fetchData } from "@/service/fetch"
+import { fetchData } from "@/service/fetchData"
 import React, { useEffect, useState } from "react"
 import Header from "../components/Header"
 import Main from "../components/Main"
@@ -49,6 +49,8 @@ const HomePage = () => {
           has had a profound impact on the English language and literature, and
           his plays continue to be celebrated as some of the greatest works of
           art in human history."`}
+        className="w-full flex flex-col items-center py-4
+      bg-gradient-to-b from-gray-700 to-black text-white border-none"
       />
       {fullPoemView === null ? (
         <Main

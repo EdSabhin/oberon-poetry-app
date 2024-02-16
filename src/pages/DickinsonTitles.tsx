@@ -1,4 +1,4 @@
-import { fetchData } from "@/service/fetch"
+import { fetchData } from "@/service/fetchData"
 import React, { useEffect, useState } from "react"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
@@ -6,6 +6,7 @@ import Header from "@/components/Header"
 import LoadingImage from "@/components/LoadingImage"
 import MusicPlayer from "@/components/MusicPlayer"
 import { songData } from "@/service/songData"
+import Book from "@/components/icons/Book"
 
 type Props = {
   title: string
@@ -30,11 +31,13 @@ const DickinsonTitles = (props: Props) => {
   // Use .then((data)) => {} when fetch is conditioning
   // Otherwise use .then() directly
   return (
-    <div>
+    <div className="p-40">
       <Navbar />
       <Header
         title="Emily D's Greatest Hits"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid natus non omnis tempore iure numquam incidunt voluptatem a repellat, dolores corporis quasi. Quisquam id sed numquam voluptates inventore maxime accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laborum possimus placeat nulla incidunt, iste sint perferendis quaerat corporis dolor molestias, unde, odio tenetur eveniet ipsam? Quo modi repellat esse?"
+        className="w-full flex flex-col items-start p-12
+      bg-gradient-to-b from-indigo-100 to-rose-100 text-amber-700"
       />
       {loading ? (
         <div className="w-full flex justify-center items-center ">
@@ -52,8 +55,8 @@ const DickinsonTitles = (props: Props) => {
                       {title.title}
                     </h3>
                   </div>
-                  <div className="w-32 h-16 flex mt-8 justify-center items-center border-b rounded-full shadow-lg shadow-rose-200">
-                    <h3 className="text-rose-900 text-3xl cursor-pointer">▷</h3>
+                  <div className="w-32 h-16 flex mt-8 justify-center items-center border-b rounded-full shadow-lg shadow-rose-200 cursor-pointer">
+                    <Book/>
                   </div>
                 </div>
               )

@@ -1,4 +1,4 @@
-import { fetchData } from "@/service/fetch"
+import { fetchData } from "@/service/fetchData"
 import React, { useEffect, useState } from "react"
 import Header from "./Header"
 import Main from "./Main"
@@ -29,7 +29,6 @@ const HomePage = () => {
   // Otherwise use .then() directly.
 
   const poemsArray = poems.slice(0, 5)
-  console.log(poemsArray)
 
   return (
     <>
