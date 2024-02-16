@@ -8,11 +8,13 @@ import MusicPlayer from "@/components/MusicPlayer"
 import { songData } from "@/service/songData"
 import Book from "@/components/icons/Book"
 
+import { navProps } from "../component-props/propsIndex"
+
 type Props = {
   title: string
 }
 
-const DickinsonTitles = (props: Props) => {
+const EmilyDsGreatestHits = (props: Props) => {
   const [titles, setTitles] = useState<any>()
   const [bgColor, setBgColor] = useState<boolean>(false)
   const [loading, setLoading] = useState<boolean>(true)
@@ -31,13 +33,13 @@ const DickinsonTitles = (props: Props) => {
   // Use .then((data)) => {} when fetch is conditioning
   // Otherwise use .then() directly
   return (
-    <div className="p-40">
-      <Navbar />
+    <div className="">
+      <Navbar className={navProps.dickinson.className} ulClassName={navProps.dickinson.ulClassName} />
       <Header
         title="Emily D's Greatest Hits"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid natus non omnis tempore iure numquam incidunt voluptatem a repellat, dolores corporis quasi. Quisquam id sed numquam voluptates inventore maxime accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laborum possimus placeat nulla incidunt, iste sint perferendis quaerat corporis dolor molestias, unde, odio tenetur eveniet ipsam? Quo modi repellat esse?"
         className="w-full flex flex-col items-start p-12
-      bg-gradient-to-b from-indigo-100 to-rose-100 text-amber-700"
+      bg-gradient-to-r from-indigo-100 to-rose-100 text-amber-700"
       />
       {loading ? (
         <div className="w-full flex justify-center items-center ">
@@ -56,7 +58,7 @@ const DickinsonTitles = (props: Props) => {
                     </h3>
                   </div>
                   <div className="w-32 h-16 flex mt-8 justify-center items-center border-b rounded-full shadow-lg shadow-rose-200 cursor-pointer">
-                    <Book/>
+                    <Book />
                   </div>
                 </div>
               )
@@ -74,4 +76,4 @@ const DickinsonTitles = (props: Props) => {
   )
 }
 
-export default DickinsonTitles
+export default EmilyDsGreatestHits

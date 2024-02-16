@@ -11,9 +11,7 @@ type Props = {
 
 const Header = ({ title, description, className }: Props) => {
   return (
-    <header
-      className={className}
-    >
+    <header className={className}>
       <h1 className="text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-amber-300 p-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900">
         {title}
       </h1>

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import Button from "./Button"
-import { Poem } from "../pages/HomePage"
+import { Poem } from "../pages/ShakespearesDen"
 
 type Props = {
   poemsArray: Poem

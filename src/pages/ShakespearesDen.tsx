@@ -6,13 +6,15 @@ import Footer from "../components/Footer"
 import FullPoem from "../components/FullPoem"
 import Navbar from "../components/Navbar"
 
+import { navProps } from "../component-props/propsIndex"
+
 export interface Poem {
   title: string
   author: string
   lines: string[]
 }
 
-const HomePage = () => {
+const ShakespearesDen = () => {
   const [poems, setPoems] = useState<any>([])
   const [bgColor, setBgColor] = useState<boolean>(false)
   const [loading, setLoading] = useState<boolean>(true)
@@ -35,7 +37,10 @@ const HomePage = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar
+        className={navProps.shakespeare.className}
+        ulClassName={navProps.shakespeare.ulClassName}
+      />
       <Header
         title={"On Shakespeare"}
         description={`"William Shakespeare's genius lies in his ability to capture the
@@ -76,4 +81,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default ShakespearesDen
