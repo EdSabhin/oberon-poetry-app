@@ -12,8 +12,6 @@ import MusicPlayer from "@/components/MusicPlayer"
 import { songData } from "@/service/songData"
 import Book from "@/components/icons/Book"
 
-
-
 type Props = {
   title: string
 }

@@ -66,6 +66,16 @@ const Footer = ({
         >
           Quill icons created by Design Circle - Flaticon
         </a>
+        <a
+          href="https://www.flaticon.com/free-icons/black-cat"
+          title="black cat icons"
+          className={`${OldStandardTT.className} ${
+            showModalImage ? "text-white" : "text-indigo-400"
+          } border-none py-2 px-6 font-bold  hover:text-amber-400 rounded italic transition ease-in-out text-lg `}
+          target="__blank"
+        >
+          Cat icons created by juicy_fish - Flaticon
+        </a>
       </div>
 
       {showModalImage && (

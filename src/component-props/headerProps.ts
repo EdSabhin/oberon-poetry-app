@@ -13,9 +13,9 @@ const headerProps = {
           his plays continue to be celebrated as some of the greatest works of
           art in human history."`,
     headerClassName:
-      "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-b from-gray-700 to-black text-white border-none",
+      "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-b from-gray-700 to-stone-800 text-white border-none",
     h1ClassName:
-      "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-amber-300 p-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900",
+      "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-amber-200 p-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900",
   },
   dickinson: {
     title: "Emily D's Greatest Hits",
