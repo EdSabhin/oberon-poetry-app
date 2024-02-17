@@ -1,14 +1,18 @@
 import { fetchData } from "@/service/fetchData"
-import React, { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
+
+import { headerProps, navProps } from "../component-props/propsIndex"
+
 import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
 import Header from "@/components/Header"
+import Footer from "../components/Footer"
+
 import LoadingImage from "@/components/LoadingImage"
 import MusicPlayer from "@/components/MusicPlayer"
 import { songData } from "@/service/songData"
 import Book from "@/components/icons/Book"
 
-import { navProps } from "../component-props/propsIndex"
+
 
 type Props = {
   title: string
@@ -27,23 +31,25 @@ const EmilyDsGreatestHits = (props: Props) => {
           setLoading(false)
         },
       )
-    }, 3000)
+    }, 3300)
   }, [])
 
-  // Use .then((data)) => {} when fetch is conditioning
-  // Otherwise use .then() directly
   return (
     <div className="">
-      <Navbar className={navProps.dickinson.className} ulClassName={navProps.dickinson.ulClassName} />
+      <Navbar
+        className={navProps.dickinson.className}
+        ulClassName={navProps.dickinson.ulClassName}
+        linkClassName={navProps.dickinson.linkClassName}
+      />
       <Header
-        title="Emily D's Greatest Hits"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid natus non omnis tempore iure numquam incidunt voluptatem a repellat, dolores corporis quasi. Quisquam id sed numquam voluptates inventore maxime accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laborum possimus placeat nulla incidunt, iste sint perferendis quaerat corporis dolor molestias, unde, odio tenetur eveniet ipsam? Quo modi repellat esse?"
-        className="w-full flex flex-col items-start p-12
-      bg-gradient-to-r from-indigo-100 to-rose-100 text-amber-700"
+        title={headerProps.dickinson.title}
+        description={headerProps.dickinson.description}
+        headerClassName={headerProps.dickinson.headerClassName}
+        h1ClassName={headerProps.dickinson.h1ClassName}
       />
       {loading ? (
         <div className="w-full flex justify-center items-center ">
-          <LoadingImage image="/feather-pen.png" />
+          <LoadingImage image="/inkwell.png" />
         </div>
       ) : (
         <section className="w-full flex flex-col items-center py-12 px-24">
@@ -57,7 +63,7 @@ const EmilyDsGreatestHits = (props: Props) => {
                       {title.title}
                     </h3>
                   </div>
-                  <div className="w-32 h-16 flex mt-8 justify-center items-center border-b rounded-full shadow-lg shadow-rose-200 cursor-pointer">
+                  <div className="w-32 h-16 flex mt-8 justify-center items-center border-b rounded-full shadow-md shadow-rose-200 cursor-pointer">
                     <Book />
                   </div>
                 </div>

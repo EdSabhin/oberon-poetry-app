@@ -4,15 +4,21 @@ import React from "react"
 type Props = {
   className: string
   ulClassName: string
+  linkClassName: string
 }
 
-const Navbar = ({ className, ulClassName }: Props) => {
+const Navbar = ({ className, ulClassName, linkClassName }: Props) => {
   return (
     <div className={className}>
       <ul className={ulClassName}>
-        <Link href="/">{`Shakespeare's Den`}</Link>
-        <Link href="/EmilyDsGreatestHits">{`Emily D's Greatest Hits`}</Link>
-        <Link href="/PoetsList">Explore More Poets</Link>
+        <Link href="/" className={linkClassName}>{`Shakespeare's Den`}</Link>
+        <Link
+          href="/EmilyDsGreatestHits"
+          className={linkClassName}
+        >{`Emily D's Greatest Hits`}</Link>
+        <Link href="/PoetsList" className={linkClassName}>
+          Explore More Poets
+        </Link>
       </ul>
     </div>
   )

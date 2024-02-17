@@ -35,7 +35,7 @@ const Footer = ({
         } `}
       >
         <Image
-          className=" hover:border-4 hover:border-zinc-100 transition duration-500 ease-in-out hover:transition-all hover:duration-500 hover:ease-in-out rounded"
+          className=" pb-8 hover:border-4 hover:border-zinc-100 transition duration-500 ease-in-out hover:transition-all hover:duration-500 hover:ease-in-out rounded"
           width={imageWidth ?? 500}
           height={imageHeight ?? 500}
           src={image}
@@ -45,17 +45,29 @@ const Footer = ({
           }
         />
       </div>
+      <div className="flex flex-col gap-2">
+        <a
+          href="https://www.flaticon.com/free-icons/feather"
+          title="feather icons"
+          className={`${OldStandardTT.className} ${
+            showModalImage ? "text-white" : "text-indigo-400"
+          } border-none py-2 px-6 font-bold  hover:text-amber-400 rounded italic transition ease-in-out text-lg `}
+          target="__blank"
+        >
+          Feather icons created by Freepik - Flaticon
+        </a>
+        <a
+          href="https://www.flaticon.com/free-icons/quill"
+          title="quill icons"
+          className={`${OldStandardTT.className} ${
+            showModalImage ? "text-white" : "text-indigo-400"
+          } border-none py-2 px-6 font-bold  hover:text-amber-400 rounded italic transition ease-in-out text-lg `}
+          target="__blank"
+        >
+          Quill icons created by Design Circle - Flaticon
+        </a>
+      </div>
 
-      <a
-        href="https://www.flaticon.com/free-icons/feather"
-        title="feather icons"
-        className={`${OldStandardTT.className} ${
-          showModalImage ? "text-white" : "text-indigo-400"
-        } border-none p-2 px-6 mt-4 font-bold  hover:text-amber-400 rounded italic transition ease-in-out text-lg `}
-        target="__blank"
-      >
-        Feather icons created by Freepik - Flaticon
-      </a>
       {showModalImage && (
         <ModalImage src={image} setShowModalImage={setShowModalImage} />
       )}

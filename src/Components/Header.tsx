@@ -6,16 +6,20 @@ const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 type Props = {
   title: string
   description: string
-  className?: string
+  headerClassName: string
+  h1ClassName: string
 }
 
-const Header = ({ title, description, className }: Props) => {
+const Header = ({
+  title,
+  description,
+  headerClassName,
+  h1ClassName,
+}: Props) => {
   return (
-    <header className={className}>
-      <h1 className="text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-amber-300 p-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900">
-        {title}
-      </h1>
-      <h2 className="text-[1.75rem] pt-4 pb-6 text-start tracking-wide">
+    <header className={headerClassName}>
+      <h1 className={h1ClassName}>{title}</h1>
+      <h2 className="text-[1.75rem] pt-4 pb-6 px-4 text-start tracking-wide">
         {description}
       </h2>
       <div className="w-full flex justify-end pr-40 pb-10">
