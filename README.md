@@ -7,12 +7,4 @@
 - Nav
 - Title
 - Add + images
-
-### Select Poems
-
-- Add The Tyger
-- Add Emily D.'s poem
-- Desiderata
-- If
-- Carry On
-- The Road Less Taken
+- Add active status for current page browsed
