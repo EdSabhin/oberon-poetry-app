@@ -70,17 +70,17 @@ const MusicPlayer = ({ songs }: Props) => {
   return (
     <div className="flex flex-col items-center justify-center">
       <audio ref={audioRef} src={songs[currentSongIndex].songSrc} autoPlay />
-      <div className="flex justify-center p-3 gap-4 border-2 border-white hover:border-amber-100 transition rounded-md">
-        <button onClick={handleMute}>
+      <div className="flex justify-center py-3 pl-12 pr-8 gap-4 border-2 border-stone-300 rounded-bl-full hover:bg-gradient-to-br hover:from-stone-700 hover:to-stone-400 shadow-md shadow-stone-950 transition duration-700 ease-in-out">
+        <button onClick={handleMute} className="hover:text-amber-400">
           {isMuted ? <RxSpeakerLoud /> : <RxSpeakerOff />}
         </button>
-        <button onClick={handlePreviousSong}>
+        <button onClick={handlePreviousSong} className="hover:text-amber-400">
           <TbPlayerTrackPrev />
         </button>
-        <button onClick={handlePlayPause}>
+        <button onClick={handlePlayPause} className="hover:text-amber-400">
           {isPlaying ? <TbPlayerPause /> : <TbPlayerPlay />}
         </button>
-        <button onClick={handleNextSong}>
+        <button onClick={handleNextSong} className="hover:text-amber-400">
           <TbPlayerTrackNext />
         </button>
       </div>

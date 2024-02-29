@@ -45,6 +45,7 @@ const ShakespearesDen = () => {
         description={headerProps.shakespeare.description}
         headerClassName={headerProps.shakespeare.headerClassName}
         h1ClassName={headerProps.shakespeare.h1ClassName}
+        headerIcon={headerProps.shakespeare.headerIcon}
       />
       {fullPoemView === null ? (
         <Main

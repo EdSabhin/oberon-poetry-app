@@ -15,8 +15,12 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
   const shortTitle = title.slice(0, title.indexOf(":"))
 
   return (
-    <div className="w-[77%] relative p-10 r-12 border-l-8 border-transparent bg-gradient-to-b from-gray-900 to-gray-600  hover:bg-gradient-to-bl hover:from-indigo-900 hover:via-indigo-400 hover:to-indigo-900 hover:border-amber-200 rounded-[3%]  rounded-br-[35%] transition ease-in-out delay-400 hover:-translate-y-4 duration-300 group">
-       <Button text="Ponder Upon" onClick={() => setFullPoemView(index)} className="absolute top-0 right-[-16%]" />
+    <div className="w-[77%] relative p-10 r-12 border-l-8 border-transparent bg-gradient-to-b from-gray-900 to-gray-600  hover:bg-gradient-to-bl hover:from-indigo-900 hover:via-indigo-400 hover:to-indigo-900 hover:border-amber-200 rounded-[3%] rounded-br-[35%] shadow-md shadow-stone-950 transition ease-in-out delay-400 hover:-translate-y-4 duration-300 group">
+      <Button
+        text="Ponder Upon"
+        onClick={() => setFullPoemView(index)}
+        className="absolute top-[6.4%] right-[-17.7%]"
+      />
       <div className="w-full flex justify-between mb-8">
         <div>
           <h1 className="py-2 text-6xl underline group-hover:decoration-2 group-hover:decoration-amber-100 group-hover:underline-offset-4 text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-amber-900">
@@ -51,7 +55,7 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
           src="/feather-pen.png"
           alt=""
         />
-      </div>     
+      </div>
     </div>
   )
 }

@@ -9,6 +9,7 @@ type Props = {
   description: string
   headerClassName: string
   h1ClassName: string
+  headerIcon: string
 }
 
 const Header = ({
@@ -16,6 +17,7 @@ const Header = ({
   description,
   headerClassName,
   h1ClassName,
+  headerIcon
 }: Props) => {
   return (
     <header className={headerClassName}>
@@ -30,7 +32,7 @@ const Header = ({
         <Image
           width={80}
           height={80}
-          src={"/cat-collar.png"}
+          src={headerIcon}
           alt="black cat"
           className="transform scale-x-[-1]"
         />

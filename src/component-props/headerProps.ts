@@ -16,6 +16,7 @@ const headerProps = {
       "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-b from-gray-700 to-stone-800 text-white border-none",
     h1ClassName:
       "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-amber-200 p-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900",
+    headerIcon: "/images/white-cat.svg",
   },
   dickinson: {
     title: "Emily D's Greatest Hits",
@@ -24,6 +25,7 @@ const headerProps = {
       "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-r from-indigo-100 to-rose-100 text-amber-700",
     h1ClassName:
       "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-rose-900 p-4 text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-teal-800",
+    headerIcon: "/images/black-cat.svg",
   },
 }
 

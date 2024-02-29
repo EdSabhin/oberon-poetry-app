@@ -44,6 +44,7 @@ const EmilyDsGreatestHits = (props: Props) => {
         description={headerProps.dickinson.description}
         headerClassName={headerProps.dickinson.headerClassName}
         h1ClassName={headerProps.dickinson.h1ClassName}
+        headerIcon={headerProps.dickinson.headerIcon}
       />
       {loading ? (
         <div className="w-full flex justify-center items-center ">
