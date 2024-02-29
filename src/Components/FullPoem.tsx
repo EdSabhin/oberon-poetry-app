@@ -26,7 +26,10 @@ const FullPoem = ({ poemsArray, setFullPoemView }: Props) => {
       </div>
       <div className="absolute top-10 right-80">
         {" "}
-        <Button onClick={() => setFullPoemView(null)} text="Go Back" />
+        <Button
+          onClick={() => setFullPoemView(null)}
+          text="Retrace Thy Steps"
+        />
       </div>
       <div className="w-1/2 mb-7 flex flex-col items-center justify-center text-2xl">
         {poemsArray.lines.map((verse: string, index: number) => {

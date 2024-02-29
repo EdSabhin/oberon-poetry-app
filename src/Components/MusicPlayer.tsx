@@ -70,7 +70,7 @@ const MusicPlayer = ({ songs }: Props) => {
   return (
     <div className="flex flex-col items-center justify-center">
       <audio ref={audioRef} src={songs[currentSongIndex].songSrc} autoPlay />
-      <div className="flex justify-center p-3 mt-4 gap-4 border-2 border-white hover:border-amber-100 transition rounded-md">
+      <div className="flex justify-center p-3 gap-4 border-2 border-white hover:border-amber-100 transition rounded-md">
         <button onClick={handleMute}>
           {isMuted ? <RxSpeakerLoud /> : <RxSpeakerOff />}
         </button>

@@ -21,6 +21,22 @@
 }
 */
 
+.text-color-animation {
+  animation: textColorChange 3s infinite alternate;
+}
+
+@keyframes textColorChange {
+  0% {
+    color: #460dca20;
+  }
+  75% {
+    color: #eae4de;
+  }
+  100% {
+    color: #eae4de;
+  }
+}
+
 .modalPoetList::before {
   height: 100vh;
   content: "";

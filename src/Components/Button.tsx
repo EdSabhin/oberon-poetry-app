@@ -1,18 +1,20 @@
 import React from "react"
-import { Old_Standard_TT } from "next/font/google"
+import { Public_Sans } from "next/font/google"
 
-const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
+const PublicSans = Public_Sans({ weight: "100", subsets: ["latin"] })
 
 type Props = {
-  text: string
-  onClick?: () => void
+  text: string;
+  onClick?: () => void;
+  className?: string;
 }
 
-const Button = ({ text, onClick }: Props) => {
+const Button = ({ text, onClick, className }: Props) => {
   return (
     <button
       onClick={onClick}
-      className={`${OldStandardTT.className} border-none p-2 px-6 mt-4 font-bold bg-gradient-to-r from-gray-400 to-gray-600 rounded italic hover:ring-2 hover:ring-amber-100 transition ease-in-out delay-100 text-lg text-amber-300 hover:text-amber-100`}
+      className={`${className ? className : ''} ${PublicSans.className} border-none p-2 px-6 hover:text-slate-800 bg-gradient-to-r from-slate-700 to-indigo-950 hover:bg-gradient-to-br hover:from-amber-500 hover:to-slate-300 rounded italic hover:ring-[0.18rem] hover:ring-stone-700 transition ease-in-out delay-100 text-lg text-amber-200 `}
+
     >
       {text}
     </button>

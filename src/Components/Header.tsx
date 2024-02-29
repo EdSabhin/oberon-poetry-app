@@ -27,7 +27,13 @@ const Header = ({
         <h3 className={`${OldStandardTT.className} text-2xl text-start`}>
           Gee Pee Tee, of House Chat
         </h3>
-        <Image width={80} height={80} src={"/cat-collar.png"} alt="black cat" className="transform scale-x-[-1]" />
+        <Image
+          width={80}
+          height={80}
+          src={"/cat-collar.png"}
+          alt="black cat"
+          className="transform scale-x-[-1]"
+        />
       </div>
     </header>
   )

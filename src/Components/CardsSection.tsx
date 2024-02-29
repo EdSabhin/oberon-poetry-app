@@ -9,7 +9,7 @@ type Props = {
 
 const CardsSection = ({ poemsArray, setFullPoemView }: Props) => {
   return (
-    <section className="w-full flex flex-wrap justify-center gap-16 p-10 ">
+    <section className="w-full flex flex-col items-start my-8 gap-24">
       {poemsArray.map((poem: Poem, index: number) => {
         return (
           <PoemCard

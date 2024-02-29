@@ -31,7 +31,7 @@ const ShakespearesDen = () => {
     }, 3300)
   }, [])
 
-  const poemsArray = poems.slice(0, 5)
+  const poemsArray = poems.slice(0, 6)
 
   return (
     <>
