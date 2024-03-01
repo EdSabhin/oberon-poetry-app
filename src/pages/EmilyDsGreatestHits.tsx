@@ -33,7 +33,7 @@ const EmilyDsGreatestHits = (props: Props) => {
   }, [])
 
   return (
-    <div className="">
+    <div className="bg-gradient-to-b from-rose-500 via-teal-300 to-pink-300">
       <Navbar
         className={navProps.dickinson.className}
         ulClassName={navProps.dickinson.ulClassName}
