@@ -1,6 +1,7 @@
 import React from "react"
 import { Poem } from "../pages/ShakespearesDen"
 import PoemCard from "./PoemCard"
+import Image from "next/image"
 
 type Props = {
   poemsArray: []
@@ -12,14 +13,14 @@ const CardsSection = ({ poemsArray, setFullPoemView }: Props) => {
     <section className="w-full flex flex-col items-start my-8 gap-32">
       {poemsArray.map((poem: Poem, index: number) => {
         return (
-          <PoemCard
+             <PoemCard
             key={index}
             index={index}
             title={poem.title}
             author={poem.author}
             poem={poem.lines}
             setFullPoemView={setFullPoemView}
-          />
+            />      
         )
       })}
     </section>

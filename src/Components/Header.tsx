@@ -34,7 +34,7 @@ const Header = ({
           height={80}
           src={headerIcon}
           alt="black cat"
-          className="transform scale-x-[-1] animate-pulse"
+          className="transform scale-x-[-1]"
         />
       </div>
     </header>
