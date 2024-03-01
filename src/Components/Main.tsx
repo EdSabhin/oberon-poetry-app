@@ -7,26 +7,26 @@ import { songData } from "@/service/songData"
 
 type Props = {
   poemsArray: []
-  bgColor: boolean
-  setBgColor: (value: boolean) => void
   setFullPoemView: (value: number) => void
   loading: boolean
+  bloodNight: boolean
+  setBloodNight: (value: boolean) => void
 }
 
 const Main = ({
   poemsArray,
-  bgColor,
-  setBgColor,
   setFullPoemView,
   loading,
+  bloodNight,
+  setBloodNight,
 }: Props) => {
   return (
     <main
       className={`${
-        bgColor
+        bloodNight
           ? "bg-gradient-to-r from-gray-900 via-rose-900 to-gray-900"
           : "bg-gradient-to-r from-black via-gray-500 to-black"
-      } w-full flex flex-col items-start py-8 px-48 text-slate-100
+      } w-full flex flex-col items-start pt-8 pb-20 px-48 text-slate-100
        `}
     >
       <div className="w-full flex justify-between mt-8 mb-12 ">
@@ -36,14 +36,14 @@ const Main = ({
         <div className="flex items-center mt-4 gap-10">
           <MusicPlayer songs={songData} />
           <Button
-            text={"Blood Night / Playwright"}
-            onClick={() => setBgColor(!bgColor)}
+            text={bloodNight ? "Playwright" : "Blood Night"}
+            onClick={() => setBloodNight(!bloodNight)}
           />
         </div>
       </div>
 
       {loading ? (
-        <LoadingImage image="/feather-pen.png" />
+        <LoadingImage image="/images/feather-pen.png" />
       ) : (
         <CardsSection
           poemsArray={poemsArray}

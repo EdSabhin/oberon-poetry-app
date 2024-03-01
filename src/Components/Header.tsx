@@ -22,10 +22,10 @@ const Header = ({
   return (
     <header className={headerClassName}>
       <h1 className={h1ClassName}>{title}</h1>
-      <h2 className="text-[1.75rem] pt-4 pb-6 px-4 text-start tracking-wide">
+      <h2 className="text-[1.75rem] pt-4 pb-6 pr-4 text-start tracking-wide">
         {description}
       </h2>
-      <div className="w-full flex justify-end items-end pr-40 pb-10 gap-2">
+      <div className="w-full flex justify-end items-end pb-10 gap-2">
         <h3 className={`${OldStandardTT.className} text-2xl text-start`}>
           Gee Pee Tee, of House Chat
         </h3>

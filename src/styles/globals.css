@@ -24,7 +24,6 @@
 .text-color-animation {
   animation: textColorChange 3s infinite alternate;
 }
-
 @keyframes textColorChange {
   0% {
     color: #460dca20;
@@ -34,6 +33,21 @@
   }
   100% {
     color: #eae4de;
+  }
+}
+
+.text-blood-animation {
+  animation: textColorChange 3s infinite alternate;
+}
+@keyframes textBloodChange {
+  0% {
+    color: #460dca20;
+  }
+  75% {
+    color: #9c2058;
+  }
+  100% {
+    color: #9c2058;
   }
 }
 

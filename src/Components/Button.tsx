@@ -1,7 +1,7 @@
 import React from "react"
-import { Public_Sans } from "next/font/google"
+import { Old_Standard_TT } from "next/font/google"
 
-const PublicSans = Public_Sans({ weight: "100", subsets: ["latin"] })
+const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 
 type Props = {
   text: string
@@ -13,7 +13,7 @@ const Button = ({ text, onClick, className }: Props) => {
   return (
     <button
       onClick={onClick}
-      className={`${className ? className : ""} ${PublicSans.className} border-none p-2 pl-6 pr-8 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-700 hover:to-stone-400 text-lg text-amber-100 hover:text-slate-200 shadow-md shadow-stone-950 rounded-br-full`}
+      className={`${className ? className : ""} ${OldStandardTT.className} w-[12rem] text-lg border-none p-2 pl-6 pr-8 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-700 hover:to-stone-400 hover:text-slate-200 shadow-md shadow-stone-950 rounded-br-full transition ease-in-out delay-400 duration-300`}
     >
       {text}
     </button>

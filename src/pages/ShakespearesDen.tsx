@@ -16,7 +16,7 @@ export interface Poem {
 
 const ShakespearesDen = () => {
   const [poems, setPoems] = useState<any>([])
-  const [bgColor, setBgColor] = useState<boolean>(false)
+  const [bloodNight, setBloodNight] = useState<boolean>(false)
   const [loading, setLoading] = useState<boolean>(true)
   const [fullPoemView, setFullPoemView] = useState<number | null>(null)
 
@@ -51,8 +51,8 @@ const ShakespearesDen = () => {
         <Main
           loading={loading}
           poemsArray={poemsArray}
-          bgColor={bgColor}
-          setBgColor={setBgColor}
+          bloodNight={bloodNight}
+          setBloodNight={setBloodNight}
           setFullPoemView={setFullPoemView}
         />
       ) : (
