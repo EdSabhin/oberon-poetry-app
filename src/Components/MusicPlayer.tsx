@@ -70,7 +70,7 @@ const MusicPlayer = ({ songs }: Props) => {
   return (
     <div className="flex flex-col items-center justify-center">
       <audio ref={audioRef} src={songs[currentSongIndex].songSrc} autoPlay />
-      <div className="w-[12rem] flex justify-center py-3 pl-12 pr-8 gap-5 border-2 border-stone-300 rounded-bl-full hover:bg-gradient-to-br hover:from-stone-700 hover:to-stone-400 shadow-md shadow-stone-950 transition duration-700 ease-in-out">
+      <div className="w-[15rem] h-[3rem] flex justify-start py-3 pl-8 pr-8 gap-5 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-700 hover:to-stone-400 shadow-md rounded-br-full shadow-stone-950 hover:translate-x-2 transition duration-500 ease-in-out delay-400">
         <button onClick={handleMute} className="hover:text-amber-400">
           {isMuted ? <RxSpeakerLoud /> : <RxSpeakerOff />}
         </button>

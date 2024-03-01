@@ -17,7 +17,7 @@ const Header = ({
   description,
   headerClassName,
   h1ClassName,
-  headerIcon
+  headerIcon,
 }: Props) => {
   return (
     <header className={headerClassName}>
@@ -25,7 +25,7 @@ const Header = ({
       <h2 className="text-[1.75rem] pt-4 pb-6 pr-4 text-start tracking-wide">
         {description}
       </h2>
-      <div className="w-full flex justify-end items-end pb-10 gap-2">
+      <div className=" w-full flex justify-end items-end pb-10 gap-2">
         <h3 className={`${OldStandardTT.className} text-2xl text-start`}>
           Gee Pee Tee, of House Chat
         </h3>
@@ -34,7 +34,7 @@ const Header = ({
           height={80}
           src={headerIcon}
           alt="black cat"
-          className="transform scale-x-[-1]"
+          className="transform scale-x-[-1] animate-pulse"
         />
       </div>
     </header>

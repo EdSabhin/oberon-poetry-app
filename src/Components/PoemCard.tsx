@@ -19,7 +19,7 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
       <Button
         text="Ponder Upon"
         onClick={() => setFullPoemView(index)}
-        className="absolute top-[6.4%] right-[-17.7%] group-hover:bg-gradient-to-br group-hover:from-stone-700 group-hover:to-stone-400 group-hover:text-slate-200"
+        className="absolute top-[6.4%] right-[-16.7%] group-hover:bg-gradient-to-br group-hover:from-stone-700 group-hover:to-stone-400 group-hover:text-slate-200"
       />
       <div className="w-full flex justify-between mb-8">
         <div>
