@@ -50,6 +50,20 @@
     color: #eae4de;
   }
 }
+.text-rose-animation {
+  animation: textRoseChange 3s infinite alternate;
+}
+@keyframes textRoseChange {
+  0% {
+    color: #ca0d7520;
+  }
+  75% {
+    color: #ba4b6a;
+  }
+  100% {
+    color: #630b3e53;
+  }
+}
 
 .modalPoetList::before {
   height: 100vh;

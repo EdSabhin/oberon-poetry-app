@@ -50,7 +50,9 @@ const Main = ({
       </div>
 
       {loading ? (
-        <LoadingImage image="/images/feather-pen.png" />
+        <div className="w-full flex justify-center items-center ">
+          <LoadingImage image="/feather-pen.png" />
+        </div>
       ) : (
         <CardsSection
           poemsArray={poemsArray}

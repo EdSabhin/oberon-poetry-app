@@ -24,7 +24,7 @@ const Footer = ({
 }: Props) => {
   return (
     <footer
-      className="w-full flex items-start relative py-8 px-48
+      className="w-full flex items-start relative pt-8 pb-14 px-48
       bg-gradient-to-l from-blue-950 via-slate-700 to-gray-900 text-white border-none tracking-wider"
     >
       <div className="flex flex-col gap-6"> 
@@ -34,11 +34,11 @@ const Footer = ({
         <p className="text-2xl tracking-wider leading-[3rem]">
           &quot;Let not the creaking of shoes nor <br />
           The rustling of silks betray <br />
-          Betray thy poor heart to woman. <br />
+          Thy poor heart to woman. <br />
           Keep thy foot out of brothels, <br />
           Thy hand out of plackets, <br />
           Thy pen from lenders&apos; books,<br />
-          And defy the foul fiend.&quot;
+          <span className="text-rose-animation text-rose-300">And defy the foul fiend.&quot;</span>
         </p>
         <p className={`${OldStandardTT.className} ${"text-rose-800"}`}><span className="text-xl italic ml-40">King Lear</span>, Act 3, Scene 4.</p>
       </div>
@@ -78,7 +78,8 @@ const Footer = ({
           Cat icons created by juicy_fish - Flaticon
         </a>
         {/* gold -skull:Image by a href=httpspixabay.comusersgdj-1086657utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1782019Gordon Johnsona from a href=httpspixabay.comutm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1782019Pixabaya */}
-         <GiHastyGrave className="absolute bottom-[50%] right-[50%] opacity-30 w-24 h-24 text-blood-animation" /> 
+        {/* Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1299297">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1299297">Pixabay</a> */}
+         <GiHastyGrave className="absolute bottom-[0%] right-[0%] w-24 h-24 opacity-5" /> 
       </div>
     </footer>
   )
