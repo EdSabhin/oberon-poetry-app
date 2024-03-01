@@ -7,15 +7,15 @@ type Props = {
 
 const LoadingImage = ({ image }: Props) => {
   return (
-    <div>
+    <>
       <Image
         width={50}
         height={50}
-        className="my-12 z-20 animate-ping"
+        className="mt-12 mb-24 animate-ping"
         src={image}
         alt=""
       />
-    </div>
+    </>
   )
 }
 

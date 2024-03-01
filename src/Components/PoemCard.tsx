@@ -47,11 +47,11 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
         )
       })}
       <div className="w-full flex items-end my-8 gap-4 ">
-        <p className="pt-2 text-2xl ">..................</p>
+        <p className=" text-2xl ">..................</p>
         <Image
           width={50}
           height={50}
-          className="mb-2  group-hover:animate-pulse-faster"
+          className="mb-2 group-hover:animate-pulse-faster"
           src="/images/feather-pen.png"
           alt=""
         />

@@ -1,7 +1,6 @@
 import React from "react"
 
 import CardsSection from "./CardsSection"
-import Button from "./Button"
 import ThemeButton from "./ThemeButton"
 import LoadingImage from "./LoadingImage"
 import MusicPlayer from "./MusicPlayer"

@@ -61,12 +61,7 @@ const ShakespearesDen = () => {
           setFullPoemView={setFullPoemView}
         />
       )}
-      <Footer
-        text={"Here lies Gulielmus Shakspere's Dramatic Footer 👣"}
-        image={
-          "https://www.azquotes.com/picture-quotes/quote-keep-thy-foot-out-of-brothels-thy-hand-out-of-plackets-thy-pen-from-lender-s-books-and-william-shakespeare-86-20-49.jpg"
-        }
-      />
+      <Footer text={"Here lies Gulielmus filius Johannes Shakspere. William, son of John."} />
     </>
   )
 }

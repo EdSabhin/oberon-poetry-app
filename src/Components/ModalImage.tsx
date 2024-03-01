@@ -45,4 +45,37 @@ const ModalImage = ({ src, setShowModalImage }: Props) => {
   )
 }
 
+{
+  /* <div
+        className={`mt-8 mb-4 ${
+          setShowModalImage !== undefined && "p-1 rounded-md cursor-pointer "
+        } `}
+      >
+        <Image
+          className=" pb-8 rounded"
+          width={imageWidth ?? 500}
+          height={imageHeight ?? 500}
+          src={image}
+          alt=""
+          onClick={() =>
+            setShowModalImage !== undefined && setShowModalImage(true)
+          }
+        />
+      </div> 
+      
+           {showModalImage && (
+        <ModalImage src={image} setShowModalImage={setShowModalImage} />
+      )}
+
+       <a
+            href="https://www.flaticon.com/free-icons/black-cat"
+            title="black cat icons"
+            className={`${OldStandardTT.className} ${
+              showModalImage ? "text-white" : "text-indigo-400"
+            } hover:text-amber-400 rounded italic transition ease-in-out text-lg `}
+            target="__blank"
+          >
+    */
+}
+
 export default ModalImage
