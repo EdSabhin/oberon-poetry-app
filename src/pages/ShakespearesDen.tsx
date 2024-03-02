@@ -36,16 +36,15 @@ const ShakespearesDen = () => {
   return (
     <>
       <Navbar
-        className={navProps.shakespeare.className}
-        ulClassName={navProps.shakespeare.ulClassName}
-        linkClassName={navProps.shakespeare.linkClassName}
+        className={`${bloodNight ? navProps.shakespeare.bloodNight.className : navProps.shakespeare.playwright.className}`}
+        linkClassName={`${bloodNight ? navProps.shakespeare.bloodNight.linkClassName : navProps.shakespeare.playwright.linkClassName}`}
       />
       <Header
-        title={headerProps.shakespeare.title}
-        description={headerProps.shakespeare.description}
-        headerClassName={headerProps.shakespeare.headerClassName}
-        h1ClassName={headerProps.shakespeare.h1ClassName}
-        headerIcon={headerProps.shakespeare.headerIcon}
+        title={headerProps.base.shakepeareTitle}
+        description={headerProps.base.shakespeareDescription}
+        headerClassName={`${bloodNight ? headerProps.shakespeare.bloodNight.headerClassName : headerProps.shakespeare.playwright.headerClassName }`}
+        h1ClassName={`${bloodNight ? headerProps.shakespeare.bloodNight.h1ClassName : headerProps.shakespeare.playwright.h1ClassName }`}
+        headerIcon={`${bloodNight ? headerProps.shakespeare.bloodNight.headerIcon : headerProps.shakespeare.playwright.headerIcon }`}
       />
       {fullPoemView === null ? (
         <Main

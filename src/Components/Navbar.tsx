@@ -3,14 +3,13 @@ import React from "react"
 
 type Props = {
   className: string
-  ulClassName: string
   linkClassName: string
 }
 
-const Navbar = ({ className, ulClassName, linkClassName }: Props) => {
+const Navbar = ({ className, linkClassName }: Props) => {
   return (
     <div className={className}>
-      <ul className={ulClassName}>
+      <ul className="w-full flex justify-around text-3xl">
         <Link href="/" className={linkClassName}>{`Shakespeare's Den`}</Link>
         <Link
           href="/EmilyDsGreatestHits"

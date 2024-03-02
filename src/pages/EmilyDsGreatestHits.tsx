@@ -18,7 +18,6 @@ type Props = {
 
 const EmilyDsGreatestHits = (props: Props) => {
   const [titles, setTitles] = useState<any>()
-  const [bgColor, setBgColor] = useState<boolean>(false)
   const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
@@ -35,13 +34,12 @@ const EmilyDsGreatestHits = (props: Props) => {
   return (
     <div className="bg-gradient-to-b from-rose-500 via-teal-300 to-pink-300">
       <Navbar
-        className={navProps.dickinson.className}
-        ulClassName={navProps.dickinson.ulClassName}
-        linkClassName={navProps.dickinson.linkClassName}
+        className={navProps.dickinson.sylph.className}
+        linkClassName={navProps.dickinson.sylph.linkClassName}
       />
       <Header
-        title={headerProps.dickinson.title}
-        description={headerProps.dickinson.description}
+        title={headerProps.base.dickinsonTitle}
+        description={headerProps.base.dickinsonDescription}
         headerClassName={headerProps.dickinson.headerClassName}
         h1ClassName={headerProps.dickinson.h1ClassName}
         headerIcon={headerProps.dickinson.headerIcon}

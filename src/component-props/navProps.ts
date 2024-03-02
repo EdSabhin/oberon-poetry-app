@@ -1,17 +1,30 @@
 const navProps = {
   shakespeare: {
-    className:
-      "w-full p-8 bg-gradient-to-r from-blue-950 via-slate-700 to-gray-900",
-    ulClassName: "w-full flex justify-around text-3xl",
-    linkClassName:
-      "pb-1 text-transparent bg-clip-text bg-gradient-to-r from-amber-50 to-orange-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-amber-100 hover:to-orange-400",
+    playwright: {
+      className:
+        "w-full p-8 bg-gradient-to-r from-blue-950 via-slate-700 to-gray-900",
+      linkClassName:
+        "pb-1 text-transparent bg-clip-text bg-gradient-to-r from-amber-50 to-orange-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-amber-100 hover:to-orange-400 hover:underline decoration-1 hover:decoration-amber-500 hover:underline-offset-4",
+    },
+    bloodNight: {
+      className: "w-full p-8 bg-gradient-to-r from-black via-rose-950 to-black",
+      linkClassName:
+        "pb-1 text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500 hover:underline hover:decoration-1 hover:decoration-rose-900 hover:underline-offset-4",
+    },
   },
   dickinson: {
-    className:
-      "w-full p-8 bg-gradient-to-r from-indigo-100 to-rose-100 text-amber-700",
-    ulClassName: "w-full flex justify-around text-3xl",
-    linkClassName:
-      "pb-1 text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-teal-600 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-800 hover:to-teal-800",
+    sylph: {
+      className:
+        "w-full p-8 bg-gradient-to-r from-indigo-100 via-rose-100 to-indigo-100 text-amber-700",
+      linkClassName:
+        "pb-1 text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-teal-700 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-900 hover:to-teal-950 hover:underline decoration-1 hover:decoration-rose-800 hover:underline-offset-4",
+    },
+    dirge: {
+      className:
+        "w-full p-8 bg-gradient-to-r from-indigo-100 to-rose-100 text-amber-700",
+      linkClassName:
+        "pb-1 text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-teal-600 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-800 hover:to-teal-800 hover:underline decoration-1 hover:decoration-amber-500 hover:underline-offset-4",
+    },
   },
 }
 
