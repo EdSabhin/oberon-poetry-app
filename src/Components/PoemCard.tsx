@@ -15,14 +15,20 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
   const shortTitle = title.slice(0, title.indexOf(":"))
 
   return (
-    <div className="w-[77%] relative p-10 r-12 border-l-8 border-transparent bg-gradient-to-b from-gray-900 to-gray-600  hover:bg-gradient-to-bl hover:from-indigo-900 hover:via-indigo-400 hover:to-indigo-900 hover:border-amber-200 rounded-[3%] rounded-br-[35%] shadow-md shadow-stone-950 transition ease-in-out delay-400 hover:-translate-y-4 duration-300 group">
+    <div className="w-[77%] relative p-10 r-12 border-l-8 border-transparent bg-gradient-to-b from-gray-900 to-gray-600 hover:bg-gradient-to-bl hover:from-indigo-900 hover:via-indigo-400 hover:to-indigo-900 hover:border-amber-200 rounded-[3%] rounded-br-[35%] shadow-md shadow-stone-950 transition ease-in-out delay-400 hover:-translate-y-4 duration-300">
       <Button
         text="Ponder Upon"
         onClick={() => setFullPoemView(index)}
         className="absolute top-[6.4%] right-[-16.7%] group-hover:bg-gradient-to-br group-hover:from-stone-700 group-hover:to-stone-400 group-hover:text-slate-200"
       />
-      <Image width={200} height={300} src={"/images/bones.svg"} alt="bones" className="absolute top-[20%] left-[135%] animate-pulse" />
-      <div className="w-full flex justify-between mb-8">
+      <Image
+        width={200}
+        height={300}
+        src={"/images/bones.svg"}
+        alt="bones"
+        className="absolute top-[20%] left-[135%] animate-pulse slide-in-left"
+      />
+      <div className="w-full flex justify-between mb-8 slide-in-left">
         <div>
           <h1 className="py-2 text-6xl underline group-hover:decoration-2 group-hover:decoration-amber-100 group-hover:underline-offset-4 text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-amber-900">
             {shortTitle}
@@ -41,7 +47,7 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
         return (
           <p
             key={index}
-            className="text-color-animation w-max rounded text-[1.6rem] text-slate-200 hover:text-amber-200 transition-ease-in-out delay-400  hover:scale-105 duration-300 hover: p-1 tracking-wide"
+            className="text-color-animation w-max rounded text-[1.6rem] text-slate-200 hover:text-amber-200 transition-ease-in-out delay-400 hover:scale-105 duration-300 hover: p-1 tracking-wide"
           >
             {poemVerse}
           </p>

@@ -61,7 +61,11 @@ const ShakespearesDen = () => {
           setFullPoemView={setFullPoemView}
         />
       )}
-      <Footer text={"Here lies Gulielmus filius Johannes Shakspere. William, son of John."} />
+      <Footer
+        text={
+          "Here lies Gulielmus filius Johannes Shakspere. William, son of John."
+        }
+      />
     </>
   )
 }
