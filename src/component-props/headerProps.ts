@@ -18,17 +18,17 @@ const headerProps = {
   shakespeare: {
     playwright: {
       headerClassName:
-        "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-b from-gray-700 to-stone-800 text-white border-none",
+        "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-b from-gray-700 to-stone-800 text-stone-200",
       h1ClassName:
         "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-amber-200 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900",
-      headerIcon: "/images/white-cat.svg",
+      headerIcon: "/images/white-cat-gold-moon.svg",
     },
     bloodNight: {
       headerClassName:
-        "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-b from-gray-700 to-stone-800 text-white",
+        "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-b from-black via-rose-950 to-black text-rose-100",
       h1ClassName:
-        "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-amber-200 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900",
-      headerIcon: "/images/blood-cat.svg",
+        "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-rose-900 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-rose-500 from-45% to-indigo-900",
+      headerIcon: "/images/blood-moon-cat.svg",
     },
   },
   dickinson: {
