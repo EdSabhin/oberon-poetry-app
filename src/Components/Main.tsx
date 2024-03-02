@@ -1,10 +1,15 @@
 import React from "react"
 
+import { scrollToTop } from "@/service/scrollToTop"
+import { songData } from "@/service/songData"
+
 import CardsSection from "./CardsSection"
 import ThemeButton from "./ThemeButton"
 import LoadingImage from "./LoadingImage"
 import MusicPlayer from "./MusicPlayer"
-import { songData } from "@/service/songData"
+
+
+
 
 type Props = {
   poemsArray: []
@@ -38,7 +43,10 @@ const Main = ({
           <MusicPlayer songs={songData} />
           <ThemeButton
             text={bloodNight ? "Playwright" : "Blood Night"}
-            onClick={() => setBloodNight(!bloodNight)}
+            onClick={() => {
+              setBloodNight(!bloodNight)
+              scrollToTop()
+            }}
             bloodNight={bloodNight}
             className={
               !bloodNight

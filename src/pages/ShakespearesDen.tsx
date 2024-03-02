@@ -38,13 +38,14 @@ const ShakespearesDen = () => {
       <Navbar
         className={`${bloodNight ? navProps.shakespeare.bloodNight.className : navProps.shakespeare.playwright.className}`}
         linkClassName={`${bloodNight ? navProps.shakespeare.bloodNight.linkClassName : navProps.shakespeare.playwright.linkClassName}`}
+        bloodNight={bloodNight}
       />
       <Header
-        title={headerProps.base.shakepeareTitle}
-        description={headerProps.base.shakespeareDescription}
-        headerClassName={`${bloodNight ? headerProps.shakespeare.bloodNight.headerClassName : headerProps.shakespeare.playwright.headerClassName }`}
-        h1ClassName={`${bloodNight ? headerProps.shakespeare.bloodNight.h1ClassName : headerProps.shakespeare.playwright.h1ClassName }`}
-        headerIcon={`${bloodNight ? headerProps.shakespeare.bloodNight.headerIcon : headerProps.shakespeare.playwright.headerIcon }`}
+        title={`${bloodNight ? headerProps.shakespeare.bloodNight.title : headerProps.shakespeare.playwright.title}`}
+        description={`${bloodNight ? headerProps.shakespeare.bloodNight.description : headerProps.shakespeare.playwright.description}`}
+        headerClassName={`${bloodNight ? headerProps.shakespeare.bloodNight.headerClassName : headerProps.shakespeare.playwright.headerClassName}`}
+        h1ClassName={`${bloodNight ? headerProps.shakespeare.bloodNight.h1ClassName : headerProps.shakespeare.playwright.h1ClassName}`}
+        headerIcon={`${bloodNight ? headerProps.shakespeare.bloodNight.headerIcon : headerProps.shakespeare.playwright.headerIcon}`}
       />
       {fullPoemView === null ? (
         <Main
@@ -62,7 +63,7 @@ const ShakespearesDen = () => {
       )}
       <Footer
         text={
-          "Here lies Gulielmus filius Johannes Shakspere. William, son of John."
+          "Here lies Gulielmus filius Johannes Shakspere.\n William, son of John."
         }
       />
     </>

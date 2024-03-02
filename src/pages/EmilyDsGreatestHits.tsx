@@ -38,8 +38,8 @@ const EmilyDsGreatestHits = (props: Props) => {
         linkClassName={navProps.dickinson.sylph.linkClassName}
       />
       <Header
-        title={headerProps.base.dickinsonTitle}
-        description={headerProps.base.dickinsonDescription}
+        title={headerProps.dickinson.title}
+        description={headerProps.dickinson.description}
         headerClassName={headerProps.dickinson.headerClassName}
         h1ClassName={headerProps.dickinson.h1ClassName}
         headerIcon={headerProps.dickinson.headerIcon}
