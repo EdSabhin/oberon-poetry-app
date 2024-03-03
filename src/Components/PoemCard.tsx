@@ -16,7 +16,7 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
   const shortTitle = title.slice(0, title.indexOf(":"))
 
   return (
-    <div className="w-[77%] relative p-10 r-12 border-l-8 border-transparent bg-gradient-to-b from-gray-900 to-gray-600 hover:bg-gradient-to-bl hover:from-indigo-900 hover:via-indigo-400 hover:to-indigo-900 hover:border-amber-200 rounded-[3%] rounded-br-[35%] shadow-md shadow-stone-950 transition ease-in-out delay-400 hover:-translate-y-4 duration-300 group">
+    <div className="w-[77%] relative p-10 r-12 border-l-8 border-transparent bg-gradient-to-b from-slate-800 to-gray-600 hover:bg-gradient-to-b hover:from-stone-900 hover:via-stone-600 hover:to-stone-900 hover:border-amber-200 rounded-[3%] rounded-br-[35%] shadow-md shadow-stone-950 transition ease-in-out delay-400 hover:-translate-y-4 duration-300 group">
       <Button
         text="Ponder Upon"
         onClick={() => setFullPoemView(index)}
@@ -56,7 +56,7 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
       })}
       <div className="w-full flex items-end my-8 gap-4 ">
         <p className=" text-2xl ">..................</p>
-        <GiQuill className="w-12 h-12 mb-2 text-indigo-100 group-hover:text-purple-300" />
+        <GiQuill className="w-12 h-12 mb-2 text-orange-100 group-hover:text-orange-200" />
       </div>
     </div>
   )

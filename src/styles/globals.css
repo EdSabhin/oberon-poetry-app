@@ -26,7 +26,7 @@
 }
 @keyframes textColorChange {
   0% {
-    color: #460dca20;
+    color: #ca780d29;
   }
   75% {
     color: #eae4de;
@@ -70,13 +70,13 @@
 }
 @keyframes fadeInOut {
   0% {
-    opacity: 0; 
+    opacity: 0;
   }
   50% {
-    opacity: 1; 
+    opacity: 1;
   }
   100% {
-    opacity: 0; 
+    opacity: 0;
   }
 }
 
