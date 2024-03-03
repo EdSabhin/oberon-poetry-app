@@ -33,7 +33,7 @@ const ShakespearesDen = () => {
 
   return (
     <>
-      <Navbar bloodNight={bloodNight} />
+      <Navbar theme={!bloodNight ? "playwright" : "bloodNight"}/>
       <Header bloodNight={bloodNight} />
       {fullPoemView === null ? (
         <Main
