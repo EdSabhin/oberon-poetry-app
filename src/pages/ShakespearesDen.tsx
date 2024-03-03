@@ -1,8 +1,6 @@
 import { fetchData } from "@/service/fetchData"
 import { useEffect, useState } from "react"
 
-import { headerProps, navProps } from "../component-props/propsIndex"
-
 import Navbar from "../components/Navbar"
 import Header from "../components/Header"
 import Main from "../components/Main"

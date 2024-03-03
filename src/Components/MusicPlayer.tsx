@@ -13,7 +13,7 @@ import { RxSpeakerLoud, RxSpeakerOff } from "react-icons/rx"
 import mainProps from "@/component-props/mainProps"
 
 type Props = {
-  bloodNight: boolean
+  bloodNight?: boolean
 }
 
 const MusicPlayer = ({ bloodNight }: Props) => {

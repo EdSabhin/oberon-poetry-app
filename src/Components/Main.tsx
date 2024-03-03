@@ -46,7 +46,7 @@ const Main = ({
               setBloodNight(!bloodNight)
               scrollToTop()
             }}
-            bloodNight={bloodNight}        
+            bloodNight={bloodNight}
           />
         </div>
       </div>

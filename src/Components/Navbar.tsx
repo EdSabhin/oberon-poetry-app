@@ -5,9 +5,10 @@ import { GiMoonBats } from "react-icons/gi"
 
 type Props = {
   bloodNight?: boolean
+  elegy?: boolean
 }
 
-const Navbar = ({ bloodNight }: Props) => {
+const Navbar = ({ bloodNight, elegy }: Props) => {
   return (
     <div
       className={`${bloodNight ? navProps.shakespeare.bloodNight.class : navProps.shakespeare.playwright.class}`}

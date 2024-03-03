@@ -1,7 +1,7 @@
 import { fetchData } from "@/service/fetchData"
 import { useEffect, useState } from "react"
 
-import { headerProps, navProps } from "../component-props/propsIndex"
+import { headerProps } from "../component-props/propsIndex"
 
 import Navbar from "../components/Navbar"
 import Header from "@/components/Header"
@@ -19,6 +19,7 @@ type Props = {
 const EmilyDsGreatestHits = (props: Props) => {
   const [titles, setTitles] = useState<any>()
   const [loading, setLoading] = useState<boolean>(true)
+  const [elegy, setElegy] = useState<boolean>(false)
 
   useEffect(() => {
     setTimeout(() => {
@@ -33,24 +34,15 @@ const EmilyDsGreatestHits = (props: Props) => {
 
   return (
     <div className="bg-gradient-to-b from-rose-500 via-teal-300 to-pink-300">
-      <Navbar
-        className={navProps.dickinson.sylph.className}
-        linkClassName={navProps.dickinson.sylph.linkClassName}
-      />
-      <Header
-        title={headerProps.dickinson.title}
-        description={headerProps.dickinson.description}
-        headerClassName={headerProps.dickinson.headerClassName}
-        h1ClassName={headerProps.dickinson.h1ClassName}
-        headerIcon={headerProps.dickinson.headerIcon}
-      />
+      <Navbar elegy={elegy} />
+      <Header />
       {loading ? (
         <div className="w-full flex justify-center items-center ">
           <LoadingImage image="/inkwell.png" />
         </div>
       ) : (
         <section className="w-full flex flex-col items-center py-12 px-24">
-          <MusicPlayer songs={songData} />
+          <MusicPlayer />
           <div className="w-full grid grid-cols-2 items-center pt-16 pb-24 gap-24">
             {titles.slice(34, 44).map((title: Props, index: number) => {
               return (

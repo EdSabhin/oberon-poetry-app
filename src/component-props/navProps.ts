@@ -21,7 +21,7 @@ const navProps = {
     },
     elegy: {
       class:
-        "w-full p-8 bg-gradient-to-r from-indigo-100 to-rose-100 text-amber-700",
+        "w-full p-8 bg-gradient-to-r from-teal-100 to-zinc-900 text-amber-700",
       linkClass:
         "pb-1 px-2  text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-teal-600 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-800 hover:to-teal-800 hover:underline decoration-1 hover:decoration-amber-500 hover:underline-offset-4",
     },

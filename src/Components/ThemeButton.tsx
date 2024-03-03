@@ -6,7 +6,6 @@ import { Old_Standard_TT } from "next/font/google"
 import { GiScrollUnfurled } from "react-icons/gi"
 import { GiMoonBats } from "react-icons/gi"
 
-
 const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 
 type Props = {
@@ -15,7 +14,7 @@ type Props = {
   bloodNight?: boolean
 }
 
-const Button = ({ text, onClick, bloodNight}: Props) => {
+const Button = ({ text, onClick, bloodNight }: Props) => {
   return (
     <button
       onClick={onClick}
