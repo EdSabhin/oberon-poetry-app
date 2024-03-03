@@ -1,7 +1,6 @@
 import React from "react"
 import { Poem } from "../pages/ShakespearesDen"
 import PoemCard from "./PoemCard"
-import Image from "next/image"
 
 type Props = {
   poemsArray: []

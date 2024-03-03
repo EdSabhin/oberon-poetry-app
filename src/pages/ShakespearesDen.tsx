@@ -36,16 +36,16 @@ const ShakespearesDen = () => {
   return (
     <>
       <Navbar
-        className={`${bloodNight ? navProps.shakespeare.bloodNight.className : navProps.shakespeare.playwright.className}`}
-        linkClassName={`${bloodNight ? navProps.shakespeare.bloodNight.linkClassName : navProps.shakespeare.playwright.linkClassName}`}
+        className={`${bloodNight ? navProps.shakespeare.bloodNight.class : navProps.shakespeare.playwright.class}`}
+        linkClassName={`${bloodNight ? navProps.shakespeare.bloodNight.linkClass : navProps.shakespeare.playwright.linkClass}`}
         bloodNight={bloodNight}
       />
       <Header
         title={`${bloodNight ? headerProps.shakespeare.bloodNight.title : headerProps.shakespeare.playwright.title}`}
         description={`${bloodNight ? headerProps.shakespeare.bloodNight.description : headerProps.shakespeare.playwright.description}`}
-        headerClassName={`${bloodNight ? headerProps.shakespeare.bloodNight.headerClassName : headerProps.shakespeare.playwright.headerClassName}`}
-        h1ClassName={`${bloodNight ? headerProps.shakespeare.bloodNight.h1ClassName : headerProps.shakespeare.playwright.h1ClassName}`}
-        headerIcon={`${bloodNight ? headerProps.shakespeare.bloodNight.headerIcon : headerProps.shakespeare.playwright.headerIcon}`}
+        headerClassName={`${bloodNight ? headerProps.shakespeare.bloodNight.class : headerProps.shakespeare.playwright.class}`}
+        h1ClassName={`${bloodNight ? headerProps.shakespeare.bloodNight.h1Class : headerProps.shakespeare.playwright.h1Class}`}
+        headerIcon={`${bloodNight ? headerProps.shakespeare.bloodNight.icon : headerProps.shakespeare.playwright.icon}`}
       />
       {fullPoemView === null ? (
         <Main
