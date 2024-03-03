@@ -1,6 +1,7 @@
 import Image from "next/image"
 import React from "react"
 import Button from "./Button"
+import { GiQuill } from "react-icons/gi"
 
 type Props = {
   title: string
@@ -15,18 +16,18 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
   const shortTitle = title.slice(0, title.indexOf(":"))
 
   return (
-    <div className="w-[77%] relative p-10 r-12 border-l-8 border-transparent bg-gradient-to-b from-gray-900 to-gray-600 hover:bg-gradient-to-bl hover:from-indigo-900 hover:via-indigo-400 hover:to-indigo-900 hover:border-amber-200 rounded-[3%] rounded-br-[35%] shadow-md shadow-stone-950 transition ease-in-out delay-400 hover:-translate-y-4 duration-300">
+    <div className="w-[77%] relative p-10 r-12 border-l-8 border-transparent bg-gradient-to-b from-gray-900 to-gray-600 hover:bg-gradient-to-bl hover:from-indigo-900 hover:via-indigo-400 hover:to-indigo-900 hover:border-amber-200 rounded-[3%] rounded-br-[35%] shadow-md shadow-stone-950 transition ease-in-out delay-400 hover:-translate-y-4 duration-300 group">
       <Button
         text="Ponder Upon"
         onClick={() => setFullPoemView(index)}
-        className="absolute top-[6.4%] right-[-16.7%] group-hover:bg-gradient-to-br group-hover:from-stone-700 group-hover:to-stone-400 group-hover:text-slate-200"
+        className="absolute top-[6.4%] right-[-16.7%] group-hover:bg-gradient-to-br group-hover:from-stone-900 group-hover:to-stone-700 group-hover:text-slate-200"
       />
       <Image
         width={200}
         height={300}
         src={"/images/bones.svg"}
-        alt="bones"
-        className="absolute top-[20%] left-[135%] animate-pulse slide-in-left"
+        alt="bones watching"
+        className="absolute top-[20%] left-[135%] fade-in-out"
       />
       <div className="w-full flex justify-between mb-8 slide-in-left">
         <div>
@@ -47,7 +48,7 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
         return (
           <p
             key={index}
-            className="text-color-animation w-max rounded text-[1.6rem] text-slate-200 hover:text-amber-200 transition-ease-in-out delay-400 hover:scale-105 duration-300 hover: p-1 tracking-wide"
+            className="text-color-animation w-max rounded text-[1.6rem] text-slate-200 hover:text-amber-200 transition-ease-in-out hover:scale-105 duration-300 hover: p-1 tracking-wide"
           >
             {poemVerse}
           </p>
@@ -55,13 +56,7 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView }: Props) => {
       })}
       <div className="w-full flex items-end my-8 gap-4 ">
         <p className=" text-2xl ">..................</p>
-        <Image
-          width={50}
-          height={50}
-          className="mb-2 group-hover:animate-pulse-faster"
-          src="/images/feather-pen.png"
-          alt=""
-        />
+        <GiQuill className="w-12 h-12 mb-2 text-indigo-100 group-hover:text-purple-300" />
       </div>
     </div>
   )

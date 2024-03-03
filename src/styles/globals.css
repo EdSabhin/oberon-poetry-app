@@ -65,6 +65,21 @@
   }
 }
 
+.fade-in-out {
+  animation: fadeInOut 8s ease-in-out infinite;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0; 
+  }
+  50% {
+    opacity: 1; 
+  }
+  100% {
+    opacity: 0; 
+  }
+}
+
 .slide-in-left {
   -webkit-animation: slide-in-left 1.2s cubic-bezier(0.215, 0.61, 0.355, 1)
     forwards;

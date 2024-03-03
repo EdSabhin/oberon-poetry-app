@@ -1,17 +1,22 @@
 import React, { useEffect, useRef, useState } from "react"
+
+import { songData } from "@/service/songData"
+
 import {
   TbPlayerPause,
   TbPlayerPlay,
   TbPlayerTrackPrev,
   TbPlayerTrackNext,
 } from "react-icons/tb"
+
 import { RxSpeakerLoud, RxSpeakerOff } from "react-icons/rx"
+import mainProps from "@/component-props/mainProps"
 
 type Props = {
-  songs: any
+  bloodNight: boolean
 }
 
-const MusicPlayer = ({ songs }: Props) => {
+const MusicPlayer = ({ bloodNight }: Props) => {
   const [isPlaying, setIsPlaying] = useState<boolean>(true)
   const [isMuted, setIsMuted] = useState<boolean>(true)
   const [currentSongIndex, setCurrentSongIndex] = useState(0)
@@ -50,7 +55,7 @@ const MusicPlayer = ({ songs }: Props) => {
   const handleNextSong = () => {
     let newIndex = currentSongIndex + 1
 
-    if (newIndex >= songs.length) {
+    if (newIndex >= songData.length) {
       newIndex = 0
     }
 
@@ -61,7 +66,7 @@ const MusicPlayer = ({ songs }: Props) => {
     let newIndex = currentSongIndex - 1
 
     if (newIndex < 0) {
-      newIndex = songs.length - 1
+      newIndex = songData.length - 1
     }
 
     setCurrentSongIndex(newIndex)
@@ -69,18 +74,32 @@ const MusicPlayer = ({ songs }: Props) => {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <audio ref={audioRef} src={songs[currentSongIndex].songSrc} autoPlay />
-      <div className="w-[15rem] h-[3rem] flex justify-start py-3 pl-8 pr-8 gap-5 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-700 hover:to-stone-400 shadow-md rounded-br-full shadow-stone-950 hover:translate-x-2 transition duration-500 ease-in-out delay-400">
-        <button onClick={handleMute} className="hover:text-amber-400">
+      <audio ref={audioRef} src={songData[currentSongIndex].src} autoPlay />
+      <div
+        className={`${bloodNight ? mainProps.shakespeare.bloodNight.musicPlayer.class : mainProps.shakespeare.playwright.musicPlayer.class}`}
+      >
+        <button
+          onClick={handleMute}
+          className={`${bloodNight ? mainProps.shakespeare.bloodNight.musicPlayer.buttonClass : mainProps.shakespeare.playwright.musicPlayer.buttonClass}`}
+        >
           {isMuted ? <RxSpeakerLoud /> : <RxSpeakerOff />}
         </button>
-        <button onClick={handlePreviousSong} className="hover:text-amber-400">
+        <button
+          onClick={handlePreviousSong}
+          className={`${bloodNight ? mainProps.shakespeare.bloodNight.musicPlayer.buttonClass : mainProps.shakespeare.playwright.musicPlayer.buttonClass}`}
+        >
           <TbPlayerTrackPrev />
         </button>
-        <button onClick={handlePlayPause} className="hover:text-amber-400">
+        <button
+          onClick={handlePlayPause}
+          className={`${bloodNight ? mainProps.shakespeare.bloodNight.musicPlayer.buttonClass : mainProps.shakespeare.playwright.musicPlayer.buttonClass}`}
+        >
           {isPlaying ? <TbPlayerPause /> : <TbPlayerPlay />}
         </button>
-        <button onClick={handleNextSong} className="hover:text-amber-400">
+        <button
+          onClick={handleNextSong}
+          className={`${bloodNight ? mainProps.shakespeare.bloodNight.musicPlayer.buttonClass : mainProps.shakespeare.playwright.musicPlayer.buttonClass}`}
+        >
           <TbPlayerTrackNext />
         </button>
       </div>

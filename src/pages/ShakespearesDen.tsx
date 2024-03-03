@@ -35,18 +35,8 @@ const ShakespearesDen = () => {
 
   return (
     <>
-      <Navbar
-        className={`${bloodNight ? navProps.shakespeare.bloodNight.class : navProps.shakespeare.playwright.class}`}
-        linkClassName={`${bloodNight ? navProps.shakespeare.bloodNight.linkClass : navProps.shakespeare.playwright.linkClass}`}
-        bloodNight={bloodNight}
-      />
-      <Header
-        title={`${bloodNight ? headerProps.shakespeare.bloodNight.title : headerProps.shakespeare.playwright.title}`}
-        description={`${bloodNight ? headerProps.shakespeare.bloodNight.description : headerProps.shakespeare.playwright.description}`}
-        headerClassName={`${bloodNight ? headerProps.shakespeare.bloodNight.class : headerProps.shakespeare.playwright.class}`}
-        h1ClassName={`${bloodNight ? headerProps.shakespeare.bloodNight.h1Class : headerProps.shakespeare.playwright.h1Class}`}
-        headerIcon={`${bloodNight ? headerProps.shakespeare.bloodNight.icon : headerProps.shakespeare.playwright.icon}`}
-      />
+      <Navbar bloodNight={bloodNight} />
+      <Header bloodNight={bloodNight} />
       {fullPoemView === null ? (
         <Main
           loading={loading}
@@ -65,6 +55,7 @@ const ShakespearesDen = () => {
         text={
           "Here lies Gulielmus filius Johannes Shakspere.\n William, son of John."
         }
+        bloodNight={bloodNight}
       />
     </>
   )

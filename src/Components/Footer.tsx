@@ -6,8 +6,9 @@ import { GiHastyGrave } from "react-icons/gi"
 const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 
 type Props = {
-  image?: string
   text: string
+  bloodNight?: boolean
+  image?: string
   imageWidth?: number
   imageHeight?: number
   showModalImage?: boolean
@@ -15,8 +16,9 @@ type Props = {
 }
 
 const Footer = ({
-  image,
   text,
+  bloodNight,
+  image,
   imageWidth,
   imageHeight,
   showModalImage,

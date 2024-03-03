@@ -33,23 +33,20 @@ const Main = ({
       } `}
     >
       <div className="w-full flex justify-between mt-8 mb-12 ">
-        <h2 className={`${bloodNight ? mainProps.shakespeare.bloodNight.titleClass : mainProps.shakespeare.playwright.titleClass}`}>
+        <h2
+          className={`${bloodNight ? mainProps.shakespeare.bloodNight.titleClass : mainProps.shakespeare.playwright.titleClass}`}
+        >
           {`${bloodNight ? mainProps.shakespeare.bloodNight.title : mainProps.shakespeare.playwright.title}`}
         </h2>
         <div className="flex flex-col items-center mt-4 gap-10">
-          <MusicPlayer songs={songData} />
+          <MusicPlayer bloodNight={bloodNight} />
           <ThemeButton
             text={bloodNight ? "Playwright" : "Blood Night"}
             onClick={() => {
               setBloodNight(!bloodNight)
               scrollToTop()
             }}
-            bloodNight={bloodNight}
-            className={
-              !bloodNight
-                ? ""
-                : "bg-gradient-to-r from-gray-900 via-rose-900 to-gray-900"
-            }
+            bloodNight={bloodNight}        
           />
         </div>
       </div>

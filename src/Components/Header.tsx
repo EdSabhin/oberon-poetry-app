@@ -1,29 +1,24 @@
 import React from "react"
 import Image from "next/image"
 import { Old_Standard_TT } from "next/font/google"
+import headerProps from "@/component-props/headerProps"
 
 const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 
 type Props = {
-  title: string
-  description: string
-  headerClassName: string
-  h1ClassName: string
-  headerIcon: string
+  bloodNight?: boolean
 }
 
-const Header = ({
-  title,
-  description,
-  headerClassName,
-  h1ClassName,
-  headerIcon,
-}: Props) => {
+const Header = ({ bloodNight }: Props) => {
   return (
-    <header className={headerClassName}>
-      <h1 className={h1ClassName}>{title}</h1>
+    <header
+      className={`${bloodNight ? headerProps.shakespeare.bloodNight.class : headerProps.shakespeare.playwright.class}`}
+    >
+      <h1
+        className={`${bloodNight ? headerProps.shakespeare.bloodNight.h1Class : headerProps.shakespeare.playwright.h1Class}`}
+      >{`${bloodNight ? headerProps.shakespeare.bloodNight.title : headerProps.shakespeare.playwright.title}`}</h1>
       <h2 className="text-[1.75rem] pt-4 pb-6 pr-4 text-start tracking-wide">
-        {description}
+        {`${bloodNight ? headerProps.shakespeare.bloodNight.description : headerProps.shakespeare.playwright.description}`}
       </h2>
       <div className="w-full flex justify-end items-end pb-10 gap-2">
         <h3 className={`${OldStandardTT.className} text-2xl text-start`}>
@@ -32,7 +27,7 @@ const Header = ({
         <Image
           width={80}
           height={80}
-          src={headerIcon}
+          src={`${bloodNight ? headerProps.shakespeare.bloodNight.icon : headerProps.shakespeare.playwright.icon}`}
           alt="black cat"
           className="transform scale-x-[-1]"
         />
