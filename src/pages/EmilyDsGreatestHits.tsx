@@ -35,7 +35,7 @@ const EmilyDsGreatestHits = (props: Props) => {
   return (
     <div className="bg-gradient-to-b from-rose-500 via-teal-300 to-pink-300">
       <Navbar theme={!elegy ? "sylph" : "elegy"} />
-      <Header />
+      <Header theme={!elegy ? "sylph" : "elegy"}/>
       {loading ? (
         <div className="w-full flex justify-center items-center ">
           <LoadingImage image="/inkwell.png" />

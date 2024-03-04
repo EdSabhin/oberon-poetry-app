@@ -5,8 +5,6 @@ import React from "react"
 import { GiMoonBats, GiVineLeaf } from "react-icons/gi"
 
 type Props = {
-  bloodNight?: boolean
-  elegy?:boolean
   theme: string
 }
 
