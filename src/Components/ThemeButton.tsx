@@ -11,20 +11,37 @@ const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 type Props = {
   text: string
   onClick?: () => void
-  bloodNight?: boolean
+  theme: string;
 }
 
-const Button = ({ text, onClick, bloodNight }: Props) => {
+const Button = ({ text, onClick, theme }: Props) => {
+  let themeButton;
+
+  switch ( theme ) {
+    case 'playwright':
+      ({themeButton} = mainProps.shakespeare.playwright)
+      break;
+    case 'bloodNight':
+      ({themeButton} = mainProps.shakespeare.bloodNight)
+      break;
+    case 'sylph':
+      ({themeButton} = mainProps.dickinson.sylph)
+      break;
+    case 'elegy':
+      ({themeButton} = mainProps.dickinson.elegy)
+      break;
+  }
+  
   return (
     <button
       onClick={onClick}
-      className={`${bloodNight ? mainProps.shakespeare.bloodNight.themeButton : mainProps.shakespeare.playwright.themeButton} ${OldStandardTT.className}`}
+      className={`${themeButton} ${OldStandardTT.className}`}
     >
       <div className="flex justify-start items-center gap-4">
-        {bloodNight !== undefined && !bloodNight && (
+        {theme === "playwright" && (
           <GiMoonBats className="w-8 h-8 text-blood-animation  group-hover:animate-pulse-faster" />
         )}
-        {bloodNight !== undefined && bloodNight && (
+        {theme === "bloodNight" && (
           <GiScrollUnfurled className="w-8 h-8 text-color-animation group-hover:animate-pulse-faster" />
         )}
         <span className="">{text}</span>

@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react"
 
+import mainProps from "@/component-props/mainProps"
+
 import { songData } from "@/service/songData"
 
 import {
@@ -10,13 +12,14 @@ import {
 } from "react-icons/tb"
 
 import { RxSpeakerLoud, RxSpeakerOff } from "react-icons/rx"
-import mainProps from "@/component-props/mainProps"
 
 type Props = {
-  bloodNight?: boolean
+  theme: string
 }
 
-const MusicPlayer = ({ bloodNight }: Props) => {
+const MusicPlayer = ({ theme }: Props) => {
+
+  /* Audio Player */
   const [isPlaying, setIsPlaying] = useState<boolean>(true)
   const [isMuted, setIsMuted] = useState<boolean>(true)
   const [currentSongIndex, setCurrentSongIndex] = useState(0)
@@ -72,33 +75,52 @@ const MusicPlayer = ({ bloodNight }: Props) => {
     setCurrentSongIndex(newIndex)
   }
 
+  /* Theme */
+  let musicPlayerClass;
+  let buttonClass;
+
+  switch ( theme ) {
+    case 'playwright':
+      ({class: musicPlayerClass, buttonClass} = mainProps.shakespeare.playwright.musicPlayer)
+      break;
+    case 'bloodNight':
+      ({class: musicPlayerClass, buttonClass} = mainProps.shakespeare.bloodNight.musicPlayer)
+      break;
+    case 'sylph':
+      ({class: musicPlayerClass, buttonClass} = mainProps.dickinson.sylph.musicPlayer)
+      break;
+    case 'elegy':
+      ({class: musicPlayerClass, buttonClass} = mainProps.dickinson.elegy.musicPlayer)
+      break;
+  }
+
   return (
     <div className="flex flex-col items-center justify-center">
       <audio ref={audioRef} src={songData[currentSongIndex].src} autoPlay />
       <div
-        className={`${bloodNight ? mainProps.shakespeare.bloodNight.musicPlayer.class : mainProps.shakespeare.playwright.musicPlayer.class}`}
+        className={musicPlayerClass}
       >
         <button
           onClick={handleMute}
-          className={`${bloodNight ? mainProps.shakespeare.bloodNight.musicPlayer.buttonClass : mainProps.shakespeare.playwright.musicPlayer.buttonClass}`}
+          className={buttonClass}
         >
           {isMuted ? <RxSpeakerLoud /> : <RxSpeakerOff />}
         </button>
         <button
           onClick={handlePreviousSong}
-          className={`${bloodNight ? mainProps.shakespeare.bloodNight.musicPlayer.buttonClass : mainProps.shakespeare.playwright.musicPlayer.buttonClass}`}
+          className={buttonClass}
         >
           <TbPlayerTrackPrev />
         </button>
         <button
           onClick={handlePlayPause}
-          className={`${bloodNight ? mainProps.shakespeare.bloodNight.musicPlayer.buttonClass : mainProps.shakespeare.playwright.musicPlayer.buttonClass}`}
+          className={buttonClass}
         >
           {isPlaying ? <TbPlayerPause /> : <TbPlayerPlay />}
         </button>
         <button
           onClick={handleNextSong}
-          className={`${bloodNight ? mainProps.shakespeare.bloodNight.musicPlayer.buttonClass : mainProps.shakespeare.playwright.musicPlayer.buttonClass}`}
+          className={buttonClass}
         >
           <TbPlayerTrackNext />
         </button>

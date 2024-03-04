@@ -1,5 +1,5 @@
-import { fetchData } from "@/service/fetchData"
 import { useEffect, useState } from "react"
+import { fetchData } from "@/service/fetchData"
 
 import Navbar from "../components/Navbar"
 import Header from "../components/Header"
@@ -42,6 +42,7 @@ const ShakespearesDen = () => {
           bloodNight={bloodNight}
           setBloodNight={setBloodNight}
           setFullPoemView={setFullPoemView}
+          theme={!bloodNight ? "playwright" : "bloodNight"}
         />
       ) : (
         <FullPoem

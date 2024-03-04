@@ -42,7 +42,7 @@ const EmilyDsGreatestHits = (props: Props) => {
         </div>
       ) : (
         <section className="w-full flex flex-col items-center py-12 px-24">
-          <MusicPlayer />
+          <MusicPlayer theme={!elegy ? "sylph" : "elegy"}/>
           <div className="w-full grid grid-cols-2 items-center pt-16 pb-24 gap-24">
             {titles.slice(34, 44).map((title: Props, index: number) => {
               return (

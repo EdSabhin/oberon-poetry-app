@@ -19,36 +19,21 @@ const Header = ({ theme }: Props) => {
   let h1Class;
   let icon;
 
-  switch ( theme ) {
+  switch (theme) {
     case 'playwright':
-      title = headerProps.shakespeare.playwright.title
-      description = headerProps.shakespeare.playwright.description
-      headerClass = headerProps.shakespeare.playwright.class
-      h1Class = headerProps.shakespeare.playwright.h1Class
-      icon = headerProps.shakespeare.playwright.icon
+      ({ title, description, class: headerClass, h1Class, icon } = headerProps.shakespeare.playwright);
       break;
     case 'bloodNight':
-      title = headerProps.shakespeare.bloodNight.title
-      description = headerProps.shakespeare.bloodNight.description
-      headerClass = headerProps.shakespeare.bloodNight.class
-      h1Class = headerProps.shakespeare.bloodNight.h1Class
-      icon = headerProps.shakespeare.bloodNight.icon
+      ({ title, description, class: headerClass, h1Class, icon } = headerProps.shakespeare.bloodNight);
       break;
     case 'sylph':
-      title = headerProps.dickinson.sylph.title
-      description = headerProps.dickinson.sylph.description
-      headerClass = headerProps.dickinson.sylph.class
-      h1Class = headerProps.dickinson.sylph.h1Class
-      icon = headerProps.dickinson.sylph.icon
+      ({ title, description, class: headerClass, h1Class, icon } = headerProps.dickinson.sylph);
       break;
     case 'elegy':
-      title = headerProps.dickinson.elegy.title
-      description = headerProps.dickinson.elegy.description
-      headerClass = headerProps.dickinson.elegy.class
-      h1Class = headerProps.dickinson.elegy.h1Class
-      icon = headerProps.dickinson.elegy.icon
+      ({ title, description, class: headerClass, h1Class, icon } = headerProps.dickinson.elegy);
       break;
   }
+
   return (
     <header
       className={headerClass}

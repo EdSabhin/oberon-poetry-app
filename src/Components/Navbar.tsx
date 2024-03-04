@@ -14,20 +14,16 @@ const Navbar = ({ theme }: Props) => {
 
   switch ( theme ) {
     case 'playwright':
-      navClass = navProps.shakespeare.playwright.class
-      linkClass = navProps.shakespeare.playwright.linkClass
+      ({class: navClass, linkClass} = navProps.shakespeare.playwright)
       break;
     case 'bloodNight':
-      navClass = navProps.shakespeare.bloodNight.class
-      linkClass = navProps.shakespeare.bloodNight.linkClass
+      ({class: navClass, linkClass} = navProps.shakespeare.bloodNight)
       break;
     case 'sylph':
-      navClass = navProps.dickinson.sylph.class
-      linkClass = navProps.dickinson.sylph.linkClass
+      ({class: navClass, linkClass} = navProps.dickinson.sylph)
       break;
     case 'elegy':
-      navClass = navProps.dickinson.elegy.class
-      linkClass = navProps.dickinson.elegy.linkClass
+      ({class: navClass, linkClass} = navProps.dickinson.elegy)
       break;
   }
 
