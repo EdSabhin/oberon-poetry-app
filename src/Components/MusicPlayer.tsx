@@ -76,21 +76,21 @@ const MusicPlayer = ({ theme }: Props) => {
   }
 
   /* Theme */
-  let musicPlayerClass;
+  let musicPlayer;
   let buttonClass;
 
   switch ( theme ) {
     case 'playwright':
-      ({class: musicPlayerClass, buttonClass} = mainProps.shakespeare.playwright.musicPlayer)
+      ({class: musicPlayer, buttonClass} = mainProps.shakespeare.playwright.musicPlayer)
       break;
     case 'bloodNight':
-      ({class: musicPlayerClass, buttonClass} = mainProps.shakespeare.bloodNight.musicPlayer)
+      ({class: musicPlayer, buttonClass} = mainProps.shakespeare.bloodNight.musicPlayer)
       break;
     case 'sylph':
-      ({class: musicPlayerClass, buttonClass} = mainProps.dickinson.sylph.musicPlayer)
+      ({class: musicPlayer, buttonClass} = mainProps.dickinson.sylph.musicPlayer)
       break;
     case 'elegy':
-      ({class: musicPlayerClass, buttonClass} = mainProps.dickinson.elegy.musicPlayer)
+      ({class: musicPlayer, buttonClass} = mainProps.dickinson.elegy.musicPlayer)
       break;
   }
 
@@ -98,7 +98,7 @@ const MusicPlayer = ({ theme }: Props) => {
     <div className="flex flex-col items-center justify-center">
       <audio ref={audioRef} src={songData[currentSongIndex].src} autoPlay />
       <div
-        className={musicPlayerClass}
+        className={musicPlayer}
       >
         <button
           onClick={handleMute}

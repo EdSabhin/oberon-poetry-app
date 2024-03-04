@@ -5,9 +5,10 @@ import PoemCard from "./PoemCard"
 type Props = {
   poemsArray: []
   setFullPoemView: (value: number) => void
+  theme: string
 }
 
-const CardsSection = ({ poemsArray, setFullPoemView }: Props) => {
+const CardsSection = ({ poemsArray, setFullPoemView, theme }: Props) => {
   return (
     <section className="w-full flex flex-col items-start my-8 gap-32">
       {poemsArray.map((poem: Poem, index: number) => {
@@ -19,6 +20,7 @@ const CardsSection = ({ poemsArray, setFullPoemView }: Props) => {
             author={poem.author}
             poem={poem.lines}
             setFullPoemView={setFullPoemView}
+            theme={theme}
           />
         )
       })}

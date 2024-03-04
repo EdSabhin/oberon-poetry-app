@@ -32,30 +32,30 @@ const Main = ({
 
   switch ( theme ) {
     case 'playwright':
-      ({class: mainClass, title, titleClass} = mainProps.shakespeare.playwright)
+      ({mainClass, title, titleClass} = mainProps.shakespeare.playwright)
       break;
     case 'bloodNight':
-      ({class: mainClass, title, titleClass} = mainProps.shakespeare.bloodNight)
+      ({mainClass, title, titleClass} = mainProps.shakespeare.bloodNight)
       break;
     case 'sylph':
-      ({class: mainClass, title, titleClass} = mainProps.dickinson.sylph)
+      ({mainClass, title, titleClass} = mainProps.dickinson.sylph)
       break;
     case 'elegy':
-      ({class: mainClass, title, titleClass} = mainProps.dickinson.elegy)
+      ({mainClass, title, titleClass} = mainProps.dickinson.elegy)
       break;
   }
   return (
     <main
       className={mainClass}
     >
-      <div className="w-full flex justify-between mt-8 mb-12 ">
+      <div className="w-full flex justify-between mt-8 mb-12">
         <h2
           className={titleClass}
         >
           {title}
         </h2>
         <div className="flex flex-col items-center mt-4 gap-10">
-          <MusicPlayer theme= {!bloodNight ? "playwright" : "bloodNight"} />
+          {/* <MusicPlayer theme= {!bloodNight ? "playwright" : "bloodNight"} /> */}
           <ThemeButton
             text={bloodNight ? "Playwright" : "Blood Night"}
             onClick={() => {
@@ -73,8 +73,9 @@ const Main = ({
         </div>
       ) : (
         <CardsSection
-          poemsArray={poemsArray}
-          setFullPoemView={setFullPoemView}
+            poemsArray={poemsArray}
+            setFullPoemView={setFullPoemView}
+            theme={!bloodNight ? "playwright" : "bloodNight"}
         />
       )}
     </main>
