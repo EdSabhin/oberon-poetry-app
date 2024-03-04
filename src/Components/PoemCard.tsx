@@ -4,7 +4,7 @@ import Image from "next/image"
 import mainProps from "@/component-props/mainProps"
 
 import Button from "./Button"
-import { GiQuill } from "react-icons/gi"
+import { GiHeartStake, GiQuill } from "react-icons/gi"
 
 type Props = {
   title: string
@@ -75,7 +75,10 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView, theme }: Props)
       })}
       <div className="w-full flex items-end my-8 gap-4 ">
         <p className="text-2xl ">..................</p>
-        <GiQuill className="w-12 h-12 mb-2 text-orange-100 group-hover:text-orange-200" />
+        {theme === "playwright" && 
+        <GiQuill className="w-12 h-12 mb-2 text-orange-100 group-hover:text-orange-200"/>}
+        {theme === "bloodNight" && 
+        <GiHeartStake className="w-12 h-12 mb-2 text-stone-800 group-hover:text-rose-950" />}
       </div>
     </div>
   )

@@ -24,15 +24,16 @@
 .text-color-animation {
   animation: textColorChange 3s infinite alternate;
 }
+
 @keyframes textColorChange {
   0% {
     color: #ca780d29;
   }
   75% {
-    color: #eae4de;
+    color: #dcd2c8;
   }
   100% {
-    color: #eae4de;
+    color: #dcd2c8;
   }
 }
 
@@ -44,10 +45,10 @@
     color: #ca0d7520;
   }
   75% {
-    color: #eae4de;
+    color: #e5c2d0;
   }
   100% {
-    color: #eae4de;
+    color: #e5c2d0;
   }
 }
 .text-rose-animation {

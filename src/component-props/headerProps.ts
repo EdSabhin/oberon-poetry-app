@@ -26,7 +26,7 @@ const headerProps = {
       headerClass:
         "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-b from-black via-rose-950 to-black text-rose-100",
       author:
-        "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-rose-900 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-rose-500 from-45% to-indigo-900",
+        "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-rose-900 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-stone-600 to-70% via-rose-500 to-stone-500",
       icon: "/images/blood-moon-cat.svg",
     },
   },
