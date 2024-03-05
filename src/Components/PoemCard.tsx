@@ -44,8 +44,8 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView, theme }: Props)
       <Image
         width={200}
         height={200}
-        src={`${theme === "playwright" ? "/images/bones.svg" : "/images/vamp-bat.svg"}`}
-        alt="bones watching"
+        src={`${theme === "playwright" ? "/images/bones.svg" : "/images/blood-bones.svg"}`}
+        alt="Bones or bat watching"
         className="absolute top-[20%] left-[135%] fade-in-out"
       />
       <div className="w-full flex justify-between mb-8 slide-in-left">
