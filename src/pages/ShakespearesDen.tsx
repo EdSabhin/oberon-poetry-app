@@ -32,7 +32,7 @@ const ShakespearesDen = () => {
   const poemsArray = poems.slice(0, 6)
 
   return (
-    <>
+    <div className={!bloodNight ? "bg-stone-900" : "bg-rose-950"}>
       <Navbar theme={!bloodNight ? "playwright" : "bloodNight"}/>
       <Header theme={!bloodNight ? "playwright" : "bloodNight"}/>
       {fullPoemView === null ? (
@@ -56,7 +56,7 @@ const ShakespearesDen = () => {
         }
         bloodNight={bloodNight}
       />
-    </>
+    </div>
   )
 }
 
