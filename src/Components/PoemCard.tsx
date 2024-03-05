@@ -44,7 +44,7 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView, theme }: Props)
       <Image
         width={200}
         height={200}
-        src={"/images/bones.svg"}
+        src={`${theme === "playwright" ? "/images/bones.svg" : "/images/vamp-bat.svg"}`}
         alt="bones watching"
         className="absolute top-[20%] left-[135%] fade-in-out"
       />
@@ -59,8 +59,8 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView, theme }: Props)
           width={"140"}
           height={"140"}
           className="rounded-[5%] rounded-br-[35%] mr-14"
-          src="/images/shakespeare-b.gif"
-          alt=""
+          src={`${theme === "playwright" ? "/images/shakespeare-portrait.png" : "/images/shakespeare-vamp-dark-decor.png"}`}
+          alt="Lord Shakespeare"
         />
       </div>
       {shortPoem.map((poemVerse, index) => {

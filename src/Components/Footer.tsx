@@ -86,7 +86,8 @@ const Footer = ({
         </a>
         {/* gold -skull:Image by a href=httpspixabay.comusersgdj-1086657utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1782019Gordon Johnsona from a href=httpspixabay.comutm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1782019Pixabaya */}
         {/* skull Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1299297">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1299297">Pixabay</a> */}
-        <GiHastyGrave className="absolute bottom-[0%] right-[0%] w-24 h-24 opacity-5" />
+        {/* Image by <a href="https://pixabay.com/users/gdj-1086657/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5198131">Gordon Johnson</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5198131">Pixabay</a>
+        <GiHastyGrave className="absolute bottom-[0%] right-[0%] w-24 h-24 opacity-5" /> */}
       </div>
     </footer>
   )
