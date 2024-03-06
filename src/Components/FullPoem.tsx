@@ -1,55 +1,71 @@
 import React, { useEffect } from "react"
-import Button from "./Button"
+
+import mainProps from "@/component-props/mainProps"
+
 import { Poem } from "../pages/ShakespearesDen"
+import Button from "./Button"
+
 
 type Props = {
   poemsArray: Poem
   setFullPoemView: (value: null) => void
+  theme: string
 }
 
-const FullPoem = ({ poemsArray, setFullPoemView }: Props) => {
+const FullPoem = ({ poemsArray, setFullPoemView, theme }: Props) => {
   
   const shortTitle = poemsArray.title.slice(0, poemsArray.title.indexOf(":"))
-  useEffect(() => {
-    const element = document.getElementById("FullPoem")
-    element?.scrollIntoView({ behavior: "smooth" })
-  }, [])
+  
+  let poemCard;
+  let poemButton;
+  let titleClass;
+  let authorClass;
+  let verses: string;
+
+  switch (theme) {
+    case "playwright":
+      ({ class: poemCard, poemButton, titleClass, authorClass, verses } = mainProps.shakespeare.playwright.fullPoem)
+      break;
+    case "bloodNight":
+      ({ class: poemCard, poemButton, titleClass, authorClass, verses } = mainProps.shakespeare.bloodNight.fullPoem)
+      break;
+  }
+
 
   return (
-    <div
-      id="FullPoem"
-      className="w-full h-[100vh] flex flex-col justify-center items-center gap-4 py-4 bg-gradient-to-bl from-stone-700 via-stone-950 to-stone-700 relative slide-in-fwd-center"
+    <main
+      className={poemCard}
     >
-      <div className="w-1/2 pt-4 flex flex-col items-center justify-center text-5xl">
-        <h1 className="p-4 text-5xl text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-amber-900 underline decoration-1 decoration-amber-200 underline-offset-8">
+      <div className="w-1/2 flex flex-col items-center justify-center text-5xl">
+        <div className="flex mt-8">
+          <h1 className={titleClass}>
           {shortTitle}
         </h1>
-      </div>
-      <div className="absolute top-10 right-80">
-        {" "}
-        <Button
+         <Button
           onClick={() => setFullPoemView(null)}
-          text="Retrace Thy Steps"
+        text="Retrace Thy Steps"
+        className={poemButton}
         />
+        </div>       
       </div>
-      <div className="w-1/2 mb-7 flex flex-col items-center justify-center text-2xl">
+      <div className="w-1/2 flex flex-col items-center justify-center text-2xl">
         {poemsArray.lines.map((verse: string, index: number) => {
           return (
             <p
-              className="w-max rounded text-white transition-ease-in-out delay-400  hover:scale-105 duration-300 hover:bg-gradient-to-r hover:from-indigo-600 hover:via-red-400 hover:to-indigo-600 p-1 text-2xl hover:text-amber-200 tracking-wide scale-gradient"
+              className={verses}
               key={index}
             >
               {verse}
             </p>
           )
         })}
-        <div className="w-full flex justify-end pr-20 p-8">
-          <h2 className="pt-1 pb-2 text-2xl text-amber-100">
+        <div className="w-full flex justify-end pr-12 p-6">
+          <h2 className={authorClass}>
             {poemsArray.author}
           </h2>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

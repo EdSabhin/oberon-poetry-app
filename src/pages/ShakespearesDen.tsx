@@ -47,7 +47,8 @@ const ShakespearesDen = () => {
       ) : (
         <FullPoem
           poemsArray={poemsArray[fullPoemView]}
-          setFullPoemView={setFullPoemView}
+            setFullPoemView={setFullPoemView}
+            theme={!bloodNight ? "playwright" : "bloodNight"}
         />
       )}
       <Footer

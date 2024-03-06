@@ -16,21 +16,21 @@ const Header = ({ theme }: Props) => {
   let title;
   let description;
   let headerClass;
-  let author;
+  let authorClass;
   let icon;
 
   switch (theme) {
     case 'playwright':
-      ({ title, description, headerClass, author, icon } = headerProps.shakespeare.playwright);
+      ({ title, description, headerClass, authorClass, icon } = headerProps.shakespeare.playwright);
       break;
     case 'bloodNight':
-      ({ title, description, headerClass, author, icon } = headerProps.shakespeare.bloodNight);
+      ({ title, description, headerClass, authorClass, icon } = headerProps.shakespeare.bloodNight);
       break;
     case 'sylph':
-      ({ title, description, headerClass, author, icon } = headerProps.dickinson.sylph);
+      ({ title, description, headerClass, authorClass, icon } = headerProps.dickinson.sylph);
       break;
     case 'elegy':
-      ({ title, description, headerClass, author, icon } = headerProps.dickinson.elegy);
+      ({ title, description, headerClass, authorClass, icon } = headerProps.dickinson.elegy);
       break;
   }
 
@@ -39,7 +39,7 @@ const Header = ({ theme }: Props) => {
       className={headerClass}
     >
       <h1
-        className={author}
+        className={authorClass}
       >{title}</h1>
       <h2 className="text-[1.75rem] pt-4 pb-6 pr-4 text-start tracking-wide">
         {description}
