@@ -69,7 +69,7 @@ const Main = ({
 
       {loading ? (
         <div className="w-full flex justify-center items-center ">
-          <LoadingImage image="/feather-pen.png" />
+          <LoadingImage image={theme === "playwright" ? "/images/quill-icon-gray.png" : "/images/quill-icon-black.png"} />
         </div>
       ) : (
         <CardsSection
