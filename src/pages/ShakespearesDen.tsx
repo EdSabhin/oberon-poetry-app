@@ -33,8 +33,8 @@ const ShakespearesDen = () => {
 
   return (
     <div className={!bloodNight ? "bg-stone-900" : "bg-rose-950"}>
-      <Navbar theme={!bloodNight ? "playwright" : "bloodNight"}/>
-      <Header theme={!bloodNight ? "playwright" : "bloodNight"}/>
+      <Navbar theme={!bloodNight ? "playwright" : "bloodNight"} />
+      <Header theme={!bloodNight ? "playwright" : "bloodNight"} />
       {fullPoemView === null ? (
         <Main
           loading={loading}
@@ -47,15 +47,15 @@ const ShakespearesDen = () => {
       ) : (
         <FullPoem
           poemsArray={poemsArray[fullPoemView]}
-            setFullPoemView={setFullPoemView}
-            theme={!bloodNight ? "playwright" : "bloodNight"}
+          setFullPoemView={setFullPoemView}
+          theme={!bloodNight ? "playwright" : "bloodNight"}
         />
       )}
       <Footer
         text={
           "Here lies Gulielmus filius Johannes Shakspere.\n William, son of John."
         }
-        bloodNight={bloodNight}
+        theme={!bloodNight ? "playwright" : "bloodNight"}
       />
     </div>
   )

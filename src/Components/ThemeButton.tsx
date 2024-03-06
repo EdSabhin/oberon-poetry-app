@@ -11,27 +11,27 @@ const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 type Props = {
   text: string
   onClick?: () => void
-  theme: string;
+  theme: string
 }
 
 const Button = ({ text, onClick, theme }: Props) => {
-  let themeButton;
+  let themeButton
 
-  switch ( theme ) {
-    case 'playwright':
-      ({themeButton} = mainProps.shakespeare.playwright)
-      break;
-    case 'bloodNight':
-      ({themeButton} = mainProps.shakespeare.bloodNight)
-      break;
-    case 'sylph':
-      ({themeButton} = mainProps.dickinson.sylph)
-      break;
-    case 'elegy':
-      ({themeButton} = mainProps.dickinson.elegy)
-      break;
+  switch (theme) {
+    case "playwright":
+      ;({ themeButton } = mainProps.shakespeare.playwright)
+      break
+    case "bloodNight":
+      ;({ themeButton } = mainProps.shakespeare.bloodNight)
+      break
+    case "sylph":
+      ;({ themeButton } = mainProps.dickinson.sylph)
+      break
+    case "elegy":
+      ;({ themeButton } = mainProps.dickinson.elegy)
+      break
   }
-  
+
   return (
     <button
       onClick={onClick}

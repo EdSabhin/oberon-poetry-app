@@ -1,92 +1,129 @@
 import Image from "next/image"
 import { Old_Standard_TT } from "next/font/google"
 import ModalImage from "./ModalImage"
-import { GiHastyGrave } from "react-icons/gi"
+import { GiCoffin, GiHastyGrave } from "react-icons/gi"
 
 const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 
 type Props = {
   text: string
-  bloodNight?: boolean
-  image?: string
-  imageWidth?: number
-  imageHeight?: number
   showModalImage?: boolean
   setShowModalImage?: (value: boolean) => void
+  theme: string
 }
 
-const Footer = ({
-  text,
-  bloodNight,
-  image,
-  imageWidth,
-  imageHeight,
-  showModalImage,
-  setShowModalImage,
-}: Props) => {
+const Footer = ({ text, showModalImage, setShowModalImage, theme }: Props) => {
   return (
     <footer
-      className="w-full flex items-start relative pt-8 pb-14 px-48
-      bg-gradient-to-l from-blue-950 via-slate-700 to-gray-900 text-white border-none tracking-wider"
+      className="w-full flex items-start relative pt-8 pb-20 px-48
+      bg-gradient-to-r from-gray-950 via-slate-800 to-gray-950 text-white border-none tracking-wider"
     >
-      <div className="flex flex-col gap-6">
-        <h4 className="leading-[4rem] py-2 text-4xl text-transparent bg-clip-text bg-gradient-to-r from-orange-200 via-orange-300 from-[10%] to-amber-200">
-          {text}
-        </h4>
-        <p className="text-2xl tracking-wider leading-[3rem]">
-          &quot;Let not the creaking of shoes nor <br />
-          The rustling of silks betray <br />
-          Thy poor heart to woman. <br />
-          Keep thy foot out of brothels, <br />
-          Thy hand out of plackets, <br />
-          Thy pen from lenders&apos; books,
-          <br />
-          <span className="text-rose-animation text-rose-300">
-            And defy the foul fiend.&quot;
-          </span>
-        </p>
-        <p className={`${OldStandardTT.className} ${"text-rose-800"}`}>
-          <span className="text-xl italic ml-40">King Lear</span>, Act 3, Scene
-          4.
-        </p>
-      </div>
+      <div className="flex gap-24 ">
+        <div className="flex flex-col gap-6">
+          <h4 className="leading-[4rem] text-4xl text-transparent bg-clip-text bg-gradient-to-r from-orange-200 via-orange-300 from-[10%] to-amber-200">
+            {text}
+          </h4>
+          <div className="flex flex-col items-start pl-14">
+             <p className=" text-2xl tracking-wider leading-[3rem]">
+            &quot;Let not the creaking of shoes nor <br />
+            The rustling of silks betray <br />
+            Thy poor heart to woman. <br />
+            Keep thy foot out of brothels, <br />
+            Thy hand out of plackets, <br />
+            Thy pen from lenders&apos; books,
+            <br />
+            <span className="text-rose-animation text-rose-300">
+              And defy the foul fiend.&quot;
+            </span>
+          </p>
+          <p className={`${OldStandardTT.className} ${"mt-6 ml-40 text-rose-900"}`}>
+            <span className="text-xl italic">King Lear</span>, Act 3,
+            Scene 4.
+          </p>
+          </div>
+         
+        </div>
 
-      <div className="h-full flex flex-col gap-2 mt-8">
-        <p className={`${OldStandardTT.className} ${"text-amber-400"}`}>
-          <span className="text-xl italic ">Attributions</span>
-        </p>
-        <a
-          href="https://www.flaticon.com/free-icons/feather"
-          title="feather icons"
-          className={`${OldStandardTT.className} ${
-            showModalImage ? "text-white" : "text-indigo-400"
-          } hover:text-amber-500 rounded italic transition ease-in-out text-lg `}
-        >
-          Feather icons created by Freepik - Flaticon
-        </a>
-        <a
-          href="https://www.flaticon.com/free-icons/quill"
-          title="quill icons"
-          className={`${OldStandardTT.className} ${
-            showModalImage ? "text-white" : "text-indigo-400"
-          } hover:text-amber-500 rounded italic transition ease-in-out text-lg `}
-          target="__blank"
-        >
-          Quill icons created by Design Circle - Flaticon
-        </a>
-        <a href="https://www.flaticon.com/free-icons/feather" title="feather icons">Quill icons created by Smashicons - Flaticon</a>
-        <a
-          href="https://www.flaticon.com/free-icons/black-cat"
-          title="black cat icons"
-          className={`${OldStandardTT.className} ${
-            showModalImage ? "text-white" : "text-indigo-400"
-          } hover:text-amber-500 rounded italic transition ease-in-out text-lg `}
-          target="__blank"
-        >
-          Cat icons created by juicy_fish - Flaticon
-        </a>
-        Skull Images by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1299297">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1299297">Pixabay</a> 
-        <GiHastyGrave className="absolute bottom-[0%] right-[0%] w-24 h-24 opacity-5"/>
+        <div className="h-full flex flex-col pt-5 gap-2">
+          <h3 className={`${OldStandardTT.className} ${"mb-2 text-xl text-orange-200"}`}>
+            <span className="italic underline underline-offset-4 decoration-1 decoration-orange-300">Attributions</span>
+          </h3>
+          <h4 className={`${OldStandardTT.className} ${"w-max px-3 text-amber-100 border-x border-orange-400"}`}>Music - <span>John Dowland</span></h4>
+          <a
+            href="https://www.youtube.com/watch?v=CcWbbMKZ3KM"
+            title="feather icons"
+            className={`${OldStandardTT.className} ${
+              showModalImage ? "text-white" : "text-indigo-200"
+            } hover:text-orange-200 rounded italic transition ease-in-out text-lg `}
+          >
+            1. The Frog Galliard
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=u3clX2CJqzs"
+            title="Flow My Tears"
+            className={`${OldStandardTT.className} ${
+              showModalImage ? "text-white" : "text-indigo-200"
+            } hover:text-orange-200 rounded italic transition ease-in-out text-lg `}
+          >
+            2. Flow My Tears (Lachrimae)
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=LB9USv8VYvA"
+            title="Can She Excuse My Wrongs"
+            className={`${OldStandardTT.className} ${
+              showModalImage ? "text-white" : "text-indigo-200"
+            } mb-6 hover:text-orange-200 rounded italic transition ease-in-out text-lg `}
+          >
+            3. Can She Excuse My Wrongs
+          </a>
+          
+          <h4 className={`${OldStandardTT.className} ${"w-max px-3 text-amber-100 border-x border-orange-400"}`}>Visuals</h4>
+          <a
+            href="https://www.flaticon.com/free-icons/feather"
+            title="feather icons"
+            className={`${OldStandardTT.className} ${
+              showModalImage ? "text-white" : "text-indigo-200"
+            } hover:text-orange-200 rounded italic transition ease-in-out text-lg `}
+          >
+            Quill icons created by Smashicons - Flaticon
+          </a>
+          <a
+            href="https://www.flaticon.com/free-icons/quill"
+            title="quill icons"
+            className={`${OldStandardTT.className} ${
+              showModalImage ? "text-white" : "text-indigo-200"
+            } hover:text-orange-200 rounded italic transition ease-in-out text-lg `}
+            target="__blank"
+          >
+            Inkwell icons created by Design Circle - Flaticon
+          </a>
+          <a
+            href="https://www.flaticon.com/free-icons/black-cat"
+            title="black cat icons"
+            className={`${OldStandardTT.className} ${
+              showModalImage ? "text-white" : "text-indigo-200"
+            } hover:text-orange-200 rounded italic transition ease-in-out text-lg `}
+            target="__blank"
+          >
+            Cat icons created by juicy_fish - Flaticon
+          </a>
+          <a
+            href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1299297"
+            title="black cat icons"
+            className={`${OldStandardTT.className} ${
+              showModalImage ? "text-white" : "text-indigo-200"
+            } hover:text-orange-200 rounded italic transition ease-in-out text-lg `}
+            target="__blank"
+          >
+            Fading skulls by OpenClipart-Vectors - Pixabay
+          </a>
+          {theme === "playwright" && (
+            <GiHastyGrave className="absolute bottom-[0%] right-[0%] w-24 h-24 text-indigo-300 fade-in-out-soft" />
+          )}
+          {theme === "bloodNight" && (
+            <GiCoffin className="absolute bottom-[0%] right-[0%] w-24 h-24 text-rose-800 fade-in-out-soft" />
+          )}
+        </div>
       </div>
     </footer>
   )

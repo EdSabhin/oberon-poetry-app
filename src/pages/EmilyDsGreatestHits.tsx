@@ -35,14 +35,14 @@ const EmilyDsGreatestHits = (props: Props) => {
   return (
     <div className="bg-gradient-to-b from-rose-500 via-teal-300 to-pink-300">
       <Navbar theme={!elegy ? "sylph" : "elegy"} />
-      <Header theme={!elegy ? "sylph" : "elegy"}/>
+      <Header theme={!elegy ? "sylph" : "elegy"} />
       {loading ? (
         <div className="w-full flex justify-center items-center ">
           <LoadingImage image="/inkwell.png" />
         </div>
       ) : (
         <section className="w-full flex flex-col items-center py-12 px-24">
-          <MusicPlayer theme={!elegy ? "sylph" : "elegy"}/>
+          <MusicPlayer theme={!elegy ? "sylph" : "elegy"} />
           <div className="w-full grid grid-cols-2 items-center pt-16 pb-24 gap-24">
             {titles.slice(34, 44).map((title: Props, index: number) => {
               return (

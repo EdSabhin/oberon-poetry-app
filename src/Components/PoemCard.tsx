@@ -15,23 +15,42 @@ type Props = {
   theme: string
 }
 
-const PoemCard = ({ title, author, poem, index, setFullPoemView, theme }: Props) => {
+const PoemCard = ({
+  title,
+  author,
+  poem,
+  index,
+  setFullPoemView,
+  theme,
+}: Props) => {
   const shortPoem = poem.slice(0, 5)
   const shortTitle = title.slice(0, title.indexOf(":"))
 
-  let poemCard;
-  let poemButton;
-  let titleClass;
-  let authorClass;
-  let verses: string;
+  let poemCard
+  let poemButton
+  let titleClass
+  let authorClass
+  let verses: string
 
   switch (theme) {
     case "playwright":
-      ({ class: poemCard, poemButton, titleClass, authorClass, verses } = mainProps.shakespeare.playwright.poemCard)
-      break;
+      ;({
+        class: poemCard,
+        poemButton,
+        titleClass,
+        authorClass,
+        verses,
+      } = mainProps.shakespeare.playwright.poemCard)
+      break
     case "bloodNight":
-      ({ class: poemCard, poemButton, titleClass, authorClass, verses } = mainProps.shakespeare.bloodNight.poemCard)
-      break;
+      ;({
+        class: poemCard,
+        poemButton,
+        titleClass,
+        authorClass,
+        verses,
+      } = mainProps.shakespeare.bloodNight.poemCard)
+      break
   }
 
   return (
@@ -50,9 +69,7 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView, theme }: Props)
       />
       <div className="w-full flex justify-between mb-8 slide-in-left">
         <div>
-          <h1 className={titleClass}>
-            {shortTitle}
-          </h1>
+          <h1 className={titleClass}>{shortTitle}</h1>
           <h2 className={authorClass}>{author}</h2>
         </div>
         <Image
@@ -65,20 +82,19 @@ const PoemCard = ({ title, author, poem, index, setFullPoemView, theme }: Props)
       </div>
       {shortPoem.map((poemVerse, index) => {
         return (
-          <p
-            key={index}
-            className={verses}
-          >
+          <p key={index} className={verses}>
             {poemVerse}
           </p>
         )
       })}
       <div className="w-full flex items-end my-8 gap-4 ">
         <p className="text-2xl ">..................</p>
-        {theme === "playwright" && 
-        <GiQuill className="w-12 h-12 mb-2 text-orange-100 group-hover:text-orange-200"/>}
-        {theme === "bloodNight" && 
-        <GiHeartStake className="w-12 h-12 mb-2 text-stone-800 group-hover:text-rose-950" />}
+        {theme === "playwright" && (
+          <GiQuill className="w-12 h-12 mb-2 text-orange-100 group-hover:text-orange-200" />
+        )}
+        {theme === "bloodNight" && (
+          <GiHeartStake className="w-12 h-12 mb-2 text-stone-800 group-hover:text-rose-950" />
+        )}
       </div>
     </div>
   )

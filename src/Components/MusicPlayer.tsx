@@ -18,7 +18,6 @@ type Props = {
 }
 
 const MusicPlayer = ({ theme }: Props) => {
-
   /* Audio Player */
   const [isPlaying, setIsPlaying] = useState<boolean>(true)
   const [isMuted, setIsMuted] = useState<boolean>(true)
@@ -76,52 +75,42 @@ const MusicPlayer = ({ theme }: Props) => {
   }
 
   /* Theme */
-  let musicPlayer;
-  let buttonClass;
+  let musicPlayer
+  let buttonClass
 
-  switch ( theme ) {
-    case 'playwright':
-      ({class: musicPlayer, buttonClass} = mainProps.shakespeare.playwright.musicPlayer)
-      break;
-    case 'bloodNight':
-      ({class: musicPlayer, buttonClass} = mainProps.shakespeare.bloodNight.musicPlayer)
-      break;
-    case 'sylph':
-      ({class: musicPlayer, buttonClass} = mainProps.dickinson.sylph.musicPlayer)
-      break;
-    case 'elegy':
-      ({class: musicPlayer, buttonClass} = mainProps.dickinson.elegy.musicPlayer)
-      break;
+  switch (theme) {
+    case "playwright":
+      ;({ class: musicPlayer, buttonClass } =
+        mainProps.shakespeare.playwright.musicPlayer)
+      break
+    case "bloodNight":
+      ;({ class: musicPlayer, buttonClass } =
+        mainProps.shakespeare.bloodNight.musicPlayer)
+      break
+    case "sylph":
+      ;({ class: musicPlayer, buttonClass } =
+        mainProps.dickinson.sylph.musicPlayer)
+      break
+    case "elegy":
+      ;({ class: musicPlayer, buttonClass } =
+        mainProps.dickinson.elegy.musicPlayer)
+      break
   }
 
   return (
     <div className="flex flex-col items-center justify-center">
       <audio ref={audioRef} src={songData[currentSongIndex].src} autoPlay />
-      <div
-        className={musicPlayer}
-      >
-        <button
-          onClick={handleMute}
-          className={buttonClass}
-        >
+      <div className={musicPlayer}>
+        <button onClick={handleMute} className={buttonClass}>
           {isMuted ? <RxSpeakerLoud /> : <RxSpeakerOff />}
         </button>
-        <button
-          onClick={handlePreviousSong}
-          className={buttonClass}
-        >
+        <button onClick={handlePreviousSong} className={buttonClass}>
           <TbPlayerTrackPrev />
         </button>
-        <button
-          onClick={handlePlayPause}
-          className={buttonClass}
-        >
+        <button onClick={handlePlayPause} className={buttonClass}>
           {isPlaying ? <TbPlayerPause /> : <TbPlayerPlay />}
         </button>
-        <button
-          onClick={handleNextSong}
-          className={buttonClass}
-        >
+        <button onClick={handleNextSong} className={buttonClass}>
           <TbPlayerTrackNext />
         </button>
       </div>

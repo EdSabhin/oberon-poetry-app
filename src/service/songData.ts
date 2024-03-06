@@ -1,14 +1,20 @@
 export const songData = [
   {
     id: 1,
-    title: "Flow My Tears (Lachrimae)",
+    title: "The Frog Galliard",
     artist: "John Dowland",
-    src: "/songs/Song1.mp3",
+    src: "/songs/the-frog-galliard.mp3",
   },
   {
     id: 2,
+    title: "Flow My Tears (Lachrimae)",
+    artist: "John Dowland",
+    src: "/songs/flow-my-tears.mp3",
+  },
+  {
+    id: 3,
     title: "Can She Excuse My Wrongs",
     artist: "John Dowland",
-    src: "/songs/Song2.mp3",
+    src: "/songs/can-she-excuse-my-wrongs.mp3",
   },
 ]

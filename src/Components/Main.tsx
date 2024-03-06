@@ -24,38 +24,32 @@ const Main = ({
   loading,
   bloodNight,
   setBloodNight,
-  theme
+  theme,
 }: Props) => {
-  let mainClass;
-  let title;
-  let titleClass;
+  let mainClass
+  let title
+  let titleClass
 
-  switch ( theme ) {
-    case 'playwright':
-      ({mainClass, title, titleClass} = mainProps.shakespeare.playwright)
-      break;
-    case 'bloodNight':
-      ({mainClass, title, titleClass} = mainProps.shakespeare.bloodNight)
-      break;
-    case 'sylph':
-      ({mainClass, title, titleClass} = mainProps.dickinson.sylph)
-      break;
-    case 'elegy':
-      ({mainClass, title, titleClass} = mainProps.dickinson.elegy)
-      break;
+  switch (theme) {
+    case "playwright":
+      ;({ mainClass, title, titleClass } = mainProps.shakespeare.playwright)
+      break
+    case "bloodNight":
+      ;({ mainClass, title, titleClass } = mainProps.shakespeare.bloodNight)
+      break
+    case "sylph":
+      ;({ mainClass, title, titleClass } = mainProps.dickinson.sylph)
+      break
+    case "elegy":
+      ;({ mainClass, title, titleClass } = mainProps.dickinson.elegy)
+      break
   }
   return (
-    <main
-      className={mainClass}
-    >
+    <main className={mainClass}>
       <div className="w-full flex justify-between mt-8 mb-12">
-        <h2
-          className={titleClass}
-        >
-          {title}
-        </h2>
+        <h2 className={titleClass}>{title}</h2>
         <div className="flex flex-col items-center mt-4 gap-10">
-          {/* <MusicPlayer theme= {!bloodNight ? "playwright" : "bloodNight"} /> */}
+          <MusicPlayer theme= {!bloodNight ? "playwright" : "bloodNight"} />
           <ThemeButton
             text={bloodNight ? "Playwright" : "Blood Night"}
             onClick={() => {
@@ -69,13 +63,19 @@ const Main = ({
 
       {loading ? (
         <div className="w-full flex justify-center items-center ">
-          <LoadingImage image={theme === "playwright" ? "/images/quill-icon-gray.png" : "/images/quill-icon-black.png"} />
+          <LoadingImage
+            image={
+              theme === "playwright"
+                ? "/images/quill-icon-gray.png"
+                : "/images/quill-icon-black.png"
+            }
+          />
         </div>
       ) : (
         <CardsSection
-            poemsArray={poemsArray}
-            setFullPoemView={setFullPoemView}
-            theme={!bloodNight ? "playwright" : "bloodNight"}
+          poemsArray={poemsArray}
+          setFullPoemView={setFullPoemView}
+          theme={!bloodNight ? "playwright" : "bloodNight"}
         />
       )}
     </main>

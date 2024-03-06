@@ -17,7 +17,7 @@ const headerProps = {
         "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-b from-gray-700 to-stone-800 text-stone-200",
       authorClass:
         "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-amber-200 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900",
-      icon: "/images/white-cat-gold-moon.svg",
+      icon: "/images/gold-moon-cat.svg",
     },
     bloodNight: {
       title: "Lord Shakespeare",
