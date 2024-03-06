@@ -27,8 +27,8 @@ const MusicPlayer = ({ theme }: Props) => {
   const attemptPlay = () => {
     audioRef &&
       audioRef.current &&
-      audioRef.current.play().catch((error: any) => {
-        console.error("Error attempting to play", error)
+      audioRef.current.play().catch((error:any) => {
+        console.error("Error attempting to play music.", error)
       })
   }
 

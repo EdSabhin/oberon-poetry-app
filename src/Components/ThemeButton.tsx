@@ -15,6 +15,7 @@ type Props = {
 }
 
 const Button = ({ text, onClick, theme }: Props) => {
+  /* Theme */
   let themeButton
 
   switch (theme) {

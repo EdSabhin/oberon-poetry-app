@@ -13,6 +13,8 @@ type Props = {
 }
 
 const Footer = ({ text, showModalImage, setShowModalImage, theme }: Props) => {
+  /*Theme*/
+
   return (
     <footer
       className="w-full flex items-start relative pt-8 pb-20 px-48

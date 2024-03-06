@@ -26,6 +26,7 @@ const Main = ({
   setBloodNight,
   theme,
 }: Props) => {
+  /* Theme */
   let mainClass
   let title
   let titleClass

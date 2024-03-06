@@ -13,7 +13,8 @@ type Props = {
 
 const FullPoem = ({ poemsArray, setFullPoemView, theme }: Props) => {
   const shortTitle = poemsArray.title.slice(0, poemsArray.title.indexOf(":"))
-
+  
+  /* Theme */
   let poemCard
   let poemButton
   let titleClass

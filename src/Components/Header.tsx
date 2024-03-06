@@ -12,6 +12,7 @@ type Props = {
 }
 
 const Header = ({ theme }: Props) => {
+  /*Theme*/
   let title
   let description
   let headerClass

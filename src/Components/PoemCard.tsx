@@ -26,6 +26,7 @@ const PoemCard = ({
   const shortPoem = poem.slice(0, 5)
   const shortTitle = title.slice(0, title.indexOf(":"))
 
+  /* Theme */
   let poemCard
   let poemButton
   let titleClass

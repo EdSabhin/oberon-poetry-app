@@ -9,6 +9,7 @@ type Props = {
 }
 
 const Navbar = ({ theme }: Props) => {
+  /* Theme */
   let navClass
   let linkClass
 
