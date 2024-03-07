@@ -50,7 +50,7 @@ const Main = ({
       <div className="w-full flex justify-between mt-8 mb-12">
         <h2 className={titleClass}>{title}</h2>
         <div className="flex flex-col items-center mt-4 gap-10">
-          <MusicPlayer theme= {!bloodNight ? "playwright" : "bloodNight"} />
+          <MusicPlayer theme={!bloodNight ? "playwright" : "bloodNight"} />
           <ThemeButton
             text={bloodNight ? "Playwright" : "Blood Night"}
             onClick={() => {
