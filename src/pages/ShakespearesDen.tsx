@@ -51,12 +51,7 @@ const ShakespearesDen = () => {
           theme={!bloodNight ? "playwright" : "bloodNight"}
         />
       )}
-      <Footer
-        text={
-          "Here lies Gulielmus filius Johannes Shakspere.\n William, son of John."
-        }
-        theme={!bloodNight ? "playwright" : "bloodNight"}
-      />
+      <Footer theme={!bloodNight ? "playwright" : "bloodNight"} />
     </div>
   )
 }
