@@ -10,7 +10,7 @@ import Footer from "../components/Footer"
 import LoadingImage from "@/components/LoadingImage"
 import MusicPlayer from "@/components/MusicPlayer"
 import { songData } from "@/service/songData"
-import Book from "@/components/icons/Book"
+import { GiSecretBook } from "react-icons/gi"
 
 type Props = {
   title: string
@@ -23,17 +23,15 @@ const EmilyDsGreatestHits = (props: Props) => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetchData("https://poetrydb.org/author/Emily%20Dickinson/title").then(
-        (data) => {
-          setTitles(data)
-          setLoading(false)
-        },
-      )
+      fetchData("https://poetrydb.org/author/Dickinson").then((data) => {
+        setTitles(data)
+        setLoading(false)
+      })
     }, 3300)
   }, [])
 
   return (
-    <div className="bg-gradient-to-b from-rose-500 via-teal-300 to-pink-300">
+    <div className={!elegy ? "bg-white" : "bg-teal-950"}>
       <Navbar theme={!elegy ? "sylph" : "elegy"} />
       <Header theme={!elegy ? "sylph" : "elegy"} />
       {loading ? (
@@ -52,8 +50,8 @@ const EmilyDsGreatestHits = (props: Props) => {
                       {title.title}
                     </h3>
                   </div>
-                  <div className="w-32 h-16 flex mt-8 justify-center items-center border-b rounded-full shadow-md shadow-rose-200 cursor-pointer">
-                    <Book />
+                  <div className="w-32 h-20 flex mt-8 justify-center items-center border-b rounded-full shadow-md shadow-rose-200 cursor-pointer text-gradient">
+                    <GiSecretBook className="w-full h-[55%] text-zinc-700" />
                   </div>
                 </div>
               )
@@ -61,14 +59,11 @@ const EmilyDsGreatestHits = (props: Props) => {
           </div>
         </section>
       )}
-      <Footer
-        text={"Emily's Footer Extravaganza"}
-        image={
-          "https://www.favoritepoem.org/files/2022/10/slate_emily-dickinson-1800x624.png"
-        }
-      />
+      <Footer />
     </div>
   )
 }
 
 export default EmilyDsGreatestHits
+
+/*<a href="https://www.flaticon.com/free-icons/feather" title="feather icons">Feather icons created by Freepik - Flaticon</a>*/

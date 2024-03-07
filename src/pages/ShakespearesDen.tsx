@@ -14,9 +14,9 @@ export interface Poem {
 
 const ShakespearesDen = () => {
   const [poems, setPoems] = useState<any>([])
-  const [bloodNight, setBloodNight] = useState<boolean>(false)
   const [loading, setLoading] = useState<boolean>(true)
   const [fullPoemView, setFullPoemView] = useState<number | null>(null)
+  const [bloodNight, setBloodNight] = useState<boolean>(false)
 
   useEffect(() => {
     setTimeout(() => {
@@ -29,7 +29,7 @@ const ShakespearesDen = () => {
     }, 3300)
   }, [])
 
-  const poemsArray = poems.slice(0, 6)
+  const poemsArray = poems.slice(0, 7)
 
   return (
     <div className={!bloodNight ? "bg-stone-900" : "bg-rose-950"}>
@@ -51,7 +51,11 @@ const ShakespearesDen = () => {
           theme={!bloodNight ? "playwright" : "bloodNight"}
         />
       )}
-      <Footer bloodNight={bloodNight} setBloodNight={setBloodNight} theme={!bloodNight ? "playwright" : "bloodNight"} />
+      <Footer
+        bloodNight={bloodNight}
+        setBloodNight={setBloodNight}
+        theme={!bloodNight ? "playwright" : "bloodNight"}
+      />
     </div>
   )
 }

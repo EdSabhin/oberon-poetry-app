@@ -4,10 +4,10 @@ import mainProps from "@/component-props/mainProps"
 
 import { scrollToTop } from "@/service/scrollToTop"
 
-import CardsSection from "./CardsSection"
-import ThemeButton from "./ThemeButton"
 import LoadingImage from "./LoadingImage"
 import MusicPlayer from "./MusicPlayer"
+import ThemeButton from "./ThemeButton"
+import CardsSection from "./CardsSection"
 
 type Props = {
   poemsArray: []
@@ -66,7 +66,7 @@ const Main = ({
         <div className="w-full flex justify-center items-center ">
           <LoadingImage
             image={
-              theme === "playwright"
+              !bloodNight
                 ? "/images/quill-icon-gray.png"
                 : "/images/quill-icon-black.png"
             }

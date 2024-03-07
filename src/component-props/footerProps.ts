@@ -9,13 +9,13 @@ const footerProps = {
         "leading-[4rem] text-4xl text-transparent bg-clip-text bg-gradient-to-r from-orange-200 via-orange-300 from-[10%] to-amber-200",
       quote: "text-2xl text-slate-300 tracking-wider leading-[3rem]",
       quoteVerse: "text-rose-animation cursor-pointer",
-      quoteWork: "mt-6 ml-40 text-rose-900",
+      quoteWork: "mt-6 ml-40 text-indigo-300",
       attributions:
         "mb-2 pr-2 text-xl text-orange-200 underline underline-offset-4 decoration-1 decoration-orange-300",
-      owner: "mb-5 text-xl text-indigo-300 hover:text-orange-300",
+      owner: "mb-5 text-xl text-indigo-200 hover:text-amber-100",
       category: "w-max px-3 text-amber-100 border-x border-orange-400",
       links: `text-indigo-200
-             hover:text-orange-200 rounded italic transition ease-in-out text-lg`,
+             hover:text-orange-100 rounded italic transition ease-in-out text-lg`,
     },
     bloodNight: {
       footerClass: `w-full relative pt-10 pb-24 px-48
@@ -24,7 +24,7 @@ const footerProps = {
         "flex pl-10 gap-32 border-x border-rose-200 border-opacity-10",
       titleClass:
         "leading-[4rem] text-4xl text-transparent bg-clip-text bg-gradient-to-r from-stone-500 via-rose-800 to-[85%] to-stone-500",
-      quote: "text-2xl text-rose-200 tracking-wider leading-[3rem]",
+      quote: "text-2xl text-rose-100 tracking-wider leading-[3rem]",
       quoteVerse: "text-rose-animation cursor-pointer",
       quoteWork: "mt-6 ml-40 text-stone-400",
       attributions:

@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.text-gradient {
+  background: linear-gradient(to right, #dc5fff, #fe7bdb, #c996ff);
+  background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .text-color-animation {
   animation: textColorChange 3s infinite alternate;
 }

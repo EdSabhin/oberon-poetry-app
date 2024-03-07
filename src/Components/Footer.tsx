@@ -117,7 +117,7 @@ const Footer = ({ bloodNight, setBloodNight, theme }: Props) => {
           setBloodNight={setBloodNight}
           titleOne={"Here lies Gulielmus filius Johannes Shakspere."}
           titleTwo="William, son of John."
-          theme={theme}       
+          theme={theme}
         />
       </div>
     </footer>

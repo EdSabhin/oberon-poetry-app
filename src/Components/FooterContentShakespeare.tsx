@@ -9,12 +9,18 @@ type Props = {
   setBloodNight: (value: boolean) => void
   titleOne: string
   titleTwo: string
-  theme: string 
+  theme: string
 }
 
 const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 
-const FooterContentShakespeare = ({bloodNight, setBloodNight, titleOne, titleTwo, theme }: Props) => {
+const FooterContentShakespeare = ({
+  bloodNight,
+  setBloodNight,
+  titleOne,
+  titleTwo,
+  theme,
+}: Props) => {
   let titleClass
   let quote
   let quoteVerse
@@ -54,10 +60,13 @@ const FooterContentShakespeare = ({bloodNight, setBloodNight, titleOne, titleTwo
           Thy hand out of plackets, <br />
           Thy pen from lenders&apos; books,
           <br />
-          <span onClick={() => {
+          <span
+            onClick={() => {
               setBloodNight(!bloodNight)
               scrollToTop()
-            }} className={`${quoteVerse}`}>
+            }}
+            className={`${quoteVerse}`}
+          >
             And defy the foul fiend.&quot;
           </span>
         </p>
