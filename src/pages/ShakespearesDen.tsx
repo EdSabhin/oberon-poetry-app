@@ -51,7 +51,7 @@ const ShakespearesDen = () => {
           theme={!bloodNight ? "playwright" : "bloodNight"}
         />
       )}
-      <Footer theme={!bloodNight ? "playwright" : "bloodNight"} />
+      <Footer bloodNight={bloodNight} setBloodNight={setBloodNight} theme={!bloodNight ? "playwright" : "bloodNight"} />
     </div>
   )
 }

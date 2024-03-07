@@ -8,11 +8,11 @@ const footerProps = {
       titleClass:
         "leading-[4rem] text-4xl text-transparent bg-clip-text bg-gradient-to-r from-orange-200 via-orange-300 from-[10%] to-amber-200",
       quote: "text-2xl text-slate-300 tracking-wider leading-[3rem]",
-      quoteVerse: "text-rose-animation text-rose-300",
+      quoteVerse: "text-rose-animation cursor-pointer",
       quoteWork: "mt-6 ml-40 text-rose-900",
       attributions:
         "mb-2 pr-2 text-xl text-orange-200 underline underline-offset-4 decoration-1 decoration-orange-300",
-      owner: "mb-5 text-xl text-indigo-300 hover:text-rose-400",
+      owner: "mb-5 text-xl text-indigo-300 hover:text-orange-300",
       category: "w-max px-3 text-amber-100 border-x border-orange-400",
       links: `text-indigo-200
              hover:text-orange-200 rounded italic transition ease-in-out text-lg`,
@@ -23,16 +23,16 @@ const footerProps = {
       footerContainer:
         "flex pl-10 gap-32 border-x border-rose-200 border-opacity-10",
       titleClass:
-        "leading-[4rem] text-4xl text-transparent bg-clip-text bg-gradient-to-r from-orange-200 via-orange-300 from-[10%] to-amber-200",
-      quote: "text-2xl text-slate-300 tracking-wider leading-[3rem]",
-      quoteVerse: "text-rose-animation text-rose-300",
-      quoteWork: "mt-6 ml-40 text-rose-900",
+        "leading-[4rem] text-4xl text-transparent bg-clip-text bg-gradient-to-r from-stone-500 via-rose-800 to-[85%] to-stone-500",
+      quote: "text-2xl text-rose-200 tracking-wider leading-[3rem]",
+      quoteVerse: "text-rose-animation cursor-pointer",
+      quoteWork: "mt-6 ml-40 text-stone-400",
       attributions:
-        "mb-2 pr-2 text-xl text-orange-200 underline underline-offset-4 decoration-1 decoration-orange-300",
-      owner: "mb-5 text-xl text-indigo-300 hover:text-rose-400",
-      category: "w-max px-3 text-amber-100 border-x border-orange-400",
-      links: `text-indigo-200
-             hover:text-orange-200 rounded italic transition ease-in-out text-lg`,
+        "mb-2 pr-2 text-xl text-stone-400 underline underline-offset-4 decoration-1 decoration-stone-500",
+      owner: "mb-5 text-xl text-stone-400 hover:text-rose-300",
+      category: "w-max px-3 text-rose-300 border-x border-rose-400",
+      links: `text-stone-400
+             hover:text-rose-200 rounded italic transition ease-in-out text-lg`,
     },
   },
   dickinson: {
@@ -44,7 +44,7 @@ const footerProps = {
       titleClass:
         "leading-[4rem] text-4xl text-transparent bg-clip-text bg-gradient-to-r from-orange-200 via-orange-300 from-[10%] to-amber-200",
       quote: "text-2xl text-slate-300 tracking-wider leading-[3rem]",
-      quoteVerse: "text-rose-animation text-rose-300",
+      quoteVerse: "text-rose-animation cursor-pointer",
       quoteWork: "mt-6 ml-40 text-rose-900",
       attributions:
         "mb-2 pr-2 text-xl text-orange-200 underline underline-offset-4 decoration-1 decoration-orange-300",
@@ -61,7 +61,7 @@ const footerProps = {
       titleClass:
         "leading-[4rem] text-4xl text-transparent bg-clip-text bg-gradient-to-r from-orange-200 via-orange-300 from-[10%] to-amber-200",
       quote: "text-2xl text-slate-300 tracking-wider leading-[3rem]",
-      quoteVerse: "text-rose-animation text-rose-300",
+      quoteVerse: "text-rose-animation cursor-pointer",
       quoteWork: "mt-6 ml-40 text-rose-900",
       attributions:
         "mb-2 pr-2 text-xl text-orange-200 underline underline-offset-4 decoration-1 decoration-orange-300",

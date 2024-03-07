@@ -8,10 +8,12 @@ import { GiCoffin, GiHastyGrave } from "react-icons/gi"
 const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 
 type Props = {
+  bloodNight: boolean
+  setBloodNight: (value: boolean) => void
   theme: string
 }
 
-const Footer = ({ theme }: Props) => {
+const Footer = ({ bloodNight, setBloodNight, theme }: Props) => {
   /*Theme*/
   let footerClass
   let footerContainer
@@ -111,9 +113,11 @@ const Footer = ({ theme }: Props) => {
           )}
         </div>
         <FooterContentShakespeare
+          bloodNight={bloodNight}
+          setBloodNight={setBloodNight}
           titleOne={"Here lies Gulielmus filius Johannes Shakspere."}
           titleTwo="William, son of John."
-          theme={theme}
+          theme={theme}       
         />
       </div>
     </footer>
