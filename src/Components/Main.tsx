@@ -10,22 +10,29 @@ import ThemeButton from "./ThemeButton"
 import CardsSection from "./CardsSection"
 
 type Props = {
+  id: number;
   poemsArray: []
   setFullPoemView: (value: number) => void
   loading: boolean
-  bloodNight: boolean
-  setBloodNight: (value: boolean) => void
+  bloodNight?: boolean
+  setBloodNight?: (value: boolean) => void
+  elegy?: boolean
+  setElegy?: (value: boolean) => void
   theme: string
 }
 
 const Main = ({
+  id,
   poemsArray,
   setFullPoemView,
   loading,
   bloodNight,
   setBloodNight,
+  elegy,
+  setElegy,
   theme,
 }: Props) => {
+  
   /* Theme */
   let mainClass
   let title
@@ -45,16 +52,47 @@ const Main = ({
       ;({ mainClass, title, titleClass } = mainProps.dickinson.elegy)
       break
   }
+
+  // Theme Button Text 
+  let themeButtonTextShakespeare;
+  let themeButtonTextDickinson;
+
+  if (bloodNight) {
+    themeButtonTextShakespeare = "Playwright"
+  } else {
+    themeButtonTextShakespeare = "Blood Night"
+  }
+
+  if (elegy) {
+    themeButtonTextDickinson = "Sylph"
+  } else {
+    themeButtonTextDickinson = "Elegy"
+  }
+  
   return (
     <main className={mainClass}>
       <div className="w-full flex justify-between mt-8 mb-12">
         <h2 className={titleClass}>{title}</h2>
         <div className="flex flex-col items-center mt-4 gap-10">
-          <MusicPlayer theme={!bloodNight ? "playwright" : "bloodNight"} />
+          {/* <MusicPlayer
+            theme={
+              !bloodNight
+                ? "playwright"
+                : bloodNight
+                  ? "bloodNight"
+                  : !elegy
+                    ? "sylph"
+                    : "elegy"
+            }
+          /> */}
           <ThemeButton
-            text={bloodNight ? "Playwright" : "Blood Night"}
+            text={id === 1 ? themeButtonTextShakespeare : themeButtonTextDickinson}
             onClick={() => {
-              setBloodNight(!bloodNight)
+              if (setBloodNight) {
+                setBloodNight(!bloodNight)
+              } else if (setElegy) {
+                setElegy(!elegy)
+              }
               scrollToTop()
             }}
             theme={!bloodNight ? "playwright" : "bloodNight"}

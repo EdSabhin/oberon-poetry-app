@@ -13,7 +13,7 @@ export interface Poem {
 }
 
 const ShakespearesDen = () => {
-  const [poems, setPoems] = useState<any>([])
+  const [poems, setPoems] = useState<[]>([])
   const [loading, setLoading] = useState<boolean>(true)
   const [fullPoemView, setFullPoemView] = useState<number | null>(null)
   const [bloodNight, setBloodNight] = useState<boolean>(false)
@@ -37,6 +37,7 @@ const ShakespearesDen = () => {
       <Header theme={!bloodNight ? "playwright" : "bloodNight"} />
       {fullPoemView === null ? (
         <Main
+          id={1}
           loading={loading}
           poemsArray={poemsArray}
           bloodNight={bloodNight}

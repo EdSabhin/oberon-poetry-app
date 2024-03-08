@@ -5,8 +5,10 @@ import { Old_Standard_TT } from "next/font/google"
 import { scrollToTop } from "@/service/scrollToTop"
 
 type Props = {
-  bloodNight: boolean
-  setBloodNight: (value: boolean) => void
+  bloodNight?: boolean
+  setBloodNight?: (value: boolean) => void
+  elegy?: boolean
+  setElegy?: (value: boolean) => void
   titleOne: string
   titleTwo: string
   theme: string
@@ -17,6 +19,8 @@ const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 const FooterContentShakespeare = ({
   bloodNight,
   setBloodNight,
+  elegy,
+  setElegy,
   titleOne,
   titleTwo,
   theme,
@@ -62,7 +66,11 @@ const FooterContentShakespeare = ({
           <br />
           <span
             onClick={() => {
-              setBloodNight(!bloodNight)
+              setBloodNight
+                ? setBloodNight(!bloodNight)
+                : setElegy
+                  ? setElegy
+                  : !elegy
               scrollToTop()
             }}
             className={`${quoteVerse}`}

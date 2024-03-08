@@ -2,14 +2,16 @@ import footerProps from "@/component-props/footerProps"
 
 import { Old_Standard_TT } from "next/font/google"
 
-import FooterContentShakespeare from "./FooterContentShakespeare"
+import FooterContentShakespeare from "./FooterContent"
 import { GiCoffin, GiHastyGrave } from "react-icons/gi"
 
 const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 
 type Props = {
-  bloodNight: boolean
-  setBloodNight: (value: boolean) => void
+  bloodNight?: boolean
+  setBloodNight?: (value: boolean) => void
+  elegy?: boolean
+  setElegy?: (value: boolean) => void
   theme: string
 }
 
