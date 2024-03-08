@@ -10,26 +10,20 @@ import ThemeButton from "./ThemeButton"
 import CardsSection from "./CardsSection"
 
 type Props = {
-  id: number
   poemsArray: []
   setFullPoemView: (value: number) => void
   loading: boolean
   bloodNight?: boolean
   setBloodNight?: (value: boolean) => void
-  elegy?: boolean
-  setElegy?: (value: boolean) => void
   theme: string
 }
 
-const Main = ({
-  id,
+const MainShakespeare = ({
   poemsArray,
   setFullPoemView,
   loading,
   bloodNight,
   setBloodNight,
-  elegy,
-  setElegy,
   theme,
 }: Props) => {
   /* Theme */
@@ -44,28 +38,6 @@ const Main = ({
     case "bloodNight":
       ;({ mainClass, title, titleClass } = mainProps.shakespeare.bloodNight)
       break
-    case "sylph":
-      ;({ mainClass, title, titleClass } = mainProps.dickinson.sylph)
-      break
-    case "elegy":
-      ;({ mainClass, title, titleClass } = mainProps.dickinson.elegy)
-      break
-  }
-
-  // Theme Button Text
-  let themeButtonTextShakespeare
-  let themeButtonTextDickinson
-
-  if (bloodNight) {
-    themeButtonTextShakespeare = "Playwright"
-  } else {
-    themeButtonTextShakespeare = "Blood Night"
-  }
-
-  if (elegy) {
-    themeButtonTextDickinson = "Sylph"
-  } else {
-    themeButtonTextDickinson = "Elegy"
   }
 
   return (
@@ -73,27 +45,11 @@ const Main = ({
       <div className="w-full flex justify-between mt-8 mb-12">
         <h2 className={titleClass}>{title}</h2>
         <div className="flex flex-col items-center mt-4 gap-10">
-          {/* <MusicPlayer
-            theme={
-              !bloodNight
-                ? "playwright"
-                : bloodNight
-                  ? "bloodNight"
-                  : !elegy
-                    ? "sylph"
-                    : "elegy"
-            }
-          /> */}
+          <MusicPlayer theme={!bloodNight ? "playwright" : "bloodNight"} />
           <ThemeButton
-            text={
-              id === 1 ? themeButtonTextShakespeare : themeButtonTextDickinson
-            }
+            text={theme === "playwright" ? "Playwright" : "Blood Night"}
             onClick={() => {
-              if (setBloodNight) {
-                setBloodNight(!bloodNight)
-              } else if (setElegy) {
-                setElegy(!elegy)
-              }
+              setBloodNight && setBloodNight(!bloodNight)
               scrollToTop()
             }}
             theme={theme}
@@ -115,11 +71,11 @@ const Main = ({
         <CardsSection
           poemsArray={poemsArray}
           setFullPoemView={setFullPoemView}
-          theme={!bloodNight ? "playwright" : "bloodNight"}
+          theme={theme}
         />
       )}
     </main>
   )
 }
 
-export default Main
+export default MainShakespeare

@@ -10,7 +10,6 @@ import ThemeButton from "./ThemeButton"
 import CardsSection from "./CardsSection"
 
 type Props = {
-  id: number
   poemsArray: []
   setFullPoemView: (value: number) => void
   loading: boolean
@@ -21,13 +20,10 @@ type Props = {
   theme: string
 }
 
-const Main = ({
-  id,
+const MainDickinson = ({
   poemsArray,
   setFullPoemView,
   loading,
-  bloodNight,
-  setBloodNight,
   elegy,
   setElegy,
   theme,
@@ -38,12 +34,6 @@ const Main = ({
   let titleClass
 
   switch (theme) {
-    case "playwright":
-      ;({ mainClass, title, titleClass } = mainProps.shakespeare.playwright)
-      break
-    case "bloodNight":
-      ;({ mainClass, title, titleClass } = mainProps.shakespeare.bloodNight)
-      break
     case "sylph":
       ;({ mainClass, title, titleClass } = mainProps.dickinson.sylph)
       break
@@ -52,48 +42,16 @@ const Main = ({
       break
   }
 
-  // Theme Button Text
-  let themeButtonTextShakespeare
-  let themeButtonTextDickinson
-
-  if (bloodNight) {
-    themeButtonTextShakespeare = "Playwright"
-  } else {
-    themeButtonTextShakespeare = "Blood Night"
-  }
-
-  if (elegy) {
-    themeButtonTextDickinson = "Sylph"
-  } else {
-    themeButtonTextDickinson = "Elegy"
-  }
-
   return (
     <main className={mainClass}>
       <div className="w-full flex justify-between mt-8 mb-12">
         <h2 className={titleClass}>{title}</h2>
         <div className="flex flex-col items-center mt-4 gap-10">
-          {/* <MusicPlayer
-            theme={
-              !bloodNight
-                ? "playwright"
-                : bloodNight
-                  ? "bloodNight"
-                  : !elegy
-                    ? "sylph"
-                    : "elegy"
-            }
-          /> */}
+          <MusicPlayer theme={!elegy ? "sylph" : "elegy"} />
           <ThemeButton
-            text={
-              id === 1 ? themeButtonTextShakespeare : themeButtonTextDickinson
-            }
+            text={theme === "sylph" ? "Sylph" : "Elegy"}
             onClick={() => {
-              if (setBloodNight) {
-                setBloodNight(!bloodNight)
-              } else if (setElegy) {
-                setElegy(!elegy)
-              }
+              setElegy && setElegy(!elegy)
               scrollToTop()
             }}
             theme={theme}
@@ -105,7 +63,7 @@ const Main = ({
         <div className="w-full flex justify-center items-center ">
           <LoadingImage
             image={
-              !bloodNight
+              !elegy
                 ? "/images/quill-icon-gray.png"
                 : "/images/quill-icon-black.png"
             }
@@ -115,11 +73,11 @@ const Main = ({
         <CardsSection
           poemsArray={poemsArray}
           setFullPoemView={setFullPoemView}
-          theme={!bloodNight ? "playwright" : "bloodNight"}
+          theme={theme}
         />
       )}
     </main>
   )
 }
 
-export default Main
+export default MainDickinson

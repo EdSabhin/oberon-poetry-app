@@ -6,6 +6,7 @@ import Header from "../components/Header"
 import Main from "../components/Main"
 import FullPoem from "../components/FullPoem"
 import Footer from "../components/Footer"
+import MainShakespeare from "@/components/MainShakespeare"
 export interface Poem {
   title: string
   author: string
@@ -36,8 +37,7 @@ const ShakespearesDen = () => {
       <Navbar theme={!bloodNight ? "playwright" : "bloodNight"} />
       <Header theme={!bloodNight ? "playwright" : "bloodNight"} />
       {fullPoemView === null ? (
-        <Main
-          id={1}
+        <MainShakespeare
           loading={loading}
           poemsArray={poemsArray}
           bloodNight={bloodNight}
