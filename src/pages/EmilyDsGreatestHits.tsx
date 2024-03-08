@@ -24,7 +24,7 @@ const EmilyDsGreatestHits = () => {
     }, 3300)
   }, [])
 
-  const poemsArray = poems.slice(0, 7)
+  const poemsArray = poems.slice(34,45)
 
   return (
     <div className={!elegy ? "bg-white" : "bg-teal-950"}>
@@ -38,7 +38,7 @@ const EmilyDsGreatestHits = () => {
           elegy={elegy}
           setElegy={setElegy}
           setFullPoemView={setFullPoemView}
-          theme={!setElegy ? "sylph" : "elegy"}
+          theme={!elegy ? "sylph" : "elegy"}
         />
       ) : (
         <FullPoem

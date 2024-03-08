@@ -82,7 +82,7 @@ const mainProps = {
         class: "",
         buttonClass: "",
       },
-      themeButton: "",
+      themeButton: "bg-white border-2 border-red",
     },
     elegy: {
       mainClass: "",
@@ -92,7 +92,7 @@ const mainProps = {
         class: "",
         buttonClass: "",
       },
-      themeButton: "",
+      themeButton: "bg-teal-700",
     },
   },
 }

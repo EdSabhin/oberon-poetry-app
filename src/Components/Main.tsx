@@ -87,6 +87,7 @@ const Main = ({
           /> */}
           <ThemeButton
             text={id === 1 ? themeButtonTextShakespeare : themeButtonTextDickinson}
+            
             onClick={() => {
               if (setBloodNight) {
                 setBloodNight(!bloodNight)
@@ -95,7 +96,7 @@ const Main = ({
               }
               scrollToTop()
             }}
-            theme={!bloodNight ? "playwright" : "bloodNight"}
+            theme={theme} 
           />
         </div>
       </div>
