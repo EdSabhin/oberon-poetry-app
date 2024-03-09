@@ -79,7 +79,7 @@ const mainProps = {
         "w-full flex flex-col items-start pt-8 pb-20 px-32 text-black  overflow-hidden bg-gradient-to-r from-rose-100 via-sky-100 to-indigo-100",
       title: "A Voice for an Age",
       titleClass:
-        "flex items-center py-2 px-16 text-5xl bg-gradient-to-r from-white to-sky-200 rounded-tl rounded-br rounded-full shadow-sm shadow-neutral-900",
+        "flex items-center py-2 px-16 text-5xl bg-gradient-to-r from-white to-sky-200 rounded-tl rounded-br rounded-full shadow-sm shadow-neutral-600",
       musicPlayer: {
         class:
           "w-[15rem] h-[2.5rem] flex justify-end py-3 pl-8 pr-8 gap-5 text-neutral-900 mt-4 bg-gradient-to-l from-white from-30% to-indigo-200 shadow-sm shadow-black rounded-bl-full hover:-translate-x-2 transition duration-500 ease-in-out",
@@ -91,11 +91,11 @@ const mainProps = {
         class:
           "w-[28rem] h-[28rem] relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-rose-100 hover:bg-gradient-to-b from-black via-neutral-900 to-indigo-200 hover:shadow-lg hover:shadow-indigo-300 hover:text-rose-300 transition duration-300 group cursor-pointer",
         iconRight:
-          "w-24 h-24 absolute top-10 right-[-1%] flex justify-center items-center rounded-full group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-indigo-200 group-shadow-md group-shadow-rose-200 cursor-pointer duration-300",
+          "w-24 h-24 absolute top-10 right-[-1%] flex justify-center items-center rounded-full group-hover:opacity-[0.87] group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-indigo-200 group-shadow-md group-shadow-rose-200 cursor-pointer duration-300",
         iconLeft:
-          "w-24 h-24 absolute top-10 left-[-1%] flex justify-center items-center rounded-full group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-indigo-200 group-shadow-md group-shadow-rose-200 cursor-pointer duration-300",
+          "w-24 h-24 absolute top-10 left-[-1%] flex justify-center items-center rounded-full group-hover:opacity-[0.87]  group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-indigo-200 group-shadow-md group-shadow-rose-200 cursor-pointer duration-300",
         iconBottom:
-          "w-24 h-24 absolute bottom-[-11%] flex justify-center items-center rounded-full group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-indigo-200 group-shadow-md group-shadow-rose-200 cursor-pointer duration-300",
+          "w-24 h-24 absolute bottom-[-11%] flex justify-center items-center rounded-full group-hover:opacity-[0.87]  group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-indigo-200 group-shadow-md group-shadow-rose-200 cursor-pointer duration-300",
         titleClass:
           "w-full flex justify-center items-center text-3xl group-hover:underline group-hover:underline-offset-4 decoration-2 decoration-dotted slide-in-fwd-center",
       },

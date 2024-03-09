@@ -64,7 +64,7 @@ const MainDickinson = ({
           <LoadingImage
             image={
               !elegy
-                ? "/images/quill-icon-gray.png"
+                ? "/images/inkwell.png"
                 : "/images/quill-icon-black.png"
             }
           />
