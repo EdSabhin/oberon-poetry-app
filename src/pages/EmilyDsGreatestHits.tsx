@@ -8,6 +8,7 @@ import FullPoem from "@/components/FullPoem"
 import Footer from "../components/Footer"
 
 import { Poem } from "./ShakespearesDen"
+import MainDickinson from "@/components/MainDickinson"
 
 const EmilyDsGreatestHits = () => {
   const [poems, setPoems] = useState<[]>([])
@@ -24,15 +25,14 @@ const EmilyDsGreatestHits = () => {
     }, 3300)
   }, [])
 
-  const poemsArray = poems.slice(34, 45)
+  const poemsArray = poems.slice(34, 42)
 
   return (
     <div className={!elegy ? "bg-white" : "bg-teal-950"}>
       <Navbar theme={!elegy ? "sylph" : "elegy"} />
       <Header theme={!elegy ? "sylph" : "elegy"} />
       {fullPoemView === null ? (
-        <Main
-          id={2}
+        <MainDickinson
           loading={loading}
           poemsArray={poemsArray}
           elegy={elegy}

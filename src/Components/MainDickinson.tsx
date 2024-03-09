@@ -49,7 +49,7 @@ const MainDickinson = ({
         <div className="flex flex-col items-center mt-4 gap-10">
           <MusicPlayer theme={!elegy ? "sylph" : "elegy"} />
           <ThemeButton
-            text={theme === "sylph" ? "Sylph" : "Elegy"}
+            text={theme === "sylph" ? "Elegy" : "Sylph"}
             onClick={() => {
               setElegy && setElegy(!elegy)
               scrollToTop()
@@ -71,6 +71,7 @@ const MainDickinson = ({
         </div>
       ) : (
         <CardsSection
+          id="Dickinson"
           poemsArray={poemsArray}
           setFullPoemView={setFullPoemView}
           theme={theme}

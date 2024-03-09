@@ -15,7 +15,7 @@ type Props = {
   theme: string
 }
 
-const PoemCard = ({
+const PoemCardShakespeare = ({
   title,
   author,
   poem,
@@ -101,4 +101,4 @@ const PoemCard = ({
   )
 }
 
-export default PoemCard
+export default PoemCardShakespeare

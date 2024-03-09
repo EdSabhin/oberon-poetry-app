@@ -69,6 +69,7 @@ const MainShakespeare = ({
         </div>
       ) : (
         <CardsSection
+          id="Shakespeare"
           poemsArray={poemsArray}
           setFullPoemView={setFullPoemView}
           theme={theme}
