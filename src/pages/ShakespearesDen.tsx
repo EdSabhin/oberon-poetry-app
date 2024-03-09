@@ -3,10 +3,10 @@ import { fetchData } from "@/service/fetchData"
 
 import Navbar from "../components/Navbar"
 import Header from "../components/Header"
-import Main from "../components/Main"
+import MainShakespeare from "@/components/MainShakespeare"
 import FullPoem from "../components/FullPoem"
 import Footer from "../components/Footer"
-import MainShakespeare from "@/components/MainShakespeare"
+
 export interface Poem {
   title: string
   author: string
@@ -47,6 +47,7 @@ const ShakespearesDen = () => {
         />
       ) : (
         <FullPoem
+          id="Shakespeare"
           poemsArray={poemsArray[fullPoemView]}
           setFullPoemView={setFullPoemView}
           theme={!bloodNight ? "playwright" : "bloodNight"}

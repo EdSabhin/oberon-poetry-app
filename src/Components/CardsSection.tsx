@@ -14,7 +14,7 @@ type Props = {
 const CardsSection = ({ id, poemsArray, setFullPoemView, theme }: Props) => {
   return (
     <section
-      className={`${id === "Shakespeare" ? "w-full flex flex-col items-start my-8 gap-32" : "w-full grid grid-cols-2 items-center pt-16 pb-24 gap-24"}`}
+      className={`${id === "Shakespeare" ? "w-full flex flex-col items-start my-8 gap-32" : "w-full grid grid-cols-2 items-center py-24 gap-36"}`}
     >
       {poemsArray.map((poem: Poem, index: number) => {
         return id === "Shakespeare" ? (

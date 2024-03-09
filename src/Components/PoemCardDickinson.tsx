@@ -52,17 +52,20 @@ const PoemCardDickinson = ({
   }
 
   return (
-    <div onClick={() => setFullPoemView(index)} className="flex flex-col items-center gap-8">
+    <div
+      onClick={() => setFullPoemView(index)}
+      className="flex flex-col items-center"
+    >
       <div className={poemCard}>
         <h1 className={titleClass}>{poemTitle}</h1>
         <div className={iconRight}>
-          <GiFairyWings className="w-[80%] h-full p-5 text-zinc-700 group-hover:text-indigo-100 slide-in-top" />
+          <GiFairyWings className="w-[80%] h-full p-5 text-neutral-900 group-hover:text-indigo-100 slide-in-top" />
         </div>
         <div className={iconLeft}>
-          <GiFairyWings className="w-[80%] h-full p-5 text-zinc-700 group-hover:text-indigo-100 slide-in-top" />
+          <GiFairyWings className="w-[80%] h-full p-5 text-neutral-900  group-hover:text-indigo-100 slide-in-top" />
         </div>
         <div className={iconBottom}>
-          <GiFairyWings className="w-[80%] h-full p-5 text-zinc-700 group-hover:text-indigo-100 slide-in-top" />
+          <GiFairyWings className="w-[80%] h-full p-5 text-neutral-900  group-hover:text-indigo-100 slide-in-top" />
         </div>
       </div>
     </div>

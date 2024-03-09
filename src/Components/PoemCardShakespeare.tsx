@@ -56,10 +56,7 @@ const PoemCardShakespeare = ({
 
   return (
     <div onClick={() => setFullPoemView(index)} className={poemCard}>
-      <Button
-        text="Ponder Upon"
-        className={poemButton}
-      />
+      <Button text="Ponder Upon" className={poemButton} />
       <Image
         width={200}
         height={200}

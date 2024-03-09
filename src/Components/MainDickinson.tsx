@@ -46,7 +46,8 @@ const MainDickinson = ({
     <main className={mainClass}>
       <div className="w-full flex justify-between mt-8 mb-12">
         <h2 className={titleClass}>{title}</h2>
-        <div className="flex flex-col items-center mt-4 gap-10">
+        <div className="flex items-center mt-4 gap-10">
+          <MusicPlayer theme={!elegy ? "sylph" : "elegy"} />
           <ThemeButton
             text={theme === "sylph" ? "Elegy" : "Sylph"}
             onClick={() => {
@@ -55,7 +56,6 @@ const MainDickinson = ({
             }}
             theme={theme}
           />
-          {/* <MusicPlayer theme={!elegy ? "sylph" : "elegy"} /> */}
         </div>
       </div>
 

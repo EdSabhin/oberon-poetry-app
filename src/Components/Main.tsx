@@ -101,7 +101,7 @@ const Main = ({
           />
         </div>
       ) : (
-          <CardsSection
+        <CardsSection
           id={""}
           poemsArray={poemsArray}
           setFullPoemView={setFullPoemView}

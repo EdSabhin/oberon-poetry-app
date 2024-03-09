@@ -3,12 +3,9 @@ import { fetchData } from "@/service/fetchData"
 
 import Navbar from "../components/Navbar"
 import Header from "@/components/Header"
-import Main from "@/components/Main"
+import MainDickinson from "@/components/MainDickinson"
 import FullPoem from "@/components/FullPoem"
 import Footer from "../components/Footer"
-
-import { Poem } from "./ShakespearesDen"
-import MainDickinson from "@/components/MainDickinson"
 
 const EmilyDsGreatestHits = () => {
   const [poems, setPoems] = useState<[]>([])
@@ -42,15 +39,16 @@ const EmilyDsGreatestHits = () => {
         />
       ) : (
         <FullPoem
+          id="Dickinson"
           poemsArray={poemsArray[fullPoemView]}
           setFullPoemView={setFullPoemView}
-          theme={!elegy ? "playwright" : "elegy"}
+          theme={!elegy ? "sylph" : "elegy"}
         />
       )}
       <Footer
         elegy={elegy}
         setElegy={setElegy}
-        theme={!elegy ? "playwright" : "elegy"}
+        theme={!elegy ? "sylph" : "elegy"}
       />
       {/* {loading ? (
         <div className="w-full flex justify-center items-center ">
