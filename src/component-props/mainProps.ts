@@ -76,23 +76,24 @@ const mainProps = {
   dickinson: {
     sylph: {
       mainClass:
-        "w-full flex flex-col items-start pt-8 pb-20 px-32 text-black  overflow-hidden",
+        "w-full flex flex-col items-start pt-8 pb-20 px-32 text-black  overflow-hidden bg-gradient-to-r from-rose-100 via-sky-100 to-indigo-100",
       title: "A Voice for an Age",
       titleClass:
-        "text-6xl py-4 pr-2 pb-1 underline decoration-2 decoration-dotted underline-offset-8 decoration-neutral-300 text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-teal-800 to-rose-400",
+        "text-6xl py-4 pr-2 pb-1 underline decoration-2 decoration-dotted underline-offset-8 decoration-neutral-300 text-transparent bg-clip-text bg-gradient-to-r from-rose-700 via-sky-400 to-indigo-500",
       musicPlayer: {
         class:
-          "w-[15rem] h-[3rem] flex justify-start py-3 pl-8 pr-8 gap-5 text-rose-500 shadow-md rounded-br-full shadow-rose-100 hover:translate-x-2 transition duration-500 ease-in-out",
-        buttonClass: "hover:text-indigo-500",
+          "w-[15rem] h-[3rem] flex justify-start py-3 pl-8 pr-8 gap-5 text-rose-400 shadow-rose-950 shadow-sm rounded-br-full bg-white  hover:translate-x-2 transition duration-500 ease-in-out",
+        buttonClass: "hover:text-indigo-400",
       },
       themeButton:
-        "text-blood-animation w-[15rem] p-3 pl-6 text-lg text-neutral-900 bg-gradient-to-r from-sky-800 to-teal-800 hover:bg-gradient-to-r hover:from-sky-700 hover:to-teal-500 shadow-md shadow-stone-950 rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
+        "w-[15rem] p-3 pl-6 text-lg text-neutral-900 bg-white hover:bg-gradient-to-r hover:from-sky-700 hover:to-teal-500 shadow-sm shadow-rose-950 rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
       poemCard: {
         class:
-          "w-[28rem] h-[28rem] relative px-20 flex justify-center items-center border-b rounded-full shadow-lg shadow-rose-100 hover:bg-gradient-to-b from-black to-indigo-200 hover:shadow-md hover:shadow-indigo-300 hover:text-rose-300 transition duration-300 group cursor-pointer",
+          "w-[28rem] h-[28rem] relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-rose-100 hover:bg-gradient-to-b from-black to-indigo-200 hover:shadow-lg hover:shadow-indigo-300 hover:text-rose-300 transition duration-300 group cursor-pointer",
         poemButton:
           "w-32 h-20 flex mt-8 shadow-md shadow-rose-200 duration-300 group-hover:bg-gradient-to-br group-hover:from-stone-900 group-hover:to-stone-700 group-hover:text-stone-200",
-        titleClass: "w-full flex justify-center items-center text-3xl",
+        titleClass:
+          "w-full flex justify-center items-center text-3xl group-hover:underline group-hover:underline-offset-4 decoration-2 decoration-dotted",
         authorClass: "pt-2 text-3xl text-stone-400",
         verses:
           "text-blood-animation text-black p-1 rounded text-[1.6rem] transition-ease-in-out hover:scale-105 duration-300 tracking-wide",

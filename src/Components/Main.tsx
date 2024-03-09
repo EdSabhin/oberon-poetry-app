@@ -73,17 +73,6 @@ const Main = ({
       <div className="w-full flex justify-between mt-8 mb-12">
         <h2 className={titleClass}>{title}</h2>
         <div className="flex flex-col items-center mt-4 gap-10">
-          {/* <MusicPlayer
-            theme={
-              !bloodNight
-                ? "playwright"
-                : bloodNight
-                  ? "bloodNight"
-                  : !elegy
-                    ? "sylph"
-                    : "elegy"
-            }
-          /> */}
           <ThemeButton
             text={
               id === 1 ? themeButtonTextShakespeare : themeButtonTextDickinson
@@ -112,7 +101,8 @@ const Main = ({
           />
         </div>
       ) : (
-        <CardsSection
+          <CardsSection
+          id={""}
           poemsArray={poemsArray}
           setFullPoemView={setFullPoemView}
           theme={!bloodNight ? "playwright" : "bloodNight"}
