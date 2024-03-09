@@ -90,13 +90,16 @@ const mainProps = {
       poemCard: {
         class:
           "w-[28rem] h-[28rem] relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-rose-100 hover:bg-gradient-to-b from-black to-indigo-200 hover:shadow-lg hover:shadow-indigo-300 hover:text-rose-300 transition duration-300 group cursor-pointer",
+        iconRight:
+          "w-24 h-24 absolute top-10 right-[-1%] flex justify-center items-center rounded-full group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-indigo-200 group-shadow-md group-shadow-rose-200 cursor-pointer duration-300",
+        iconLeft:
+          "w-24 h-24 absolute top-10 left-[-1%] flex justify-center items-center rounded-full group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-indigo-200 group-shadow-md group-shadow-rose-200 cursor-pointer duration-300",
+        iconBottom:
+          "w-24 h-24 absolute bottom-[-11%] flex justify-center items-center rounded-full group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-indigo-200 group-shadow-md group-shadow-rose-200 cursor-pointer duration-300",
         poemButton:
           "w-32 h-20 flex mt-8 shadow-md shadow-rose-200 duration-300 group-hover:bg-gradient-to-br group-hover:from-stone-900 group-hover:to-stone-700 group-hover:text-stone-200",
         titleClass:
-          "w-full flex justify-center items-center text-3xl group-hover:underline group-hover:underline-offset-4 decoration-2 decoration-dotted",
-        authorClass: "pt-2 text-3xl text-stone-400",
-        verses:
-          "text-blood-animation text-black p-1 rounded text-[1.6rem] transition-ease-in-out hover:scale-105 duration-300 tracking-wide",
+          "w-full flex justify-center items-center text-3xl group-hover:underline group-hover:underline-offset-4 decoration-2 decoration-dotted slide-in-fwd-center",
       },
       fullPoem: {
         class:

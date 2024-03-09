@@ -3,8 +3,7 @@ import Image from "next/image"
 
 import mainProps from "@/component-props/mainProps"
 
-import Button from "./Button"
-import { GiFairyWings, GiSecretBook } from "react-icons/gi"
+import { GiFairyWings } from "react-icons/gi"
 
 type Props = {
   title: string
@@ -26,21 +25,27 @@ const PoemCardDickinson = ({
 
   /* Theme */
   let poemCard
-  let poemButton
+  let iconRight
+  let iconLeft
+  let iconBottom
   let titleClass
 
   switch (theme) {
     case "sylph":
       ;({
         class: poemCard,
-        poemButton,
+        iconRight,
+        iconLeft,
+        iconBottom,
         titleClass,
       } = mainProps.dickinson.sylph.poemCard)
       break
     case "elegy":
       ;({
         class: poemCard,
-        poemButton,
+        iconRight,
+        iconLeft,
+        iconBottom,
         titleClass,
       } = mainProps.dickinson.elegy.poemCard)
       break
@@ -50,14 +55,14 @@ const PoemCardDickinson = ({
     <div onClick={() => setFullPoemView(index)} className="flex flex-col items-center gap-8">
       <div className={poemCard}>
         <h1 className={titleClass}>{poemTitle}</h1>
-        <div className="w-24 h-24 absolute top-10 right-[-1%] flex justify-center items-center rounded-full group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-indigo-200 group-shadow-md group-shadow-rose-200 cursor-pointer duration-300">
-          <GiFairyWings className="w-[80%] h-full p-5 text-zinc-700 group-hover:text-indigo-100" />
+        <div className={iconRight}>
+          <GiFairyWings className="w-[80%] h-full p-5 text-zinc-700 group-hover:text-indigo-100 slide-in-top" />
         </div>
-        <div className="w-24 h-24 absolute top-10 left-[-1%] flex justify-center items-center rounded-full group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-indigo-200 group-shadow-md group-shadow-rose-200 cursor-pointer duration-300">
-          <GiFairyWings className="w-[80%] h-full p-5 text-zinc-700 group-hover:text-indigo-100" />
+        <div className={iconLeft}>
+          <GiFairyWings className="w-[80%] h-full p-5 text-zinc-700 group-hover:text-indigo-100 slide-in-top" />
         </div>
-        <div className="w-24 h-24 absolute bottom-[-11%] flex justify-center items-center rounded-full group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-indigo-200 group-shadow-md group-shadow-rose-200 cursor-pointer duration-300">
-          <GiFairyWings className="w-[80%] h-full p-5 text-zinc-700 group-hover:text-indigo-100" />
+        <div className={iconBottom}>
+          <GiFairyWings className="w-[80%] h-full p-5 text-zinc-700 group-hover:text-indigo-100 slide-in-top" />
         </div>
       </div>
     </div>
