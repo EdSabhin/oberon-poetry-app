@@ -3,8 +3,9 @@ import footerProps from "@/component-props/footerProps"
 import { Old_Standard_TT } from "next/font/google"
 
 import FooterContentShakespeare from "./FooterContentShakespeare"
-import { GiCoffin, GiHastyGrave } from "react-icons/gi"
+import { GiCoffin, GiHastyGrave, GiSandsOfTime } from "react-icons/gi"
 import FooterContentDickinson from "./FooterContentDickinson"
+import { SiApachecassandra } from "react-icons/si";
 
 const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 
@@ -123,10 +124,10 @@ const Footer = ({
             <GiCoffin className="absolute bottom-[0%] right-[0%] w-24 h-24 text-rose-800 fade-in-out-soft" />
           )}
           {theme === "sylph" && (
-            <GiCoffin className="absolute bottom-[0%] right-[0%] w-24 h-24 text-rose-800 fade-in-out-soft" />
+            <GiSandsOfTime className="absolute bottom-[0%] right-[0%] w-24 h-24 text-teal-500 fade-in-out-soft" />
           )}
           {theme === "elegy" && (
-            <GiCoffin className="absolute bottom-[0%] right-[0%] w-24 h-24 text-rose-800 fade-in-out-soft" />
+            <SiApachecassandra  className="absolute bottom-[0%] right-[0%] w-24 h-24 text-rose-800 fade-in-out-soft" />
           )}
         </div>
         {id === "Shakespeare" ? (

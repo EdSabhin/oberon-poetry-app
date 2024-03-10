@@ -8,29 +8,37 @@ import FullPoem from "../components/FullPoem"
 import Footer from "../components/Footer"
 
 export interface Poem {
-  title: string
-  author: string
-  lines: string[]
+  title: string;
+  author: string;
+  lines: string[];
+  linecount: string;
 }
 
+
 const ShakespearesDen = () => {
-  const [poems, setPoems] = useState<[]>([])
+  const [poems, setPoems] = useState<Poem[]>([])
   const [loading, setLoading] = useState<boolean>(true)
   const [fullPoemView, setFullPoemView] = useState<number | null>(null)
   const [bloodNight, setBloodNight] = useState<boolean>(false)
 
   useEffect(() => {
     setTimeout(() => {
-      fetchData("https://poetrydb.org/author,title/Shakespeare;Sonnet").then(
-        (data) => {
-          setPoems(data)
-          setLoading(false)
-        },
-      )
-    }, 3300)
-  }, [])
+      fetchDataAsync();
+    }, 3300);
+  }, []);
 
-  const poemsArray = poems.slice(0, 7)
+  const fetchDataAsync = async () => {
+    try {
+      const data: Poem[] = await fetchData("https://poetrydb.org/author,title/Shakespeare;Sonnet");
+      setPoems(data);
+      setLoading(false);
+    } catch (error) {
+      console.error("Error fetching poems:", error);
+      setLoading(false); 
+    }
+  };
+
+  const poemsArray:Poem[] = poems.slice(0, 7)
 
   return (
     <div className={!bloodNight ? "bg-stone-900" : "bg-rose-950"}>
