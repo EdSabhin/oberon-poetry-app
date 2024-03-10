@@ -76,7 +76,7 @@ const mainProps = {
   dickinson: {
     sylph: {
       mainClass:
-        "w-full flex flex-col items-start pt-8 pb-20 px-32 text-black  overflow-hidden bg-gradient-to-r from-rose-100 via-sky-100 to-indigo-100",
+        "w-full flex flex-col items-start pt-8 pb-20 px-40 text-black  overflow-hidden bg-gradient-to-r from-rose-100 via-sky-100 to-indigo-100",
       title: "A Voice for an Age",
       titleClass:
         "flex items-center py-2 px-16 text-5xl bg-gradient-to-r from-white to-sky-200 rounded-tl rounded-br rounded-full shadow-sm shadow-neutral-600",

@@ -54,8 +54,11 @@ const ShakespearesDen = () => {
         />
       )}
       <Footer
+        id="Shakespeare"
         bloodNight={bloodNight}
         setBloodNight={setBloodNight}
+        elegy={false}
+        setElegy={() => ""}
         theme={!bloodNight ? "playwright" : "bloodNight"}
       />
     </div>

@@ -6,9 +6,7 @@ import { scrollToTop } from "@/service/scrollToTop"
 
 type Props = {
   bloodNight?: boolean
-  setBloodNight?: (value: boolean) => void
-  elegy?: boolean
-  setElegy?: (value: boolean) => void
+  setBloodNight: (value: boolean) => void
   titleOne: string
   titleTwo: string
   theme: string
@@ -19,33 +17,23 @@ const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 const FooterContentShakespeare = ({
   bloodNight,
   setBloodNight,
-  elegy,
-  setElegy,
   titleOne,
   titleTwo,
   theme,
 }: Props) => {
   let titleClass
-  let quote
-  let quoteVerse
-  let quoteWork
+  let quoteClass
+  let quoteVerseClass
+  let quoteWorkClass
 
   switch (theme) {
     case "playwright":
-      ;({ titleClass, quote, quoteVerse, quoteWork } =
+      ;({ titleClass, quoteClass, quoteVerseClass, quoteWorkClass } =
         footerProps.shakespeare.playwright)
       break
     case "bloodNight":
-      ;({ titleClass, quote, quoteVerse, quoteWork } =
+      ;({ titleClass, quoteClass, quoteVerseClass, quoteWorkClass } =
         footerProps.shakespeare.bloodNight)
-      break
-    case "sylph":
-      ;({ titleClass, quote, quoteVerse, quoteWork } =
-        footerProps.dickinson.sylph)
-      break
-    case "elegy":
-      ;({ titleClass, quote, quoteVerse, quoteWork } =
-        footerProps.dickinson.elegy)
       break
   }
 
@@ -56,7 +44,7 @@ const FooterContentShakespeare = ({
       </h4>
 
       <div className="flex flex-col mr-12">
-        <p className={`${quote}`}>
+        <p className={`${quoteClass}`}>
           &quot;Let not the creaking of shoes nor <br />
           The rustling of silks betray <br />
           Thy poor heart to woman. <br />
@@ -66,19 +54,15 @@ const FooterContentShakespeare = ({
           <br />
           <span
             onClick={() => {
-              setBloodNight
-                ? setBloodNight(!bloodNight)
-                : setElegy
-                  ? setElegy
-                  : !elegy
+              setBloodNight(!bloodNight);
               scrollToTop()
             }}
-            className={`${quoteVerse}`}
+            className={`${quoteVerseClass}`}
           >
             And defy the foul fiend.&quot;
           </span>
         </p>
-        <p className={`${OldStandardTT.className} ${quoteWork}`}>
+        <p className={`${OldStandardTT.className} ${quoteWorkClass}`}>
           <span className="text-xl italic">King Lear</span>, Act 3, Scene 4.
         </p>
       </div>

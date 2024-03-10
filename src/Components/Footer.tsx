@@ -2,20 +2,29 @@ import footerProps from "@/component-props/footerProps"
 
 import { Old_Standard_TT } from "next/font/google"
 
-import FooterContentShakespeare from "./FooterContent"
+import FooterContentShakespeare from "./FooterContentShakespeare"
 import { GiCoffin, GiHastyGrave } from "react-icons/gi"
+import FooterContentDickinson from "./FooterContentDickinson"
 
 const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 
 type Props = {
-  bloodNight?: boolean
-  setBloodNight?: (value: boolean) => void
-  elegy?: boolean
-  setElegy?: (value: boolean) => void
+  id: string
+  bloodNight: boolean
+  setBloodNight: (value: boolean) => void
+  elegy: boolean 
+  setElegy: (value: boolean) => void
   theme: string
 }
 
-const Footer = ({ bloodNight, setBloodNight, theme }: Props) => {
+const Footer = ({
+  id,
+  bloodNight,
+  setBloodNight,
+  elegy,
+  setElegy,
+  theme,
+}: Props) => {
   /*Theme*/
   let footerClass
   let footerContainer
@@ -113,14 +122,30 @@ const Footer = ({ bloodNight, setBloodNight, theme }: Props) => {
           {theme === "bloodNight" && (
             <GiCoffin className="absolute bottom-[0%] right-[0%] w-24 h-24 text-rose-800 fade-in-out-soft" />
           )}
+          {theme === "sylph" && (
+            <GiCoffin className="absolute bottom-[0%] right-[0%] w-24 h-24 text-rose-800 fade-in-out-soft" />
+          )}
+          {theme === "elegy" && (
+            <GiCoffin className="absolute bottom-[0%] right-[0%] w-24 h-24 text-rose-800 fade-in-out-soft" />
+          )}
         </div>
-        <FooterContentShakespeare
-          bloodNight={bloodNight}
-          setBloodNight={setBloodNight}
-          titleOne={"Here lies Gulielmus filius Johannes Shakspere."}
-          titleTwo="William, son of John."
-          theme={theme}
-        />
+        {id === "Shakespeare" ? (
+          <FooterContentShakespeare
+            bloodNight={bloodNight}
+            setBloodNight={setBloodNight}
+            titleOne={"Here lies Gulielmus filius Johannes Shakspere."}
+            titleTwo={"William, son of John."}
+            theme={theme}
+          />
+        ) : (
+          <FooterContentDickinson
+            elegy={elegy}
+            setElegy={setElegy}
+            titleOne="Beware of waters still, of all absconding lures --"
+            titleTwo="Lest thou be plucked by That which obscures."
+            theme={theme}
+          />
+        )}
       </div>
     </footer>
   )
