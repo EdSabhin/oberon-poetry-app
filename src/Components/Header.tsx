@@ -53,7 +53,7 @@ const Header = ({ theme }: Props) => {
             width={80}
             height={80}
             src={icon}
-            alt="black cat"
+            alt="Cat and Moon"
             className="transform scale-x-[-1]"
           />
         )}

@@ -3,7 +3,7 @@ import React from "react"
 import mainProps from "@/component-props/mainProps"
 
 import { Old_Standard_TT } from "next/font/google"
-import { GiScrollUnfurled } from "react-icons/gi"
+import { GiCurledLeaf, GiFairyWings, GiScrollUnfurled } from "react-icons/gi"
 import { GiMoonBats } from "react-icons/gi"
 
 const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
@@ -44,6 +44,12 @@ const Button = ({ text, onClick, theme }: Props) => {
         )}
         {theme === "bloodNight" && (
           <GiScrollUnfurled className="w-8 h-8 text-color-animation group-hover:animate-pulse-faster" />
+        )}
+        {theme === "sylph" && (
+          <GiCurledLeaf className="w-8 h-8 text-color-animation group-hover:animate-pulse-faster transform scale-x-[-1]" />
+        )}
+        {theme === "elegy" && (
+          <GiFairyWings className="w-8 h-8 text-color-animation group-hover:animate-pulse-faster" />
         )}
         <span className="">{text}</span>
       </div>

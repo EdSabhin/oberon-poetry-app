@@ -42,12 +42,12 @@ const headerProps = {
     },
     elegy: {
       title: "Emily D's Greatest Hits",
-      description: `"Emily Dickinson's legacy is profound and enduring, shaping the landscape of American literature for generations. As one of the most significant poets of the 19th century, her work defied conventions and explored themes of nature, love, death, and the human condition with unparalleled depth and complexity. Despite being relatively unknown during her lifetime, Dickinson's poetry has since garnered widespread acclaim for its innovative use of language, distinctive style, and keen insights into the human psyche. Her bold experimentation with form, punctuation, and syntax challenged traditional poetic norms and laid the groundwork for modernist poetry. Beyond her literary contributions, Dickinson's reclusive life and enigmatic persona have captured the imagination of scholars and readers alike, sparking countless interpretations and analyses of her work. Today, Dickinson's legacy endures as a testament to the power of individual expression and the timeless resonance of poetic genius."`,
+      description: `Emily Dickinson's poetic works pulsate with rhythm and sparkle with dazzling imagery. Each verse becomes a glittering gem on the dance floor of literature, where metaphors twirl and similes shimmy to the beat of her ingenious wordplay. Her lines, once whispered in quiet corners, now echo through the ballrooms of Eternity, inviting listeners to join the poetic revelry. With every stanza, Dickinson spins a tale of love, loss, and the mysteries of existence, infusing the fireline with an ethereal glow that captivates both heart and soul. In this radiant performance, her words dance and sway, illuminating the night with their timeless allure and leaving an indelible imprint on the minds of all who dare to join the elegiac celebration.`,
       headerClass:
-        "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-r from-indigo-100 to-rose-200 text-amber-700",
+        "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-r from-cyan-900 to-cyan-400 text-cyan-200",
       authorClass:
-        "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-rose-900 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-teal-800",
-      icon: "/images/black-cat.svg",
+        "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-emerald-600 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-300",
+      icon: "/images/aqua-cat.svg",
     },
   },
 }

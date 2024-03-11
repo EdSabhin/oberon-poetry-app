@@ -2,7 +2,7 @@ import navProps from "@/component-props/navProps"
 
 import Link from "next/link"
 import React from "react"
-import { GiMoonBats, GiVineLeaf } from "react-icons/gi"
+import { GiMoonBats , GiCurledLeaf} from "react-icons/gi"
 
 type Props = {
   theme: string
@@ -37,7 +37,7 @@ const Navbar = ({ theme }: Props) => {
             <GiMoonBats className="w-10 h-10 group-hover:animate-pulse-faster" />
           )}
           {theme === "elegy" && (
-            <GiVineLeaf className="w-10 h-10 text-teal-600 group-hover:animate-pulse-faster" />
+            <GiCurledLeaf className="w-10 h-10 text-emerald-200 group-hover:animate-pulse-faster transform scale-x-[-1]" />
           )}
         </div>
 
@@ -50,7 +50,7 @@ const Navbar = ({ theme }: Props) => {
             <GiMoonBats className="w-10 h-10 group-hover:animate-pulse-faster" />
           )}
           {theme === "elegy" && (
-            <GiVineLeaf className="w-10 h-10 text-teal-600 group-hover:animate-pulse-faster" />
+            <GiCurledLeaf className="w-10 h-10 text-emerald-200 group-hover:animate-pulse-faster transform scale-x-[-1]" />
           )}
         </div>
         <div className="flex gap-4 group">
@@ -58,10 +58,10 @@ const Navbar = ({ theme }: Props) => {
             Abode
           </Link>
           {theme === "bloodNight" && (
-            <GiMoonBats className="w-10 h-10 text-pink-900 group-hover:animate-pulse-faster" />
+            <GiMoonBats className="w-10 h-10 group-hover:animate-pulse-faster text-rose-950" />
           )}
           {theme === "elegy" && (
-            <GiVineLeaf className="w-10 h-10 text-teal-600 group-hover:animate-pulse-faster" />
+            <GiCurledLeaf className="w-10 h-10 text-emerald-200 group-hover:animate-pulse-faster transform scale-x-[-1]" />
           )}
         </div>
       </ul>
