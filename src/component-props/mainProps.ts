@@ -86,7 +86,7 @@ const mainProps = {
         buttonClass: "hover:text-rose-600",
       },
       themeButton:
-        "w-[15rem] p-3 pl-6 text-lg text-neutral-900 mt-4 bg-gradient-to-r from-white from-30% to-indigo-200 shadow-sm shadow-black hover:bg-gradient-to-r hover:from-cyan-200 hover:to-indigo-200  rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
+        "w-[15rem] p-3 pl-6 text-lg text-neutral-900 mt-4 bg-gradient-to-r from-white from-30% to-indigo-200 shadow-sm shadow-black hover:bg-gradient-to-r hover:from-cyan-200 hover:to-teal-100  rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
       poemCard: {
         class:
           "w-[28rem] h-[28rem] relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-rose-100 hover:bg-gradient-to-b from-black via-neutral-900 to-indigo-200 hover:shadow-lg hover:shadow-indigo-300 hover:text-rose-300 transition duration-300 group cursor-pointer",
@@ -116,7 +116,7 @@ const mainProps = {
         "w-full flex flex-col items-start pt-8 pb-20 px-40 text-black  overflow-hidden bg-gradient-to-r from-black via-cyan-950 to-white",
       title: "Moves to the Infinite",
       titleClass:
-        "flex items-center py-2 px-16 text-5xl text-neutral-800 bg-gradient-to-r from-gray-400 via-teal-100 to-cyan-700 rounded-tl rounded-br rounded-full shadow-sm shadow-neutral-600",
+        "flex items-center py-2 px-16 text-5xl text-neutral-100 bg-gradient-to-r from-black via-cyan-500 to-teal-950 rounded-tl rounded-br rounded-full shadow-sm shadow-neutral-600",
       musicPlayer: {
         class:
           "w-[15rem] h-[2.5rem] flex justify-end py-3 pl-8 pr-8 gap-5 text-neutral-900 mt-4 bg-gradient-to-l from-white from-30% to-indigo-200 shadow-sm shadow-black rounded-bl-full hover:-translate-x-2 transition duration-500 ease-in-out",
@@ -138,14 +138,14 @@ const mainProps = {
       },
       fullPoem: {
         class:
-          "w-full h-full flex flex-col items-center pt-8 pb-12 bg-gradient-to-t from-rose-200 to-indigo-200 slide-in-fwd-right",
+          "w-full h-full flex flex-col items-center pt-8 pb-12 bg-gradient-to-br from-black to-cyan-900 slide-in-fwd-right",
         titleClass:
-          "py-6 px-28 mb-8 text-5xl bg-gradient-to-r from-white to-sky-100 rounded-bl rounded-tr rounded-full",
+          "py-6 px-28 mb-8 text-5xl text-neutral-100 bg-gradient-to-r from-black via-cyan-600 to-teal-900 rounded-bl rounded-tr rounded-full",
         poemButton:
-          "w-max p-2 mt-4 bg-gradient-to-r from-white from-30% to-indigo-200 shadow-sm shadow-black rounded-br-full transition ease-in-out duration-300 absolute top-[30%] right-[15%] hover:-translate-x-5",
+          "w-max p-2 mt-4 bg-gradient-to-r text-neutral-100 from-cyan-800 to-teal-900 shadow-sm shadow-black rounded-br-full transition ease-in-out duration-300 absolute top-[30%] right-[15%] hover:-translate-x-5",
         verses:
-          "w-max py-1 px-10 text-amber-700 leading-relaxed tracking-wide text-[1.57rem] hover:text-neutral-900 rounded-full hover:bg-gradient-to-r hover:from-sky-100 hover:via-rose-100 hover:to-sky-100 transition-ease-in-out duration-300",
-        authorClass: "pt-1 px-2 text-2xl text-neutral-900",
+          "w-max py-1 px-10 text-green-200 leading-relaxed tracking-wide text-[1.57rem] hover:text-teal-200 rounded-full hover:bg-gradient-to-r hover:from-cyan-200 hover:via-cyan-800 hover:to-cyan-200 transition-ease-in-out duration-300",
+        authorClass: "pt-1 px-2 text-2xl text-neutral-100",
       },
     },
   },
