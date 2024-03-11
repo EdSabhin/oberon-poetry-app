@@ -9,6 +9,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+.bg-moon {
+  background-image: url("/images/crescent-moon.svg");
+  background-size: cover;
+  background-position: top;
+}
+
 .text-color-animation {
   animation: textColorChange 3s infinite alternate;
 }

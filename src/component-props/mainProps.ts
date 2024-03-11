@@ -114,7 +114,7 @@ const mainProps = {
     elegy: {
       mainClass:
         "w-full flex flex-col items-start pt-8 pb-20 px-40 text-black  overflow-hidden bg-gradient-to-r from-black via-cyan-950 to-white",
-      title: "Moves for the Infinite",
+      title: "Moves to the Infinite",
       titleClass:
         "flex items-center py-2 px-16 text-5xl text-neutral-800 bg-gradient-to-r from-gray-400 via-teal-100 to-cyan-700 rounded-tl rounded-br rounded-full shadow-sm shadow-neutral-600",
       musicPlayer: {
@@ -126,13 +126,13 @@ const mainProps = {
         "w-[15rem] p-3 pl-6 mt-4 text-lg text-neutral-200 hover:text-neutral-800 bg-gradient-to-r from-cyan-700 from-30% to-emerald-100 shadow-sm shadow-black hover:bg-gradient-to-r hover:from-white hover:to-indigo-200  rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
       poemCard: {
         class:
-          "w-[28rem] h-[28rem] relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-teal-200 hover:bg-gradient-to-b from-black via-cyan-900 to-cyan-200 hover:shadow-lg hover:shadow-cyan-300 hover:text-emerald-300 transition duration-300 group cursor-pointer",
+          "w-[28rem] h-[28rem] bg-moon relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-teal-200 hover:bg-gradient-to-b from-black via-cyan-900 to-cyan-200 hover:shadow-lg hover:shadow-cyan-300 hover:text-emerald-300 transition duration-300 group cursor-pointer",
         iconRight:
-          "w-24 h-24 absolute top-10 right-[-1%] flex justify-center items-center rounded-full group-hover:opacity-[0.87] group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-cyan-700 group-shadow-md cursor-pointer duration-300",
+          "w-24 h-24 absolute top-10 right-[-1%] flex justify-center items-center rounded-full group-hover:opacity-[0.87] group-hover:bg-gradient-to-b group-hover:from-black group-hover:via-teal-100 group-hover:to-cyan-700 group-shadow-md cursor-pointer transition duration-300 animate-pulse-faster",
         iconLeft:
-          "w-24 h-24 absolute top-10 left-[-1%] flex justify-center items-center rounded-full group-hover:opacity-[0.87]  group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-cyan-700 group-shadow-md cursor-pointer duration-300",
+          "w-24 h-24 absolute top-10 left-[-1%] flex justify-center items-center rounded-full group-hover:opacity-[0.87]  group-hover:bg-gradient-to-b group-hover:from-black group-hover:via-teal-100 group-hover:to-cyan-700 group-shadow-md cursor-pointer transition duration-300 animate-pulse-faster",
         iconBottom:
-          "w-24 h-24 absolute bottom-[-11%] flex justify-center items-center rounded-full group-hover:opacity-[0.87]  group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-cyan-700 group-shadow-md cursor-pointer duration-300",
+          "w-24 h-24 absolute bottom-[-11%] flex justify-center items-center rounded-full group-hover:opacity-[0.87]  group-hover:bg-gradient-to-b group-hover:from-black group-hover:via-teal-100 group-hover:to-cyan-700 group-shadow-md cursor-pointer transition duration-300 animate-pulse-faster",
         titleClass:
           "w-full flex justify-center items-center text-3xl group-hover:underline group-hover:underline-offset-4 decoration-2 decoration-dotted slide-in-fwd-center",
       },

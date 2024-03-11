@@ -3,7 +3,7 @@ import Image from "next/image"
 
 import mainProps from "@/component-props/mainProps"
 
-import { GiFairyWings } from "react-icons/gi"
+import { GiCurledLeaf, GiFairyWings } from "react-icons/gi"
 
 type Props = {
   title: string
@@ -59,13 +59,17 @@ const PoemCardDickinson = ({
       <div className={poemCard}>
         <h1 className={titleClass}>{poemTitle}</h1>
         <div className={iconRight}>
-          <GiFairyWings className="w-[80%] h-full p-5 text-neutral-900 group-hover:text-indigo-100 slide-in-top" />
+          {theme === "sylph" && <GiFairyWings className="w-[80%] h-full p-5 text-neutral-900 group-hover:text-indigo-100 slide-in-top" />}
+          {theme === "elegy" && <GiCurledLeaf className="w-[80%] h-full p-5 text-transparent group-hover:text-cyan-600" />}
+          
         </div>
         <div className={iconLeft}>
-          <GiFairyWings className="w-[80%] h-full p-5 text-neutral-900  group-hover:text-indigo-100 slide-in-top" />
+          {theme === "sylph" &&  <GiFairyWings className="w-[80%] h-full p-5 text-neutral-900 group-hover:text-indigo-100 slide-in-top" />}
+          {theme === "elegy" && <GiCurledLeaf className="w-[80%] h-full p-5 text-transparent group-hover:text-cyan-600" />}
         </div>
         <div className={iconBottom}>
-          <GiFairyWings className="w-[80%] h-full p-5 text-neutral-900  group-hover:text-indigo-100 slide-in-top" />
+          {theme === "sylph" && <GiFairyWings className="w-[80%] h-full p-5 text-neutral-900 group-hover:text-indigo-100 slide-in-top" />}
+          {theme === "elegy" && <GiCurledLeaf className="w-[80%] h-full p-5 text-transparent group-hover:text-cyan-600" />}
         </div>
       </div>
     </div>
