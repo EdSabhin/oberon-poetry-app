@@ -86,7 +86,7 @@ const mainProps = {
         buttonClass: "hover:text-rose-600",
       },
       themeButton:
-        "w-[15rem] p-3 pl-6 text-lg text-neutral-900 mt-4 bg-gradient-to-r from-white from-30% to-indigo-200 shadow-sm shadow-black hover:bg-gradient-to-r hover:from-cyan-200 hover:to-teal-100  rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
+        "w-[15rem] p-3 pl-6 text-lg text-neutral-900 hover:text-neutral-100 mt-4 bg-gradient-to-r from-white from-30% to-indigo-200 shadow-sm shadow-black hover:bg-gradient-to-r hover:from-cyan-700 hover:to-emerald-200  rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
       poemCard: {
         class:
           "w-[28rem] h-[28rem] relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-rose-100 hover:bg-gradient-to-b from-black via-neutral-900 to-indigo-200 hover:shadow-lg hover:shadow-indigo-300 hover:text-rose-300 transition duration-300 group cursor-pointer",
@@ -119,11 +119,11 @@ const mainProps = {
         "flex items-center py-2 px-16 text-5xl text-neutral-100 bg-gradient-to-r from-black via-cyan-500 to-teal-950 rounded-tl rounded-br rounded-full shadow-sm shadow-neutral-600",
       musicPlayer: {
         class:
-          "w-[15rem] h-[2.5rem] flex justify-end py-3 pl-8 pr-8 gap-5 text-neutral-900 mt-4 bg-gradient-to-l from-white from-30% to-indigo-200 shadow-sm shadow-black rounded-bl-full hover:-translate-x-2 transition duration-500 ease-in-out",
-        buttonClass: "hover:text-rose-600",
+          "w-[15rem] h-[2.5rem] flex justify-end py-3 pl-8 pr-8 gap-5 text-neutral-100 mt-4 bg-gradient-to-l from-cyan-700 from-30% to-emerald-200 shadow-sm shadow-black rounded-bl-full hover:-translate-x-2 transition duration-500 ease-in-out",
+        buttonClass: "hover:text-green-400",
       },
       themeButton:
-        "w-[15rem] p-3 pl-6 mt-4 text-lg text-neutral-200 hover:text-neutral-800 bg-gradient-to-r from-cyan-700 from-30% to-emerald-100 shadow-sm shadow-black hover:bg-gradient-to-r hover:from-white hover:to-indigo-200  rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
+        "w-[15rem] p-3 pl-6 mt-4 text-lg text-neutral-200 hover:text-neutral-900 bg-gradient-to-r from-cyan-700 from-30% to-emerald-200 shadow-sm shadow-black hover:bg-gradient-to-r hover:from-white hover:to-indigo-200  rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
       poemCard: {
         class:
           "w-[28rem] h-[28rem] bg-moon relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-teal-200 hover:bg-gradient-to-b from-black via-cyan-900 to-cyan-200 hover:shadow-lg hover:shadow-cyan-300 hover:text-emerald-300 transition duration-300 group cursor-pointer",
