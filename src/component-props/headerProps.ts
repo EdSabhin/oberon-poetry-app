@@ -17,6 +17,7 @@ const headerProps = {
         "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-b from-gray-700 to-stone-800 text-stone-200",
       authorClass:
         "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-amber-200 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900",
+      quoteAuthor: "text-2xl text-start text-orange-100",
       icon: "/images/gold-moon-cat.svg",
     },
     bloodNight: {
@@ -27,6 +28,7 @@ const headerProps = {
         "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-b from-black via-rose-950 to-black text-rose-100",
       authorClass:
         "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-rose-900 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-stone-600 to-70% via-rose-500 to-stone-500",
+      quoteAuthor: "text-2xl text-start text-rose-300",
       icon: "/images/blood-moon-cat.svg",
     },
   },
@@ -38,6 +40,7 @@ const headerProps = {
         "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-r from-indigo-100 to-rose-200 text-amber-700",
       authorClass:
         "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-rose-900 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-teal-800",
+      quoteAuthor: "text-2xl text-start text-black",
       icon: "/images/black-cat.svg",
     },
     elegy: {
@@ -47,6 +50,7 @@ const headerProps = {
         "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-r from-cyan-900 to-cyan-400 text-cyan-200",
       authorClass:
         "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-emerald-600 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-300",
+      quoteAuthor: "text-2xl text-start text-green-300",
       icon: "/images/aqua-cat.svg",
     },
   },

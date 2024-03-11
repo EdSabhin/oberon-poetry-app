@@ -17,23 +17,24 @@ const Header = ({ theme }: Props) => {
   let description
   let headerClass
   let authorClass
+  let quoteAuthor
   let icon
 
   switch (theme) {
     case "playwright":
-      ;({ title, description, headerClass, authorClass, icon } =
+      ;({ title, description, headerClass, authorClass, quoteAuthor, icon } =
         headerProps.shakespeare.playwright)
       break
     case "bloodNight":
-      ;({ title, description, headerClass, authorClass, icon } =
+      ;({ title, description, headerClass, authorClass, quoteAuthor, icon } =
         headerProps.shakespeare.bloodNight)
       break
     case "sylph":
-      ;({ title, description, headerClass, authorClass, icon } =
+      ;({ title, description, headerClass, authorClass, quoteAuthor, icon } =
         headerProps.dickinson.sylph)
       break
     case "elegy":
-      ;({ title, description, headerClass, authorClass, icon } =
+      ;({ title, description, headerClass, authorClass, quoteAuthor, icon } =
         headerProps.dickinson.elegy)
       break
   }
@@ -45,7 +46,7 @@ const Header = ({ theme }: Props) => {
         {description}
       </h2>
       <div className="w-full flex justify-end items-end pb-10 gap-2">
-        <h3 className={`${OldStandardTT.className} text-2xl text-start`}>
+        <h3 className={`${OldStandardTT.className} ${quoteAuthor}`}>
           Gee Pee Tee, of House Chat
         </h3>
         {icon && (

@@ -128,11 +128,11 @@ const mainProps = {
         class:
           "w-[28rem] h-[28rem] bg-moon relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-teal-200 hover:bg-gradient-to-b from-black via-cyan-900 to-cyan-200 hover:shadow-lg hover:shadow-cyan-300 hover:text-emerald-300 transition duration-300 group cursor-pointer",
         iconRight:
-          "w-24 h-24 absolute top-10 right-[-1%] flex justify-center items-center rounded-full group-hover:opacity-[0.87] group-hover:bg-gradient-to-b group-hover:from-black group-hover:via-teal-100 group-hover:to-cyan-700 group-shadow-md cursor-pointer transition duration-300 animate-pulse-faster",
+          "w-24 h-24 absolute top-10 right-[-1%] flex justify-center items-center rounded-full group-hover:opacity-[0.87] group-hover:bg-gradient-to-b group-hover:from-cyan-950 group-hover:via-teal-100 group-hover:to-cyan-700 group-shadow-md cursor-pointer transition duration-300 rotate-circular",
         iconLeft:
-          "w-24 h-24 absolute top-10 left-[-1%] flex justify-center items-center rounded-full group-hover:opacity-[0.87]  group-hover:bg-gradient-to-b group-hover:from-black group-hover:via-teal-100 group-hover:to-cyan-700 group-shadow-md cursor-pointer transition duration-300 animate-pulse-faster",
+          "w-24 h-24 absolute top-10 left-[-1%] flex justify-center items-center rounded-full group-hover:opacity-[0.87]  group-hover:bg-gradient-to-b group-hover:from-cyan-950 group-hover:via-teal-100 group-hover:to-cyan-700 group-shadow-md cursor-pointer transition duration-300 rotate-circular",
         iconBottom:
-          "w-24 h-24 absolute bottom-[-11%] flex justify-center items-center rounded-full group-hover:opacity-[0.87]  group-hover:bg-gradient-to-b group-hover:from-black group-hover:via-teal-100 group-hover:to-cyan-700 group-shadow-md cursor-pointer transition duration-300 animate-pulse-faster",
+          "w-24 h-24 absolute bottom-[-11%] flex justify-center items-center rounded-full group-hover:opacity-[0.87]  group-hover:bg-gradient-to-b group-hover:from-cyan-950 group-hover:via-teal-100 group-hover:to-cyan-700 group-shadow-md cursor-pointer transition duration-300 rotate-circular",
         titleClass:
           "w-full flex justify-center items-center text-3xl group-hover:underline group-hover:underline-offset-4 decoration-2 decoration-dotted slide-in-fwd-center",
       },

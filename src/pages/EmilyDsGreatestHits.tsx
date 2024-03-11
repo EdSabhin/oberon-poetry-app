@@ -35,7 +35,7 @@ const EmilyDsGreatestHits = () => {
   const poemsArray:Poem[] = poems.slice(34, 42)
 
   return (
-    <div className={!elegy ? "bg-white" : "bg-teal-950"}>
+    <div className={!elegy ? "bg-white" : "bg-cyan-950"}>
       <Navbar theme={!elegy ? "sylph" : "elegy"} />
       <Header theme={!elegy ? "sylph" : "elegy"} />
       {fullPoemView === null ? (

@@ -90,6 +90,19 @@
   }
 }
 
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-circular {
+  animation: rotate360 5s linear infinite;
+}
+
 .slide-in-left {
   -webkit-animation: slide-in-left 1.5s cubic-bezier(0.215, 0.61, 0.355, 1)
     forwards;
