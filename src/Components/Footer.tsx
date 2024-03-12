@@ -124,10 +124,10 @@ const Footer = ({
             <GiCoffin className="absolute bottom-[0%] right-[0%] w-24 h-24 text-rose-800 fade-in-out-soft" />
           )}
           {theme === "sylph" && (
-            <GiSandsOfTime className="absolute bottom-[0%] right-[0%] w-24 h-24 text-teal-500 fade-in-out-soft" />
+            <GiSandsOfTime className="absolute bottom-[0%] right-[0%] w-24 h-24 text-teal-300 fade-in-out-soft" />
           )}
           {theme === "elegy" && (
-            <SiApachecassandra  className="absolute bottom-[0%] right-[0%] w-24 h-24 text-rose-800 fade-in-out-soft" />
+            <SiApachecassandra  className="absolute bottom-[0%] right-[0%] w-24 h-24 text-cyan-100 fade-in-out-soft" />
           )}
         </div>
         {id === "Shakespeare" ? (

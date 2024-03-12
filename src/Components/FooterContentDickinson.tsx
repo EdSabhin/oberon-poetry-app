@@ -39,7 +39,8 @@ const FooterContentDickinson = ({
   return (
     <div className="flex flex-col items-end gap-10">
       <h4 className={`${titleClass}`}>
-        {titleOne} {titleTwo}
+        {titleOne} <br />
+        {titleTwo}
       </h4>
 
       <div className="flex flex-col mr-12">

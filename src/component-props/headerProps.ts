@@ -47,7 +47,7 @@ const headerProps = {
       title: "Emily D's Greatest Hits",
       description: `Emily Dickinson's poetic works pulsate with rhythm and sparkle with dazzling imagery. Each verse becomes a glittering gem on the dance floor of literature, where metaphors twirl and similes shimmy to the beat of her ingenious wordplay. Her lines, once whispered in quiet corners, now echo through the ballrooms of Eternity, inviting listeners to join the poetic revelry. With every stanza, Dickinson spins a tale of love, loss, and the mysteries of existence, infusing the fireline with an ethereal glow that captivates both heart and soul. In this radiant performance, her words dance and sway, illuminating the night with their timeless allure and leaving an indelible imprint on the minds of all who dare to join the elegiac celebration.`,
       headerClass:
-        "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-r from-cyan-900 to-cyan-400 text-cyan-200",
+        "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-r from-cyan-600 to-cyan-950 text-cyan-200",
       authorClass:
         "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-emerald-600 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-300",
       quoteAuthor: "text-2xl text-start text-green-300",
