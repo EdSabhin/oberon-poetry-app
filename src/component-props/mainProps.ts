@@ -12,7 +12,7 @@ const mainProps = {
         buttonClass: "hover:text-amber-400",
       },
       themeButton:
-        "text-stone-300 w-[15rem] p-3 pl-6 text-lg text-stone-200 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-r hover:from-stone-800 hover:via-rose-950 hover:to-stone-950 shadow-md shadow-stone-950 rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
+        "w-[15rem] p-3 pl-6 text-lg text-stone-300 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-r hover:from-stone-800 hover:via-rose-950 hover:to-stone-950 shadow-md shadow-stone-950 rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
       poemCard: {
         class:
           "w-[77%] relative p-10 r-12 border-l-8 border-transparent bg-gradient-to-b from-gray-950 via-gray-500 to-gray-950 hover:bg-gradient-to-b hover:from-stone-950 hover:via-stone-600 hover:to-stone-950 hover:border-amber-200 rounded-[3%] rounded-br-[35%] shadow-md shadow-stone-950 transition ease-in-out hover:-translate-y-4 duration-300 group",
@@ -116,14 +116,14 @@ const mainProps = {
         "w-full flex flex-col items-start pt-8 pb-20 px-40 text-black  overflow-hidden bg-gradient-to-r from-black via-cyan-950 to-white",
       title: "Moves to the Infinite",
       titleClass:
-        "flex items-center py-2 px-16 text-5xl text-neutral-100 bg-gradient-to-r from-black via-cyan-500 to-teal-950 rounded-tl rounded-br rounded-full shadow-sm shadow-neutral-600",
+        "text-aqua-title-animation flex items-center py-2 px-16 text-5xl text-neutral-100 bg-gradient-to-r from-black via-cyan-500 to-teal-950 rounded-tl rounded-br rounded-full shadow-sm shadow-neutral-600",
       musicPlayer: {
         class:
           "w-[15rem] h-[2.5rem] flex justify-end py-3 pl-8 pr-8 gap-5 text-neutral-100 mt-4 bg-gradient-to-l from-cyan-700 from-30% to-emerald-200 shadow-sm shadow-black rounded-bl-full hover:-translate-x-2 transition duration-500 ease-in-out",
         buttonClass: "hover:text-green-400",
       },
       themeButton:
-        "w-[15rem] p-3 pl-6 mt-4 text-lg text-neutral-200 hover:text-neutral-900 bg-gradient-to-r from-cyan-700 from-30% to-emerald-200 shadow-sm shadow-black hover:bg-gradient-to-r hover:from-white hover:to-indigo-200  rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
+        "w-[15rem] p-3 pl-6 mt-4 text-lg text-neutral-100 hover:text-neutral-900 bg-gradient-to-r from-cyan-700 from-30% to-emerald-200 shadow-sm shadow-black hover:bg-gradient-to-r hover:from-white hover:to-indigo-200 rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
       poemCard: {
         class:
           "w-[28rem] h-[28rem] bg-moon relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-teal-200 hover:bg-gradient-to-b from-black via-cyan-900 to-cyan-200 hover:shadow-lg hover:shadow-cyan-300 hover:text-emerald-300 transition duration-300 group cursor-pointer",

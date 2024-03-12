@@ -16,7 +16,7 @@
 }
 
 .text-color-animation {
-  animation: textColorChange 3s infinite alternate;
+  animation: textColorChange 4s infinite forwards;
 }
 @keyframes textColorChange {
   0% {
@@ -31,7 +31,7 @@
 }
 
 .text-blood-animation {
-  animation: textBloodChange 3s infinite alternate;
+  animation: textBloodChange 4s infinite forwards;
 }
 @keyframes textBloodChange {
   0% {
@@ -45,15 +45,90 @@
   }
 }
 
-.text-rose-animation {
-  animation: textRoseChange 3s infinite alternate;
+.text-aqua-animation {
+  animation: textAquaChange 4s infinite forwards;
 }
-@keyframes textRoseChange {
+@keyframes textAquaChange {
   0% {
     color: #100025;
   }
   75% {
-    color: #ba4b6a;
+    color: #5e9bbe;
+  }
+  100% {
+    color: #100025;
+  }
+}
+
+.text-aqua-title-animation {
+  animation: textAquaTitleChange 6s infinite forwards;
+}
+@keyframes textAquaTitleChange {
+  0% {
+    color: #100025;
+  }
+  75% {
+    color: #cfddde;
+  }
+  100% {
+    color: #100025;
+  }
+}
+
+.text-sylph-animation {
+  animation: textSylphChange 4s infinite forwards;
+}
+@keyframes textSylphChange {
+  0% {
+    color: #100025;
+  }
+  75% {
+    color: #eddbeb;
+  }
+  100% {
+    color: #100025;
+  }
+}
+
+.text-verse-animation {
+  animation: textVerseChange 4s infinite forwards;
+}
+@keyframes textVerseChange {
+  0% {
+    color: #100025;
+  }
+  75% {
+    color: #c04e72;
+  }
+  100% {
+    color: #100025;
+  }
+}
+
+.text-verse-teal-animation {
+  animation: textVerseTealChange 4s infinite forwards;
+}
+@keyframes textVerseTealChange {
+  0% {
+    color: #ffffff;
+  }
+  75% {
+    color: #41cbbd;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+
+.text-verse-indigo-animation {
+  animation: textVerseIndigoChange 4s infinite forwards;
+}
+@keyframes textVerseIndigoChange {
+  0% {
+    color: #100025;
+  }
+  75% {
+    color: #d7c7e7;
   }
   100% {
     color: #100025;

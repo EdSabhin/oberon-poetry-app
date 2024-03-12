@@ -46,10 +46,10 @@ const Button = ({ text, onClick, theme }: Props) => {
           <GiScrollUnfurled className="w-8 h-8 text-color-animation group-hover:animate-pulse-faster" />
         )}
         {theme === "sylph" && (
-          <GiCurledLeaf className="w-8 h-8 text-color-animation group-hover:animate-pulse-faster transform scale-x-[-1]" />
+          <GiCurledLeaf className="w-8 h-8 text-aqua-animation group-hover:animate-pulse-faster transform scale-x-[-1]" />
         )}
         {theme === "elegy" && (
-          <GiFairyWings className="w-8 h-8 text-color-animation group-hover:animate-pulse-faster" />
+          <GiFairyWings className="w-8 h-8 text-sylph-animation group-hover:animate-pulse-faster" />
         )}
         <span className="">{text}</span>
       </div>
