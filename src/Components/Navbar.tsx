@@ -2,7 +2,7 @@ import navProps from "@/component-props/navProps"
 
 import Link from "next/link"
 import React from "react"
-import { GiMoonBats , GiCurledLeaf} from "react-icons/gi"
+import { GiMoonBats, GiCurledLeaf } from "react-icons/gi"
 
 type Props = {
   theme: string

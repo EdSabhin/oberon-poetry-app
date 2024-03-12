@@ -55,7 +55,7 @@ const FooterContentDickinson = ({
           <br />
           <span
             onClick={() => {
-              setElegy(!elegy);
+              setElegy(!elegy)
               scrollToTop()
             }}
             className={`${quoteVerseClass}`}

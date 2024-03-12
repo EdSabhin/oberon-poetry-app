@@ -8,7 +8,6 @@ import MainDickinson from "@/components/MainDickinson"
 import FullPoem from "@/components/FullPoem"
 import Footer from "../components/Footer"
 
-
 const EmilyDsGreatestHits = () => {
   const [poems, setPoems] = useState<Poem[]>([])
   const [loading, setLoading] = useState<boolean>(true)
@@ -17,22 +16,24 @@ const EmilyDsGreatestHits = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetchDataAsync();
-    }, 3300);
-  }, []);
+      fetchDataAsync()
+    }, 3300)
+  }, [])
 
   const fetchDataAsync = async () => {
     try {
-      const data: Poem[] = await fetchData("https://poetrydb.org/author/Dickinson");
-      setPoems(data);
-      setLoading(false);
+      const data: Poem[] = await fetchData(
+        "https://poetrydb.org/author/Dickinson",
+      )
+      setPoems(data)
+      setLoading(false)
     } catch (error) {
-      console.error("Error fetching poems:", error);
-      setLoading(false); 
+      console.error("Error fetching poems:", error)
+      setLoading(false)
     }
-  };
+  }
 
-  const poemsArray:Poem[] = poems.slice(34, 42)
+  const poemsArray: Poem[] = poems.slice(34, 42)
 
   return (
     <div className={!elegy ? "bg-white" : "bg-cyan-950"}>
@@ -56,7 +57,7 @@ const EmilyDsGreatestHits = () => {
         />
       )}
       <Footer
-        id = "Dickinson"
+        id="Dickinson"
         bloodNight={false}
         setBloodNight={() => ""}
         elegy={elegy}

@@ -54,7 +54,7 @@ const FooterContentShakespeare = ({
           <br />
           <span
             onClick={() => {
-              setBloodNight(!bloodNight);
+              setBloodNight(!bloodNight)
               scrollToTop()
             }}
             className={`${quoteVerseClass}`}

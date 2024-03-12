@@ -86,11 +86,23 @@ const PoemCardShakespeare = ({
       })}
       <div className="w-full flex items-end my-8 gap-4 ">
         <p className="text-2xl ">..................</p>
-        {theme === "playwright" && (
-          <GiQuill className="w-12 h-12 mb-2 text-orange-100 group-hover:text-orange-200" />
-        )}
+         {theme === "playwright" && (
+          <Image
+          width={"55"}
+          height={"55"}
+          className="mb-[0.4rem] ml-4 group-hover:animate-ping"
+          src= "/images/quill-icon-playwright.png"
+          alt="Lord Shakespeare"
+        />
+        )} 
         {theme === "bloodNight" && (
-          <GiHeartStake className="w-12 h-12 mb-2 text-stone-800 group-hover:text-rose-950" />
+          <Image
+          width={"55"}
+          height={"55"}
+          className=" ml-2 group-hover:animate-ping"
+          src= "/images/stake-heart-icon.png"
+          alt="Lord Shakespeare"
+        />
         )}
       </div>
     </div>

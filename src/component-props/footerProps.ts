@@ -40,7 +40,7 @@ const footerProps = {
       footerClass: `w-full relative pt-10 pb-24 px-48
       bg-gradient-to-b from-indigo-100 via-rose-200 to-teal-100 tracking-wider`,
       footerContainer:
-        "flex pl-10 gap-32 border-x border-indigo-400 border-opacity-30",
+        "flex pl-10 gap-28 border-x border-indigo-400 border-opacity-30",
       titleClass:
         "leading-[4rem] text-4xl text-transparent bg-clip-text bg-gradient-to-r from-teal-700 to-rose-700",
       quoteClass: "text-2xl text-amber-700 tracking-wider leading-[3rem]",
@@ -48,15 +48,15 @@ const footerProps = {
       quoteWorkClass: "mt-6 ml-40 text-rose-900",
       attributions:
         "mb-2 pr-2 text-xl text-indigo-700 underline underline-offset-4 decoration-1 decoration-indigo-300",
-      owner: "mb-5 text-xl text-neutral-900 hover:text-rose-600",
+      owner: "mb-5 text-xl text-neutral-900 hover:text-rose-500",
       category: "w-max px-3 text-indigo-500 border-x border-indigo-500",
-      links: `text-neutral-900 hover:text-rose-600 rounded italic transition ease-in-out text-lg`,
+      links: `text-neutral-900 hover:text-rose-500 rounded italic transition ease-in-out text-lg`,
     },
     elegy: {
       footerClass: `w-full relative pt-10 pb-24 px-48
       bg-gradient-to-b from-cyan-950 via-cyan-600 to-neutral-950 tracking-wider`,
       footerContainer:
-        "flex pl-10 gap-32 border-x border-lime-300 border-opacity-30",
+        "flex pl-10 gap-28 border-x border-lime-300 border-opacity-30",
       titleClass:
         "leading-[4rem] text-4xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-teal-300",
       quoteClass: "text-2xl text-emerald-200 tracking-wider leading-[3rem]",

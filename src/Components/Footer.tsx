@@ -5,7 +5,7 @@ import { Old_Standard_TT } from "next/font/google"
 import FooterContentShakespeare from "./FooterContentShakespeare"
 import { GiCoffin, GiHastyGrave, GiSandsOfTime } from "react-icons/gi"
 import FooterContentDickinson from "./FooterContentDickinson"
-import { SiApachecassandra } from "react-icons/si";
+import { SiApachecassandra } from "react-icons/si"
 
 const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 
@@ -13,7 +13,7 @@ type Props = {
   id: string
   bloodNight: boolean
   setBloodNight: (value: boolean) => void
-  elegy: boolean 
+  elegy: boolean
   setElegy: (value: boolean) => void
   theme: string
 }
@@ -90,33 +90,49 @@ const Footer = ({
 
           <h4 className={`${OldStandardTT.className} ${category}`}>Visuals</h4>
           <a
-            href="https://www.flaticon.com/free-icons/feather"
-            title="feather icons"
-            className={`${OldStandardTT.className} ${links}`}
-          >
-            Quill icons created by Smashicons - Flaticon
-          </a>
-          <a
-            href="https://www.flaticon.com/free-icons/quill"
-            title="quill icons"
-            className={`${OldStandardTT.className} ${links} `}
-          >
-            Inkwell icons created by Design Circle - Flaticon
-          </a>
-          <a
             href="https://www.flaticon.com/free-icons/black-cat"
-            title="black cat icons"
+            title="cat icons"
             className={`${OldStandardTT.className} ${links}`}
           >
             Cat icons created by juicy_fish - Flaticon
           </a>
-          <a
-            href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1299297"
-            title="black cat icons"
-            className={`${OldStandardTT.className} ${links}`}
-          >
-            Fading skulls by OpenClipart-Vectors - Pixabay
-          </a>
+          {id === "Shakespeare" ? (
+            <a
+              href="https://www.flaticon.com/free-icons/feather"
+              title="quill icons"
+              className={`${OldStandardTT.className} ${links}`}
+            >
+              Quill icons created by Smashicons - Flaticon
+            </a>
+          ) : (
+            <a
+              href="https://www.flaticon.com/free-icons/quill"
+              title="inkwell icons"
+              className={`${OldStandardTT.className} ${links} `}
+            >
+              Inkwell icons created by Design Circle - Flaticon
+            </a>
+          )}
+          {id === "Shakespeare" && 
+          <a href="https://www.flaticon.com/free-icons/kill" title="staked heart icons"  className={`${OldStandardTT.className} ${links} `}>Heart icon created by edt.im - Flaticon</a>}
+          {id === "Shakespeare" ? (
+            <a
+              href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1299297"
+              title="skulls art"
+              className={`${OldStandardTT.className} ${links}`}
+            >
+              Fading skulls by OpenClipart-Vectors - Pixabay
+            </a>
+          ) : (
+            <a
+              href="https://pixabay.com/users/gdj-1086657/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5244885"
+              title="moon art"
+              className={`${OldStandardTT.className} ${links}`}
+            >
+              Crescent Moon by Gordon Johnson - Pixabay
+            </a>
+          )}
+
           {theme === "playwright" && (
             <GiHastyGrave className="absolute bottom-[0%] right-[0%] w-24 h-24 text-indigo-300 fade-in-out-soft" />
           )}
@@ -127,7 +143,7 @@ const Footer = ({
             <GiSandsOfTime className="absolute bottom-[0%] right-[0%] w-24 h-24 text-teal-300 fade-in-out-soft" />
           )}
           {theme === "elegy" && (
-            <SiApachecassandra  className="absolute bottom-[0%] right-[0%] w-24 h-24 text-cyan-100 fade-in-out-soft" />
+            <SiApachecassandra className="absolute bottom-[0%] right-[0%] w-24 h-24 text-cyan-100 fade-in-out-soft" />
           )}
         </div>
         {id === "Shakespeare" ? (
