@@ -62,7 +62,7 @@ const PoemCardShakespeare = ({
         height={200}
         src={`${theme === "playwright" ? "/images/bones.svg" : "/images/blood-bones.svg"}`}
         alt="Bones or bat watching"
-        className="absolute top-[20%] left-[136%] fade-in-out"
+        className="absolute top-[20%] left-[140%] fade-in-out"
       />
       <div className="w-full flex justify-between mb-8 slide-in-left">
         <div>

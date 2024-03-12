@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .text-gradient {
-  background: linear-gradient(to right, #dc5fff, #4c81db, #fe7bdb);
+  background: linear-gradient(to right, #ff335c, #84827d, #ff335c);
   background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -16,7 +16,7 @@
 }
 
 .text-color-animation {
-  animation: textColorChange 4s infinite forwards;
+  animation: textColorChange 3s infinite alternate;
 }
 @keyframes textColorChange {
   0% {
@@ -31,7 +31,7 @@
 }
 
 .text-blood-animation {
-  animation: textBloodChange 4s infinite forwards;
+  animation: textBloodChange 3s infinite alternate;
 }
 @keyframes textBloodChange {
   0% {
@@ -46,7 +46,7 @@
 }
 
 .text-aqua-animation {
-  animation: textAquaChange 4s infinite forwards;
+  animation: textAquaChange 3s infinite alternate;
 }
 @keyframes textAquaChange {
   0% {
@@ -76,7 +76,7 @@
 }
 
 .text-sylph-animation {
-  animation: textSylphChange 4s infinite forwards;
+  animation: textSylphChange 3s infinite alternate;
 }
 @keyframes textSylphChange {
   0% {
@@ -91,7 +91,7 @@
 }
 
 .text-verse-animation {
-  animation: textVerseChange 4s infinite forwards;
+  animation: textVerseChange 4s infinite alternate;
 }
 @keyframes textVerseChange {
   0% {
@@ -106,7 +106,7 @@
 }
 
 .text-verse-teal-animation {
-  animation: textVerseTealChange 4s infinite forwards;
+  animation: textVerseTealChange 4s infinite alternate;
 }
 @keyframes textVerseTealChange {
   0% {
