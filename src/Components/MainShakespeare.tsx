@@ -62,8 +62,8 @@ const MainShakespeare = ({
           <LoadingImage
             image={
               !bloodNight
-                ? "/images/quill-icon-gray.png"
-                : "/images/quill-icon-black.png"
+                ? "/images/quill-icon-playwright.png"
+                : "/images/quill-icon-blood.png"
             }
           />
         </div>

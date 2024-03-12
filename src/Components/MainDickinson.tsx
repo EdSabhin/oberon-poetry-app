@@ -63,7 +63,7 @@ const MainDickinson = ({
         <div className="w-full flex justify-center items-center ">
           <LoadingImage
             image={
-              !elegy ? "/images/inkwell.png" : "/images/quill-icon-black.png"
+              !elegy ? "/images/inkwell-sylph.png" : "/images/inkwell-elegy.png"
             }
           />
         </div>
