@@ -1,4 +1,4 @@
-import navProps from "@/component-props/navProps"
+import navbarProps from "@/component-props/navbarProps"
 
 import Link from "next/link"
 import React from "react"
@@ -15,16 +15,16 @@ const Navbar = ({ theme }: Props) => {
 
   switch (theme) {
     case "playwright":
-      ;({ navClass, linkClass } = navProps.shakespeare.playwright)
+      ;({ navClass, linkClass } = navbarProps.shakespeare.playwright)
       break
     case "bloodNight":
-      ;({ navClass, linkClass } = navProps.shakespeare.bloodNight)
+      ;({ navClass, linkClass } = navbarProps.shakespeare.bloodNight)
       break
     case "sylph":
-      ;({ navClass, linkClass } = navProps.dickinson.sylph)
+      ;({ navClass, linkClass } = navbarProps.dickinson.sylph)
       break
     case "elegy":
-      ;({ navClass, linkClass } = navProps.dickinson.elegy)
+      ;({ navClass, linkClass } = navbarProps.dickinson.elegy)
       break
   }
 

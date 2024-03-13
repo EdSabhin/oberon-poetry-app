@@ -1,4 +1,4 @@
-const navProps = {
+const navbarProps = {
   shakespeare: {
     playwright: {
       navClass:
@@ -28,4 +28,4 @@ const navProps = {
   },
 }
 
-export default navProps
+export default navbarProps

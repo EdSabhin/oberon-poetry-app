@@ -61,7 +61,7 @@ const PoemCardShakespeare = ({
         width={200}
         height={200}
         src={`${theme === "playwright" ? "/images/bones.svg" : "/images/blood-bones.svg"}`}
-        alt="Bones or bat watching"
+        alt="bones watching"
         className="absolute top-[20%] left-[140%] fade-in-out"
       />
       <div className="w-full flex justify-between mb-8 slide-in-left">
@@ -92,16 +92,16 @@ const PoemCardShakespeare = ({
           height={"55"}
           className="mb-[0.4rem] ml-4 group-hover:animate-ping"
           src= "/images/quill-icon-playwright.png"
-          alt="Lord Shakespeare"
+          alt="gold quill"
         />
         )} 
         {theme === "bloodNight" && (
           <Image
           width={"55"}
           height={"55"}
-          className=" ml-2 group-hover:animate-ping"
-          src= "/images/stake-heart-icon.png"
-          alt="Lord Shakespeare"
+          className="mb-[0.4rem] ml-4 group-hover:animate-ping"
+          src= "/images/quill-icon-blood.png"
+          alt="blood quill"
         />
         )}
       </div>

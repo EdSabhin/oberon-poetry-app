@@ -60,21 +60,6 @@
   }
 }
 
-.text-aqua-title-animation {
-  animation: textAquaTitleChange 6s infinite forwards;
-}
-@keyframes textAquaTitleChange {
-  0% {
-    color: #100025;
-  }
-  75% {
-    color: #cfddde;
-  }
-  100% {
-    color: #100025;
-  }
-}
-
 .text-sylph-animation {
   animation: textSylphChange 3s infinite alternate;
 }
@@ -135,6 +120,36 @@
   }
 }
 
+.text-aqua-title-animation {
+  animation: textAquaTitleChange 6s infinite forwards;
+}
+@keyframes textAquaTitleChange {
+  0% {
+    color: #100025;
+  }
+  75% {
+    color: #cfddde;
+  }
+  100% {
+    color: #100025;
+  }
+}
+
+.text-blood-title-animation {
+  animation: textBloodTitleChange 6s infinite forwards;
+}
+@keyframes textBloodTitleChange {
+  0% {
+    color: #100025;
+  }
+  75% {
+    color: rgb(212, 21, 82);
+  }
+  100% {
+    color: #100025;
+  }
+}
+
 .fade-in-out {
   animation: fadeInOut 8s ease-in-out infinite;
 }
@@ -143,7 +158,7 @@
     opacity: 0;
   }
   50% {
-    opacity: 1;
+    opacity: 0.7;
   }
   100% {
     opacity: 0;

@@ -113,8 +113,6 @@ const Footer = ({
               Inkwell icons created by Design Circle - Flaticon
             </a>
           )}
-          {id === "Shakespeare" && 
-          <a href="https://www.flaticon.com/free-icons/kill" title="staked heart icons"  className={`${OldStandardTT.className} ${links} `}>Heart icon created by edt.im - Flaticon</a>}
           {id === "Shakespeare" ? (
             <a
               href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1299297"
