@@ -86,23 +86,23 @@ const PoemCardShakespeare = ({
       })}
       <div className="w-full flex items-end my-8 gap-4 ">
         <p className="text-2xl ">..................</p>
-         {theme === "playwright" && (
+        {theme === "playwright" && (
           <Image
-          width={"55"}
-          height={"55"}
-          className="mb-[0.4rem] ml-4 group-hover:animate-ping"
-          src= "/images/quill-icon-playwright.png"
-          alt="gold quill"
-        />
-        )} 
+            width={"55"}
+            height={"55"}
+            className="mb-[0.4rem] ml-4 group-hover:animate-ping"
+            src="/images/quill-playwright.png"
+            alt="gold quill"
+          />
+        )}
         {theme === "bloodNight" && (
           <Image
-          width={"55"}
-          height={"55"}
-          className="mb-[0.4rem] ml-4 group-hover:animate-ping"
-          src= "/images/quill-icon-blood.png"
-          alt="blood quill"
-        />
+            width={"55"}
+            height={"55"}
+            className="mb-[0.4rem] ml-4 group-hover:animate-ping"
+            src="/images/quill-blood.png"
+            alt="blood quill"
+          />
         )}
       </div>
     </div>
