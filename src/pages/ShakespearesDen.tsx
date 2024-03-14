@@ -52,11 +52,7 @@ const ShakespearesDen = () => {
     <div className={!bloodNight ? "bg-stone-900" : "bg-rose-950"}>
       <Navbar theme={!bloodNight ? "playwright" : "bloodNight"} />
       {sidebar && (
-        <Sidebar
-          sidebar={sidebar}
-          setSidebar={setSidebar}
-          poems={poems}
-        />
+        <Sidebar sidebar={sidebar} setSidebar={setSidebar} poems={poems} />
       )}
       <Header theme={!bloodNight ? "playwright" : "bloodNight"} />
       {fullPoemView === null ? (

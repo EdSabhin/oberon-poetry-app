@@ -49,7 +49,7 @@ const MainShakespeare = ({
         <div className="flex flex-col gap-20">
           <h2 className={titleClass}>{title}</h2>
           <Button
-            text="Search Menu"
+            text="Search Sonnets"
             onClick={handleOpenSidebar}
             className="w-[15rem] h-[3rem] flex justify-center py-3 pl-8 pr-8 gap-5 text-stone-200 hover:text-orange-100 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-900 hover:to-stone-700 shadow-md rounded-bl-full rounded-tr-full shadow-stone-950 hover:translate-x-2 transition duration-500 ease-in-out"
           />
