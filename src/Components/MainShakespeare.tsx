@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 
 import mainProps from "@/component-props/mainProps"
 
@@ -6,7 +6,6 @@ import { scrollToTop } from "@/service/scrollToTop"
 
 import LoadingImage from "./LoadingImage"
 import Button from "./Button"
-import Sidebar from "./Sidebar"
 import MusicPlayer from "./MusicPlayer"
 import ThemeButton from "./ThemeButton"
 import CardsSection from "./CardsSection"
