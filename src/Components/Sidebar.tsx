@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 
 import { Poem } from "@/pages/ShakespearesDen"
 
@@ -15,15 +15,32 @@ const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
 
 const Sidebar = ({ sidebar, setSidebar, poems }: SidebarProps) => {
   const [searchTerm, setSearchTerm] = useState("")
-  const [filteredPoems, setFilteredPoems] = useState<Poem[]>([])
+  const [showResults, setShowResults] = useState(false)
 
-  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSearchUpdate = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value)
-    const filteredSearch = poems.filter((poem) =>
-      poem.title.toLowerCase().includes(searchTerm.toLowerCase()),
-    )
-    setFilteredPoems(filteredSearch)
   }
+
+  const [searchResults, setSearchResults] = useState<Poem[]>([])
+
+  const filterSearch = () => {
+    setShowResults(true)
+
+    const searchText = searchTerm.toLowerCase().trim()
+    if (searchText === "") {
+      setSearchResults([])
+      return
+    }
+    const filterText = poems.filter((poem) =>
+      poem.lines.some((line) => line.toLowerCase().includes(searchText)),
+    )
+
+    setSearchResults(filterText || [])
+  }
+
+  useEffect(() => {
+  filterSearch();
+}, [searchTerm]);
 
   // Close Sidebar
   const handleCloseSidebar = () => {
@@ -52,7 +69,7 @@ const Sidebar = ({ sidebar, setSidebar, poems }: SidebarProps) => {
           type="text"
           placeholder="Search titles, stanzas, verses..."
           value={searchTerm}
-          onChange={handleSearchChange}
+          onChange={handleSearchUpdate}
           className={`${OldStandardTT.className} w-full text-md text-orange-900 py-2 px-4 mr-12 mb-8 bg-stone-100 rounded-br-full rounded-l-lg outline-none placeholder-stone-600 custom-cursor`}
         />
       </div>
@@ -65,9 +82,9 @@ const Sidebar = ({ sidebar, setSidebar, poems }: SidebarProps) => {
         <div
           className={`${OldStandardTT.className} h-max flex flex-col gap-6 text-md text-orange-900 py-2 px-4 mr-12 bg-stone-100 rounded-xl outline-none placeholder-stone-600 custom-cursor`}
         >
-          {filteredPoems.map((poem, index) => (
+          {showResults && searchResults.map((poem, index) => (
             <div key={index}>
-              <h4>{poem.title}</h4>
+              <h3>{`Matches in: ${poem.title.split(":")[0].trim()}`}</h3>
             </div>
           ))}
         </div>

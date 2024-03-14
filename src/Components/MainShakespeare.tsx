@@ -63,7 +63,7 @@ const MainShakespeare = ({
             }}
             theme={theme}
           />
-          <MusicPlayer theme={!bloodNight ? "playwright" : "bloodNight"} />
+          {/* <MusicPlayer theme={!bloodNight ? "playwright" : "bloodNight"} /> */}
         </div>
       </div>
 
