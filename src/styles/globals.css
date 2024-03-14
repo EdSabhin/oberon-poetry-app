@@ -9,7 +9,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.custom-cursor {
+.text-cursor-playwright {
   caret-color: rgb(101, 56, 21);
 }
 

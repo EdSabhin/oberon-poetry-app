@@ -11,7 +11,7 @@ import ThemeButton from "./ThemeButton"
 import CardsSection from "./CardsSection"
 
 type Props = {
-  poemsArray: []
+  poems: []
   handleOpenSidebar: () => void
   setFullPoemView: (value: number) => void
   loading: boolean
@@ -21,7 +21,7 @@ type Props = {
 }
 
 const MainShakespeare = ({
-  poemsArray,
+  poems,
   handleOpenSidebar,
   setFullPoemView,
   loading,
@@ -80,11 +80,16 @@ const MainShakespeare = ({
       ) : (
         <CardsSection
           id="Shakespeare"
-          poemsArray={poemsArray}
+          poems={poems}
           setFullPoemView={setFullPoemView}
           theme={theme}
         />
       )}
+       <Button
+            text="More Sonnets"
+            onClick={handleOpenSidebar}
+            className="w-[15rem] h-[3rem] flex justify-center mt-12 py-3 pl-8 pr-8 gap-5 text-stone-200 hover:text-orange-100 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-900 hover:to-stone-700 shadow-md rounded-bl-full rounded-tr-full shadow-stone-950 hover:translate-x-2 transition duration-500 ease-in-out"
+          />
     </main>
   )
 }

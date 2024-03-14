@@ -7,17 +7,17 @@ import Button from "./Button"
 
 type Props = {
   id?: string
-  poemsArray: Poem
+  poems: Poem
   setFullPoemView: (value: null) => void
   theme: string
 }
 
-const FullPoem = ({ id, poemsArray, setFullPoemView, theme }: Props) => {
-  const shakespeareTitle = poemsArray.title.slice(
+const FullPoem = ({ id, poems, setFullPoemView, theme }: Props) => {
+  const shakespeareTitle = poems.title.slice(
     0,
-    poemsArray.title.indexOf(":")
+    poems.title.indexOf(":"),
   )
-  const dickinsonTitle = poemsArray.title
+  const dickinsonTitle = poems.title
 
   /* Theme */
   let poemCard
@@ -82,7 +82,7 @@ const FullPoem = ({ id, poemsArray, setFullPoemView, theme }: Props) => {
         </div>
       </div>
       <div className="w-1/2 flex flex-col items-center justify-center text-2xl">
-        {poemsArray.lines.map((verse: string, index: number) => {
+        {poems.lines.map((verse: string, index: number) => {
           return (
             <p className={verses} key={index}>
               {verse}
@@ -90,7 +90,7 @@ const FullPoem = ({ id, poemsArray, setFullPoemView, theme }: Props) => {
           )
         })}
         <div className="w-full flex justify-end pr-12 p-6">
-          <h2 className={authorClass}>{poemsArray.author}</h2>
+          <h2 className={authorClass}>{poems.author}</h2>
         </div>
       </div>
     </main>

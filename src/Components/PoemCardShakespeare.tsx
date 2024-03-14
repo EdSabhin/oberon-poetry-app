@@ -4,7 +4,6 @@ import Image from "next/image"
 import mainProps from "@/component-props/mainProps"
 
 import Button from "./Button"
-import { GiHeartStake, GiQuill } from "react-icons/gi"
 
 type Props = {
   title: string
@@ -85,7 +84,7 @@ const PoemCardShakespeare = ({
         )
       })}
       <div className="w-full flex items-end my-8 gap-4 ">
-        <p className="text-2xl ">..................</p>
+        <p className="text-2xl">..................</p>
         {theme === "playwright" && (
           <Image
             width={"55"}

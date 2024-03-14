@@ -40,7 +40,7 @@ const ShakespearesDen = () => {
     }
   }
 
-  const poemsArray = poems.slice(0, 7)
+  const displayPoems = poems.slice(0, 7)
 
   // Open Sidebar
   const [sidebar, setSidebar] = useState<boolean>(false)
@@ -52,13 +52,13 @@ const ShakespearesDen = () => {
     <div className={!bloodNight ? "bg-stone-900" : "bg-rose-950"}>
       <Navbar theme={!bloodNight ? "playwright" : "bloodNight"} />
       {sidebar && (
-        <Sidebar sidebar={sidebar} setSidebar={setSidebar} poems={poems} />
+        <Sidebar setSidebar={setSidebar} poems={poems} handlePoemClick={(index) => setFullPoemView(index)} />
       )}
       <Header theme={!bloodNight ? "playwright" : "bloodNight"} />
       {fullPoemView === null ? (
         <MainShakespeare
           loading={loading}
-          poemsArray={poemsArray}
+          poems={poems}
           handleOpenSidebar={handleOpenSidebar}
           bloodNight={bloodNight}
           setBloodNight={setBloodNight}
@@ -68,7 +68,7 @@ const ShakespearesDen = () => {
       ) : (
         <FullPoem
           id="Shakespeare"
-          poemsArray={poemsArray[fullPoemView]}
+          poems={poems[fullPoemView]}
           setFullPoemView={setFullPoemView}
           theme={!bloodNight ? "playwright" : "bloodNight"}
         />
