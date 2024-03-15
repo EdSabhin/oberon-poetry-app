@@ -35,12 +35,12 @@ const MainShakespeare = ({
 
   // Shuffle Poems
   const [randomPoems, setRandomPoems] = useState<Poem[]>([]);
-  const [randomizedPoems, setRandomizedPoems] = useState<boolean>(false)
+  const [shuffledPoems, setShuffledPoems] = useState<boolean>(false)
 
   const randomizePoems = () => {
     const randomizedPoems = shufflePoems(poems).slice(0, 8);
     setRandomPoems(randomizedPoems);
-    setRandomizedPoems(true)
+    setShuffledPoems(true)
   }
 
   /* Theme */
@@ -106,7 +106,7 @@ const MainShakespeare = ({
           poems={poems}
           setFullPoemView={setFullPoemView}
             randomPoems={randomPoems}
-            randomizedPoems={randomizedPoems}
+            shuffledPoems={shuffledPoems}
           theme={theme}
         />
       )}

@@ -19,6 +19,7 @@ const ShakespearesDen = () => {
   const [poems, setPoems] = useState<Poem[]>([])
   const [loading, setLoading] = useState<boolean>(true)
   const [fullPoemView, setFullPoemView] = useState<number | null>(null)
+  const [titlePoemView, setTitlePoemView] = useState<number | null>(null)
   const [bloodNight, setBloodNight] = useState<boolean>(false)
 
   useEffect(() => {

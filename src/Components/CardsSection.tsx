@@ -8,11 +8,11 @@ type Props = {
   poems: Poem[]
   setFullPoemView: (value: number) => void
   randomPoems?: Poem[] 
-  randomizedPoems: boolean
+  shuffledPoems: boolean
   theme: string
 }
 
-const CardsSection = ({ id, poems, setFullPoemView, randomPoems, randomizedPoems, theme }: Props) => {
+const CardsSection = ({ id, poems, setFullPoemView, randomPoems, shuffledPoems, theme }: Props) => {
   let displayPoems = poems.slice(0, 8)
 
   return (
@@ -42,7 +42,7 @@ const CardsSection = ({ id, poems, setFullPoemView, randomPoems, randomizedPoems
           />
         )
       })}
-      {!randomizedPoems && displayPoems.map((poem: Poem, index: number) => {
+      {!shuffledPoems && displayPoems.map((poem: Poem, index: number) => {
         return id === "Shakespeare" ? (
           <PoemCardShakespeare
             key={index}
