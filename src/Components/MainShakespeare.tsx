@@ -14,7 +14,7 @@ import CardsSection from "./CardsSection"
 
 
 type Props = {
-  poems: []
+  poems: Poem[]
   handleOpenSidebar: () => void
   setFullPoemView: (value: number) => void
   loading: boolean

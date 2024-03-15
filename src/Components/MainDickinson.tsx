@@ -70,7 +70,7 @@ const MainDickinson = ({
       ) : (
         <CardsSection
           id="Dickinson"
-          poemsArray={poemsArray}
+          poems={poemsArray}
           setFullPoemView={setFullPoemView}
           theme={theme}
         />

@@ -97,7 +97,7 @@ const mainProps = {
         iconBottom:
           "w-24 h-24 absolute bottom-[-11%] flex justify-center items-center rounded-full group-hover:opacity-[0.87]  group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-indigo-200 group-shadow-md group-shadow-rose-200 cursor-pointer duration-300",
         titleClass:
-          "w-full flex justify-center items-center text-3xl group-hover:underline group-hover:underline-offset-4 decoration-2 decoration-dotted slide-in-fwd-center",
+          "w-full flex justify-center items-center text-3xl leading-[3rem] group-hover:underline group-hover:underline-offset-4 decoration-2 decoration-dotted slide-in-fwd-center",
       },
       fullPoem: {
         class:
@@ -134,7 +134,7 @@ const mainProps = {
         iconBottom:
           "w-24 h-24 absolute bottom-[-11%] flex justify-center items-center rounded-full group-hover:opacity-[0.87]  group-hover:bg-gradient-to-b group-hover:from-cyan-950 group-hover:via-teal-100 group-hover:to-cyan-700 group-shadow-md cursor-pointer transition duration-300 rotate-circular",
         titleClass:
-          "w-full flex justify-center items-center text-3xl group-hover:underline group-hover:underline-offset-4 decoration-2 decoration-dotted slide-in-fwd-center",
+          "w-full flex justify-center items-center text-3xl leading-[3rem] group-hover:underline group-hover:underline-offset-4 decoration-2 decoration-dotted slide-in-fwd-center",
       },
       fullPoem: {
         class:
