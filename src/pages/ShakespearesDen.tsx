@@ -41,7 +41,6 @@ const ShakespearesDen = () => {
     }
   }
 
-  const displayPoems = poems.slice(0, 7)
 
   // Open Sidebar
   const [sidebar, setSidebar] = useState<boolean>(false)

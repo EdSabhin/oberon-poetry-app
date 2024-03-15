@@ -19,7 +19,7 @@ const CardsSection = ({ id, poems, setFullPoemView, randomPoems, shuffledPoems, 
     <section
       className={`${id === "Shakespeare" ? "w-full flex flex-col items-start my-8 gap-32" : "w-full grid grid-cols-2 items-center py-24 gap-36"}`}
     >
-      {randomPoems && randomPoems.map((poem: Poem, index: number) => {
+      {shuffledPoems && randomPoems?.map((poem: Poem, index: number) => {
         return id === "Shakespeare" ? (
           <PoemCardShakespeare
             key={index}
