@@ -8,7 +8,7 @@ import { SiApachecassandra } from "react-icons/si"
 interface SidebarProps {
   setSidebar: (value: boolean) => void
   poems: Poem[]
-  handlePoemClick: (index: number) => void;
+  handlePoemClick: (index: number) => void
 }
 
 const OldStandardTT = Old_Standard_TT({ weight: "400", subsets: ["latin"] })
@@ -85,7 +85,12 @@ const Sidebar = ({ setSidebar, poems, handlePoemClick }: SidebarProps) => {
           {showResults &&
             searchResults.map((poem, index) => (
               <div key={index}>
-                <h3 className="text-md text-orange-900">Matches in: <span onClick={() => handlePoemClick(index)}  className="py-2 px-3 ml-2 rounded-lg hover:bg-gradient-to-r hover:from-stone-300 hover:to-orange-200 underline underline-offset-4 cursor-pointer">{`${poem.title.split(":")[0].trim()}`}</span>
+                <h3 className="text-md text-orange-900">
+                  Matches in:{" "}
+                  <span
+                    onClick={() => handlePoemClick(index)}
+                    className="py-2 px-3 ml-2 rounded-lg hover:bg-gradient-to-r hover:from-stone-300 hover:to-orange-200 underline underline-offset-4 cursor-pointer"
+                  >{`${poem.title.split(":")[0].trim()}`}</span>
                 </h3>
               </div>
             ))}
@@ -101,7 +106,8 @@ const Sidebar = ({ setSidebar, poems, handlePoemClick }: SidebarProps) => {
           {poems.map((poem: Poem, index: number) => {
             return (
               <div key={index} className="flex gap-12">
-                <li onClick={() => handlePoemClick(index)}
+                <li
+                  onClick={() => handlePoemClick(index)}
                   className={`${OldStandardTT.className} text-md text-orange-100 hover:text-orange-200 cursor-pointer`}
                 >
                   {poem.title}

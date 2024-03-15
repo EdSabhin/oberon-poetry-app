@@ -13,10 +13,7 @@ type Props = {
 }
 
 const FullPoem = ({ id, poems, setFullPoemView, theme }: Props) => {
-  const shakespeareTitle = poems.title.slice(
-    0,
-    poems.title.indexOf(":"),
-  )
+  const shakespeareTitle = poems.title.slice(0, poems.title.indexOf(":"))
   const dickinsonTitle = poems.title
 
   /* Theme */

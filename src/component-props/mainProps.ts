@@ -19,7 +19,7 @@ const mainProps = {
         poemButton:
           "absolute top-[6.4%] right-[-16.7%] text-color-animation bg-gradient-to-r from-slate-800 to-stone-800 shadow-md shadow-stone-950 rounded-br-full transition ease-in-out duration-300 group-hover:bg-gradient-to-br group-hover:from-stone-900 group-hover:to-stone-700 group-hover:text-stone-200",
         titleClass:
-          "py-2 text-6xl underline group-hover:decoration-2 group-hover:decoration-orange-200 group-hover:underline-offset-8 text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-amber-900",
+          "py-2 pr-2 text-6xl underline group-hover:decoration-2 group-hover:decoration-orange-200 group-hover:underline-offset-8 text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-amber-900",
         authorClass: "pt-2 text-3xl text-yellow-100",
         verses:
           "text-color-animation p-1 rounded text-[1.6rem] transition-ease-in-out hover:scale-105 duration-300 tracking-wide",
@@ -55,7 +55,7 @@ const mainProps = {
         poemButton:
           "absolute top-[6.4%] right-[-16.7%] text-blood-animation bg-gradient-to-r from-rose-950 to-stone-900 shadow-md shadow-stone-950 rounded-br-full transition ease-in-out duration-300 group-hover:bg-gradient-to-br group-hover:from-black group-hover:to-stone-800 group-hover:text-stone-200 group-hover:shadow-lg group-hover:shadow-rose-950",
         titleClass:
-          "py-2 text-6xl underline group-hover:decoration-2 group-hover:decoration-stone-600 group-hover:underline-offset-8 text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-stone-500",
+          "py-2 pr-2 text-6xl underline group-hover:decoration-2 group-hover:decoration-stone-600 group-hover:underline-offset-8 text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-stone-500",
         authorClass: "pt-2 text-3xl text-stone-400",
         verses:
           "text-blood-animation text-black p-1 rounded text-[1.6rem] transition-ease-in-out hover:scale-105 duration-300 tracking-wide",
