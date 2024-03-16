@@ -49,7 +49,7 @@ const Sidebar = ({ setSidebar, poems, handlePoemClick }: SidebarProps) => {
 
   return (
     <div
-      className={`w-[35%] fixed inset-y-0 left-0 z-10 opacity-90 flex flex-col items-start pt-12 pb-16 pl-12 bg-gradient-to-b from-stone-800 to-slate-800`}
+      className={`w-[35%] fixed inset-y-0 left-0 z-10 opacity-90 flex flex-col items-start pt-12 pb-16 pl-12 bg-gradient-to-b from-slate-950 to-stone-800`}
     >
       <div className="flex flex-col gap-4">
         <div className="flex items-center mt-12 gap-6">
@@ -78,7 +78,7 @@ const Sidebar = ({ setSidebar, poems, handlePoemClick }: SidebarProps) => {
       >
         Results
       </h3>
-      <div className="h-full flex flex-col mb-12 overflow-y-auto">
+      {searchResults && <div className="h-[20rem] flex flex-col mb-12 overflow-y-auto">
         <ul
           className={`${OldStandardTT.className} flex flex-col gap-6 pt-4 pb-5 px-4 mr-12 bg-stone-100 rounded-xl overflow-y-auto`}
         >
@@ -95,14 +95,14 @@ const Sidebar = ({ setSidebar, poems, handlePoemClick }: SidebarProps) => {
               </div>
             ))}
         </ul>
-      </div>
+      </div>}
       <h3
         className={`${OldStandardTT.className} text-xl text-orange-100 py-2 mr-12 mb-4`}
       >
         View all
       </h3>
       <div className="h-full flex flex-col overflow-y-auto">
-        <ul className="flex flex-col py-8 px-6 mr-12 gap-10 border border-stone-100 rounded-xl">
+        <ul className="flex flex-col py-8 px-6 mr-12 gap-10 border border-stone-100 rounded-xl bg-stone-900">
           {poems.map((poem: Poem, index: number) => {
             return (
               <div key={index} className="flex gap-12">

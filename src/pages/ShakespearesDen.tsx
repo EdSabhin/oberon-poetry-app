@@ -47,8 +47,14 @@ const ShakespearesDen = () => {
   }))
 
   useEffect(() => {
+    //  Check if uniqueIdPoems is different from current poems 
+    //  to avoid infinite loop. Only sets state when they are   
+    //  different, and keeps latest state of poems.
+  const uniqueIsDifferent = JSON.stringify(uniqueIdPoems) !== JSON.stringify(poems);
+  if (uniqueIsDifferent) {
     setPoems(uniqueIdPoems);
-  }, []);
+  }
+}, [uniqueIdPoems, poems]);
 
   // Open Sidebar
   const [sidebar, setSidebar] = useState<boolean>(false)
