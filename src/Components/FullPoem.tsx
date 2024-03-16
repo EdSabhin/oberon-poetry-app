@@ -5,16 +5,16 @@ import mainProps from "@/component-props/mainProps"
 import { Poem } from "../pages/ShakespearesDen"
 import Button from "./Button"
 
-type Props = {
-  id?: string
-  poems: Poem
-  setFullPoemView: (value: null) => void
+type FullPoemProps = {
+  id: string
+  poems?: Poem
+  setFullPoemView: (value: string | null) => void
   theme: string
 }
 
-const FullPoem = ({ id, poems, setFullPoemView, theme }: Props) => {
-  const shakespeareTitle = poems.title.slice(0, poems.title.indexOf(":"))
-  const dickinsonTitle = poems.title
+const FullPoem = ({ id, poems, setFullPoemView, theme }: FullPoemProps) => {
+  const shakespeareTitle = poems?.title.slice(0, poems.title.indexOf(":"))
+  const dickinsonTitle = poems?.title
 
   /* Theme */
   let poemCard
@@ -79,7 +79,7 @@ const FullPoem = ({ id, poems, setFullPoemView, theme }: Props) => {
         </div>
       </div>
       <div className="w-1/2 flex flex-col items-center justify-center text-2xl">
-        {poems.lines.map((verse: string, index: number) => {
+        {poems?.lines.map((verse: string, index: number) => {
           return (
             <p className={verses} key={index}>
               {verse}
@@ -87,7 +87,7 @@ const FullPoem = ({ id, poems, setFullPoemView, theme }: Props) => {
           )
         })}
         <div className="w-full flex justify-end pr-12 p-6">
-          <h2 className={authorClass}>{poems.author}</h2>
+          <h2 className={authorClass}>{poems?.author}</h2>
         </div>
       </div>
     </main>

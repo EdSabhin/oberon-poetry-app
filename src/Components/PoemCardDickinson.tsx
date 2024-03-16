@@ -9,18 +9,12 @@ type Props = {
   title: string
   author?: string
   poem: string[]
-  index: number
-  setFullPoemView: (value: number) => void
+  id: string
+  setFullPoemView: (value: string) => void
   theme: string
 }
 
-const PoemCardDickinson = ({
-  title,
-  author,
-  index,
-  setFullPoemView,
-  theme,
-}: Props) => {
+const PoemCardDickinson = ({ title, id, setFullPoemView, theme }: Props) => {
   const poemTitle = title
 
   /* Theme */
@@ -53,7 +47,7 @@ const PoemCardDickinson = ({
 
   return (
     <div
-      onClick={() => setFullPoemView(index)}
+      onClick={() => setFullPoemView(id)}
       className="flex flex-col items-center"
     >
       <div className={poemCard}>

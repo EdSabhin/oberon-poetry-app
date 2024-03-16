@@ -9,6 +9,7 @@ import Footer from "../components/Footer"
 import Sidebar from "@/components/Sidebar"
 
 export interface Poem {
+  id?: string 
   title: string
   author: string
   lines: string[]
@@ -18,8 +19,7 @@ export interface Poem {
 const ShakespearesDen = () => {
   const [poems, setPoems] = useState<Poem[]>([])
   const [loading, setLoading] = useState<boolean>(true)
-  const [fullPoemView, setFullPoemView] = useState<number | null>(null)
-  const [titlePoemView, setTitlePoemView] = useState<number | null>(null)
+  const [fullPoemView, setFullPoemView] = useState<string | null>(null)
   const [bloodNight, setBloodNight] = useState<boolean>(false)
 
   useEffect(() => {
@@ -41,6 +41,14 @@ const ShakespearesDen = () => {
     }
   }
 
+  const uniqueIdPoems:Poem[] = poems.map((poem) => ({
+    ...poem,
+    id: `${poem.title}-${poem.author}`,
+  }))
+
+  useEffect(() => {
+    setPoems(uniqueIdPoems);
+  }, [uniqueIdPoems]);
 
   // Open Sidebar
   const [sidebar, setSidebar] = useState<boolean>(false)
@@ -55,7 +63,7 @@ const ShakespearesDen = () => {
         <Sidebar
           setSidebar={setSidebar}
           poems={poems}
-          handlePoemClick={(index) => setFullPoemView(index)}
+          handlePoemClick={(id) => setFullPoemView(id ?? null)}
         />
       )}
       <Header theme={!bloodNight ? "playwright" : "bloodNight"} />
@@ -72,7 +80,7 @@ const ShakespearesDen = () => {
       ) : (
         <FullPoem
           id="Shakespeare"
-          poems={poems[fullPoemView]}
+          poems={poems.find(poem => poem.id === fullPoemView)}
           setFullPoemView={setFullPoemView}
           theme={!bloodNight ? "playwright" : "bloodNight"}
         />

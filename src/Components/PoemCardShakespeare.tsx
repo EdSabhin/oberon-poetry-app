@@ -9,8 +9,8 @@ type Props = {
   title: string
   author: string
   poem: string[]
-  index: number
-  setFullPoemView: (value: number) => void
+  id: string 
+  setFullPoemView: (value: string) => void
   theme: string
 }
 
@@ -18,7 +18,7 @@ const PoemCardShakespeare = ({
   title,
   author,
   poem,
-  index,
+  id,
   setFullPoemView,
   theme,
 }: Props) => {
@@ -54,7 +54,7 @@ const PoemCardShakespeare = ({
   }
 
   return (
-    <div onClick={() => setFullPoemView(index)} className={poemCard}>
+    <div onClick={() => setFullPoemView(id)} className={poemCard}>
       <Button text="Ponder Upon" className={poemButton} />
       <Image
         width={200}
