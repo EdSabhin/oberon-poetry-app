@@ -156,6 +156,7 @@
 
 .fade-in-out {
   animation: fadeInOut 8s ease-in-out infinite;
+  height: auto;
 }
 @keyframes fadeInOut {
   0% {

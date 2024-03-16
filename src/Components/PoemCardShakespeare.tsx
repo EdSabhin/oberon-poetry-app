@@ -9,7 +9,7 @@ type Props = {
   title: string
   author: string
   poem: string[]
-  id: string 
+  id: string
   setFullPoemView: (value: string) => void
   theme: string
 }

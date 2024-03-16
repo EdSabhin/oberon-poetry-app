@@ -6,7 +6,7 @@ import PoemCardDickinson from "./PoemCardDickinson"
 type Props = {
   pageId: string
   poems: Poem[]
-  setFullPoemView: (value: string) => void  
+  setFullPoemView: (value: string) => void
   randomPoems?: Poem[]
   shuffledPoems: boolean
   theme: string
@@ -27,9 +27,10 @@ const CardsSection = ({
       className={`${pageId === "Shakespeare" ? "w-full flex flex-col items-start my-8 gap-32" : "w-full grid grid-cols-2 items-center py-24 gap-36"}`}
     >
       {shuffledPoems &&
-        randomPoems?.map((poem: Poem) => {
+        randomPoems?.map((poem: Poem, key:number) => {
           return pageId === "Shakespeare" ? (
             <PoemCardShakespeare
+              key={key}
               id={poem.id ?? ""}
               title={poem.title}
               author={poem.author}
@@ -39,6 +40,7 @@ const CardsSection = ({
             />
           ) : (
             <PoemCardDickinson
+              key={key}
               id={poem.id ?? ""}
               title={poem.title}
               author={poem.author}
@@ -49,9 +51,10 @@ const CardsSection = ({
           )
         })}
       {!shuffledPoems &&
-        displayPoems.map((poem: Poem) => {
+        displayPoems.map((poem: Poem, key) => {
           return pageId === "Shakespeare" ? (
             <PoemCardShakespeare
+              key={key}
               id={poem.id ?? ""}
               title={poem.title}
               author={poem.author}
@@ -61,6 +64,7 @@ const CardsSection = ({
             />
           ) : (
             <PoemCardDickinson
+              key={key}
               id={poem.id ?? ""}
               title={poem.title}
               author={poem.author}
@@ -69,7 +73,7 @@ const CardsSection = ({
               theme={theme}
             />
           )
-        })} 
+        })}
     </section>
   )
 }

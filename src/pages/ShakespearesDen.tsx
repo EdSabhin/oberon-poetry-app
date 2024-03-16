@@ -48,7 +48,7 @@ const ShakespearesDen = () => {
 
   useEffect(() => {
     setPoems(uniqueIdPoems);
-  }, [uniqueIdPoems]);
+  }, []);
 
   // Open Sidebar
   const [sidebar, setSidebar] = useState<boolean>(false)
