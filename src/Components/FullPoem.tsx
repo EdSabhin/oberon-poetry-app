@@ -6,7 +6,7 @@ import { Poem } from "../pages/ShakespearesDen"
 import Button from "./Button"
 
 type FullPoemProps = {
-  id: string
+  pageId: string
   poems?: Poem
   fullPoemView: string | null
   setFullPoemView: (value: string | null) => void
@@ -14,7 +14,7 @@ type FullPoemProps = {
 }
 
 const FullPoem = ({
-  id,
+  pageId,
   poems,
   fullPoemView,
   setFullPoemView,
@@ -27,7 +27,7 @@ const FullPoem = ({
     setTimeout(() => {
       const fullPoem = document.getElementById("Shakespeare")
       fullPoem?.scrollIntoView({ behavior: "smooth" })
-    }, 1200)
+    }, 700)
   }, [fullPoemView])
 
   /* Theme */
@@ -77,16 +77,16 @@ const FullPoem = ({
   }
 
   return (
-    <main id={id} className={poemCard}>
+    <main id={pageId} className={poemCard}>
       <div className="w-1/2 flex flex-col items-center justify-center text-5xl">
         <div className="flex mt-8">
           <h1 className={titleClass}>
-            {id === "Shakespeare" ? shakespeareTitle : dickinsonTitle}
+            {pageId === "Shakespeare" ? shakespeareTitle : dickinsonTitle}
           </h1>
           <Button
             onClick={() => setFullPoemView(null)}
             text={
-              id === "Shakespeare" ? "Retrace Thy Steps" : "Return, O Wanderer"
+              pageId === "Shakespeare" ? "Retrace Thy Steps" : "Return, O Wanderer"
             }
             className={poemButton}
           />

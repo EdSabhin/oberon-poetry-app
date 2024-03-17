@@ -9,8 +9,6 @@ import Button from "./Button"
 import MusicPlayer from "./MusicPlayer"
 import ThemeButton from "./ThemeButton"
 import CardsSection from "./CardsSection"
-import { songData } from "@/service/songData"
-import FullPoem from "./FullPoem"
 
 type Props = {
   poems: Poem[]
@@ -43,12 +41,14 @@ const MainShakespeare = ({
     setShuffledPoems(true)
   }
 
+
+  // Scroll to Main
   useEffect(() => {
     const mainSection = document.getElementById("mainSection")
     mainSection?.scrollIntoView({ behavior: "smooth" })
   }, [fullPoemView])
 
-  /* Theme */
+  // Theme 
   let mainClass
   let title
   let titleClass

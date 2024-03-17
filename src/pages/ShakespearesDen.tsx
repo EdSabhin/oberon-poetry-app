@@ -81,13 +81,13 @@ const ShakespearesDen = () => {
           handleOpenSidebar={handleOpenSidebar}
           bloodNight={bloodNight}
           setBloodNight={setBloodNight}
-          setFullPoemView={setFullPoemView}
           fullPoemView={fullPoemView}
+          setFullPoemView={setFullPoemView}      
           theme={!bloodNight ? "playwright" : "bloodNight"}
         />
       ) : (
         <FullPoem
-          id="Shakespeare"
+          pageId="Shakespeare"
           fullPoemView={fullPoemView}
           poems={poems.find((poem) => poem.id === fullPoemView)}
           setFullPoemView={setFullPoemView}

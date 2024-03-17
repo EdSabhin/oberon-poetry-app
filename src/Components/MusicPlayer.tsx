@@ -19,22 +19,22 @@ type Props = {
 
 const MusicPlayer = ({ theme }: Props) => {
   /* Audio Player */
-  const [isPlaying, setIsPlaying] = useState<boolean>(true)
+  const [isPlaying, setIsPlaying] = useState<boolean>(false)
   const [isMuted, setIsMuted] = useState<boolean>(true)
   const [currentSongIndex, setCurrentSongIndex] = useState(0)
   const audioRef = useRef<any>(null)
 
-  const attemptPlay = () => {
-    audioRef &&
-      audioRef.current &&
-      audioRef.current.play().catch((error: any) => {
-        console.error("Error attempting to play music.", error)
-      })
-  }
+  // const attemptPlay = () => {
+  //   audioRef &&
+  //     audioRef.current &&
+  //     audioRef.current.play().catch((error: any) => {
+  //       console.error("Error attempting to play music.", error)
+  //     })
+  // }
 
-  useEffect(() => {
-    attemptPlay()
-  }, [])
+  // useEffect(() => {
+  //   attemptPlay()
+  // }, [])
 
   const handleMute = () => {
     setIsMuted(!isMuted)
@@ -99,7 +99,7 @@ const MusicPlayer = ({ theme }: Props) => {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <audio ref={audioRef} src={songData[currentSongIndex].src} autoPlay />
+      <audio ref={audioRef} src={songData[currentSongIndex].src}/>
       <div className={musicPlayer}>
         <button onClick={handleMute} className={buttonClass}>
           {isMuted ? <RxSpeakerLoud /> : <RxSpeakerOff />}
