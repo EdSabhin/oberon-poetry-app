@@ -49,7 +49,7 @@ const Sidebar = ({ setSidebar, poems, handlePoemClick }: SidebarProps) => {
 
   return (
     <div
-      className={`w-[35%] fixed inset-y-0 left-0 z-10 opacity-90 flex flex-col items-start pt-12 pb-16 pl-12 bg-gradient-to-b from-slate-950 to-stone-800`}
+      className={`w-[35%] fixed inset-y-0 left-0 z-10 !opacity-90 flex flex-col items-start pt-12 pb-16 pl-12 bg-gradient-to-b from-slate-950 to-stone-800 slide-in-left`}
     >
       <div className="flex flex-col gap-4">
         <div className="flex items-center mt-12 gap-6">
@@ -78,24 +78,26 @@ const Sidebar = ({ setSidebar, poems, handlePoemClick }: SidebarProps) => {
       >
         Results
       </h3>
-      {searchResults && <div className="h-[20rem] flex flex-col mb-12 overflow-y-auto">
-        <ul
-          className={`${OldStandardTT.className} flex flex-col gap-6 pt-4 pb-5 px-4 mr-12 bg-stone-100 rounded-xl overflow-y-auto`}
-        >
-          {showResults &&
-            searchResults.map((poem, id) => (
-              <div key={id}>
-                <h3 className="text-md text-orange-900">
-                  Matches in:{" "}
-                  <span
-                    onClick={() => handlePoemClick(poem.id)}
-                    className="py-2 px-3 ml-2 rounded-lg hover:bg-gradient-to-r hover:from-stone-300 hover:to-orange-200 underline underline-offset-4 cursor-pointer"
-                  >{`${poem.title.split(":")[0].trim()}`}</span>
-                </h3>
-              </div>
-            ))}
-        </ul>
-      </div>}
+      {searchResults && (
+        <div className="h-[20rem] flex flex-col mb-12 overflow-y-auto">
+          <ul
+            className={`${OldStandardTT.className} flex flex-col gap-6 pt-4 pb-5 px-4 mr-12 bg-stone-100 rounded-xl overflow-y-auto`}
+          >
+            {showResults &&
+              searchResults.map((poem, id) => (
+                <div key={id}>
+                  <h3 className="text-md text-orange-900">
+                    Matches in:{" "}
+                    <span
+                      onClick={() => handlePoemClick(poem.id)}
+                      className="py-2 px-3 ml-2 rounded-lg hover:bg-gradient-to-r hover:from-stone-300 hover:to-orange-200 underline underline-offset-4 cursor-pointer"
+                    >{`${poem.title.split(":")[0].trim()}`}</span>
+                  </h3>
+                </div>
+              ))}
+          </ul>
+        </div>
+      )}
       <h3
         className={`${OldStandardTT.className} text-xl text-orange-100 py-2 mr-12 mb-4`}
       >

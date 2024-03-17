@@ -1,19 +1,21 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 
 import mainProps from "@/component-props/mainProps"
 import { Poem } from "@/pages/ShakespearesDen"
 import { scrollToTop } from "@/service/scrollToTop"
 import shufflePoems from "@/service/shufflePoems"
-
 import LoadingImage from "./LoadingImage"
 import Button from "./Button"
 import MusicPlayer from "./MusicPlayer"
 import ThemeButton from "./ThemeButton"
 import CardsSection from "./CardsSection"
+import { songData } from "@/service/songData"
+import FullPoem from "./FullPoem"
 
 type Props = {
   poems: Poem[]
   handleOpenSidebar: () => void
+  fullPoemView: string | null
   setFullPoemView: (value: string) => void
   loading: boolean
   bloodNight?: boolean
@@ -24,6 +26,7 @@ type Props = {
 const MainShakespeare = ({
   poems,
   handleOpenSidebar,
+  fullPoemView,
   setFullPoemView,
   loading,
   bloodNight,
@@ -40,6 +43,11 @@ const MainShakespeare = ({
     setShuffledPoems(true)
   }
 
+  useEffect(() => {
+    const mainSection = document.getElementById("mainSection")
+    mainSection?.scrollIntoView({ behavior: "smooth" })
+  }, [fullPoemView])
+
   /* Theme */
   let mainClass
   let title
@@ -55,7 +63,7 @@ const MainShakespeare = ({
   }
 
   return (
-    <main className={mainClass}>
+    <main id="mainSection" className={mainClass}>
       <div className="w-full flex justify-between mt-8 mb-12">
         <div className="flex flex-col gap-20">
           <h2 className={titleClass}>{title}</h2>
@@ -83,7 +91,9 @@ const MainShakespeare = ({
             }}
             theme={theme}
           />
-          {/* <MusicPlayer theme={!bloodNight ? "playwright" : "bloodNight"} /> */}
+          <MusicPlayer
+            theme={!bloodNight ? "playwright" : "bloodNight"}
+          />
         </div>
       </div>
 

@@ -1,0 +1,55 @@
+"filename", "language", "JSON with Comments", "JavaScript", "Markdown", "TypeScript JSX", "JSON", "TypeScript", "XML", "CSS", "comment", "blank", "total"
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\.eslintrc.json", "JSON with Comments", 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\.prettierrc.js", "JavaScript", 0, 5, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\README.md", "Markdown", 0, 0, 9, 0, 0, 0, 0, 0, 0, 2, 11
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\next.config.js", "JavaScript", 0, 20, 0, 0, 0, 0, 0, 0, 1, 2, 23
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\package-lock.json", "JSON", 0, 0, 0, 0, 4639, 0, 0, 0, 0, 1, 4640
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\package.json", "JSON", 0, 0, 0, 0, 34, 0, 0, 0, 0, 1, 35
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\postcss.config.js", "JavaScript", 0, 6, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\public\images\aqua-cat.svg", "XML", 0, 0, 0, 0, 0, 0, 14, 0, 0, 1, 15
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\public\images\black-cat.svg", "XML", 0, 0, 0, 0, 0, 0, 28, 0, 0, 2, 30
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\public\images\blood-bones.svg", "XML", 0, 0, 0, 0, 0, 0, 8, 0, 0, 1, 9
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\public\images\blood-moon-cat.svg", "XML", 0, 0, 0, 0, 0, 0, 14, 0, 0, 1, 15
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\public\images\bones.svg", "XML", 0, 0, 0, 0, 0, 0, 4, 0, 0, 1, 5
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\public\images\crescent-moon.svg", "XML", 0, 0, 0, 0, 0, 0, 810, 0, 0, 1, 811
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\public\images\gold-moon-cat.svg", "XML", 0, 0, 0, 0, 0, 0, 33, 0, 0, 1, 34
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\public\next.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\component-props\footerProps.ts", "TypeScript", 0, 0, 0, 0, 0, 72, 0, 0, 0, 2, 74
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\component-props\headerProps.ts", "TypeScript", 0, 0, 0, 0, 0, 58, 0, 0, 0, 2, 60
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\component-props\mainProps.ts", "TypeScript", 0, 0, 0, 0, 0, 153, 0, 0, 0, 2, 155
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\component-props\navbarProps.ts", "TypeScript", 0, 0, 0, 0, 0, 30, 0, 0, 0, 2, 32
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\component-props\propsIndex.ts", "TypeScript", 0, 0, 0, 0, 0, 3, 0, 0, 0, 1, 4
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\Button.tsx", "TypeScript JSX", 0, 0, 0, 19, 0, 0, 0, 0, 0, 5, 24
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\CardsSection.tsx", "TypeScript JSX", 0, 0, 0, 77, 0, 0, 0, 0, 0, 5, 82
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\Footer.tsx", "TypeScript JSX", 0, 0, 0, 158, 0, 0, 0, 0, 1, 11, 170
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\FooterContentDickinson.tsx", "TypeScript JSX", 0, 0, 0, 63, 0, 0, 0, 0, 0, 9, 72
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\FooterContentShakespeare.tsx", "TypeScript JSX", 0, 0, 0, 65, 0, 0, 0, 0, 0, 9, 74
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\FullPoem.tsx", "TypeScript JSX", 0, 0, 0, 88, 0, 0, 0, 0, 1, 9, 98
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\Header.tsx", "TypeScript JSX", 0, 0, 0, 57, 0, 0, 0, 0, 1, 9, 67
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\LoadingImage.tsx", "TypeScript JSX", 0, 0, 0, 19, 0, 0, 0, 0, 0, 4, 23
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\Main.tsx", "TypeScript JSX", 0, 0, 0, 101, 0, 0, 0, 0, 2, 13, 116
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\MainDickinson.tsx", "TypeScript JSX", 0, 0, 0, 72, 0, 0, 0, 0, 1, 10, 83
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\MainShakespeare.tsx", "TypeScript JSX", 0, 0, 0, 102, 0, 0, 0, 0, 2, 11, 115
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\ModalImage.tsx", "TypeScript JSX", 0, 0, 0, 45, 0, 0, 0, 0, 30, 7, 82
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\MusicPlayer.tsx", "TypeScript JSX", 0, 0, 0, 99, 0, 0, 0, 0, 2, 21, 122
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\Navbar.tsx", "TypeScript JSX", 0, 0, 0, 64, 0, 0, 0, 0, 1, 8, 73
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\PoemCardDickinson.tsx", "TypeScript JSX", 0, 0, 0, 66, 0, 0, 0, 0, 1, 9, 76
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\PoemCardShakespeare.tsx", "TypeScript JSX", 0, 0, 0, 102, 0, 0, 0, 0, 1, 9, 112
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\Sidebar.tsx", "TypeScript JSX", 0, 0, 0, 114, 0, 0, 0, 0, 1, 16, 131
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\components\ThemeButton.tsx", "TypeScript JSX", 0, 0, 0, 51, 0, 0, 0, 0, 1, 9, 61
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\pages\EmilyDsGreatestHits.tsx", "TypeScript JSX", 0, 0, 0, 64, 0, 0, 0, 0, 1, 9, 74
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\pages\PoetsList.tsx", "TypeScript JSX", 0, 0, 0, 59, 0, 0, 0, 0, 2, 6, 67
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\pages\ShakespearesDen.tsx", "TypeScript JSX", 0, 0, 0, 92, 0, 0, 0, 0, 4, 11, 107
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\pages\_app.tsx", "TypeScript JSX", 0, 0, 0, 11, 0, 0, 0, 0, 0, 3, 14
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\pages\_document.tsx", "TypeScript JSX", 0, 0, 0, 12, 0, 0, 0, 0, 0, 2, 14
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\pages\api\hello.ts", "TypeScript", 0, 0, 0, 0, 0, 10, 0, 0, 1, 3, 14
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\pages\index.tsx", "TypeScript JSX", 0, 0, 0, 17, 0, 0, 0, 0, 0, 2, 19
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\service\fetchData.ts", "TypeScript", 0, 0, 0, 0, 0, 8, 0, 0, 0, 1, 9
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\service\scrollToElement.ts", "TypeScript", 0, 0, 0, 0, 0, 9, 0, 0, 0, 1, 10
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\service\scrollToTop.ts", "TypeScript", 0, 0, 0, 0, 0, 6, 0, 0, 0, 1, 7
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\service\shufflePoems.ts", "TypeScript", 0, 0, 0, 0, 0, 5, 0, 0, 0, 3, 8
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\service\songData.ts", "TypeScript", 0, 0, 0, 0, 0, 20, 0, 0, 0, 1, 21
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\src\styles\globals.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 338, 55, 28, 421
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\tailwind.config.js", "JavaScript", 0, 25, 0, 0, 0, 0, 0, 0, 2, 2, 29
+"c:\Users\ESH\Desktop\Dev\Projects\edsabhin\oberon-poetry-app\tsconfig.json", "JSON with Comments", 24, 0, 0, 0, 0, 0, 0, 0, 0, 1, 25
+"Total", "-", 27, 56, 9, 1617, 4673, 374, 912, 338, 111, 274, 8391

@@ -1,0 +1,320 @@
+{
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/.eslintrc.json": {
+    "language": "JSON with Comments",
+    "code": 3,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/tailwind.config.js": {
+    "language": "JavaScript",
+    "code": 25,
+    "comment": 2,
+    "blank": 2
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/tsconfig.json": {
+    "language": "JSON with Comments",
+    "code": 24,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/postcss.config.js": {
+    "language": "JavaScript",
+    "code": 6,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/README.md": {
+    "language": "Markdown",
+    "code": 9,
+    "comment": 0,
+    "blank": 2
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/FullPoem.tsx": {
+    "language": "TypeScript JSX",
+    "code": 88,
+    "comment": 1,
+    "blank": 9
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/next.config.js": {
+    "language": "JavaScript",
+    "code": 20,
+    "comment": 1,
+    "blank": 2
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/FooterContentDickinson.tsx": {
+    "language": "TypeScript JSX",
+    "code": 63,
+    "comment": 0,
+    "blank": 9
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/package.json": {
+    "language": "JSON",
+    "code": 34,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/Header.tsx": {
+    "language": "TypeScript JSX",
+    "code": 57,
+    "comment": 1,
+    "blank": 9
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/.prettierrc.js": {
+    "language": "JavaScript",
+    "code": 5,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/Footer.tsx": {
+    "language": "TypeScript JSX",
+    "code": 158,
+    "comment": 1,
+    "blank": 11
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/Main.tsx": {
+    "language": "TypeScript JSX",
+    "code": 101,
+    "comment": 2,
+    "blank": 13
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/LoadingImage.tsx": {
+    "language": "TypeScript JSX",
+    "code": 19,
+    "comment": 0,
+    "blank": 4
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/service/songData.ts": {
+    "language": "TypeScript",
+    "code": 20,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/FooterContentShakespeare.tsx": {
+    "language": "TypeScript JSX",
+    "code": 65,
+    "comment": 0,
+    "blank": 9
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/CardsSection.tsx": {
+    "language": "TypeScript JSX",
+    "code": 77,
+    "comment": 0,
+    "blank": 5
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/Button.tsx": {
+    "language": "TypeScript JSX",
+    "code": 19,
+    "comment": 0,
+    "blank": 5
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/service/shufflePoems.ts": {
+    "language": "TypeScript",
+    "code": 5,
+    "comment": 0,
+    "blank": 3
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/service/scrollToElement.ts": {
+    "language": "TypeScript",
+    "code": 9,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/service/scrollToTop.ts": {
+    "language": "TypeScript",
+    "code": 6,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/Sidebar.tsx": {
+    "language": "TypeScript JSX",
+    "code": 114,
+    "comment": 1,
+    "blank": 16
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/ThemeButton.tsx": {
+    "language": "TypeScript JSX",
+    "code": 51,
+    "comment": 1,
+    "blank": 9
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/PoemCardShakespeare.tsx": {
+    "language": "TypeScript JSX",
+    "code": 102,
+    "comment": 1,
+    "blank": 9
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/MusicPlayer.tsx": {
+    "language": "TypeScript JSX",
+    "code": 99,
+    "comment": 2,
+    "blank": 21
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/Navbar.tsx": {
+    "language": "TypeScript JSX",
+    "code": 64,
+    "comment": 1,
+    "blank": 8
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/PoemCardDickinson.tsx": {
+    "language": "TypeScript JSX",
+    "code": 66,
+    "comment": 1,
+    "blank": 9
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/ModalImage.tsx": {
+    "language": "TypeScript JSX",
+    "code": 45,
+    "comment": 30,
+    "blank": 7
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/service/fetchData.ts": {
+    "language": "TypeScript",
+    "code": 8,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/MainShakespeare.tsx": {
+    "language": "TypeScript JSX",
+    "code": 102,
+    "comment": 2,
+    "blank": 11
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/components/MainDickinson.tsx": {
+    "language": "TypeScript JSX",
+    "code": 72,
+    "comment": 1,
+    "blank": 10
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/public/images/aqua-cat.svg": {
+    "language": "XML",
+    "code": 14,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/public/images/black-cat.svg": {
+    "language": "XML",
+    "code": 28,
+    "comment": 0,
+    "blank": 2
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/pages/_document.tsx": {
+    "language": "TypeScript JSX",
+    "code": 12,
+    "comment": 0,
+    "blank": 2
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/public/next.svg": {
+    "language": "XML",
+    "code": 1,
+    "comment": 0,
+    "blank": 0
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/component-props/headerProps.ts": {
+    "language": "TypeScript",
+    "code": 58,
+    "comment": 0,
+    "blank": 2
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/styles/globals.css": {
+    "language": "CSS",
+    "code": 338,
+    "comment": 55,
+    "blank": 28
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/pages/ShakespearesDen.tsx": {
+    "language": "TypeScript JSX",
+    "code": 92,
+    "comment": 4,
+    "blank": 11
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/pages/_app.tsx": {
+    "language": "TypeScript JSX",
+    "code": 11,
+    "comment": 0,
+    "blank": 3
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/package-lock.json": {
+    "language": "JSON",
+    "code": 4639,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/component-props/footerProps.ts": {
+    "language": "TypeScript",
+    "code": 72,
+    "comment": 0,
+    "blank": 2
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/component-props/mainProps.ts": {
+    "language": "TypeScript",
+    "code": 153,
+    "comment": 0,
+    "blank": 2
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/pages/index.tsx": {
+    "language": "TypeScript JSX",
+    "code": 17,
+    "comment": 0,
+    "blank": 2
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/pages/EmilyDsGreatestHits.tsx": {
+    "language": "TypeScript JSX",
+    "code": 64,
+    "comment": 1,
+    "blank": 9
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/pages/PoetsList.tsx": {
+    "language": "TypeScript JSX",
+    "code": 59,
+    "comment": 2,
+    "blank": 6
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/component-props/navbarProps.ts": {
+    "language": "TypeScript",
+    "code": 30,
+    "comment": 0,
+    "blank": 2
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/component-props/propsIndex.ts": {
+    "language": "TypeScript",
+    "code": 3,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/src/pages/api/hello.ts": {
+    "language": "TypeScript",
+    "code": 10,
+    "comment": 1,
+    "blank": 3
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/public/images/blood-moon-cat.svg": {
+    "language": "XML",
+    "code": 14,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/public/images/gold-moon-cat.svg": {
+    "language": "XML",
+    "code": 33,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/public/images/bones.svg": {
+    "language": "XML",
+    "code": 4,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/public/images/blood-bones.svg": {
+    "language": "XML",
+    "code": 8,
+    "comment": 0,
+    "blank": 1
+  },
+  "file:///c%3A/Users/ESH/Desktop/Dev/Projects/edsabhin/oberon-poetry-app/public/images/crescent-moon.svg": {
+    "language": "XML",
+    "code": 810,
+    "comment": 0,
+    "blank": 1
+  }
+}

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 import mainProps from "@/component-props/mainProps"
 
@@ -8,13 +8,27 @@ import Button from "./Button"
 type FullPoemProps = {
   id: string
   poems?: Poem
+  fullPoemView: string | null
   setFullPoemView: (value: string | null) => void
   theme: string
 }
 
-const FullPoem = ({ id, poems, setFullPoemView, theme }: FullPoemProps) => {
+const FullPoem = ({
+  id,
+  poems,
+  fullPoemView,
+  setFullPoemView,
+  theme,
+}: FullPoemProps) => {
   const shakespeareTitle = poems?.title.slice(0, poems.title.indexOf(":"))
   const dickinsonTitle = poems?.title
+
+  useEffect(() => {
+    setTimeout(() => {
+      const fullPoem = document.getElementById("Shakespeare")
+      fullPoem?.scrollIntoView({ behavior: "smooth" })
+    }, 1200)
+  }, [fullPoemView])
 
   /* Theme */
   let poemCard
@@ -63,7 +77,7 @@ const FullPoem = ({ id, poems, setFullPoemView, theme }: FullPoemProps) => {
   }
 
   return (
-    <main className={poemCard}>
+    <main id={id} className={poemCard}>
       <div className="w-1/2 flex flex-col items-center justify-center text-5xl">
         <div className="flex mt-8">
           <h1 className={titleClass}>

@@ -9,7 +9,7 @@ import Footer from "../components/Footer"
 import Sidebar from "@/components/Sidebar"
 
 export interface Poem {
-  id?: string 
+  id?: string
   title: string
   author: string
   lines: string[]
@@ -41,20 +41,21 @@ const ShakespearesDen = () => {
     }
   }
 
-  const uniqueIdPoems:Poem[] = poems.map((poem) => ({
+  const uniqueIdPoems: Poem[] = poems.map((poem) => ({
     ...poem,
     id: `${poem.title}-${poem.author}`,
   }))
 
   useEffect(() => {
-    //  Check if uniqueIdPoems is different from current poems 
-    //  to avoid infinite loop. Only sets state when they are   
+    //  Check if uniqueIdPoems is different from current poems
+    //  to avoid infinite loop. Only sets state when they are
     //  different, and keeps latest state of poems.
-  const uniqueIsDifferent = JSON.stringify(uniqueIdPoems) !== JSON.stringify(poems);
-  if (uniqueIsDifferent) {
-    setPoems(uniqueIdPoems);
-  }
-}, [uniqueIdPoems, poems]);
+    const uniqueIsDifferent =
+      JSON.stringify(uniqueIdPoems) !== JSON.stringify(poems)
+    if (uniqueIsDifferent) {
+      setPoems(uniqueIdPoems)
+    }
+  }, [uniqueIdPoems, poems])
 
   // Open Sidebar
   const [sidebar, setSidebar] = useState<boolean>(false)
@@ -81,12 +82,14 @@ const ShakespearesDen = () => {
           bloodNight={bloodNight}
           setBloodNight={setBloodNight}
           setFullPoemView={setFullPoemView}
+          fullPoemView={fullPoemView}
           theme={!bloodNight ? "playwright" : "bloodNight"}
         />
       ) : (
         <FullPoem
           id="Shakespeare"
-          poems={poems.find(poem => poem.id === fullPoemView)}
+          fullPoemView={fullPoemView}
+          poems={poems.find((poem) => poem.id === fullPoemView)}
           setFullPoemView={setFullPoemView}
           theme={!bloodNight ? "playwright" : "bloodNight"}
         />
