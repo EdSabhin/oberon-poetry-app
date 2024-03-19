@@ -99,7 +99,7 @@ const MusicPlayer = ({ theme }: Props) => {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <audio ref={audioRef} src={songData[currentSongIndex].src}/>
+      <audio ref={audioRef} src={songData[currentSongIndex].src} />
       <div className={musicPlayer}>
         <button onClick={handleMute} className={buttonClass}>
           {isMuted ? <RxSpeakerLoud /> : <RxSpeakerOff />}

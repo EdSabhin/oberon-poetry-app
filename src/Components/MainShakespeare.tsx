@@ -47,7 +47,7 @@ const MainShakespeare = ({
     mainSection?.scrollIntoView({ behavior: "smooth" })
   }, [fullPoemView])
 
-  // Theme 
+  // Theme
   let mainClass
   let title
   let titleClass
@@ -55,10 +55,12 @@ const MainShakespeare = ({
 
   switch (theme) {
     case "playwright":
-      ;({ mainClass, title, titleClass, utilityButton } = mainProps.shakespeare.playwright)
+      ;({ mainClass, title, titleClass, utilityButton } =
+        mainProps.shakespeare.playwright)
       break
     case "bloodNight":
-      ;({ mainClass, title, titleClass, utilityButton } = mainProps.shakespeare.bloodNight)
+      ;({ mainClass, title, titleClass, utilityButton } =
+        mainProps.shakespeare.bloodNight)
       break
   }
 
@@ -78,7 +80,7 @@ const MainShakespeare = ({
               onClick={() => {
                 randomizePoems()
               }}
-              className={ utilityButton}
+              className={utilityButton}
             />
           </div>
         </div>
@@ -91,9 +93,7 @@ const MainShakespeare = ({
             }}
             theme={theme}
           />
-          <MusicPlayer
-            theme={!bloodNight ? "playwright" : "bloodNight"}
-          />
+          <MusicPlayer theme={!bloodNight ? "playwright" : "bloodNight"} />
         </div>
       </div>
 

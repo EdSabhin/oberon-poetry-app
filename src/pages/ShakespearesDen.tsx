@@ -63,10 +63,10 @@ const ShakespearesDen = () => {
     setSidebar(true)
   }
 
-   // Scroll to Main before opening FullPoem 
-   useEffect(() => {
-      const mainContainer = document.getElementById("mainContainer")
-      mainContainer?.scrollIntoView({ behavior: "smooth" })
+  // Scroll to Main before opening FullPoem
+  useEffect(() => {
+    const mainContainer = document.getElementById("mainContainer")
+    mainContainer?.scrollIntoView({ behavior: "smooth" })
   }, [fullPoemView])
 
   return (
@@ -77,30 +77,31 @@ const ShakespearesDen = () => {
           setSidebar={setSidebar}
           poems={poems}
           handlePoemClick={(id) => setFullPoemView(id ?? null)}
+          theme={!bloodNight ? "playwright" : "bloodNight"}
         />
       )}
       <Header theme={!bloodNight ? "playwright" : "bloodNight"} />
       <div id="mainContainer">
         {fullPoemView === null ? (
-        <MainShakespeare
-          loading={loading}
-          poems={poems}
-          handleOpenSidebar={handleOpenSidebar}
-          bloodNight={bloodNight}
-          setBloodNight={setBloodNight}
-          fullPoemView={fullPoemView}
-          setFullPoemView={setFullPoemView}      
-          theme={!bloodNight ? "playwright" : "bloodNight"}
-        />
-      ) : (
-        <FullPoem
-          pageId="Shakespeare"
-          poems={poems.find((poem) => poem.id === fullPoemView)}
-          setFullPoemView={setFullPoemView}
-          theme={!bloodNight ? "playwright" : "bloodNight"}
-        />
-      )}
-      </div>      
+          <MainShakespeare
+            loading={loading}
+            poems={poems}
+            handleOpenSidebar={handleOpenSidebar}
+            bloodNight={bloodNight}
+            setBloodNight={setBloodNight}
+            fullPoemView={fullPoemView}
+            setFullPoemView={setFullPoemView}
+            theme={!bloodNight ? "playwright" : "bloodNight"}
+          />
+        ) : (
+          <FullPoem
+            pageId="Shakespeare"
+            poems={poems.find((poem) => poem.id === fullPoemView)}
+            setFullPoemView={setFullPoemView}
+            theme={!bloodNight ? "playwright" : "bloodNight"}
+          />
+        )}
+      </div>
       <Footer
         id="Shakespeare"
         bloodNight={bloodNight}

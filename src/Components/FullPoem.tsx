@@ -12,12 +12,7 @@ type FullPoemProps = {
   theme: string
 }
 
-const FullPoem = ({
-  pageId,
-  poems,
-  setFullPoemView,
-  theme,
-}: FullPoemProps) => {
+const FullPoem = ({ pageId, poems, setFullPoemView, theme }: FullPoemProps) => {
   const shakespeareTitle = poems?.title.slice(0, poems.title.indexOf(":"))
   const dickinsonTitle = poems?.title
 
@@ -77,7 +72,9 @@ const FullPoem = ({
           <Button
             onClick={() => setFullPoemView(null)}
             text={
-              pageId === "Shakespeare" ? "Retrace Thy Steps" : "Return, O Wanderer"
+              pageId === "Shakespeare"
+                ? "Retrace Thy Steps"
+                : "Return, O Wanderer"
             }
             className={poemButton}
           />
