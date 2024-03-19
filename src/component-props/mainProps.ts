@@ -13,6 +13,8 @@ const mainProps = {
       },
       themeButton:
         "w-[15rem] p-3 pl-6 text-lg text-stone-300 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-r hover:from-stone-800 hover:via-rose-950 hover:to-stone-950 shadow-md shadow-stone-950 rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
+      utilityButton:
+        "w-[15rem] h-[3rem] flex justify-center py-3 pl-8 pr-8 gap-5 text-stone-200 hover:text-orange-100 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-900 hover:to-stone-700 shadow-md rounded-bl-full rounded-tr-full shadow-stone-950 hover:-translate-x-2 transition duration-500 ease-in-out",
       poemCard: {
         class:
           "w-[75%] relative p-10 r-12 border-l-8 border-transparent bg-gradient-to-b from-gray-950 via-gray-500 to-gray-950 hover:bg-gradient-to-b hover:from-stone-950 hover:via-stone-600 hover:to-stone-950 hover:border-amber-200 rounded-[3%] rounded-br-[35%] shadow-md shadow-stone-950 transition ease-in-out hover:-translate-y-4 duration-300 group",
@@ -49,6 +51,8 @@ const mainProps = {
       },
       themeButton:
         "text-stone-300 w-[15rem] p-3 pl-6 text-lg text-stone-300 bg-gradient-to-r from-stone-800 via-rose-950 to-stone-950 hover:bg-gradient-to-r hover:from-slate-800 hover:to-stone-800 shadow-md shadow-stone-950 rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
+      utilityButton:
+        "w-[15rem] h-[3rem] flex justify-center py-3 pl-8 pr-8 gap-5 text-stone-200 hover:text-orange-100 bg-gradient-to-r from-stone-950 via-rose-950 to-stone-800 shadow-md rounded-bl-full rounded-tr-full shadow-stone-950 hover:-translate-x-2 transition duration-500 ease-in-out",
       poemCard: {
         class:
           "w-[75%] relative p-10 r-12 border-l-8 border-transparent bg-gradient-to-b from-stone-950 via-rose-900 to-stone-950 hover:bg-gradient-to-b hover:from-black hover:via-stone-900 hover:to-black hover:border-rose-500 rounded-[3%] rounded-br-[35%] shadow-sm shadow-stone-900 transition ease-in-out hover:-translate-y-4 duration-300 group",
@@ -87,6 +91,8 @@ const mainProps = {
       },
       themeButton:
         "w-[15rem] p-3 pl-6 text-lg text-neutral-900 hover:text-neutral-100 mt-4 bg-gradient-to-r from-white from-30% to-indigo-200 shadow-sm shadow-black hover:bg-gradient-to-r hover:from-cyan-700 hover:to-emerald-200  rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
+      utilityButton:
+        "w-[15rem] h-[3rem] flex justify-center py-3 pl-8 pr-8 gap-5 text-stone-200 hover:text-orange-100 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-900 hover:to-stone-700 shadow-md rounded-bl-full rounded-tr-full shadow-stone-950 hover:translate-x-2 transition duration-500 ease-in-out",
       poemCard: {
         class:
           "w-[28rem] h-[28rem] relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-rose-100 hover:bg-gradient-to-b from-black via-neutral-900 to-indigo-200 hover:shadow-lg hover:shadow-indigo-300 hover:text-rose-300 transition duration-300 group cursor-pointer",
@@ -124,6 +130,8 @@ const mainProps = {
       },
       themeButton:
         "w-[15rem] p-3 pl-6 mt-4 text-lg text-neutral-100 hover:text-neutral-900 bg-gradient-to-r from-cyan-700 from-30% to-emerald-200 shadow-sm shadow-black hover:bg-gradient-to-r hover:from-white hover:to-indigo-200 rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
+      utilityButton:
+        "w-[15rem] h-[3rem] flex justify-center py-3 pl-8 pr-8 gap-5 text-stone-200 hover:text-orange-100 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-900 hover:to-stone-700 shadow-md rounded-bl-full rounded-tr-full shadow-stone-950 hover:translate-x-2 transition duration-500 ease-in-out",
       poemCard: {
         class:
           "w-[28rem] h-[28rem] bg-moon relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-teal-200 hover:bg-gradient-to-b from-black via-cyan-900 to-cyan-200 hover:shadow-lg hover:shadow-cyan-300 hover:text-emerald-300 transition duration-300 group cursor-pointer",
