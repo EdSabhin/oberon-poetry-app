@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 
 import { Poem } from "@/pages/ShakespearesDen"
 
@@ -28,18 +28,19 @@ const Sidebar = ({
   const handleSearchUpdate = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value)
     setShowResults(event.target.value !== "")
+    filterSearch(event.target.value)
   }
 
   const [searchResults, setSearchResults] = useState<Poem[]>([])
 
-  const filterSearch = () => {
-    const searchText = searchTerm.toLowerCase().trim()
-    if (searchText === "") {
+  const filterSearch = (searchTerm:string) => {
+     searchTerm.toLowerCase().trim()
+    if (searchTerm === "") {
       setSearchResults([])
       return
     }
     const filterText = poems.filter((poem) =>
-      poem.lines.some((line) => line.toLowerCase().includes(searchText)),
+      poem.lines.some((line) => line.toLowerCase().includes(searchTerm)),
     )
     setSearchResults(filterText)
     setNoMatches(filterText.length === 0)
@@ -49,10 +50,6 @@ const Sidebar = ({
         setShowResults(true); 
     }
   }
-
-  useEffect(() => {
-    filterSearch()
-  }, [searchTerm])
 
   // Close Sidebar
   const handleCloseSidebar = () => {
@@ -111,7 +108,9 @@ const Sidebar = ({
           className={`${OldStandardTT.className} w-full text-md text-orange-900 py-2 px-4 mr-12 mb-8 bg-stone-100 rounded-br-full rounded-l-lg outline-none placeholder-stone-600 text-cursor-playwright`}
         />
       </div>
-      {noMatches && (
+      
+      <div>
+        {noMatches && (
         <h3
           className={`${OldStandardTT.className} text-xl text-rose-400 py-2 mr-12 mb-4`}
         >
@@ -144,6 +143,8 @@ const Sidebar = ({
           </div>
         </div>
       )}
+      </div>
+      
 
       <h3
         className={`${OldStandardTT.className} text-xl text-orange-100 py-2 mr-12 mb-4`}
