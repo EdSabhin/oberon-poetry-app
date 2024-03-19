@@ -8,7 +8,6 @@ import Button from "./Button"
 type FullPoemProps = {
   pageId: string
   poems?: Poem
-  fullPoemView: string | null
   setFullPoemView: (value: string | null) => void
   theme: string
 }
@@ -16,7 +15,6 @@ type FullPoemProps = {
 const FullPoem = ({
   pageId,
   poems,
-  fullPoemView,
   setFullPoemView,
   theme,
 }: FullPoemProps) => {

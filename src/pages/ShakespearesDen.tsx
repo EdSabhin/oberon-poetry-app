@@ -63,7 +63,7 @@ const ShakespearesDen = () => {
     setSidebar(true)
   }
 
-   // Scroll to Main before FullPoem animation
+   // Scroll to Main before opening FullPoem 
    useEffect(() => {
       const mainContainer = document.getElementById("mainContainer")
       mainContainer?.scrollIntoView({ behavior: "smooth" })
@@ -95,7 +95,6 @@ const ShakespearesDen = () => {
       ) : (
         <FullPoem
           pageId="Shakespeare"
-          fullPoemView={fullPoemView}
           poems={poems.find((poem) => poem.id === fullPoemView)}
           setFullPoemView={setFullPoemView}
           theme={!bloodNight ? "playwright" : "bloodNight"}

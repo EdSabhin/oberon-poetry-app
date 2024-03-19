@@ -41,8 +41,7 @@ const MainShakespeare = ({
     setShuffledPoems(true)
   }
 
-
-  // Scroll to Main
+  // Scroll to Main after closing FullPoem
   useEffect(() => {
     const mainSection = document.getElementById("mainSection")
     mainSection?.scrollIntoView({ behavior: "smooth" })
