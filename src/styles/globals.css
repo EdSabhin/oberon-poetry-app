@@ -19,6 +19,22 @@
   background-position: top;
 }
 
+.click-animation {
+  animation: changeColor 1s;
+  animation-duration: 3s;
+}
+@keyframes changeColor {
+  0% {
+    color: red; /* Initial color */
+  }
+  50% {
+    color: blue; /* Intermediate color */
+  }
+  100% {
+    color: green; /* Final color */
+  }
+}
+
 .text-color-animation {
   animation: textColorChange 3s infinite alternate;
 }

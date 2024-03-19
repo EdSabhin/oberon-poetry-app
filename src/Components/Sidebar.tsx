@@ -34,7 +34,7 @@ const Sidebar = ({
   const [searchResults, setSearchResults] = useState<Poem[]>([])
 
   const filterSearch = (searchTerm:string) => {
-     searchTerm.toLowerCase().trim()
+    searchTerm = searchTerm.toLowerCase().trim()
     if (searchTerm === "") {
       setSearchResults([])
       return
