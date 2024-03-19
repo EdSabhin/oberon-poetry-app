@@ -33,7 +33,7 @@ const Sidebar = ({
 
   const [searchResults, setSearchResults] = useState<Poem[]>([])
 
-  const filterSearch = (searchTerm:string) => {
+  const filterSearch = (searchTerm: string) => {
     searchTerm = searchTerm.toLowerCase().trim()
     if (searchTerm === "") {
       setSearchResults([])
@@ -44,10 +44,10 @@ const Sidebar = ({
     )
     setSearchResults(filterText)
     setNoMatches(filterText.length === 0)
-     if (filterText.length === 0) {
-        setShowResults(false); 
+    if (filterText.length === 0) {
+      setShowResults(false)
     } else if (filterText.length !== 0) {
-        setShowResults(true); 
+      setShowResults(true)
     }
   }
 
@@ -62,7 +62,12 @@ const Sidebar = ({
   let eyeCon
   let closeSidebar
   let inputClass
-  let results
+  let subsection
+  let resultsContainer
+  let resultsTitle: string
+  let allPoemsContainer
+  let poemTitle: string
+  let readPoem: string
 
   switch (theme) {
     case "playwright":
@@ -72,17 +77,58 @@ const Sidebar = ({
         eyeCon,
         closeSidebar,
         inputClass,
-        results,
+        subsection,
+        resultsContainer,
+        resultsTitle,
+        allPoemsContainer,
+        poemTitle,
+        readPoem,
       } = sidebarProps.shakespeare.playwright)
       break
     case "bloodNight":
-      ;({ sidebarClass, searchSonnets } = sidebarProps.shakespeare.bloodNight)
+      ;({
+        sidebarClass,
+        searchSonnets,
+        eyeCon,
+        closeSidebar,
+        inputClass,
+        subsection,
+        resultsContainer,
+        resultsTitle,
+        allPoemsContainer,
+        poemTitle,
+        readPoem,
+      } = sidebarProps.shakespeare.bloodNight)
       break
     case "sylph":
-      ;({ sidebarClass, searchSonnets } = sidebarProps.dickinson.sylph)
+      ;({
+        sidebarClass,
+        searchSonnets,
+        eyeCon,
+        closeSidebar,
+        inputClass,
+        subsection,
+        resultsContainer,
+        resultsTitle,
+        allPoemsContainer,
+        poemTitle,
+        readPoem,
+      } = sidebarProps.dickinson.sylph)
       break
     case "elegy":
-      ;({ sidebarClass, searchSonnets } = sidebarProps.dickinson.elegy)
+      ;({
+        sidebarClass,
+        searchSonnets,
+        eyeCon,
+        closeSidebar,
+        inputClass,
+        subsection,
+        resultsContainer,
+        resultsTitle,
+        allPoemsContainer,
+        poemTitle,
+        readPoem,
+      } = sidebarProps.dickinson.elegy)
       break
   }
 
@@ -95,7 +141,7 @@ const Sidebar = ({
 
           <p
             onClick={() => handleCloseSidebar()}
-            className={`${OldStandardTT.className} absolute top-[4%] right-[9%] py-1 px-2 text-2xl text-stone-300 font-bold hover:text-orange-200 hover:border-b hover:border-orange-100 rounded cursor-pointer  transition duration-300`}
+            className={closeSidebar}
           >
             X
           </p>
@@ -105,66 +151,65 @@ const Sidebar = ({
           placeholder="Search stanzas, verses, words..."
           value={searchTerm}
           onChange={handleSearchUpdate}
-          className={`${OldStandardTT.className} w-full text-md text-orange-900 py-2 px-4 mr-12 mb-8 bg-stone-100 rounded-br-full rounded-l-lg outline-none placeholder-stone-600 text-cursor-playwright`}
+          className={inputClass} 
         />
       </div>
-      
+
       <div>
         {noMatches && (
-        <h3
-          className={`${OldStandardTT.className} text-xl text-rose-400 py-2 mr-12 mb-4`}
-        >
-          No matches found. Query anew.
-        </h3>
-      )}
-      {showResults && (
-        <div>
           <h3
-            className={`${OldStandardTT.className} text-xl text-orange-100 py-2 mr-12 mb-4`}
+            className={`${OldStandardTT.className} text-xl text-rose-400 py-2 mr-12 mb-4`}
           >
-            Results
+            No matches found. Query anew.
           </h3>
-          <div className="h-[9.5rem] flex flex-col mb-12">
-            <ul
-              className={`${OldStandardTT.className} flex flex-col gap-6 pt-4 pb-5 px-4 mr-12 bg-stone-100 rounded-xl overflow-y-auto`}
+        )}
+        {showResults && (
+          <div>
+            <h3
+              className={subsection}
             >
-              {searchResults.map((poem, id) => (
-                <div key={id}>
-                  <h3 className="text-md text-orange-900">
-                    Matches in:
-                    <span
-                      onClick={() => handlePoemClick(poem.id)}
-                      className="py-2 px-3 ml-2 rounded-lg hover:bg-gradient-to-r hover:from-stone-300 hover:to-orange-200 underline underline-offset-4 cursor-pointer"
-                    >{`${poem.title.split(":")[0].trim()}`}</span>
-                  </h3>
-                </div>
-              ))}
-            </ul>
+              Results
+            </h3>
+            <div className="h-[9.5rem] flex flex-col mb-12">
+              <ul
+                className={resultsContainer}
+              >
+                {searchResults.map((poem, id) => (
+                  <div key={id}>
+                    <h3>
+                      Matches in:
+                      <span
+                        onClick={() => handlePoemClick(poem.id)}
+                        className={resultsTitle}
+                      >{`${poem.title.split(":")[0].trim()}`}</span>
+                    </h3>
+                  </div>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
-      )}
+        )}
       </div>
-      
 
       <h3
-        className={`${OldStandardTT.className} text-xl text-orange-100 py-2 mr-12 mb-4`}
+        className={subsection}
       >
         View all
       </h3>
       <div className="h-full flex flex-col overflow-y-auto">
-        <ul className="flex flex-col py-8 px-6 mr-12 gap-10 border border-stone-100 rounded-xl bg-stone-900">
+        <ul className={allPoemsContainer}>
           {poems.map((poem: Poem, index: number) => {
             return (
               <div key={index} className="flex gap-12">
                 <li
                   onClick={() => handlePoemClick(poem.id)}
-                  className={`${OldStandardTT.className} text-md text-orange-100 hover:text-orange-200 cursor-pointer`}
+                  className={poemTitle}
                 >
                   {poem.title}
                 </li>
                 <p
                   onClick={() => handlePoemClick(poem.id)}
-                  className={`${OldStandardTT.className} text-md text-stone-300 hover:underline underline-offset-4 decoration-stone-300 cursor-pointer`}
+                  className={readPoem}
                 >
                   Read
                 </p>
