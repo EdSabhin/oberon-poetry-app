@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 
 import mainProps from "@/component-props/mainProps"
 
@@ -22,13 +22,6 @@ const FullPoem = ({
 }: FullPoemProps) => {
   const shakespeareTitle = poems?.title.slice(0, poems.title.indexOf(":"))
   const dickinsonTitle = poems?.title
-
-  useEffect(() => {
-    setTimeout(() => {
-      const fullPoem = document.getElementById("Shakespeare")
-      fullPoem?.scrollIntoView({ behavior: "smooth" })
-    }, 700)
-  }, [fullPoemView])
 
   /* Theme */
   let poemCard

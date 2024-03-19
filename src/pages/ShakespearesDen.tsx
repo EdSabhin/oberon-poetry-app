@@ -63,6 +63,12 @@ const ShakespearesDen = () => {
     setSidebar(true)
   }
 
+   // Scroll to Main before FullPoem animation
+   useEffect(() => {
+      const mainContainer = document.getElementById("mainContainer")
+      mainContainer?.scrollIntoView({ behavior: "smooth" })
+  }, [fullPoemView])
+
   return (
     <div className={!bloodNight ? "bg-stone-900" : "bg-rose-950"}>
       <Navbar theme={!bloodNight ? "playwright" : "bloodNight"} />
@@ -74,7 +80,8 @@ const ShakespearesDen = () => {
         />
       )}
       <Header theme={!bloodNight ? "playwright" : "bloodNight"} />
-      {fullPoemView === null ? (
+      <div id="mainContainer">
+        {fullPoemView === null ? (
         <MainShakespeare
           loading={loading}
           poems={poems}
@@ -94,6 +101,7 @@ const ShakespearesDen = () => {
           theme={!bloodNight ? "playwright" : "bloodNight"}
         />
       )}
+      </div>      
       <Footer
         id="Shakespeare"
         bloodNight={bloodNight}
