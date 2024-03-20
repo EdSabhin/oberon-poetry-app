@@ -3,10 +3,10 @@ import { fetchData } from "@/service/fetchData"
 
 import Navbar from "../components/Navbar"
 import Header from "../components/Header"
-import MainShakespeare from "@/components/MainShakespeare"
+import Sidebar from "../components/Sidebar"
+import MainShakespeare from "../components/MainShakespeare"
 import FullPoem from "../components/FullPoem"
 import Footer from "../components/Footer"
-import Sidebar from "@/components/Sidebar"
 
 export interface Poem {
   id?: string
@@ -70,8 +70,15 @@ const ShakespearesDen = () => {
   }, [fullPoemView])
 
   return (
-    <div className={!bloodNight ? "bg-gradient-to-r from-slate-950 via-black to-slate-950" : "bg-gradient-to-r from-black via-stone-950 to-rose-950"}>
+    <div
+      className={
+        !bloodNight
+          ? "bg-gradient-to-r from-slate-950 via-black to-slate-950"
+          : "bg-gradient-to-r from-black via-stone-950 to-rose-950"
+      }
+    >
       <Navbar theme={!bloodNight ? "playwright" : "bloodNight"} />
+      <Header theme={!bloodNight ? "playwright" : "bloodNight"} />
       {sidebar && (
         <Sidebar
           setSidebar={setSidebar}
@@ -80,7 +87,6 @@ const ShakespearesDen = () => {
           theme={!bloodNight ? "playwright" : "bloodNight"}
         />
       )}
-      <Header theme={!bloodNight ? "playwright" : "bloodNight"} />
       <div id="mainContainer">
         {fullPoemView === null ? (
           <MainShakespeare

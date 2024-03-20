@@ -5,7 +5,6 @@
 .text-gradient {
   background: linear-gradient(to right, #ff335c, #84827d, #ff335c);
   background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -156,7 +155,6 @@
     color: #100025;
   }
 }
-
 
 .fade-in-out {
   animation: fadeInOut 8s ease-in-out infinite;

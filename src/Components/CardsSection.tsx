@@ -20,7 +20,13 @@ const CardsSection = ({
   shuffledPoems,
   theme,
 }: Props) => {
-  let displayPoems = poems.slice(0, 8)
+  let displayPoems: Poem[] = []
+
+  if (pageId === "Shakespeare") {
+    displayPoems = poems.slice(0, 8)
+  } else if (pageId === "Dickinson") {
+    displayPoems = poems.slice(34, 42)
+  }
 
   return (
     <section

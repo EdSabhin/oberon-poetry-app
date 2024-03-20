@@ -40,7 +40,7 @@ const mainProps = {
     },
     bloodNight: {
       mainClass:
-        " w-full flex flex-col items-start pt-8 pb-32 px-48 text-stone-200 bg-gradient-to-r from-black via-rose-900 to-black from-[3%] via-[57%] to-[96%] overflow-hidden group-hover:bg-gradient-to-r group-hover:from-black group-hover:to-stone-950",
+        " w-full flex flex-col items-start pt-8 pb-32 px-48 text-stone-200 bg-gradient-to-r from-black via-rose-900 to-black from-[3%] via-[57%] to-[96%] overflow-hidden",
       title: "Prospero's Grimoire",
       titleClass:
         "h-max flex items-center py-6 px-16 text-5xl text-blood-title-animation bg-gradient-to-r from-stone-950 via-rose-800 to-stone-900 rounded-tl rounded-br rounded-full shadow-md shadow-black",
@@ -86,13 +86,13 @@ const mainProps = {
         "flex items-center py-2 px-16 text-5xl bg-gradient-to-r from-white to-sky-200 rounded-tl rounded-br rounded-full shadow-sm shadow-neutral-600",
       musicPlayer: {
         class:
-          "w-[15rem] h-[2.5rem] flex justify-end py-3 pl-8 pr-8 gap-5 text-neutral-900 mt-4 bg-gradient-to-l from-white from-30% to-indigo-200 shadow-sm shadow-black rounded-bl-full hover:-translate-x-2 transition duration-500 ease-in-out",
+          "w-[15rem] h-[2.5rem] flex justify-end py-3 pl-8 pr-8 gap-5 text-neutral-900 mt-4 bg-gradient-to-l from-white to-indigo-200 shadow-sm shadow-black rounded-bl-full hover:-translate-x-2 transition duration-500 ease-in-out",
         buttonClass: "hover:text-rose-600",
       },
       themeButton:
         "w-[15rem] p-3 pl-6 text-lg text-neutral-900 hover:text-neutral-100 mt-4 bg-gradient-to-r from-white from-30% to-indigo-200 shadow-sm shadow-black hover:bg-gradient-to-r hover:from-cyan-700 hover:to-emerald-200  rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
       utilityButton:
-        "w-[15rem] h-[3rem] flex justify-center py-3 pl-8 pr-8 gap-5 text-stone-200 hover:text-orange-100 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-900 hover:to-stone-700 shadow-md rounded-bl-full rounded-tr-full shadow-stone-950 hover:translate-x-2 transition duration-500 ease-in-out",
+        "w-[8rem] h-[8rem] flex justify-center items-center pt-3 pb-4 pl-8 pr-8 gap-5 text-neutral-900-200 hover:text-orange-100 bg-gradient-to-r from-white to-indigo-200 hover:bg-gradient-to-br hover:from-stone-900 hover:to-stone-700 shadow-sm rounded-full  shadow-black hover:-translate-x-2 transition duration-150 ease-in-out",
       poemCard: {
         class:
           "w-[28rem] h-[28rem] relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-rose-100 hover:bg-gradient-to-b from-black via-neutral-900 to-indigo-200 hover:shadow-lg hover:shadow-indigo-300 hover:text-rose-300 transition duration-300 group cursor-pointer",

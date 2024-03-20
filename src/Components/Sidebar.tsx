@@ -139,10 +139,7 @@ const Sidebar = ({
           <h2 className={searchSonnets}>Search Sonnets</h2>
           <SiApachecassandra className={eyeCon} />
 
-          <p
-            onClick={() => handleCloseSidebar()}
-            className={closeSidebar}
-          >
+          <p onClick={() => handleCloseSidebar()} className={closeSidebar}>
             X
           </p>
         </div>
@@ -151,7 +148,7 @@ const Sidebar = ({
           placeholder="Search stanzas, verses, words..."
           value={searchTerm}
           onChange={handleSearchUpdate}
-          className={inputClass} 
+          className={inputClass}
         />
       </div>
 
@@ -165,15 +162,9 @@ const Sidebar = ({
         )}
         {showResults && (
           <div>
-            <h3
-              className={subsection}
-            >
-              Results
-            </h3>
+            <h3 className={subsection}>Results</h3>
             <div className="h-[9.5rem] flex flex-col mb-12">
-              <ul
-                className={resultsContainer}
-              >
+              <ul className={resultsContainer}>
                 {searchResults.map((poem, id) => (
                   <div key={id}>
                     <h3>
@@ -191,16 +182,12 @@ const Sidebar = ({
         )}
       </div>
 
-      <h3
-        className={subsection}
-      >
-        View all
-      </h3>
+      <h3 className={subsection}>View all</h3>
       <div className="h-full flex flex-col overflow-y-auto">
         <ul className={allPoemsContainer}>
           {poems.map((poem: Poem, index: number) => {
             return (
-              <div key={index} className="flex gap-12">
+              <div key={index} className="flex justify-between gap-12">
                 <li
                   onClick={() => handlePoemClick(poem.id)}
                   className={poemTitle}

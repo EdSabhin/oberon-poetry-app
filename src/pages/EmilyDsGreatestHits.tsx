@@ -3,15 +3,16 @@ import { fetchData } from "@/service/fetchData"
 import { Poem } from "./ShakespearesDen"
 
 import Navbar from "../components/Navbar"
-import Header from "@/components/Header"
-import MainDickinson from "@/components/MainDickinson"
-import FullPoem from "@/components/FullPoem"
+import Header from "../components/Header"
+import Sidebar from "../components/Sidebar"
+import MainDickinson from "../components/MainDickinson"
+import FullPoem from "../components/FullPoem"
 import Footer from "../components/Footer"
 
 const EmilyDsGreatestHits = () => {
   const [poems, setPoems] = useState<Poem[]>([])
   const [loading, setLoading] = useState<boolean>(true)
-  const [fullPoemView, setFullPoemView] = useState<number | null>(null)
+  const [fullPoemView, setFullPoemView] = useState<string | null>(null)
   const [elegy, setElegy] = useState<boolean>(false)
 
   useEffect(() => {
@@ -33,29 +34,74 @@ const EmilyDsGreatestHits = () => {
     }
   }
 
-  const poemsArray: Poem[] = poems.slice(34, 42)
+  const uniqueIdPoems: Poem[] = poems.map((poem) => ({
+    ...poem,
+    id: `${poem.title}-${poem.author}`,
+  }))
+
+  useEffect(() => {
+    //  Check if uniqueIdPoems is different from current poems
+    //  to avoid infinite loop. Only sets state when they are
+    //  different, and keeps latest state of poems.
+    const uniqueIsDifferent =
+      JSON.stringify(uniqueIdPoems) !== JSON.stringify(poems)
+    if (uniqueIsDifferent) {
+      setPoems(uniqueIdPoems)
+    }
+  }, [uniqueIdPoems, poems])
+
+  // Open Sidebar
+  const [sidebar, setSidebar] = useState<boolean>(false)
+  const handleOpenSidebar = () => {
+    setSidebar(true)
+  }
+
+  // Scroll to Main before opening FullPoem
+  useEffect(() => {
+    const mainContainer = document.getElementById("mainContainer")
+    mainContainer?.scrollIntoView({ behavior: "smooth" })
+  }, [fullPoemView])
 
   return (
-    <div className={!elegy ? "bg-white" : "bg-cyan-950"}>
+    <div
+      className={
+        !elegy
+          ? "bg-gradient-to-r from-white via-neutral-100 to-indigo-200"
+          : "bg-gradient-to-r from-neutral-950 via-neutral-100 to-cyan-700"
+      }
+    >
       <Navbar theme={!elegy ? "sylph" : "elegy"} />
       <Header theme={!elegy ? "sylph" : "elegy"} />
-      {fullPoemView === null ? (
-        <MainDickinson
-          loading={loading}
-          poemsArray={poemsArray}
-          elegy={elegy}
-          setElegy={setElegy}
-          setFullPoemView={setFullPoemView}
-          theme={!elegy ? "sylph" : "elegy"}
-        />
-      ) : (
-        <FullPoem
-          id="Dickinson"
-          poemsArray={poemsArray[fullPoemView]}
-          setFullPoemView={setFullPoemView}
+      {sidebar && (
+        <Sidebar
+          setSidebar={setSidebar}
+          poems={poems}
+          handlePoemClick={(id) => setFullPoemView(id ?? null)}
           theme={!elegy ? "sylph" : "elegy"}
         />
       )}
+      <div id="mainContainer">
+        {fullPoemView === null ? (
+          <MainDickinson
+            loading={loading}
+            poems={poems}
+            handleOpenSidebar={handleOpenSidebar}
+            elegy={elegy}
+            setElegy={setElegy}
+            fullPoemView={fullPoemView}
+            setFullPoemView={setFullPoemView}
+            theme={!elegy ? "sylph" : "elegy"}
+          />
+        ) : (
+          <FullPoem
+            pageId="Dickinson"
+            poems={poems.find((poem) => poem.id === fullPoemView)}
+            setFullPoemView={setFullPoemView}
+            theme={!elegy ? "sylph" : "elegy"}
+          />
+        )}
+      </div>
+
       <Footer
         id="Dickinson"
         bloodNight={false}

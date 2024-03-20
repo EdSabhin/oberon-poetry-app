@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react"
+import React, { useState, useEffect } from "react"
 
 import mainProps from "@/component-props/mainProps"
 import { Poem } from "@/pages/ShakespearesDen"
+
 import { scrollToTop } from "@/service/scrollToTop"
 import shufflePoems from "@/service/shufflePoems"
+
 import LoadingImage from "./LoadingImage"
 import Button from "./Button"
 import MusicPlayer from "./MusicPlayer"
