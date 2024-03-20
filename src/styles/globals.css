@@ -96,15 +96,15 @@
   }
 }
 
-.text-verse-teal-animation {
-  animation: textVerseTealChange 4s infinite alternate;
+.text-verse-cyan-animation {
+  animation: textVerseCyanChange 4s infinite alternate;
 }
-@keyframes textVerseTealChange {
+@keyframes textVerseCyanChange {
   0% {
     color: #ffffff;
   }
   75% {
-    color: #41cbbd;
+    color: #0fc4ca;
   }
   100% {
     color: #ffffff;

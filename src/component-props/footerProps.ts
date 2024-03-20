@@ -38,13 +38,13 @@ const footerProps = {
   dickinson: {
     sylph: {
       footerClass: `w-full relative pt-10 pb-24 px-48
-      bg-gradient-to-b from-indigo-100 via-rose-200 to-teal-100 tracking-wider`,
+      bg-gradient-to-b from-indigo-100 via-rose-200 to-purple-200 tracking-wider`,
       footerContainer:
         "flex pl-10 gap-28 border-x border-indigo-400 border-opacity-30",
       titleClass:
         "leading-[4rem] text-4xl text-transparent bg-clip-text bg-gradient-to-r from-teal-700 to-rose-700",
       quoteClass: "text-2xl text-amber-700 tracking-wider leading-[3rem]",
-      quoteVerseClass: "text-verse-teal-animation cursor-pointer",
+      quoteVerseClass: "text-verse-cyan-animation cursor-pointer",
       quoteWorkClass: "mt-6 ml-40 text-rose-900",
       attributions:
         "mb-2 pr-2 text-xl text-indigo-700 underline underline-offset-4 decoration-1 decoration-indigo-300",
