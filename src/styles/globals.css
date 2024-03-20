@@ -157,20 +157,6 @@
   }
 }
 
-.bg-change {
-  animation: bgChange 4s ease-in-out infinite;
-}
-@keyframes bgChange {
-  0% {
-    background-color: blue;
-  }
-  50% {
-    background-color: red;
-  }
-  100% {
-    background-color: blue;
-  }
-}
 
 .fade-in-out {
   animation: fadeInOut 8s ease-in-out infinite;

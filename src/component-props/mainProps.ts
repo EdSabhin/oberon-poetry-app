@@ -40,7 +40,7 @@ const mainProps = {
     },
     bloodNight: {
       mainClass:
-        " w-full flex flex-col items-start pt-8 pb-32 px-48 text-stone-200 bg-gradient-to-r from-black via-rose-900 to-black from-[3%] via-[57%] to-[96%] overflow-hidden",
+        " w-full flex flex-col items-start pt-8 pb-32 px-48 text-stone-200 bg-gradient-to-r from-black via-rose-900 to-black from-[3%] via-[57%] to-[96%] overflow-hidden group-hover:bg-gradient-to-r group-hover:from-black group-hover:to-stone-950",
       title: "Prospero's Grimoire",
       titleClass:
         "h-max flex items-center py-6 px-16 text-5xl text-blood-title-animation bg-gradient-to-r from-stone-950 via-rose-800 to-stone-900 rounded-tl rounded-br rounded-full shadow-md shadow-black",

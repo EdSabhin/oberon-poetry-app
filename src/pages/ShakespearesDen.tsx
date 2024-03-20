@@ -70,7 +70,7 @@ const ShakespearesDen = () => {
   }, [fullPoemView])
 
   return (
-    <div className={!bloodNight ? "bg-stone-900" : "bg-rose-950"}>
+    <div className={!bloodNight ? "bg-gradient-to-r from-slate-950 via-black to-slate-950" : "bg-gradient-to-r from-black via-stone-950 to-rose-950"}>
       <Navbar theme={!bloodNight ? "playwright" : "bloodNight"} />
       {sidebar && (
         <Sidebar
