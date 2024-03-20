@@ -186,6 +186,9 @@
   }
 }
 
+.rotate-circular {
+  animation: rotate360 9s linear infinite;
+}
 @keyframes rotate360 {
   from {
     transform: rotate(0deg);
@@ -193,10 +196,6 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.rotate-circular {
-  animation: rotate360 5s linear infinite;
 }
 
 .slide-in-left {

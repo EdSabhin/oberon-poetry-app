@@ -54,15 +54,16 @@ const MainDickinson = ({
   let mainClass
   let title
   let titleClass
-  let utilityButton
+  let utilityButtonLeft
+  let utilityButtonRight
 
   switch (theme) {
     case "sylph":
-      ;({ mainClass, title, titleClass, utilityButton } =
+      ;({ mainClass, title, titleClass, utilityButtonLeft, utilityButtonRight } =
         mainProps.dickinson.sylph)
       break
     case "elegy":
-      ;({ mainClass, title, titleClass, utilityButton } =
+      ;({ mainClass, title, titleClass, utilityButtonLeft, utilityButtonRight } =
         mainProps.dickinson.elegy)
       break
   }
@@ -83,21 +84,22 @@ const MainDickinson = ({
           />
         </div>
       </div>
+      
       <div className="w-full flex justify-center items-center mb-8 gap-12">
         <Button
           text="Peruse Hits"
           onClick={handleOpenSidebar}
-          className={`${utilityButton} justify-end rounded-bl-full hover:-translate-x-2 bg-gradient-to-r from-white to-indigo-200 hover:bg-gradient-to-r hover:from-neutral-300 hover:to-rose-100`}
+          className={utilityButtonLeft}
         />
-        <div className="w-[4.4rem] h-[4.4rem] justify-center items-center bg-gradient-to-r from-white to-neutral-100 flex text-4xl rounded-full gap-3">
-          <TfiInfinite className="text-5xl text-neutral-400 cursor-pointer" />
+        <div className="w-[4.7rem] h-[4.7rem] justify-center items-center bg-gradient-to-r from-white to-neutral-100 flex text-4xl rounded-full gap-3">
+          <TfiInfinite className="text-5xl text-neutral-400 cursor-pointer rotate-circular" />
         </div>
         <Button
           text="Shuffle Poems"
           onClick={() => {
             randomizePoems()
           }}
-          className={`${utilityButton} justify-start rounded-br-full hover:translate-x-2 bg-gradient-to-l from-white to-indigo-200 hover:bg-gradient-to-l hover:from-neutral-300 hover:to-rose-100`}
+          className={utilityButtonRight}
         />
       </div>
 
