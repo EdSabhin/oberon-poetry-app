@@ -81,6 +81,7 @@ const ShakespearesDen = () => {
       <Header theme={!bloodNight ? "playwright" : "bloodNight"} />
       {sidebar && (
         <Sidebar
+          pageId="Shakespeare"
           setSidebar={setSidebar}
           poems={poems}
           handlePoemClick={(id) => setFullPoemView(id ?? null)}

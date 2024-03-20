@@ -84,7 +84,7 @@ const MainDickinson = ({
           />
         </div>
       </div>
-      
+
       <div className="w-full flex justify-center items-center mb-8 gap-12">
         <Button
           text="Peruse Hits"

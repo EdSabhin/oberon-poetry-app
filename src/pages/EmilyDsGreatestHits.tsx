@@ -74,6 +74,7 @@ const EmilyDsGreatestHits = () => {
       <Header theme={!elegy ? "sylph" : "elegy"} />
       {sidebar && (
         <Sidebar
+          pageId="Dickinson"
           setSidebar={setSidebar}
           poems={poems}
           handlePoemClick={(id) => setFullPoemView(id ?? null)}

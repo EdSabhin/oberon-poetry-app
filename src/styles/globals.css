@@ -15,6 +15,18 @@
   caret-color: rgb(170, 22, 86);
 }
 
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #969696;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: #ffffff;
+}
+
 .bg-moon {
   background-image: url("/images/crescent-moon.svg");
   background-size: cover;
