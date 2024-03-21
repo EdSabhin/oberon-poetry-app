@@ -68,10 +68,10 @@ const MainShakespeare = ({
 
   return (
     <main id="mainSection" className={mainClass}>
-      <div className="w-full flex justify-between mt-8 mb-12">
-        <div className="flex flex-col gap-20">
+      <div className="w-full flex flex-col md:flex-row justify-between mt-8 mb-12 gap-10">
+        <div className="flex flex-col gap-10 md:gap-20">
           <h2 className={titleClass}>{title}</h2>
-          <div className="flex gap-12">
+          <div className="flex md:gap-12">
             <Button
               text="Search Sonnets"
               onClick={handleOpenSidebar}
@@ -91,7 +91,7 @@ const MainShakespeare = ({
             text={theme === "playwright" ? "Blood Night" : "Playwright"}
             onClick={() => {
               setBloodNight && setBloodNight(!bloodNight)
-              scrollToTop()
+              // scrollToTop()
             }}
             theme={theme}
           />
