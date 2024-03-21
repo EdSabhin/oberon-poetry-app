@@ -86,18 +86,23 @@ const mainProps = {
         "flex items-center py-2 px-16 text-5xl bg-gradient-to-r from-white to-sky-200 rounded-tl rounded-br rounded-full shadow-sm shadow-neutral-600",
       musicPlayer: {
         class:
-          "w-[15rem] h-[2.5rem] flex justify-end py-3 px-8 gap-5 text-neutral-900 hover:text-indigo-500 mt-4 bg-gradient-to-l from-white to-indigo-200 hover:bg-gradient-to-r hover:from-neutral-300 hover:to-rose-100 shadow-sm shadow-black rounded-bl-full hover:-translate-x-2 transition duration-500 ease-in-out",
+          "w-[15rem] h-[2.5rem] flex justify-end py-3 px-8 gap-5 text-neutral-900 hover:text-indigo-600 mt-4 bg-gradient-to-l from-white to-indigo-200 hover:bg-gradient-to-r hover:from-indigo-100 hover:to-rose-100 shadow-sm shadow-black rounded-bl-full hover:-translate-x-2 transition duration-500 ease-in-out",
         buttonClass: "hover:text-purple-500",
       },
       themeButton:
         "w-[15rem] p-3 pl-6 text-lg text-neutral-900 hover:text-neutral-100 mt-4 bg-gradient-to-r from-white from-30% to-indigo-200 shadow-sm shadow-black hover:bg-gradient-to-r hover:from-cyan-700 hover:to-emerald-200 rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
       utilityButtonLeft:
-        "w-[15rem] h-[2.7rem] flex items-center py-3 text-neutral-900 justify-end rounded-bl-full hover:-translate-x-2 bg-gradient-to-r from-white to-indigo-200 hover:bg-gradient-to-r hover:from-neutral-300 hover:to-rose-100 hover:text-purple-500 active:text-teal-300 shadow-sm shadow-black transition duration-150 ease-in-out",
+        "w-[15rem] h-[2.7rem] flex items-center py-3 text-neutral-900 justify-end rounded-bl-full hover:-translate-x-2 bg-gradient-to-r from-white to-indigo-200 hover:bg-gradient-to-r hover:from-indigo-100 hover:to-rose-100 hover:text-purple-500 active:text-white shadow-sm shadow-black transition duration-150 ease-in-out",
       utilityButtonRight:
-        "w-[15rem] h-[2.7rem] flex items-center py-3 text-neutral-900 justify-start rounded-br-full hover:translate-x-2 bg-gradient-to-l from-white to-indigo-200 hover:bg-gradient-to-l hover:from-neutral-300 hover:to-rose-100 hover:text-purple-500 active:text-teal-300 shadow-sm shadow-black transition duration-150 ease-in-out",
+        "w-[15rem] h-[2.7rem] flex items-center py-3 text-neutral-900 justify-start rounded-br-full hover:translate-x-2 bg-gradient-to-l from-white to-indigo-200 hover:bg-gradient-to-l hover:from-indigo-100 hover:to-rose-100 hover:text-purple-500 active:text-white shadow-sm shadow-black transition duration-150 ease-in-out",
+      infinity: {
+        container:
+          "w-[4.7rem] h-[4.7rem] justify-center items-center bg-gradient-to-b from-white to-neutral-100 flex text-4xl rounded-full gap-3",
+        symbol: "text-5xl text-neutral-400 cursor-pointer rotate-circular",
+      },
       poemCard: {
         class:
-          "w-[28rem] h-[28rem] relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-rose-100 hover:bg-gradient-to-b from-black via-neutral-900 to-indigo-200 hover:shadow-lg hover:shadow-indigo-300 hover:text-rose-300 transition duration-300 group cursor-pointer",
+          "w-[28rem] h-[28rem] relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-rose-100 hover:bg-gradient-to-b from-black via-neutral-900 to-indigo-200 hover:shadow-lg hover:shadow-indigo-300 hover:text-rose-400 transition duration-300 group cursor-pointer",
         iconRight:
           "w-24 h-24 absolute top-10 right-[-1%] flex justify-center items-center rounded-full group-hover:opacity-[0.87] group-hover:bg-gradient-to-b group-hover:from-black group-hover:to-indigo-200 group-shadow-md group-shadow-rose-200 cursor-pointer duration-300",
         iconLeft:
@@ -113,7 +118,7 @@ const mainProps = {
         titleClass:
           "py-6 px-28 mb-8 text-5xl bg-gradient-to-r from-white to-sky-100 rounded-bl rounded-tr rounded-full",
         poemButton:
-          "w-max p-2 mt-4 bg-gradient-to-r from-white from-30% to-indigo-200 shadow-sm shadow-black rounded-br-full transition ease-in-out duration-300 absolute top-[30%] right-[15%] hover:-translate-x-5",
+          "w-max p-2 mt-4 bg-gradient-to-r from-white from-30% to-indigo-200 shadow-sm shadow-black rounded-br-full transition ease-in-out duration-300 absolute top-[38%] right-[15%] hover:-translate-x-5",
         verses:
           "w-max py-1 px-10 text-amber-700 leading-relaxed tracking-wide text-[1.57rem] hover:text-neutral-900 rounded-full hover:bg-gradient-to-r hover:from-sky-100 hover:via-rose-100 hover:to-sky-100 transition-ease-in-out duration-300",
         authorClass: "pt-1 px-2 text-2xl text-neutral-900",
@@ -127,15 +132,20 @@ const mainProps = {
         "text-aqua-title-animation flex items-center py-2 px-16 text-5xl text-neutral-100 bg-gradient-to-r from-black via-cyan-500 to-teal-950 rounded-tl rounded-br rounded-full shadow-sm shadow-neutral-600",
       musicPlayer: {
         class:
-          "w-[15rem] h-[2.5rem] flex justify-end py-3 pl-8 pr-8 gap-5 text-neutral-100 mt-4 bg-gradient-to-l from-cyan-700 from-30% to-emerald-200 shadow-sm shadow-black rounded-bl-full hover:-translate-x-2 transition duration-500 ease-in-out",
+          "w-[15rem] h-[2.5rem] flex justify-end py-3 pl-8 pr-8 gap-5 text-neutral-100 mt-4 bg-gradient-to-l from-cyan-700 from-30% to-emerald-200 hover:from-neutral-950 hover:to-cyan-800 hover:text-cyan-100 active:text-cyan-300 shadow-sm shadow-black rounded-bl-full hover:-translate-x-2 transition duration-500 ease-in-out",
         buttonClass: "hover:text-green-400",
       },
       themeButton:
         "w-[15rem] p-3 pl-6 mt-4 text-lg text-neutral-100 hover:text-neutral-900 bg-gradient-to-r from-cyan-700 from-30% to-emerald-200 shadow-sm shadow-black hover:bg-gradient-to-r hover:from-white hover:to-indigo-200 rounded-br-full hover:translate-x-2 transition ease-in-out duration-500 group",
       utilityButtonLeft:
-        "w-[15rem] h-[2.7rem] flex items-center py-3 text-neutral-900 justify-end rounded-bl-full hover:-translate-x-2 bg-gradient-to-r from-white to-indigo-200 hover:bg-gradient-to-r hover:from-neutral-300 hover:to-rose-100 hover:text-purple-500 active:text-teal-300 shadow-sm shadow-black transition duration-150 ease-in-out",
+        "w-[15rem] h-[2.7rem] flex items-center py-3 text-neutral-100 justify-end rounded-bl-full hover:-translate-x-2 bg-gradient-to-l from-cyan-700 to-emerald-200 hover:bg-gradient-to-r hover:from-neutral-950 hover:to-cyan-800 hover:text-cyan-100 active:text-black shadow-sm shadow-black transition duration-150 ease-in-out",
       utilityButtonRight:
-        "w-[15rem] h-[2.7rem] flex items-center py-3 text-neutral-900 justify-start rounded-br-full hover:translate-x-2 bg-gradient-to-l from-white to-indigo-200 hover:bg-gradient-to-l hover:from-neutral-300 hover:to-rose-100 hover:text-purple-500 active:text-teal-300 shadow-sm shadow-black transition duration-150 ease-in-out",
+        "w-[15rem] h-[2.7rem] flex items-center py-3 text-neutral-100 justify-start rounded-br-full hover:translate-x-2 bg-gradient-to-r from-cyan-700 to-emerald-200 hover:bg-gradient-to-l hover:from-neutral-950 hover:to-cyan-800 hover:text-cyan-100 active:text-black shadow-sm shadow-black transition duration-150 ease-in-out",
+      infinity: {
+        container:
+          "w-[4.7rem] h-[4.7rem] justify-center items-center bg-gradient-to-b from-cyan-900 to-black flex text-4xl rounded-full gap-3",
+        symbol: "text-5xl text-teal-300 cursor-pointer rotate-circular",
+      },
       poemCard: {
         class:
           "w-[28rem] h-[28rem] bg-moon relative px-20 flex justify-center items-center border-b rounded-full bg-white shadow-lg shadow-teal-200 hover:bg-gradient-to-b from-black via-cyan-900 to-cyan-200 hover:shadow-lg hover:shadow-cyan-300 hover:text-emerald-300 transition duration-300 group cursor-pointer",
@@ -154,7 +164,7 @@ const mainProps = {
         titleClass:
           "py-6 px-28 mb-8 text-5xl text-neutral-100 bg-gradient-to-r from-black via-cyan-600 to-teal-900 rounded-bl rounded-tr rounded-full",
         poemButton:
-          "w-max p-2 mt-4 bg-gradient-to-r text-neutral-100 from-cyan-800 to-teal-900 shadow-sm shadow-black rounded-br-full transition ease-in-out duration-300 absolute top-[30%] right-[15%] hover:-translate-x-5",
+          "w-max p-2 mt-4 bg-gradient-to-r text-neutral-100 from-cyan-800 to-teal-900 shadow-sm shadow-black rounded-br-full transition ease-in-out duration-300 absolute top-[38%] right-[15%] hover:-translate-x-5",
         verses:
           "w-max py-1 px-10 text-green-200 leading-relaxed tracking-wide text-[1.57rem] hover:text-teal-200 rounded-full hover:bg-gradient-to-r hover:from-cyan-200 hover:via-cyan-800 hover:to-cyan-200 transition-ease-in-out duration-300",
         authorClass: "pt-1 px-2 text-2xl text-neutral-100",

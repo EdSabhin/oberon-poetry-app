@@ -67,7 +67,7 @@ const EmilyDsGreatestHits = () => {
       className={
         !elegy
           ? "bg-gradient-to-r from-white via-neutral-100 to-indigo-200"
-          : "bg-gradient-to-r from-neutral-950 via-neutral-100 to-cyan-700"
+          : "bg-gradient-to-r from-black to-cyan-700"
       }
     >
       <Navbar theme={!elegy ? "sylph" : "elegy"} />

@@ -60,7 +60,7 @@ const Sidebar = ({
 
   /* Theme */
   let sidebarClass
-  let searchSonnets
+  let searchTitle
   let eyeCon
   let closeSidebar
   let inputClass
@@ -75,7 +75,7 @@ const Sidebar = ({
     case "playwright":
       ;({
         sidebarClass,
-        searchSonnets,
+        searchTitle,
         eyeCon,
         closeSidebar,
         inputClass,
@@ -90,7 +90,7 @@ const Sidebar = ({
     case "bloodNight":
       ;({
         sidebarClass,
-        searchSonnets,
+        searchTitle,
         eyeCon,
         closeSidebar,
         inputClass,
@@ -105,7 +105,7 @@ const Sidebar = ({
     case "sylph":
       ;({
         sidebarClass,
-        searchSonnets,
+        searchTitle,
         eyeCon,
         closeSidebar,
         inputClass,
@@ -120,7 +120,7 @@ const Sidebar = ({
     case "elegy":
       ;({
         sidebarClass,
-        searchSonnets,
+        searchTitle,
         eyeCon,
         closeSidebar,
         inputClass,
@@ -138,7 +138,9 @@ const Sidebar = ({
     <div className={`${OldStandardTT.className} ${sidebarClass}`}>
       <div className="flex flex-col gap-4">
         <div className="flex items-center mt-12 gap-6">
-          <h2 className={searchSonnets}>{pageId === "Shakespeare" ? "Search Sonnets" : "Hits of the 1800s"}</h2>
+          <h2 className={searchTitle}>
+            {pageId === "Shakespeare" ? "Search Sonnets" : "Hits of the 1800s"}
+          </h2>
           <SiApachecassandra className={eyeCon} />
 
           <p onClick={() => handleCloseSidebar()} className={closeSidebar}>
@@ -184,7 +186,6 @@ const Sidebar = ({
         )}
       </div>
 
-      
       <div className="h-full flex flex-col overflow-y-auto">
         <h3 className={subsection}>View all</h3>
         <ul className={allPoemsContainer}>
