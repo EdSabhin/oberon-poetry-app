@@ -42,10 +42,10 @@ const Header = ({ theme }: Props) => {
   return (
     <header className={headerClass}>
       <h1 className={authorClass}>{title}</h1>
-      <h2 className="text-[1.75rem] pt-4 pb-6 pr-4 text-start tracking-wide">
+      <h2 className="text-[1.43rem] md:text-[1.75rem] 2xl:text-[2.3rem] pt-4 pb-6 px-4 md:pr-4 text-start tracking-wide">
         {description}
       </h2>
-      <div className="w-full flex justify-end items-end pb-10 gap-2">
+      <div className="w-full flex justify-end items-end pb-10 px-3 gap-2">
         <h3 className={`${OldStandardTT.className} ${quoteAuthor}`}>
           Gee Pee Tee, of House Chat
         </h3>

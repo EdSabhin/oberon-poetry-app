@@ -2,22 +2,14 @@ const headerProps = {
   shakespeare: {
     playwright: {
       title: "On Shakespeare",
-      description: `"William Shakespeare's genius lies in his ability to capture the
-          complexities of human emotions and motivations, and convey them
-          through his characters' words and actions. His works demonstrate an
-          unparalleled mastery of language and poetic form, showcasing his
-          ability to create vivid imagery and use language to delightfully
-          express a wide range of ideas and emotions. Shakespeare's works have
-          endured for centuries because of their universal themes and enduring
-          relevance, which continue to resonate with audiences today. His legacy
-          has had a profound impact on the English language and literature, and
-          his plays continue to be celebrated as some of the greatest works of
-          art in human history."`,
+      description:
+        "William Shakespeare's genius lies in his ability to capture the complexities of human emotions and motivations, and convey them through his characters' words and actions. His works demonstrate an unparalleled mastery of language and poetic form, showcasing his ability to create vivid imagery and use language to delightfully express a wide range of ideas and emotions. Shakespeare's works have endured for centuries because of their universal themes and enduring relevance, which continue to resonate with audiences today. His legacy has had a profound impact on the English language and literature, and his plays continue to be celebrated as some of the greatest works of art in human history.",
       headerClass:
-        "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-b from-gray-700 to-stone-800 text-stone-200",
+        "w-full flex flex-col items-center md:items-start py-4 md:py-8 2xl:py-12 px-4 md:px-48 bg-gradient-to-b from-gray-700 to-stone-800 text-stone-200",
       authorClass:
-        "text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-amber-200 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900",
-      quoteAuthor: "text-2xl text-start text-orange-100",
+        "text-[3rem] md:text-[4rem] xl:text-7xl 2xl:text-[5.5rem] items-center md:items-start underline underline-offset-8 decoration-double decoration-1 decoration-amber-200 py-4 px-4 md:pr-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900",
+      quoteAuthor:
+        "text-xl md:text-2xl 2xl:text-3xl text-start text-orange-100",
       icon: "/images/gold-moon-cat.svg",
     },
     bloodNight: {

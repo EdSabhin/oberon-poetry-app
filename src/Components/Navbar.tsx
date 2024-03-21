@@ -30,7 +30,7 @@ const Navbar = ({ theme }: Props) => {
 
   return (
     <div className={navClass}>
-      <ul className="w-full flex justify-around text-3xl">
+      <ul className="w-full flex max-md:flex-col justify-around items-center gap-5 text-[1.6rem] md:text-[2rem] lg:text-3xl 2xl:text-[2.6rem]">
         <div className="flex gap-4 group">
           <Link href="/" className={linkClass}>{`Shakespeare's Den`}</Link>
           {theme === "bloodNight" && (
