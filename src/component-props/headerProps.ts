@@ -8,7 +8,7 @@ const headerProps = {
         "w-full flex flex-col items-center md:items-start py-4 md:py-8 2xl:py-12 px-4 md:px-48 bg-gradient-to-b from-gray-700 to-stone-800 text-stone-200",
       authorClass:
         "text-[3rem] md:text-[4rem] xl:text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-amber-200 py-4 px-4 md:pr-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900",
-      quoteAuthor: "text-2xl text-start text-orange-100",
+      quoteAuthor: "text-xl md:text-2xl text-start text-orange-100",
       icon: "/images/gold-moon-cat.svg",
     },
     bloodNight: {
@@ -19,7 +19,7 @@ const headerProps = {
         "w-full flex flex-col items-center md:items-start py-4 md:py-8 2xl:py-12 px-6 md:px-48 bg-gradient-to-b from-black via-rose-950 to-black text-rose-100",
       authorClass:
         "text-[3rem] md:text-[4rem] xl:text-7xl px-6 md:items-start underline underline-offset-8 decoration-double decoration-1 decoration-rose-900 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-stone-600 to-70% via-rose-500 to-stone-500",
-      quoteAuthor: "text-2xl text-start text-rose-300",
+      quoteAuthor: "text-xl md:text-2xl text-start text-rose-300",
       icon: "/images/blood-moon-cat.svg",
     },
   },

@@ -2,14 +2,15 @@ const navbarProps = {
   shakespeare: {
     playwright: {
       navClass:
-        "w-full p-8 bg-gradient-to-r from-blue-950 via-slate-700 to-stone-900",
+        "w-full py-10 px-8 bg-gradient-to-r from-blue-950 via-slate-700 to-stone-900",
       linkClass:
-        "py-2 px-2 text-transparent bg-clip-text bg-gradient-to-r from-amber-50 to-orange-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-amber-100 hover:to-orange-400 hover:underline decoration-1 hover:decoration-amber-500 hover:underline-offset-4",
+        "w-full p-2 text-transparent bg-clip-text bg-gradient-to-r from-amber-50 to-orange-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-amber-100 hover:to-orange-400 hover:underline decoration-1 hover:decoration-amber-500 hover:underline-offset-4",
     },
     bloodNight: {
-      navClass: "w-full p-8 bg-gradient-to-r from-black via-rose-950 to-black",
+      navClass:
+        "w-full py-10 px-8 bg-gradient-to-r from-black via-rose-950 to-black",
       linkClass:
-        "py-2 px-2  text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500 hover:underline hover:decoration-1 hover:decoration-rose-900 hover:underline-offset-4",
+        "w-full p-2 text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500 hover:underline hover:decoration-1 hover:decoration-rose-900 hover:underline-offset-4",
     },
   },
   dickinson: {
