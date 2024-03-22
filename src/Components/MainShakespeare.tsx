@@ -68,23 +68,23 @@ const MainShakespeare = ({
 
   return (
     <main id="mainSection" className={mainClass}>
-      <div className="w-full flex flex-col justify-between mt-8 mb-12 gap-10">
-        <div className="flex flex-col gap-10 md:gap-20">
-          <div className="flex flex-col md:flex-row justify-between items-start gap-10 2xl:mr-32">
-             <h2 className={titleClass}>{title}</h2>
-          <div className="flex flex-col items-center gap-10">
-          <ThemeButton
-            text={theme === "playwright" ? "Blood Night" : "Playwright"}
-            onClick={() => {
-              setBloodNight && setBloodNight(!bloodNight)
-              // scrollToTop()
-            }}
-            theme={theme}
-          />
-          <MusicPlayer theme={!bloodNight ? "playwright" : "bloodNight"} />
-        </div>
+      <div className="w-full flex flex-col items-center md:items-start mt-8 mb-12 gap-10">
+        <div className="flex flex-col items-center md:items-start gap-10 md:gap-20">
+          <div className="w-full flex flex-col md:flex-row md:items-start gap-10 md:gap-56 2xl:mr-32">
+            <h2 className={titleClass}>{title}</h2>
+            <div className="flex flex-col items-center gap-10">
+              <ThemeButton
+                text={theme === "playwright" ? "Blood Night" : "Playwright"}
+                onClick={() => {
+                  setBloodNight && setBloodNight(!bloodNight)
+                  // scrollToTop()
+                }}
+                theme={theme}
+              />
+              <MusicPlayer theme={!bloodNight ? "playwright" : "bloodNight"} />
+            </div>
           </div>
-         
+
           <div className="flex flex-col md:flex-row gap-10 md:gap-12">
             <Button
               text="Search Sonnets"
@@ -100,7 +100,6 @@ const MainShakespeare = ({
             />
           </div>
         </div>
-        
       </div>
 
       {loading ? (

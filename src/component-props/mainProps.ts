@@ -2,13 +2,13 @@ const mainProps = {
   shakespeare: {
     playwright: {
       mainClass:
-        "w-full flex flex-col items-start pt-12 pb-32 px-8 md:px-48 text-stone-200 bg-gradient-to-r from-black via-gray-600 to-black overflow-hidden",
+        "w-full flex flex-col items-center md:items-start pt-8 pb-32 px-4 md:px-48 text-stone-200 bg-gradient-to-r from-black via-gray-600 to-black overflow-hidden",
       title: "Oberon's House of Sonnets",
       titleClass:
         "h-max flex justify-center items-center py-6 pl-4 pr-10 md:pt-6 md:pb-4 md:px-20 text-[2rem] md:text-[2.85rem] text-orange-100 bg-gradient-to-r from-stone-950 via-stone-700 to-slate-950 rounded-br-full md:rounded-br-none md:rounded-tr-full md:rounded-bl-full shadow-md shadow-black",
       musicPlayer: {
         class:
-          "w-[15rem] h-[3rem] flex justify-start py-2 md:py-3 px-8 gap-5 text-stone-200 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-900 hover:to-stone-700 shadow-md rounded-br-full shadow-stone-950 hover:translate-x-2 transition duration-500 ease-in-out",
+          "w-[15rem] h-[3rem] flex justify-center md:justify-start py-2 md:py-3 px-8 gap-5 text-stone-200 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-900 hover:to-stone-700 shadow-md rounded-br-full shadow-stone-950 hover:translate-x-2 transition duration-500 ease-in-out",
         buttonClass: "hover:text-orange-300",
       },
       themeButton:
@@ -17,14 +17,14 @@ const mainProps = {
         "w-[15rem] h-[3.1rem] md:w-[15rem] md:h-[3rem] flex justify-center py-3 pl-8 pr-8 gap-5 text-stone-200 hover:text-orange-100 active:text-orange-500 bg-gradient-to-l from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-900 hover:to-stone-700 shadow-md rounded-bl-full rounded-tr-full shadow-stone-950 hover:-translate-x-2 transition duration-150 ease-in-out",
       poemCard: {
         class:
-          "w-[75%] relative p-10 r-12 border-l-8 border-transparent bg-gradient-to-b from-gray-950 via-gray-500 to-gray-950 hover:bg-gradient-to-b hover:from-stone-950 hover:via-stone-600 hover:to-stone-950 hover:border-amber-200 rounded-[3%] rounded-br-[35%] shadow-md shadow-stone-950 transition ease-in-out hover:-translate-y-4 duration-300 group",
+          "w-full flex-col items-center md:w-[75%] relative text-center md:text-start p-10 pb-14 md:r-12 border-l-8 border-transparent bg-gradient-to-b from-gray-950 via-gray-500 to-gray-950 hover:bg-gradient-to-b hover:from-stone-950 hover:via-stone-600 hover:to-stone-950 hover:border-amber-200 rounded-[10%] md:rounded-[3%] rounded-br-none md:rounded-br-[35%] shadow-md shadow-stone-950 transition ease-in-out hover:-translate-y-4 duration-300 group",
         poemButton:
-          "absolute top-[6.4%] right-[-16.7%] text-color-animation bg-gradient-to-r from-slate-800 to-stone-800 shadow-md shadow-stone-950 rounded-br-full transition ease-in-out duration-300 group-hover:bg-gradient-to-br group-hover:from-stone-900 group-hover:to-stone-700 group-hover:text-stone-200",
+          "w-[10rem] h-[2.7rem] absolute bottom-[-2.2%] right-[0%] md:top-[6.4%] md:right-[-16.7%] text-color-animation bg-gradient-to-r from-slate-800 to-stone-800 shadow-md shadow-stone-950 rounded-br-full transition ease-in-out duration-300 group-hover:bg-gradient-to-br group-hover:from-stone-900 group-hover:to-stone-700 group-hover:text-stone-200",
         titleClass:
-          "py-2 pr-2 text-6xl underline group-hover:decoration-2 group-hover:decoration-orange-200 group-hover:underline-offset-8 text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-amber-900",
+          "py-2 pr-2 text-5xl md:text-6xl underline group-hover:decoration-2 group-hover:decoration-orange-200 group-hover:underline-offset-8 text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-amber-900",
         authorClass: "pt-2 text-3xl text-yellow-100",
         verses:
-          "text-color-animation p-1 rounded text-[1.6rem] transition-ease-in-out hover:scale-105 duration-300 tracking-wide",
+          "text-color-animation py-3 md:p-1 text-[1.6rem] transition-ease-in-out hover:scale-105 duration-300 tracking-wide",
       },
       fullPoem: {
         class:
@@ -35,18 +35,18 @@ const mainProps = {
           "w-max p-2 mt-4 text-color-animation bg-gradient-to-b from-stone-800 to-stone-600 shadow-md shadow-stone-900 rounded-br-full transition ease-in-out duration-300 absolute top-[30%] right-[15%] hover:-translate-x-5",
         verses:
           "w-max py-1 px-10 text-stone-300 leading-relaxed tracking-wide text-[1.57rem] hover:text-orange-200 rounded-full hover:bg-gradient-to-r hover:from-stone-900 hover:via-stone-500 hover:to-stone-900 transition-ease-in-out duration-300",
-        authorClass: "pt-1 px-2 text-2xl text-orange-100 ",
+        authorClass: "p-2 md:pt-2 text-2xl md:text-3xl text-orange-100",
       },
     },
     bloodNight: {
       mainClass:
-        " w-full flex flex-col items-start pt-12 pb-32 px-8 md:px-48 text-stone-200 bg-gradient-to-r from-black via-rose-900 to-black from-[3%] via-[57%] to-[96%] overflow-hidden",
+        "w-full flex flex-col items-center md:items-start pt-8 pb-32 px-4 md:px-48 text-stone-200 bg-gradient-to-r from-black via-rose-900 to-black from-[3%] md:via-[57%] to-[96%] overflow-hidden",
       title: "Prospero's Grimoire",
       titleClass:
         "h-max flex justify-center items-center py-6 pl-4 pr-10 md:pt-6 md:pb-4 md:px-20 text-[2rem] md:text-[2.85rem] text-blood-title-animation bg-gradient-to-r from-stone-950 via-rose-800 to-stone-900 rounded-br-full md:rounded-br-none md:rounded-tr-full md:rounded-bl-full shadow-md shadow-black",
       musicPlayer: {
         class:
-          "w-[15rem] h-[3rem] flex justify-start py-2 md:py-3 px-8 gap-5 text-stone-200 bg-gradient-to-r from-stone-800 via-rose-950 to-black shadow-md rounded-br-full shadow-stone-950 hover:translate-x-2 transition duration-500 ease-in-out",
+          "w-[15rem] h-[3rem] flex justify-center md:justify-start py-2 md:py-3 px-8 gap-5 text-stone-200 bg-gradient-to-r from-stone-800 via-rose-950 to-black shadow-md rounded-br-full shadow-stone-950 hover:translate-x-2 transition duration-500 ease-in-out",
         buttonClass: "hover:text-rose-500",
       },
       themeButton:
@@ -55,14 +55,14 @@ const mainProps = {
         "w-[15rem] h-[3.1rem] md:w-[15rem] md:h-[3rem] flex justify-center py-3 pl-8 pr-8 gap-5 text-stone-200 hover:text-rose-100 active:text-rose-500 bg-gradient-to-r from-stone-950 via-rose-950 to-stone-800 shadow-md rounded-bl-full rounded-tr-full shadow-stone-950 hover:-translate-x-2 transition duration-150 ease-in-out",
       poemCard: {
         class:
-          "w-[75%] relative p-10 r-12 border-l-8 border-transparent bg-gradient-to-b from-stone-950 via-rose-900 to-stone-950 hover:bg-gradient-to-b hover:from-black hover:via-stone-900 hover:to-black hover:border-rose-500 rounded-[3%] rounded-br-[35%] shadow-sm shadow-stone-900 transition ease-in-out hover:-translate-y-4 duration-300 group",
+          "w-full flex-col items-center md:w-[75%] relative text-center md:text-start p-10 pb-14 md:r-12 border-l-8 border-transparent bg-gradient-to-b from-stone-950 via-rose-900 to-stone-950 hover:bg-gradient-to-b hover:from-black hover:via-stone-900 hover:to-black hover:border-rose-500 rounded-[10%] md:rounded-[3%] rounded-br-none md:rounded-br-[35%] shadow-sm shadow-stone-900 transition ease-in-out hover:-translate-y-4 duration-300 group",
         poemButton:
-          "absolute top-[6.4%] right-[-16.7%] text-blood-animation bg-gradient-to-r from-rose-950 to-stone-900 shadow-md shadow-stone-950 rounded-br-full transition ease-in-out duration-300 group-hover:bg-gradient-to-br group-hover:from-black group-hover:to-stone-800 group-hover:text-stone-200 group-hover:shadow-lg group-hover:shadow-rose-950",
+          "w-[10rem] h-[2.7rem] absolute bottom-[-2.2%] right-[0%] md:top-[6.4%] md:right-[-16.7%] text-blood-animation bg-gradient-to-r from-rose-950 to-stone-900 shadow-md shadow-stone-950 rounded-br-full transition ease-in-out duration-300 group-hover:bg-gradient-to-br group-hover:from-black group-hover:to-stone-800 group-hover:text-stone-200 group-hover:shadow-lg group-hover:shadow-rose-950",
         titleClass:
-          "py-2 pr-2 text-6xl underline group-hover:decoration-2 group-hover:decoration-stone-600 group-hover:underline-offset-8 text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-stone-500",
-        authorClass: "pt-2 text-3xl text-stone-400",
+          "py-2 pr-2 text-5xl md:text-6xl underline group-hover:decoration-2 group-hover:decoration-stone-600 group-hover:underline-offset-8 text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-stone-500",
+        authorClass: "p-2 md:pt-2 text-2xl md:text-3xl text-stone-400",
         verses:
-          "text-blood-animation text-black p-1 rounded text-[1.6rem] transition-ease-in-out hover:scale-105 duration-300 tracking-wide",
+          "text-blood-animation py-3 md:p-1 text-[1.6rem] transition-ease-in-out hover:scale-105 duration-300 tracking-wide",
       },
       fullPoem: {
         class:

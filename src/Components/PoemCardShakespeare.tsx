@@ -61,9 +61,9 @@ const PoemCardShakespeare = ({
         height={200}
         src={`${theme === "playwright" ? "/images/bones.svg" : "/images/blood-bones.svg"}`}
         alt="bones watching"
-        className="absolute top-[20%] left-[140%] fade-in-out"
+        className="w-[100px] h-[100px] md:w-[200px] md:h-[200px] absolute left-[33%] md:top-[20%] md:left-[140%] fade-in-out bottom-[-15.5%]"
       />
-      <div className="w-full flex justify-between mb-8 slide-in-left">
+      <div className="w-full flex flex-col items-center gap-6 md:flex-row md:justify-between mb-8 slide-in-left">
         <div>
           <h1 className={titleClass}>{shortTitle}</h1>
           <h2 className={authorClass}>{author}</h2>
@@ -71,7 +71,7 @@ const PoemCardShakespeare = ({
         <Image
           width={"140"}
           height={"140"}
-          className="rounded-[5%] rounded-br-[35%] mr-14"
+          className="w-[115px] h-[115px] md:w-[140px] md:h-[140px] rounded-[5%] rounded-br-[35%] md:mr-14"
           src={`${theme === "playwright" ? "/images/shakespeare-portrait.png" : "/images/shakespeare-vamp-dark-decor.png"}`}
           alt="Lord Shakespeare"
         />
@@ -83,7 +83,7 @@ const PoemCardShakespeare = ({
           </p>
         )
       })}
-      <div className="w-full flex items-end my-8 gap-4 ">
+      <div className="w-full flex items-end my-8 gap-4">
         <p className="text-2xl">..................</p>
         {theme === "playwright" && (
           <Image

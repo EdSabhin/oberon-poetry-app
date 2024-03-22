@@ -2,7 +2,7 @@ const sidebarProps = {
   shakespeare: {
     playwright: {
       sidebarClass:
-        "w-[35%] fixed inset-y-0 left-0 z-10 !opacity-90 flex flex-col items-start pt-12 pb-16 pl-12 bg-gradient-to-b from-slate-950 to-stone-800 slide-in-left",
+        "w-full md:w-[35%] fixed inset-y-0 left-0 z-10 !opacity-90 flex flex-col items-start pt-12 pb-16 pl-12 bg-gradient-to-b from-slate-950 to-stone-800 slide-in-left",
       searchTitle: "text-3xl text-stone-200",
       eyeCon: "w-14 h-14 text-stone-200 animate-pulse-faster",
       closeSidebar:
