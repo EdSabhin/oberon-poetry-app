@@ -68,10 +68,24 @@ const MainShakespeare = ({
 
   return (
     <main id="mainSection" className={mainClass}>
-      <div className="w-full flex flex-col md:flex-row justify-between mt-8 mb-12 gap-10">
+      <div className="w-full flex flex-col justify-between mt-8 mb-12 gap-10">
         <div className="flex flex-col gap-10 md:gap-20">
-          <h2 className={titleClass}>{title}</h2>
-          <div className="flex md:gap-12">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-10 2xl:mr-32">
+             <h2 className={titleClass}>{title}</h2>
+          <div className="flex flex-col items-center gap-10">
+          <ThemeButton
+            text={theme === "playwright" ? "Blood Night" : "Playwright"}
+            onClick={() => {
+              setBloodNight && setBloodNight(!bloodNight)
+              // scrollToTop()
+            }}
+            theme={theme}
+          />
+          <MusicPlayer theme={!bloodNight ? "playwright" : "bloodNight"} />
+        </div>
+          </div>
+         
+          <div className="flex flex-col md:flex-row gap-10 md:gap-12">
             <Button
               text="Search Sonnets"
               onClick={handleOpenSidebar}
@@ -86,17 +100,7 @@ const MainShakespeare = ({
             />
           </div>
         </div>
-        <div className="flex flex-col items-center mt-4 gap-10">
-          <ThemeButton
-            text={theme === "playwright" ? "Blood Night" : "Playwright"}
-            onClick={() => {
-              setBloodNight && setBloodNight(!bloodNight)
-              // scrollToTop()
-            }}
-            theme={theme}
-          />
-          <MusicPlayer theme={!bloodNight ? "playwright" : "bloodNight"} />
-        </div>
+        
       </div>
 
       {loading ? (
