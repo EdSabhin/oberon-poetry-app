@@ -5,7 +5,7 @@ const mainProps = {
         "w-full flex flex-col items-start pt-8 pb-32 px-8 md:px-48 text-stone-200 bg-gradient-to-r from-black via-gray-600 to-black overflow-hidden",
       title: "Oberon's House of Sonnets",
       titleClass:
-        "h-max flex justify-center items-center py-6 px-4 md:pl-12 text-[2rem] md:text-[2.85rem] text-orange-100 bg-gradient-to-r from-stone-950 via-stone-700 to-slate-950 rounded-br-full md:rounded-br-none md:rounded-tr-full md:rounded-bl-full shadow-md shadow-black",
+        "h-max flex justify-center items-center py-6 pl-4 pr-10 md:pt-6 md:pb-4 md:px-20 text-[2rem] md:text-[2.85rem] text-orange-100 bg-gradient-to-r from-stone-950 via-stone-700 to-slate-950 rounded-br-full md:rounded-br-none md:rounded-tr-full md:rounded-bl-full shadow-md shadow-black",
       musicPlayer: {
         class:
           "w-[15rem] h-[3rem] flex justify-start py-3 px-8 gap-5 text-stone-200 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-900 hover:to-stone-700 shadow-md rounded-br-full shadow-stone-950 hover:translate-x-2 transition duration-500 ease-in-out",
@@ -43,7 +43,7 @@ const mainProps = {
         " w-full flex flex-col items-start pt-8 pb-32 px-8 md:px-48 text-stone-200 bg-gradient-to-r from-black via-rose-900 to-black from-[3%] via-[57%] to-[96%] overflow-hidden",
       title: "Prospero's Grimoire",
       titleClass:
-        "h-max flex justify-center items-center py-6 pr-6 md:pr-0 md:pl-12 text-[2rem] md:text-[2.85rem] text-blood-title-animation bg-gradient-to-r from-stone-950 via-rose-800 to-stone-900 rounded-br-full md:rounded-br-none md:rounded-tr-full md:rounded-bl-full shadow-md shadow-black",
+        "h-max flex justify-center items-center py-6 pr-6 md:px-12 text-[2rem] md:text-[2.85rem] text-blood-title-animation bg-gradient-to-r from-stone-950 via-rose-800 to-stone-900 rounded-br-full md:rounded-br-none md:rounded-tr-full md:rounded-bl-full shadow-md shadow-black",
       musicPlayer: {
         class:
           "w-[15rem] h-[3rem] flex justify-start py-3 px-8 gap-5 text-stone-300 bg-gradient-to-r from-stone-800 via-rose-950 to-black shadow-md rounded-br-full shadow-stone-950 hover:translate-x-2 transition duration-500 ease-in-out",
