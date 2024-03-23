@@ -66,14 +66,15 @@ const mainProps = {
       },
       fullPoem: {
         class:
-          "w-full h-full flex flex-col items-center pt-8 pb-12 bg-gradient-to-bl from-rose-950 via-stone-950 to-rose-900 slide-in-fwd-right",
+          "w-full h-full flex flex-col items-center pt-8 pb-8 md:pb-12 bg-gradient-to-bl from-rose-950 via-stone-950 to-rose-900 slide-in-fwd-right",
         titleClass:
           "h-max flex items-center pt-5 pb-3 px-16 mb-8 text-5xl text-rose-400 bg-gradient-to-r from-stone-950 via-stone-900 to-rose-950 rounded-tl rounded-br rounded-full shadow-md shadow-black",
         poemButton:
-          "w-max p-2 mt-4 text-blood-animation bg-gradient-to-b from-rose-950 from-30% to-black shadow-sm shadow-black rounded-br-full transition ease-in-out duration-300 absolute top-[30%] right-[15%] hover:-translate-x-5",
+          "w-full h-[3.4rem] p-2 mt-4 text-blood-animation bg-gradient-to-b from-rose-950 from-30% to-black shadow-sm shadow-black rounded-bl rounded-tr rounded-full transition ease-in-out duration-300 hover:-translate-x-5",
         verses:
-          "w-max py-1 px-10 text-rose-200 leading-relaxed tracking-wide text-[1.57rem] hover:text-rose-400 rounded-full hover:bg-gradient-to-r hover:from-stone-950 hover:via-stone-700 hover:to-stone-900 transition-ease-in-out duration-300",
-        authorClass: "pt-1 px-2 text-2xl text-rose-300",
+          "w-full md:w-max py-1 px-10 text-center text-stone-300 leading-relaxed tracking-wide text-[1.57rem] hover:text-orange-200 rounded-full hover:text-rose-400 rounded-full hover:bg-gradient-to-r hover:from-stone-950 hover:via-stone-700 hover:to-stone-900 transition-ease-in-out duration-300",
+        authorClass:
+          "pt-1 px-2 text-2xlp-2 md:pt-2 text-2xl md:text-3xl text-rose-300",
       },
     },
   },
@@ -114,14 +115,14 @@ const mainProps = {
       },
       fullPoem: {
         class:
-          "w-full h-full flex flex-col items-center pt-8 pb-12 bg-gradient-to-t from-rose-200 to-indigo-200 slide-in-fwd-right",
+          "w-full h-full flex flex-col items-center pt-8 pb-8 md:pb-12 bg-gradient-to-t from-rose-200 to-indigo-200 slide-in-fwd-right",
         titleClass:
-          "py-6 px-28 mb-8 text-5xl bg-gradient-to-r from-white to-sky-100 rounded-bl rounded-tr rounded-full",
+          "py-6 px-20 mb-8 text-5xl bg-gradient-to-r from-white to-sky-100 rounded-bl rounded-tr rounded-full",
         poemButton:
-          "w-max p-2 mt-4 bg-gradient-to-r from-white from-30% to-indigo-200 shadow-sm shadow-black rounded-br-full transition ease-in-out duration-300 absolute top-[38%] right-[15%] hover:-translate-x-5",
+          "w-[16rem] h-[3.4rem] p-2 mt-4 bg-gradient-to-r from-white from-30% to-indigo-200 shadow-sm shadow-black rounded-bl-full rounded-tr-full hover:text-purple-500 transition ease-in-out duration-300",
         verses:
-          "w-max py-1 px-10 text-amber-700 leading-relaxed tracking-wide text-[1.57rem] hover:text-neutral-900 rounded-full hover:bg-gradient-to-r hover:from-sky-100 hover:via-rose-100 hover:to-sky-100 transition-ease-in-out duration-300",
-        authorClass: "pt-1 px-2 text-2xl text-neutral-900",
+          "w-full md:w-max py-1 px-10 text-center text-amber-700 hover:text-neutral-900 leading-relaxed tracking-wide text-[1.57rem] rounded-full hover:bg-gradient-to-r hover:from-sky-100 hover:via-rose-100 hover:to-sky-100 transition-ease-in-out duration-300",
+        authorClass: "p-2 md:pt-2 text-2xl md:text-3xl text-neutral-900",
       },
     },
     elegy: {
@@ -160,14 +161,14 @@ const mainProps = {
       },
       fullPoem: {
         class:
-          "w-full h-full flex flex-col items-center pt-8 pb-12 bg-gradient-to-br from-black to-cyan-900 slide-in-fwd-right",
+          "w-full h-full flex flex-col items-center pt-8 pb-8 md:pb-12 bg-gradient-to-br from-black to-cyan-900 slide-in-fwd-right",
         titleClass:
-          "py-6 px-28 mb-8 text-5xl text-neutral-100 bg-gradient-to-r from-black via-cyan-600 to-teal-900 rounded-bl rounded-tr rounded-full",
+          "py-6 px-20 mb-8 text-5xl text-neutral-100 bg-gradient-to-r from-black via-cyan-600 to-teal-900 rounded-bl rounded-tr rounded-full",
         poemButton:
-          "w-max p-2 mt-4 bg-gradient-to-r text-neutral-100 from-cyan-800 to-teal-900 shadow-sm shadow-black rounded-br-full transition ease-in-out duration-300 absolute top-[38%] right-[15%] hover:-translate-x-5",
+          "w-[16rem] h-[3.4rem] p-2 mt-4 bg-gradient-to-r text-neutral-100 from-cyan-800 to-teal-900 shadow-sm shadow-black rounded-bl-full rounded-tr-full hover:text-cyan-200 transition ease-in-out duration-300",
         verses:
-          "w-max py-1 px-10 text-green-200 leading-relaxed tracking-wide text-[1.57rem] hover:text-teal-200 rounded-full hover:bg-gradient-to-r hover:from-cyan-200 hover:via-cyan-800 hover:to-cyan-200 transition-ease-in-out duration-300",
-        authorClass: "pt-1 px-2 text-2xl text-neutral-100",
+          "w-full md:w-max py-1 px-10 text-center text-stone-300 leading-relaxed tracking-wide text-[1.57rem] hover:text-orange-200 rounded-full hover:text-teal-200 rounded-full hover:bg-gradient-to-r hover:from-cyan-200 hover:via-cyan-800 hover:to-cyan-200 transition-ease-in-out duration-300",
+        authorClass: "p-2 md:pt-2 text-2xl md:text-3xl text-cyan-200",
       },
     },
   },
