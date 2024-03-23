@@ -47,7 +47,7 @@
 }
 
 .text-color-animation {
-  animation: textColorChange 3s infinite alternate;
+  animation: textColorChange 4s infinite alternate;
 }
 @keyframes textColorChange {
   0% {
@@ -62,7 +62,7 @@
 }
 
 .text-blood-animation {
-  animation: textBloodChange 3s infinite alternate;
+  animation: textBloodChange 4s infinite alternate;
 }
 @keyframes textBloodChange {
   0% {
@@ -76,8 +76,51 @@
   }
 }
 
+.text-sylph-animation {
+  animation: textSylphChange 4s infinite alternate;
+}
+@keyframes textSylphChange {
+  0% {
+    color: #100025;
+  }
+  75% {
+    color: #e7dbed;
+  }
+  100% {
+    color: #100025;
+  }
+}
+.text-sylph-animation-two {
+  animation: textSylphChangeTwo 4s infinite alternate;
+}
+@keyframes textSylphChangeTwo {
+  0% {
+    color: #b700ff;
+  }
+  75% {
+    color: #000000;
+  }
+  100% {
+    color: #b700ff;
+  }
+}
+
+.text-aqua-animation-two {
+  animation: textAquaChangeTwo 4s infinite alternate;
+}
+@keyframes textAquaChangeTwo {
+  0% {
+    color: #100025;
+  }
+  75% {
+    color: #25dee4;
+  }
+  100% {
+    color: #100025;
+  }
+}
 .text-aqua-animation {
-  animation: textAquaChange 3s infinite alternate;
+  animation: textAquaChange 4s infinite alternate;
 }
 @keyframes textAquaChange {
   0% {
@@ -85,21 +128,6 @@
   }
   75% {
     color: #5e9bbe;
-  }
-  100% {
-    color: #100025;
-  }
-}
-
-.text-sylph-animation {
-  animation: textSylphChange 3s infinite alternate;
-}
-@keyframes textSylphChange {
-  0% {
-    color: #100025;
-  }
-  75% {
-    color: #eddbeb;
   }
   100% {
     color: #100025;
