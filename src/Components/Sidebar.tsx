@@ -183,10 +183,15 @@ const Sidebar = ({
         )}
         {showResults && (
           <div>
-            <h3 className={subsection} onClick={() => {
-            setShowResults(false)
-            setNoMatches(false)
-          }}>Results</h3>
+            <h3
+              className={subsection}
+              onClick={() => {
+                setShowResults(false)
+                setNoMatches(false)
+              }}
+            >
+              Results
+            </h3>
             <div className="h-[9.5rem] flex flex-col mb-12">
               <ul className={resultsContainer}>
                 {searchResults.map((poem, id) => (
@@ -209,7 +214,7 @@ const Sidebar = ({
 
       <div className="h-full flex flex-col overflow-y-auto">
         <h3
-          className={`${subsection} active:text-orange-300`}
+          className={subsection}
           onClick={() => {
             setShowResults(false)
             setNoMatches(false)
