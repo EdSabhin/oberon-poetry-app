@@ -439,3 +439,15 @@
   background-image: url("/pexels-pixabay-235985.jpg");
   opacity: 0.75;
 }
+
+@media (max-width: 640px) {
+  .placeholder-common::placeholder {
+    content: "Search...";
+  }
+}
+
+@media (max-width: 769px) {
+  .placeholder-common::placeholder {
+    content: "Search stanzas, verses, words...";
+  }
+}

@@ -5,7 +5,7 @@ const mainProps = {
         "w-full flex flex-col items-center md:items-start pt-8 pb-48 md:pb-32 px-4 md:px-48 text-stone-200 bg-gradient-to-r from-black via-gray-600 to-black overflow-hidden",
       title: "Oberon's House of Sonnets",
       titleClass:
-        "h-max flex justify-center items-center py-6 pl-4 pr-10 md:pt-6 md:pb-4 md:px-20 text-[2rem] md:text-[2.85rem] text-orange-100 bg-gradient-to-r from-stone-950 via-stone-700 to-slate-950 rounded-br-full md:rounded-br-none md:rounded-tr-full md:rounded-bl-full shadow-md shadow-black",
+        "h-max flex justify-center items-center py-6 pl-4 pr-10 md:pt-6 md:pb-4 md:px-32 text-[2rem] md:text-[2.85rem] text-orange-100 bg-gradient-to-r from-stone-950 via-stone-700 to-slate-950 rounded-br-full md:rounded-br-none md:rounded-tr-full md:rounded-bl-full shadow-md shadow-black",
       musicPlayer: {
         class:
           "w-[15rem] h-[3rem] flex justify-center md:justify-start py-2 md:py-3 px-8 gap-5 text-stone-200 bg-gradient-to-r from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-900 hover:to-stone-700 shadow-md rounded-br-full shadow-stone-950 hover:translate-x-2 transition duration-500 ease-in-out",
@@ -30,9 +30,9 @@ const mainProps = {
         class:
           "w-full h-full flex flex-col items-center pt-8 pb-8 md:pb-12 bg-gradient-to-bl from-stone-950 via-stone-500 to-stone-950 slide-in-fwd-right",
         titleClass:
-          "h-max flex items-center pt-5 pb-3 px-16 mb-8 text-5xl text-orange-100 bg-gradient-to-r from-stone-900 via-stone-600 to-slate-900 rounded-tl rounded-br rounded-full shadow-md shadow-black",
+          "w-full h-max flex items-center pt-6 pb-3 px-16 mb-8 text-center text-5xl text-orange-100 bg-gradient-to-r from-stone-900 via-stone-600 to-slate-900 rounded-tl rounded-br rounded-full shadow-md shadow-black",
         poemButton:
-          "w-full h-[3.4rem] p-2 mt-4 text-color-animation bg-gradient-to-b from-stone-800 to-stone-600 shadow-md shadow-stone-900 rounded-bl rounded-tr rounded-full transition ease-in-out duration-300  hover:-translate-x-5",
+          "w-[14rem] pt-4 pb-3 p-2 mt-4 text-color-animation bg-gradient-to-b from-stone-800 to-stone-600 shadow-md shadow-stone-900 rounded-bl rounded-tr rounded-full transition ease-in-out duration-300  hover:-translate-x-5",
         verses:
           "w-full md:w-max py-1 px-10 text-center text-stone-300 leading-relaxed tracking-wide text-[1.57rem] hover:text-orange-200 rounded-full hover:bg-gradient-to-r hover:from-stone-900 hover:via-stone-500 hover:to-stone-900 transition-ease-in-out duration-300",
         authorClass: "p-2 md:pt-2 text-2xl md:text-3xl text-orange-100",
@@ -68,9 +68,9 @@ const mainProps = {
         class:
           "w-full h-full flex flex-col items-center pt-8 pb-8 md:pb-12 bg-gradient-to-bl from-rose-950 via-stone-950 to-rose-900 slide-in-fwd-right",
         titleClass:
-          "h-max flex items-center pt-5 pb-3 px-16 mb-8 text-5xl text-rose-400 bg-gradient-to-r from-stone-950 via-stone-900 to-rose-950 rounded-tl rounded-br rounded-full shadow-md shadow-black",
+          "w-full h-max flex items-center pt-6 pb-3 px-16 mb-8 text-center text-5xl text-rose-400 bg-gradient-to-r from-stone-950 via-stone-900 to-rose-950 rounded-tl rounded-br rounded-full shadow-md shadow-black",
         poemButton:
-          "w-full h-[3.4rem] p-2 mt-4 text-blood-animation bg-gradient-to-b from-rose-950 from-30% to-black shadow-sm shadow-black rounded-bl rounded-tr rounded-full transition ease-in-out duration-300 hover:-translate-x-5",
+          "w-[14rem] pt-4 pb-3 mt-4 text-blood-animation bg-gradient-to-b from-rose-950 from-30% to-black shadow-sm shadow-black rounded-bl rounded-tr rounded-full transition ease-in-out duration-300 hover:-translate-x-5",
         verses:
           "w-full md:w-max py-1 px-10 text-center text-stone-300 leading-relaxed tracking-wide text-[1.57rem] hover:text-orange-200 rounded-full hover:text-rose-400 rounded-full hover:bg-gradient-to-r hover:from-stone-950 hover:via-stone-700 hover:to-stone-900 transition-ease-in-out duration-300",
         authorClass:
@@ -117,9 +117,9 @@ const mainProps = {
         class:
           "w-full h-full flex flex-col items-center pt-8 pb-8 md:pb-12 bg-gradient-to-t from-rose-200 to-indigo-200 slide-in-fwd-right",
         titleClass:
-          "py-6 px-20 mb-8 text-5xl bg-gradient-to-r from-white to-sky-100 rounded-bl rounded-tr rounded-full",
+          "w-full h-max flex items-center pt-6 pb-3 px-16 mb-8 text-center text-5xl bg-gradient-to-r from-white to-sky-100 rounded-bl rounded-tr rounded-full",
         poemButton:
-          "w-[16rem] h-[3.4rem] p-2 mt-4 bg-gradient-to-r from-white from-30% to-indigo-200 shadow-sm shadow-black rounded-bl-full rounded-tr-full hover:text-purple-500 transition ease-in-out duration-300",
+          "w-[14rem] pt-4 pb-3 p-2 mt-4 bg-gradient-to-r from-white from-30% to-indigo-200 shadow-sm shadow-black rounded-bl-full rounded-tr-full hover:text-purple-500 transition ease-in-out duration-300",
         verses:
           "w-full md:w-max py-1 px-10 text-center text-amber-700 hover:text-neutral-900 leading-relaxed tracking-wide text-[1.57rem] rounded-full hover:bg-gradient-to-r hover:from-sky-100 hover:via-rose-100 hover:to-sky-100 transition-ease-in-out duration-300",
         authorClass: "p-2 md:pt-2 text-2xl md:text-3xl text-neutral-900",
@@ -163,9 +163,9 @@ const mainProps = {
         class:
           "w-full h-full flex flex-col items-center pt-8 pb-8 md:pb-12 bg-gradient-to-br from-black to-cyan-900 slide-in-fwd-right",
         titleClass:
-          "py-6 px-20 mb-8 text-5xl text-neutral-100 bg-gradient-to-r from-black via-cyan-600 to-teal-900 rounded-bl rounded-tr rounded-full",
+          "w-full h-max flex items-center pt-6 pb-3 px-16 mb-8 text-center text-5xl text-neutral-100 bg-gradient-to-r from-black via-cyan-600 to-teal-900 rounded-bl rounded-tr rounded-full",
         poemButton:
-          "w-[16rem] h-[3.4rem] p-2 mt-4 bg-gradient-to-r text-neutral-100 from-cyan-800 to-teal-900 shadow-sm shadow-black rounded-bl-full rounded-tr-full hover:text-cyan-200 transition ease-in-out duration-300",
+          "w-[14rem] pt-4 pb-3 p-2 mt-4 bg-gradient-to-r text-neutral-100 from-cyan-800 to-teal-900 shadow-sm shadow-black rounded-bl-full rounded-tr-full hover:text-cyan-200 transition ease-in-out duration-300",
         verses:
           "w-full md:w-max py-1 px-10 text-center text-stone-300 leading-relaxed tracking-wide text-[1.57rem] hover:text-orange-200 rounded-full hover:text-teal-200 rounded-full hover:bg-gradient-to-r hover:from-cyan-200 hover:via-cyan-800 hover:to-cyan-200 transition-ease-in-out duration-300",
         authorClass: "p-2 md:pt-2 text-2xl md:text-3xl text-cyan-200",
