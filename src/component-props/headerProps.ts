@@ -7,7 +7,7 @@ const headerProps = {
       headerClass:
         "w-full flex flex-col items-center md:items-start py-4 md:py-8 2xl:py-12 px-4 md:px-48 bg-gradient-to-b from-gray-700 to-stone-800 text-stone-200",
       authorClass:
-        "text-[3rem] md:text-[4rem] xl:text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-amber-200 py-4 px-4 md:pr-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900",
+        "text-center text-[3rem] md:text-[4rem] xl:text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-amber-200 py-4 px-4 md:pr-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900",
       quoteAuthor: "text-xl md:text-2xl text-start text-orange-100",
       icon: "/images/gold-moon-cat.svg",
     },
@@ -16,9 +16,9 @@ const headerProps = {
       description: `"The vampiric brilliance of Lord William Shakespeare lies in his uncanny knack for delving into the labyrinthine depths of immortal emotions and desires, deftly weaving them into the fabric of his characters' dialogues and deeds. With a supernatural command of language and verse, he conjures spellbinding tapestries of imagery, painting scenes that shimmer with dark allure and haunting beauty.
       Like a shadowy specter lurking in the moonlit night, Lord Shakespeare's words cast a bewitching spell upon all who dare to venture into the depths of his immortal creations. His legacy, like the eternal embrace of the night, continues to cast its enchanting spell upon the realms of English language and literature, ensuring that his immortal works will forever reign as ageless, sovereign masterpieces in the annals of human history."`,
       headerClass:
-        "w-full flex flex-col items-center md:items-start py-4 md:py-8 2xl:py-12 px-6 md:px-48 bg-gradient-to-b from-black via-rose-950 to-black text-rose-100",
+        "w-full flex flex-col items-center md:items-start py-4 md:py-8 2xl:py-12 px-4 md:px-48 bg-gradient-to-b from-black via-rose-950 to-black text-rose-100",
       authorClass:
-        "text-[3rem] md:text-[4rem] xl:text-7xl px-6 md:items-start underline underline-offset-8 decoration-double decoration-1 decoration-rose-900 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-stone-600 to-70% via-rose-500 to-stone-500",
+        "text-center text-[3rem] md:text-[4rem] xl:text-7xl px-6 md:items-start underline underline-offset-8 decoration-double decoration-1 decoration-rose-900 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-stone-600 to-70% via-rose-500 to-stone-500",
       quoteAuthor: "text-xl md:text-2xl text-start text-rose-300",
       icon: "/images/blood-moon-cat.svg",
     },

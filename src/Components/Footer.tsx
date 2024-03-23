@@ -56,7 +56,7 @@ const Footer = ({
   return (
     <footer className={`${footerClass}`}>
       <div className={`${footerContainer}`}>
-        <div className="w-[25%] flex flex-col pt-5 gap-2 ">
+        <div className="md:w-[25%] flex flex-col items-center md:items-start pt-5 gap-2 ">
           <h3 className={`${OldStandardTT.className} ${attributions}`}>
             <span className="italic">Attributions</span>
           </h3>
@@ -132,16 +132,16 @@ const Footer = ({
           )}
 
           {theme === "playwright" && (
-            <GiHastyGrave className="absolute bottom-[0%] right-[0%] w-24 h-24 text-indigo-300 fade-in-out-soft" />
+            <GiHastyGrave className="absolute bottom-0 right-1/2 transform translate-x-1/2 w-24 h-24 text-indigo-300 fade-in-out-soft" />
           )}
           {theme === "bloodNight" && (
-            <GiCoffin className="absolute bottom-[0%] right-[0%] w-24 h-24 text-rose-800 fade-in-out-soft" />
+            <GiCoffin className="absolute bottom-0 right-1/2 transform translate-x-1/2 w-24 h-24 text-rose-800 fade-in-out-soft" />
           )}
           {theme === "sylph" && (
-            <GiSandsOfTime className="absolute bottom-[0%] right-[0%] w-24 h-24 text-rose-300 fade-in-out-soft" />
+            <GiSandsOfTime className="absolute bottom-0 right-1/2 transform translate-x-1/2 w-24 h-24 text-rose-300 fade-in-out-soft" />
           )}
           {theme === "elegy" && (
-            <SiApachecassandra className="absolute bottom-[0%] right-[0%] w-24 h-24 text-cyan-100 fade-in-out-soft" />
+            <SiApachecassandra className="absolute bottom-0 right-1/2 transform translate-x-1/2 w-24 h-24 text-cyan-100 fade-in-out-soft" />
           )}
         </div>
         {id === "Shakespeare" ? (

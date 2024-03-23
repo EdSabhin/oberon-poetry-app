@@ -2,7 +2,7 @@ const mainProps = {
   shakespeare: {
     playwright: {
       mainClass:
-        "w-full flex flex-col items-center md:items-start pt-8 pb-32 px-4 md:px-48 text-stone-200 bg-gradient-to-r from-black via-gray-600 to-black overflow-hidden",
+        "w-full flex flex-col items-center md:items-start pt-8 pb-48 md:pb-32 px-4 md:px-48 text-stone-200 bg-gradient-to-r from-black via-gray-600 to-black overflow-hidden",
       title: "Oberon's House of Sonnets",
       titleClass:
         "h-max flex justify-center items-center py-6 pl-4 pr-10 md:pt-6 md:pb-4 md:px-20 text-[2rem] md:text-[2.85rem] text-orange-100 bg-gradient-to-r from-stone-950 via-stone-700 to-slate-950 rounded-br-full md:rounded-br-none md:rounded-tr-full md:rounded-bl-full shadow-md shadow-black",
@@ -40,7 +40,7 @@ const mainProps = {
     },
     bloodNight: {
       mainClass:
-        "w-full flex flex-col items-center md:items-start pt-8 pb-32 px-4 md:px-48 text-stone-200 bg-gradient-to-r from-black via-rose-900 to-black from-[3%] md:via-[57%] to-[96%] overflow-hidden",
+        "w-full flex flex-col items-center md:items-start pt-8 pb-48 md:pb-32 px-4 md:px-48 text-stone-200 bg-gradient-to-r from-black via-rose-900 to-black from-[3%] md:via-[57%] to-[96%] overflow-hidden",
       title: "Prospero's Grimoire",
       titleClass:
         "h-max flex justify-center items-center py-6 pl-4 pr-10 md:pt-6 md:pb-4 md:px-20 text-[2rem] md:text-[2.85rem] text-blood-title-animation bg-gradient-to-r from-stone-950 via-rose-800 to-stone-900 rounded-br-full md:rounded-br-none md:rounded-tr-full md:rounded-bl-full shadow-md shadow-black",
