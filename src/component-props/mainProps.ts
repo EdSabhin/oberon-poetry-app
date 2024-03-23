@@ -28,13 +28,13 @@ const mainProps = {
       },
       fullPoem: {
         class:
-          "w-full h-full flex flex-col items-center pt-8 pb-12 bg-gradient-to-bl from-stone-950 via-stone-500 to-stone-950 slide-in-fwd-right",
+          "w-full h-full flex flex-col items-center pt-8 pb-8 md:pb-12 bg-gradient-to-bl from-stone-950 via-stone-500 to-stone-950 slide-in-fwd-right",
         titleClass:
           "h-max flex items-center pt-5 pb-3 px-16 mb-8 text-5xl text-orange-100 bg-gradient-to-r from-stone-900 via-stone-600 to-slate-900 rounded-tl rounded-br rounded-full shadow-md shadow-black",
         poemButton:
-          "w-max p-2 mt-4 text-color-animation bg-gradient-to-b from-stone-800 to-stone-600 shadow-md shadow-stone-900 rounded-br-full transition ease-in-out duration-300 absolute top-[30%] right-[15%] hover:-translate-x-5",
+          "w-full h-[3.4rem] p-2 mt-4 text-color-animation bg-gradient-to-b from-stone-800 to-stone-600 shadow-md shadow-stone-900 rounded-bl rounded-tr rounded-full transition ease-in-out duration-300  hover:-translate-x-5",
         verses:
-          "w-max py-1 px-10 text-stone-300 leading-relaxed tracking-wide text-[1.57rem] hover:text-orange-200 rounded-full hover:bg-gradient-to-r hover:from-stone-900 hover:via-stone-500 hover:to-stone-900 transition-ease-in-out duration-300",
+          "w-full md:w-max py-1 px-10 text-center text-stone-300 leading-relaxed tracking-wide text-[1.57rem] hover:text-orange-200 rounded-full hover:bg-gradient-to-r hover:from-stone-900 hover:via-stone-500 hover:to-stone-900 transition-ease-in-out duration-300",
         authorClass: "p-2 md:pt-2 text-2xl md:text-3xl text-orange-100",
       },
     },

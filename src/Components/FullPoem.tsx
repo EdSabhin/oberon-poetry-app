@@ -64,8 +64,8 @@ const FullPoem = ({ pageId, poems, setFullPoemView, theme }: FullPoemProps) => {
 
   return (
     <main id={pageId} className={poemCard}>
-      <div className="w-1/2 flex flex-col items-center justify-center text-5xl">
-        <div className="flex mt-8">
+      <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-5xl">
+        <div className="flex flex-col items-center mx-4 mt-8 mb-12">
           <h1 className={titleClass}>
             {pageId === "Shakespeare" ? shakespeareTitle : dickinsonTitle}
           </h1>
@@ -80,7 +80,7 @@ const FullPoem = ({ pageId, poems, setFullPoemView, theme }: FullPoemProps) => {
           />
         </div>
       </div>
-      <div className="w-1/2 flex flex-col items-center justify-center text-2xl">
+      <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-2xl gap-6 md:gap-2">
         {poems?.lines.map((verse: string, index: number) => {
           return (
             <p className={verses} key={index}>
