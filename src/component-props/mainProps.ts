@@ -127,7 +127,7 @@ const mainProps = {
     },
     elegy: {
       mainClass:
-        "w-full flex flex-col items-center md:items-start pt-8 pb-36 md:pb-20 px-4 md:px-48 text-black overflow-hidden bg-gradient-to-r from-black via-cyan-950 to-white",
+        "w-full flex flex-col items-center md:items-start pt-8 pb-36 md:pb-20 px-4 md:px-48 text-black overflow-hidden bg-gradient-to-r from-neutral-900 via-cyan-950 to-neutral-900",
       title: "Moves to the Infinite",
       titleClass:
         "text-aqua-title-animation flex items-center py-2 px-16 text-5xl text-neutral-100 bg-gradient-to-r from-black via-cyan-500 to-teal-950 rounded-tl rounded-br rounded-full shadow-sm shadow-neutral-600",
