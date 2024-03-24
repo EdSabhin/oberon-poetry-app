@@ -30,7 +30,7 @@ const CardsSection = ({
 
   return (
     <section
-      className={`${pageId === "Shakespeare" ? "w-full flex flex-col items-start my-8 gap-56 md:gap-32" : "w-full grid grid-cols-2 items-center py-24 gap-36"}`}
+      className={`${pageId === "Shakespeare" ? "w-full flex flex-col items-start my-8 gap-56 md:gap-32" : "w-full grid grid-cols-1 md:grid-cols-2 items-center py-24 gap-52 md:gap-36"}`}
     >
       {shuffledPoems &&
         randomPoems?.map((poem: Poem, key: number) => {

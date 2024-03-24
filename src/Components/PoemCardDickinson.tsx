@@ -22,6 +22,7 @@ const PoemCardDickinson = ({ title, id, setFullPoemView, theme }: Props) => {
   let iconRight
   let iconLeft
   let iconBottom
+  let iconAbsolute
   let titleClass
 
   switch (theme) {
@@ -37,9 +38,7 @@ const PoemCardDickinson = ({ title, id, setFullPoemView, theme }: Props) => {
     case "elegy":
       ;({
         class: poemCard,
-        iconRight,
-        iconLeft,
-        iconBottom,
+        iconAbsolute,
         titleClass,
       } = mainProps.dickinson.elegy.poemCard)
       break
@@ -52,7 +51,7 @@ const PoemCardDickinson = ({ title, id, setFullPoemView, theme }: Props) => {
     >
       <div className={poemCard}>
         <h1 className={titleClass}>{poemTitle}</h1>
-        <div className={iconRight}>
+        <div className={theme === "sylph" ? iconRight : iconAbsolute}>
           {theme === "sylph" && (
             <GiFairyWings className="w-[80%] h-full p-5 text-neutral-900 group-hover:text-indigo-100 slide-in-top" />
           )}
