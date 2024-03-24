@@ -37,31 +37,29 @@ const FooterContentDickinson = ({
   }
 
   return (
-    <div className="flex flex-col items-end gap-10">
+    <div className="flex flex-col items-center md:items-end gap-10">
       <h4 className={`${titleClass}`}>
         {titleOne} <br />
         {titleTwo}
       </h4>
 
-      <div className="flex flex-col mr-12">
-        <p className={`${quoteClass}`}>
-          &quot;Oh Future! thou secreted peace, <br />
-          Or subterranean woe --, <br />
-          Is there no wandering route of grace, <br />
-          That leads away from thee --, <br />
-          No circuit sage of all the course, <br />
-          Descried by cunning Men, <br />
-          To balk thee of thy sacred Prey --,
-          <br />
-          <span
-            onClick={() => {
-              setElegy(!elegy)
-              scrollToTop()
-            }}
-            className={`${quoteVerseClass}`}
-          >
-            Advancing to thy Den --&quot;
-          </span>
+      <div className="flex flex-col items-center md:items-start md:mr-12">
+        <p className={quoteClass}>&quot;Oh Future! thou secreted peace,</p>
+        <p className={quoteClass}>Or subterranean woe --,</p>
+        <p className={quoteClass}>Is there no wandering route of grace,</p>
+        <p className={quoteClass}> That leads away from thee --,</p>
+        <p className={quoteClass}>No circuit sage of all the course</p>
+        <p className={quoteClass}>Descried by cunning Men,</p>
+        <p className={quoteClass}> To balk thee of thy sacred Prey --,</p>
+
+        <p
+          onClick={() => {
+            setElegy(!elegy)
+            scrollToTop()
+          }}
+          className={`${quoteVerseClass}`}
+        >
+          Advancing to thy Den --&quot;
         </p>
       </div>
     </div>

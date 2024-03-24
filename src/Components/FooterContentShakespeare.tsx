@@ -44,14 +44,12 @@ const FooterContentShakespeare = ({
       </h4>
 
       <div className="flex flex-col items-center md:items-start md:mr-12">
-        <p className={`${quoteClass}`}>
-          &quot;Let not the creaking of shoes nor
-        </p>
-        <p className={`${quoteClass}`}>The rustling of silks betray </p>
-        <p className={`${quoteClass}`}>Thy poor heart to woman.</p>
-        <p className={`${quoteClass}`}>Keep thy foot out of brothels,</p>
-        <p className={`${quoteClass}`}>Thy hand out of plackets,</p>
-        <p className={`${quoteClass}`}>Thy pen from lenders&apos; books,</p>
+        <p className={quoteClass}>&quot;Let not the creaking of shoes nor</p>
+        <p className={quoteClass}>The rustling of silks betray </p>
+        <p className={quoteClass}>Thy poor heart to woman.</p>
+        <p className={quoteClass}>Keep thy foot out of brothels,</p>
+        <p className={quoteClass}>Thy hand out of plackets,</p>
+        <p className={quoteClass}>Thy pen from lenders&apos; books,</p>
         <p
           onClick={() => {
             setBloodNight(!bloodNight)
@@ -61,9 +59,9 @@ const FooterContentShakespeare = ({
         >
           And defy the foul fiend.&quot;
         </p>
-        <div className="flex flex-col my-10 md:ml-52">
+        <div className="text-center flex flex-col my-10 md:ml-52">
           <p className={`${OldStandardTT.className} ${quoteWorkClass}`}>
-            <span className="text-xl italic">King Lear,</span>{" "}
+            <span className="text-xl italic">King Lear</span>{" "}
           </p>
           <p className={`${OldStandardTT.className} ${quoteWorkClass}`}>
             Act 3, Scene 4.

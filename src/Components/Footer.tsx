@@ -141,7 +141,7 @@ const Footer = ({
             <GiSandsOfTime className="absolute bottom-0 right-1/2 transform translate-x-1/2 w-24 h-24 text-rose-300 fade-in-out-soft" />
           )}
           {theme === "elegy" && (
-            <SiApachecassandra className="absolute bottom-0 right-1/2 transform translate-x-1/2 w-24 h-24 text-cyan-100 fade-in-out-soft" />
+            <SiApachecassandra className="absolute bottom-3 right-1/2 transform translate-x-1/2 w-24 h-24 text-cyan-100 fade-in-out-soft" />
           )}
         </div>
         {id === "Shakespeare" ? (
