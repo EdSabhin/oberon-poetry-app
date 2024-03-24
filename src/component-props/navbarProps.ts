@@ -16,15 +16,15 @@ const navbarProps = {
   dickinson: {
     sylph: {
       navClass:
-        "w-full p-8 bg-gradient-to-r from-indigo-100 via-rose-100 to-indigo-100 text-amber-700",
+        "w-full py-10 px-8 bg-gradient-to-r from-indigo-100 via-rose-100 to-indigo-100 text-amber-700",
       linkClass:
-        "py-2 px-2 text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-teal-700 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-900 hover:to-teal-950 hover:underline decoration-1 hover:decoration-rose-800 hover:underline-offset-4",
+        "w-full p-2 text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-teal-700 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-900 hover:to-teal-950 hover:underline decoration-1 hover:decoration-rose-800 hover:underline-offset-4",
     },
     elegy: {
       navClass:
-        "w-full p-8 bg-gradient-to-r from-cyan-700 via-cyan-950 to-cyan-700 text-amber-700",
+        "w-full py-10 px-8 bg-gradient-to-r from-cyan-700 via-cyan-950 to-cyan-700 text-amber-700",
       linkClass:
-        "py-2 px-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-emerald-400 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-400 hover:to-lime-400 hover:underline decoration-1 hover:decoration-emerald-500 hover:underline-offset-4",
+        "w-full p-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-emerald-400 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-400 hover:to-lime-400 hover:underline decoration-1 hover:decoration-emerald-500 hover:underline-offset-4",
     },
   },
 }

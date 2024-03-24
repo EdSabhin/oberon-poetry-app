@@ -30,39 +30,39 @@ const Navbar = ({ theme }: Props) => {
 
   return (
     <div className={navClass}>
-      <ul className="w-full flex max-md:flex-col md:justify-around items-center gap-8 text-[1.6rem] md:text-[2rem] lg:text-3xl 2xl:text-[2.2rem]">
-        <div className="flex justify-center md:gap-4 group">
+      <ul className="w-full flex flex-col md:flex-row md:justify-around items-center gap-8 text-[1.6rem] md:text-[2rem] lg:text-3xl 2xl:text-[2.2rem]">
+        <div className="flex items-start justify-center group">
           <Link href="/" className={linkClass}>
             Abode
           </Link>
           {theme === "bloodNight" && (
-            <GiMoonBats className="w-[2.9rem] h-[2.9rem] group-hover:animate-pulse-faster text-rose-800" />
+            <GiMoonBats className="w-[3.2rem] h-[2.4rem] [group-hover:animate-pulse-faster text-rose-800" />
           )}
           {theme === "elegy" && (
-            <GiCurledLeaf className="w-10 h-10 text-emerald-200 group-hover:animate-pulse-faster transform scale-x-[-1]" />
+            <GiCurledLeaf className=" w-12 h-10 text-emerald-200 group-hover:animate-pulse-faster transform scale-x-[-1]" />
           )}
         </div>
 
-        <div className="flex justify-center gap-4 group">
-          <Link href="/" className={linkClass}>{`Shakespeare's Den`}</Link>
+        <div className="flex justify-center group">
+          <Link href="/ShakespearesDen" className={linkClass}>{`Shakespeare's Respite`}</Link>
           {theme === "bloodNight" && (
-            <GiMoonBats className="hidden md:block w-10 h-10 group-hover:animate-pulse-faster text-rose-800" />
+            <GiMoonBats className="hidden md:block w-10 h-10 ml-3 group-hover:animate-pulse-faster text-rose-800" />
           )}
           {theme === "elegy" && (
-            <GiCurledLeaf className="w-10 h-10 text-emerald-200 group-hover:animate-pulse-faster transform scale-x-[-1]" />
+            <GiCurledLeaf className="hidden md:block w-10 h-10 ml-2 text-emerald-200 group-hover:animate-pulse-faster transform scale-x-[-1]" />
           )}
         </div>
 
-        <div className="flex justify-center gap-4 group">
+        <div className="flex justify-center group">
           <Link
             href="/EmilyDsGreatestHits"
             className={linkClass}
           >{`Emily D's Greatest Hits`}</Link>
           {theme === "bloodNight" && (
-            <GiMoonBats className="hidden md:block w-10 h-10 group-hover:animate-pulse-faster text-rose-800" />
+            <GiMoonBats className="hidden md:block w-10 h-10 ml-3 group-hover:animate-pulse-faster text-rose-800" />
           )}
           {theme === "elegy" && (
-            <GiCurledLeaf className="w-10 h-10 text-emerald-200 group-hover:animate-pulse-faster transform scale-x-[-1]" />
+            <GiCurledLeaf className="hidden md:block w-10 h-10 ml-2 text-emerald-200 group-hover:animate-pulse-faster transform scale-x-[-1]" />
           )}
         </div>
       </ul>
