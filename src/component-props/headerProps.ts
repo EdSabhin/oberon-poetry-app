@@ -7,7 +7,7 @@ const headerProps = {
       headerClass:
         "w-full flex flex-col items-center md:items-start py-4 md:py-8 2xl:py-12 px-4 md:px-48 bg-gradient-to-b from-gray-700 to-stone-800 text-stone-200",
       authorClass:
-        "text-center text-[3rem] md:text-[4rem] xl:text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-amber-200 py-4 px-4 md:pr-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900",
+        "py-4 px-4 md:pr-4 text-center text-[3rem] md:text-[4rem] xl:text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-amber-200 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 to-yellow-900",
       quoteAuthor: "text-xl md:text-2xl text-start text-orange-100",
       icon: "/images/gold-moon-cat.svg",
     },
@@ -18,7 +18,7 @@ const headerProps = {
       headerClass:
         "w-full flex flex-col items-center md:items-start py-4 md:py-8 2xl:py-12 px-4 md:px-48 bg-gradient-to-b from-black via-rose-950 to-black text-rose-100",
       authorClass:
-        "text-center text-[3rem] md:text-[4rem] xl:text-7xl px-6 md:items-start underline underline-offset-8 decoration-double decoration-1 decoration-rose-900 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-stone-600 to-70% via-rose-500 to-stone-500",
+        "py-4 px-4 md:pr-4 text-center text-[3rem] md:text-[4rem] xl:text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-rose-900 text-transparent bg-clip-text bg-gradient-to-r from-stone-600 to-70% via-rose-500 to-stone-500",
       quoteAuthor: "text-xl md:text-2xl text-start text-rose-300",
       icon: "/images/blood-moon-cat.svg",
     },
@@ -28,20 +28,20 @@ const headerProps = {
       title: "Emily D's Greatest Hits",
       description: `"Emily Dickinson's legacy is profound and enduring, shaping the landscape of American literature for generations. As one of the most significant poets of the 19th century, her work defied conventions and explored themes of nature, love, death, and the human condition with unparalleled depth and complexity. Despite being relatively unknown during her lifetime, Dickinson's poetry has since garnered widespread acclaim for its innovative use of language, distinctive style, and keen insights into the human psyche. Her bold experimentation with form, punctuation, and syntax challenged traditional poetic norms and laid the groundwork for modernist poetry. Beyond her literary contributions, Dickinson's reclusive life and enigmatic persona have captured the imagination of scholars and readers alike, sparking countless interpretations and analyses of her work. Today, Dickinson's legacy endures as a testament to the power of individual expression and the timeless resonance of poetic genius."`,
       headerClass:
-        "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-r from-indigo-100 to-rose-200 text-amber-700",
+        "w-full flex flex-col items-center md:items-start py-4 md:py-8 2xl:py-12 px-4 md:px-48 bg-gradient-to-r from-indigo-100 to-rose-200 text-amber-700",
       authorClass:
-        "text-[3rem] md:text-[4rem] xl:text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-rose-900 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-teal-800",
-      quoteAuthor: "text-2xl text-start text-black",
+        "py-4 px-4 md:pr-4 text-center text-[3rem] md:text-[4rem] xl:text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-rose-900 text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-teal-800",
+      quoteAuthor: "text-xl md:text-2xl text-start text-black",
       icon: "/images/black-cat.svg",
     },
     elegy: {
       title: "Emily D's Greatest Hits",
       description: `Emily Dickinson's poetic works pulsate with rhythm and sparkle with dazzling imagery. Each verse becomes a glittering gem on the dance floor of literature, where metaphors twirl and similes shimmy to the beat of her ingenious wordplay. Her lines, once whispered in quiet corners, now echo through the ballrooms of Eternity, inviting listeners to join the poetic revelry. With every stanza, Dickinson spins a tale of love, loss, and the mysteries of existence, infusing the fireline with an ethereal glow that captivates both heart and soul. In this radiant performance, her words dance and sway, illuminating the night with their timeless allure and leaving an indelible imprint on the minds of all who dare to join the elegiac celebration.`,
       headerClass:
-        "w-full flex flex-col items-start py-8 px-48 bg-gradient-to-r from-cyan-600 to-cyan-950 text-cyan-200",
+        "w-full flex flex-col items-center md:items-start py-4 md:py-8 2xl:py-12 px-4 md:px-48 bg-gradient-to-r from-cyan-600 to-cyan-950 text-cyan-200",
       authorClass:
-        "text-[3rem] md:text-[4rem] xl:text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-emerald-600 py-4 pr-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-300",
-      quoteAuthor: "text-2xl text-start text-green-300",
+        "py-4 px-4 md:pr-4 text-center text-[3rem] md:text-[4rem] xl:text-7xl underline underline-offset-8 decoration-double decoration-1 decoration-emerald-600 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-300",
+      quoteAuthor: "text-xl md:text-2xl text-start text-green-300",
       icon: "/images/aqua-cat.svg",
     },
   },
