@@ -44,7 +44,7 @@ const Navbar = ({ theme }: Props) => {
         </div>
 
         <div className="flex justify-center group">
-          <Link href="/ShakespearesDen" className={linkClass}>{`Shakespeare's Respite`}</Link>
+          <Link href="/ShakespearesRespite" className={linkClass}>{`Shakespeare's Respite`}</Link>
           {theme === "bloodNight" && (
             <GiMoonBats className="hidden md:block w-10 h-10 ml-3 group-hover:animate-pulse-faster text-rose-800" />
           )}

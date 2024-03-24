@@ -1,5 +1,5 @@
 import React from "react"
-import { Poem } from "../pages/ShakespearesDen"
+import { Poem } from "../pages/ShakespearesRespite"
 import PoemCardShakespeare from "./PoemCardShakespeare"
 import PoemCardDickinson from "./PoemCardDickinson"
 

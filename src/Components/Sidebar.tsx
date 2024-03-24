@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 
-import { Poem } from "@/pages/ShakespearesDen"
+import { Poem } from "@/pages/ShakespearesRespite"
 
 import { Old_Standard_TT } from "next/font/google"
 import { SiApachecassandra } from "react-icons/si"

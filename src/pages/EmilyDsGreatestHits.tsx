@@ -1,6 +1,7 @@
+import Head from "next/head"
 import { useEffect, useState } from "react"
 import { fetchData } from "@/service/fetchData"
-import { Poem } from "./ShakespearesDen"
+import { Poem } from "./ShakespearesRespite"
 
 import Navbar from "../components/Navbar"
 import Header from "../components/Header"
@@ -63,6 +64,13 @@ const EmilyDsGreatestHits = () => {
   }, [fullPoemView])
 
   return (
+    <>
+      <Head>
+        <title>Lo! A whisper in the wind.</title>
+        <meta name="description" content="Poetry Portal for William Shakespeare, Emily Dickinson, and more." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/images/gold-moon-cat.svg" />
+      </Head>
     <div
       className={
         !elegy
@@ -111,7 +119,8 @@ const EmilyDsGreatestHits = () => {
         setElegy={setElegy}
         theme={!elegy ? "sylph" : "elegy"}
       />
-    </div>
+      </div>
+      </>
   )
 }
 

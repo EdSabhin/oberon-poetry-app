@@ -2,7 +2,7 @@ import React from "react"
 
 import mainProps from "@/component-props/mainProps"
 
-import { Poem } from "../pages/ShakespearesDen"
+import { Poem } from "../pages/ShakespearesRespite"
 import Button from "./Button"
 
 type FullPoemProps = {

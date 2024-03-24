@@ -23,16 +23,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #3a3a3a;
-}
-
-::-webkit-scrollbar-track:hover {
-  background-color: #ffffff;
+  background-color: #808080;
 }
 
 ::-webkit-scrollbar-button {
-  display: contents;
-  background-color: #ccc; /* Background color of the scrollbar buttons */
+  background-color: transparent;
 }
 
 ::selection {

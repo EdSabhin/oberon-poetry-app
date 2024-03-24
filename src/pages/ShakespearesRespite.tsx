@@ -1,3 +1,4 @@
+import Head from "next/head"
 import { useEffect, useState } from "react"
 import { fetchData } from "@/service/fetchData"
 
@@ -8,6 +9,7 @@ import MainShakespeare from "../components/MainShakespeare"
 import FullPoem from "../components/FullPoem"
 import Footer from "../components/Footer"
 
+
 export interface Poem {
   id?: string
   title: string
@@ -16,7 +18,7 @@ export interface Poem {
   linecount: string
 }
 
-const ShakespearesDen = () => {
+const ShakespearesRespite = () => {
   const [poems, setPoems] = useState<Poem[]>([])
   const [loading, setLoading] = useState<boolean>(true)
   const [fullPoemView, setFullPoemView] = useState<string | null>(null)
@@ -70,6 +72,13 @@ const ShakespearesDen = () => {
   }, [fullPoemView])
 
   return (
+    <>
+      <Head>
+        <title>Lo! A whisper in the wind.</title>
+        <meta name="description" content="Poetry Portal for William Shakespeare, Emily Dickinson, and more." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/images/gold-moon-cat.svg" />
+      </Head>
     <div
       className={
         !bloodNight
@@ -117,8 +126,10 @@ const ShakespearesDen = () => {
         setElegy={() => ""}
         theme={!bloodNight ? "playwright" : "bloodNight"}
       />
-    </div>
+      </div>
+      </>
   )
 }
+      
 
-export default ShakespearesDen
+export default ShakespearesRespite

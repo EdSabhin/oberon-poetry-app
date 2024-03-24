@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 
 import mainProps from "@/component-props/mainProps"
-import { Poem } from "@/pages/ShakespearesDen"
+import { Poem } from "@/pages/ShakespearesRespite"
 
 import { scrollToTop } from "@/service/scrollToTop"
 import shufflePoems from "@/service/shufflePoems"

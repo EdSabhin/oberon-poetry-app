@@ -81,7 +81,7 @@ const mainProps = {
   dickinson: {
     sylph: {
       mainClass:
-        "w-full flex flex-col items-center md:items-start pt-8 pb-48 md:pb-32 px-4 md:px-48 text-black overflow-hidden bg-gradient-to-r from-rose-100 via-sky-100 to-indigo-100",
+        "w-full flex flex-col items-center md:items-start pt-8 pb-10 md:pb-20 px-4 md:px-48 text-black overflow-hidden bg-gradient-to-r from-rose-100 via-sky-100 to-indigo-100",
       title: "A Voice for an Age",
       titleClass:
         "flex items-center py-2 px-16 text-5xl bg-gradient-to-r from-white to-sky-200 rounded-tl rounded-br rounded-full shadow-sm shadow-neutral-600",
@@ -127,7 +127,7 @@ const mainProps = {
     },
     elegy: {
       mainClass:
-        "w-full flex flex-col items-center md:items-start pt-8 pb-48 md:pb-32 px-4 md:px-48 text-black overflow-hidden bg-gradient-to-r from-black via-cyan-950 to-white",
+        "w-full flex flex-col items-center md:items-start pt-8 pb-36 md:pb-20 px-4 md:px-48 text-black overflow-hidden bg-gradient-to-r from-black via-cyan-950 to-white",
       title: "Moves to the Infinite",
       titleClass:
         "text-aqua-title-animation flex items-center py-2 px-16 text-5xl text-neutral-100 bg-gradient-to-r from-black via-cyan-500 to-teal-950 rounded-tl rounded-br rounded-full shadow-sm shadow-neutral-600",
