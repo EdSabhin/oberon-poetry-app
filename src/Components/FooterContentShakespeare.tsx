@@ -59,7 +59,7 @@ const FooterContentShakespeare = ({
         >
           And defy the foul fiend.&quot;
         </p>
-        <div className="text-center flex flex-col my-10 md:ml-52">
+        <div className="text-center md:text-start flex flex-col my-10 md:ml-52">
           <p className={`${OldStandardTT.className} ${quoteWorkClass}`}>
             <span className="text-xl italic">King Lear</span>{" "}
           </p>
