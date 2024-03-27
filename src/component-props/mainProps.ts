@@ -17,7 +17,7 @@ const mainProps = {
         "w-[15rem] h-[3.1rem] md:w-[15rem] md:h-[3rem] flex justify-center py-3 pl-8 pr-8 gap-5 text-stone-200 hover:text-orange-100 active:text-orange-500 bg-gradient-to-l from-slate-800 to-stone-800 hover:bg-gradient-to-br hover:from-stone-900 hover:to-stone-700 shadow-md rounded-bl-full rounded-tr-full shadow-stone-950 hover:-translate-x-2 transition duration-150 ease-in-out",
       poemCard: {
         class:
-          "w-full flex-col items-center md:w-[75%] relative text-center md:text-start p-10 pb-14 md:r-12 border-l-8 border-transparent bg-gradient-to-b from-gray-950 via-gray-500 to-gray-950 hover:bg-gradient-to-b hover:from-stone-950 hover:via-stone-600 hover:to-stone-950 hover:border-amber-200 rounded-[10%] md:rounded-[3%] rounded-br-[3%] md:rounded-br-[35%] shadow-md shadow-stone-950 transition ease-in-out hover:-translate-y-4 duration-300 group",
+          "w-full flex-col items-center md:w-[75%] relative text-center md:text-start p-10 pb-14 md:r-12 border-l-8 border-transparent bg-gradient-to-br from-gray-950 via-gray-500 to-gray-950 hover:bg-gradient-to-br hover:from-stone-950 hover:via-stone-600 hover:to-stone-950 hover:border-amber-200 rounded-[10%] md:rounded-[3%] rounded-br-[3%] md:rounded-br-[35%] shadow-md shadow-stone-950 transition ease-in-out hover:-translate-y-4 duration-300 group",
         poemButton:
           "w-[10rem] h-[2.7rem] absolute bottom-[-2.2%] right-[0%] md:top-[6.4%] md:right-[-16.7%] text-color-animation bg-gradient-to-r from-slate-800 to-stone-800 shadow-md shadow-stone-950 rounded-br-full transition ease-in-out duration-300 group-hover:bg-gradient-to-br group-hover:from-stone-900 group-hover:to-stone-700 group-hover:text-stone-200",
         titleClass:
@@ -55,7 +55,7 @@ const mainProps = {
         "w-[15rem] h-[3.1rem] md:w-[15rem] md:h-[3rem] flex justify-center py-3 pl-8 pr-8 gap-5 text-stone-200 hover:text-rose-100 active:text-rose-500 bg-gradient-to-r from-stone-950 via-rose-950 to-stone-800 shadow-md rounded-bl-full rounded-tr-full shadow-stone-950 hover:-translate-x-2 transition duration-150 ease-in-out",
       poemCard: {
         class:
-          "w-full flex-col items-center md:w-[75%] relative text-center md:text-start p-10 pb-14 md:r-12 border-l-8 border-transparent bg-gradient-to-b from-stone-950 to-rose-950 hover:bg-gradient-to-b hover:from-black hover:via-stone-900 hover:to-black hover:border-rose-500 rounded-[10%] md:rounded-[3%] rounded-br-[3%] md:rounded-br-[35%] shadow-sm shadow-stone-900 transition ease-in-out hover:-translate-y-4 duration-300 group",
+          "w-full flex-col items-center md:w-[75%] relative text-center md:text-start p-10 pb-14 md:r-12 border-l-8 border-transparent bg-gradient-to-br from-black via-rose-950 to-black hover:bg-gradient-to-br hover:from-black hover:via-stone-900 hover:to-black hover:border-rose-500 rounded-[10%] md:rounded-[3%] rounded-br-[3%] md:rounded-br-[35%] shadow-sm shadow-stone-900 transition ease-in-out hover:-translate-y-4 duration-300 group",
         poemButton:
           "w-[10rem] h-[2.7rem] absolute bottom-[-2.2%] right-[0%] md:top-[6.4%] md:right-[-16.7%] text-blood-animation bg-gradient-to-r from-rose-950 to-stone-900 shadow-md shadow-stone-950 rounded-br-full transition ease-in-out duration-300 group-hover:bg-gradient-to-br group-hover:from-black group-hover:to-stone-800 group-hover:text-stone-200 group-hover:shadow-lg group-hover:shadow-rose-950",
         titleClass:
